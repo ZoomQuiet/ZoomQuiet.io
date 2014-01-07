@@ -1,56 +1,76 @@
-# weekly.PyChina.org
+# for ZoomQuiet.github.io
 
-in fact from 2003 there is CZUG.org ~ the 1st(and only one) focus Zope tech community be set up;
+in fact my logging is long time:
 
-so years ago, there is soooooooo many python tech abt. commuity in China
+- try in livejournal/blogger etc. blog srv.
+- and before 2004 base [nucleuscms](http://nucleuscms.org) publish as zqstudio.org
+- from 2005 , fall in love [txt2tags](http://txt2tags.org/), base [PyBlosxom](http://pyblosxom.bluesock.org/) publish as [Zoom.Quiet's PyBlosxom blogging](http://blog.zoomquiet.org/pyblosxom/)
 
-but never group as one unify community brand,
-like as: perl-china/ruby-china etc. 
+but...
 
-so after PyCon2013China, some `old` Chinese Pythonista together and building:
+Markdown is realy easy than t2t/rST,
+and more and more site support .md not .t2t/.rst
 
-![](PyChina_logo_131217_zq_h200.png)
-
-## goal
-
-- by Pythonner in China Operations
-- as Pythonner in China Deleloping
-- for Pythonista in Global support events organizing srvice
+esp. github is love .md
 
 
-## organizer
 
-- KJ
-- Zoom.Quiet
+## re-start 2014
+
+- keep http://blog.zoomquiet.org/pyblosxom/
+- start new domain zoomquiet.io
+- usgae zoomquiet.github.io
+- CNAME as blog.zoomquiet.oi
+- base [Pelican](http://getpelican.com/) the Pythonic Static Site Generator
 
 ## usage
 How to update the site contents
 
 main loop:
 
-1. git clone
+1. git clone for start
 1. edit some .md in `content/`
-1. `fab rebuild` for test local
-1. `cd output` this is another repo. yet!
-1. git add->ci->push
-1. `fab deploy` published all
+1. `fab build` for test local
+1. `fab pub4github` git add->ci->push in `output/`
+
+loop 2~4
+
+
+## repo. relation
+
+https://github.com/ZoomQuiet/ZoomQuiet.io clone in local need embded another rep.
+
+    +- LICENSE
+    +- README.md
+    +- _plugins
+    +- _themes
+    +- content
+    +- output     as https://github.com/ZoomQuiet/ZoomQuiet.github.io
+    +- fabfile.py
+    `- pelicanconf.py
+
+
+- because github only support Jekell srv.
+- but github-pages can direct publish pure html static site
+- so 
+
 
 ### writing
 
-- fork https://gitcafe.com/CPyUG/PyChina into local
-- or becamed https://gitcafe.com/CPyUG member hold the repo. ACL
+- fork https://github.com/ZoomQuiet/ZoomQuiet.io into local
 - cd into content/
 - the sub-dir means:
 
         content/
-            +- Events       首字母大写的是分类目录 收集对应文章
-            +- Volunteer    ...志愿者
             +- _extra       扩展功能文件 e.g robots.txt
             +- _files       站内文件
             +- _images      站内图片
+            +- IMHO       首字母大写的是分类目录 收集对应文章
+            +- ...
             `- pages        类似 about 的导航栏文档
 
-#### 文章格式
+### 文章格式
+
 - 标准 Markdown 格式
 - 以 .md 为后缀
 - 文件名不得使用中文/空格/符号
@@ -77,12 +97,10 @@ main loop:
     Available commands:
 
         build       编译所有页面
-        deploy      向主机部署所有页面
+        pub4github  向github 真实发布文章
         reserve     重编译所有页面再启动本地服务
         serve       启动本地服务 localhost:8000
 
-
-`注意!` 向主机部署,需要有相关权限,并在本地配置好对应 SSH 信息
 
 ### design
 
@@ -92,6 +110,8 @@ main loop:
 - 样式: `_themes/pelican-bootstrap3/`
 - 插件: `_plugins/`
 
-## changelog
 
-- 131219 base pelican build and through qiniu.com publish
+# Changelog
+
+- 140106 base https://gitcafe.com/CPyUG/weekly init. all
+
