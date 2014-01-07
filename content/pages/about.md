@@ -1,32 +1,34 @@
 Title: About
 
-# PyChina.org
+# ZoomQuiet.io
+in fact my logging is long time:
 
-in fact from 2003 there is CZUG.org ~ the 1st(and only one) focus Zope tech community be set up;
+- try in livejournal/blogger etc. blog srv.
+- and before 2004 base [nucleuscms](http://nucleuscms.org) publish as zqstudio.org
+- from 2005 , fall in love [txt2tags](http://txt2tags.org/), base [PyBlosxom](http://pyblosxom.bluesock.org/) publish as [Zoom.Quiet's PyBlosxom blogging](http://blog.zoomquiet.org/pyblosxom/)
 
-so years ago, there is soooooooo many python tech abt. commuity in China
+but...
 
-but never group as one unify community brand,
-like as: perl-china/ruby-china etc. 
+Markdown is realy easy than t2t/rST,
+and more and more site support .md not .t2t/.rst
 
-so after PyCon2013China, some `old` Chinese Pythonista together and building:
-
-![](../_images/PyChina_logo_131217_zq_h200.png)
-
-## goal
-
-- by Pythonner in China Operations
-- as Pythonner in China Deleloping
-- for Pythonista in Global support events organizing srvice
+esp. github is love .md
 
 
-## organizer
+## re-start 2014
 
-- lepture
-- KJ
-- Sting
-- Zoom.Quiet
+- keep http://blog.zoomquiet.org/pyblosxom/
+- start new domain zoomquiet.io
+- usgae zoomquiet.github.io
+- CNAME as blog.zoomquiet.oi
+- base [Pelican](http://getpelican.com/) the Pythonic Static Site Generator
+
+continue [WyTiWyG](http://wiki.woodpecker.org.cn/moin/WyTiWyG) blogging...
+
+
+## historic mapping
+
 
 ## changelog
 
-- 131218 base pelican build and through qiniu.com publish
+- 140107 init. the base info of zoomquiet.io

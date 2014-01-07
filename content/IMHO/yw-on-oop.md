@@ -2,6 +2,7 @@ Title: On object-oriented programming
 Date: 2013-12-24 
 Tags: YinWang,Pythonner,Zh 
 Slug: 131224-yw-on-oop 
+
 via: http://yinwang0.wordpress.com/2013/12/24/on-object-oriented-programming/
 
 The programmers’ world is full of fads and superstitions. Every now and then there will be somebody come up and announce: “I can save the world!” No matter how bad the ideas are, there will always be followers, and the ideas soon become their religion. They then develop their community or camp, try to make the rest of the world adopt those ideas, and try to make the ideas live forever.
@@ -103,7 +104,6 @@ The programming languages world has cared too much about styles, paradigms and c
 
 程序猿的世界充斥着各种时髦迷信.不时就有人跳出来吼:”俺能拯救世界!”诡异的是,无论多不靠谱的想法,总有追随者,并快速打造成全站的宗教,结成社区,尽量迫使其它所有人认同,以史这想法永存下去.
 
-Whenever you criticize a programming language or paradigm, people would think you are a proponent of some other language or paradigm. Since I wrote the article pointing out the drawbacks of purely functional programming and monads, some people have apparently taken me as a proponent of object-oriented programming. That’s far from the case. I don’t like OO at all. I use almost none of the OO techniques even when I write programs in Java.
 
 当你开始批评某编程语言或是范式时,人们就认为你一定是另外某某党的拥趸. 自从俺写文章黒 纯函式 编程以及单子的问题后, 有的就以为俺已经投入到 OOP 的怀抱中了. 图样图森破,俺从来就没有尿过 OOP, 即便在使用JAVA 编程时.
 

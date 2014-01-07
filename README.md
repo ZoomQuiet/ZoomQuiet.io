@@ -23,6 +23,8 @@ esp. github is love .md
 - CNAME as blog.zoomquiet.oi
 - base [Pelican](http://getpelican.com/) the Pythonic Static Site Generator
 
+continue [WyTiWyG](http://wiki.woodpecker.org.cn/moin/WyTiWyG) blogging...
+
 ## usage
 How to update the site contents
 

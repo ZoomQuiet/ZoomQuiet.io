@@ -6,8 +6,9 @@ from __future__ import unicode_literals
 ###############################################################
 AUTHOR = u'Zoom.Quiet'
 SITENAME = u''
-SITEDESC = u'.io'
+SITEDESC = u'ZoomQuiet.io'
 SITENOTE = u"官网"
+SITETITLE = u'#是也乎'
 
 SITEURL = 'http://blog.zoomquiet.io'
 DISQUS_SITENAME = u"blogzoomquietio" #填入你的Shortname
