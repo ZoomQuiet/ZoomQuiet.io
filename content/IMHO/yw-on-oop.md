@@ -535,46 +535,122 @@ OO 语言自我吹嘘他们的抽象弄清,其实抽象以及表述能力都很�
 
 
 
-## What is an OO language any way?
-
-To this point we haven’t yet talked about what makes a language an “OO language” and what makes it not. Is it an OO language just because I can put both data fields and functions into a record? Or is it an OO language only if it also provides extremely late binding? How about inheritance, overloading, etc etc? Must I have all of them? Any of them?
-
-It turns out that there is no good answer to this question. There really is no such thing as an “object-oriented language”. Objects can be part of a language, but it is just a small part of it. You can’t really say that a language is object-oriented just because it provides objects as a feature. The so-called OO languages are solidly rooted in traditional procedural programming (PP). OOP basically stole everything from PP, renamed the terminologies and acted as if the ideas were its own.
-
-Historically the term OO was mainly used for marketing reasons. It could give a language some advantages of attracting people if you claim it to be an OO language, but now this advantage is diminishing because more and more people have realized the problems of OO’s methodology.
+## 乜系OO语言?
+~ What is an OO language any way?
 
 
-## Harm in education and industry
+有关这方面,咱还没有论及什么使一门语言 "面向对象",
+又或什么使之不是.
+称其为OO语言,只是因为俺能将两个数据字段和一个方法塞到一个记录中?
+又或是只有当其也提供 `极迟绑定` 时才算 OO?
+那么 继承/重载/等等,等等呢?
+是必须同时具有所有特性?还是有任何一个就算OO 了?
 
-Although OO has lots of problems, it is very successful in marketing and has risen to a dominant position over the years. Under social and market pressure, many colleges started using OO languages such as Java as their introductory language, replacing traditional procedural languages such as Pascal and functional languages such as Scheme. This in a large degree caused the students’ failure to learn the most essential concepts of programming. The only thing that OO emphasizes is code reusing, but how can you teach it to the students who can’t even write usable code, not to mention that code reusing is not really as important as some people believe.
 
-At both Cornell and Indiana, I have been a TA for introductory programming courses in Java. I did it for multiple semesters. I still remember how confused the students were. Most of them had trouble understanding things such as the meaning of “this”, why everything needs to be put inside classes, why make every field private and use getters, the difference between a method and a static method, etc etc.
+事实上,这一命题没有好答案.
+本质上根本就不存在 "面向对象语言".
+对象可以是语言的一部分,而且只是一小部分.
+你真心不能说因为提供了对象的支持,语言就是面向对象的.
+所谓的 OO语言是深深植根于传统的过程化编程(PP).
+本质上 OOP 的一切都是从 PP 偷走的,
+只是加以改名假装是自个儿创造的.
 
-There is a good reason that they don’t understand — because OO is not how things work. Most of the time I feel that I was teaching design flaws and dogmas. Many of them learned very little in the end. Worse, some of those students really believed in OO. They ended up being proud of writing over-engineered and convoluted code. They no longer see things or write programs in straightforward ways. This is sad. I feel that we are no longer educating students as creative and critical thinkers, but mindless assembly line workers.
+
+历史上鼓吹OO一直只是市场营销的需要.
+一种语言想吸引人注目,就得宣称是 OO 的,
+目测现在这点在慢慢改变,
+因为越来越多的人意识到了 OO 的问题.
+
+
+## OO对教育和产业的伤害
+~ Harm in education and industry
+
+
+虽然OO 有很多硬伤,但它在市场上非常成功,而且多年来都处于主导地位.
+因为社会以及市场的压力,许多高校也开始使用 OO语言,
+如JAVA 作为入门语言, 来取代传统的过程语言,比如 Pacsal,
+又或是函式语言,比如 Scheme .
+这在很大程度上造成了学生根本没有接触到编程最重要的概念.
+OO 强调的唯一重要的事儿就是重用,
+但是,怎么能教无法写出可用代码的学习重用?
+更何况复审并不是如某些人物所言的那么重要.
+
+
+在康奈尔和印第安纳大学,俺都作为 TA 使用JAVA 来进行编程入门课程.
+用了好几个学期.
+清楚的记得学生们是怎么被绕晕的.
+他们多数无法理解什么是 `"this"`,
+为毛一切都要塞进类里,
+为毛每个字段都要私有并使用 `getters`,
+方法和静态方法的差异,等等等等...
+
+
+他们无法理解的一个正当理由是 - OO 并不是描述事情怎么运作的.
+多数时候,俺感觉,俺在教授设计上的缺陷和教条.
+最终他们只能学到些皮毛.
+更杯具的是,那些真心相信OOP 的学生,
+将以为能写出令人费解的代码而自豪.
+他们再也无法用简洁直接的方式来编写程序了.
+这是可悲的.
+俺感觉,我们不再教导学生拥有创造性和批判性思维,
+而只是批量制造流水线工人.
 
 
 ![yw_modern-times.jpg](http://zoomq.qiniudn.com/ZQCollection/img/yw_modern-times.jpg)
 
-In industry, OO hasn’t really proved its effectiveness with evidence. Good systems may be built in a “OO language”, but the code is often written by people who understand the problems of OO and don’t embrace “everything is an object” or “design patterns”. Good programmers usually use workarounds in OO languages and are essentially writing in a traditional procedural style combined with bits from functional programming. So some OO languages and their tools may be pretty widely used, but the OO style doesn’t really have much influence on the advancements of programming as a field.
 
-## Final word
+工程方面,OO 并没有证实它宣称的威力.
+良好的系统,可能用 "OO 语言"来实现,
+但是,往往代码出自真正理解 OOP 的问题,
+不盲从 `一切皆对象`或是`设计模式` 的工程师.
+优秀程序员,通常在 OO 语言中进行变通,基本上只写传统的过程式的代码,
+并结合函数式编程风格.
+因此,一些 OOP 语言及其工具可能有非常广泛的应用,
+但是,OO风格其实并没有真正对编程领域施加什么大太的推动.
 
-So what does this post has to say? A jihad against OO languages? Advocate functional programming? Neither. As I said, there is no such thing as an “OO language”, so where is the war? Every so-called OO language also contains good elements that it borrowed (or stole) from procedural languages or sometimes functional languages, so they are not completely useless.
 
-But honestly, it is the extra features added by OO (in addition to procedural programming, PP) that are causing most of the problems. There is no denial of PP’s value. Those extra “true OO techniques” contain way more confusion than real value, to the point that their value is negligible. In my experience, accepting even one or two of those ideas may put you into a series of troubles and wrong ways of thinking which may take a long time to examine and recover.
+## 终言
+~ Final word
 
-Thus I suggest not to buy OO’s way of thinking and don’t try to exploit its “features”. They are usually brain eaters that you want to stay away from. By eschewing those problematic features, you can still produce acceptable programs in an “OO language”, because you are basically using it as an non-OO procedural language.
+那么终究这篇文章想说什么?
+对OO语言的圣战?
+提倡函数式编程?
+都不是,如俺所言, 根本没有所谓 `"面向对象语言"`, 
+所以,神马战争,是不存在的.
+每一个 OO语言,都包含从过程式语言或是函数式语言借(或偷)来的好东西,
+所以,它们也不算完全无用.
 
 
+但是实话哪,大部分问题究其根源,就是追加的那些个 OO 特性
+(死塞到过程编程, PP).
+而这些额外的 "真OO技术" 带来的混乱比价值要多的多.
+从这点看其价值是微不足道的.
+根据俺的经验,
+一但接受了哪怕只有一两个 OO 思想,
+就将引发一系列麻烦和思维错误中,
+且需要很长时间才能醒悟并摆脱.
+
+
+因此,俺严正建议,表再接受任何 OO方面的想法,
+也表试图使用它的 "特性".
+OO 就是`食脑魔`,能躲多远躲多远.
+但,你依然可以使用 "OO语言" 来生产可用程序,
+因为你基本上是以非OO语言来使用它的.
 
 
 
 # 是也乎
 
- 对于 王珢, 关注了很久了,久到成为习惯了…
-但是,认真翻译他翻越后的技术思考成果,还是第一次,可惜也只能用自个儿的语气来快译,真正涉及的所有技术细节,俺还没有能力逐一印证,俺也只是个期望知道个认同的结论,记忆下来,直接使用的那种知其然,不知所以然的家伙…
+对于 `王珢` , 关注了太久了,久到成为习惯了…
+但是,认真翻译他翻越后的技术思考成果,还是第一次,可惜也只能用自个儿的语气来快译,真正涉及的所有技术细节,俺还没有能力逐一印证,俺也只是个期望简洁的结论,记忆下来,直接使用的那种知其然,不知所以然的家伙…
 
-但是,不得不说,对于 OOP 从第N次使用JAVA 败退后,就一直对 OOP 的编程思想抱有深深的焦虑,原先是对自个儿为毛无法自然的对象化所有事物而自我嫌弃,然后是奇怪为毛不用 OOP 编程反而更加自然,到最后,沈游侠向俺演示,怎么通过清除 class 关键词令脚本的代码更短,运行更快…彻底放弃了 OOP 俺的世界观,但是,一直没有找到为毛这样的根因,现在 王珢完成了这一结论性描述,收藏之!
+但是,不得不说,对于 OOP 从第N次使用JAVA 败退后,
+就一直对 OOP 的编程思想抱有深深的焦虑,
+原先总是对自个儿为毛无法自然的对象化所有事物而自我嫌弃,
+然后是奇怪为毛不用 OOP 编程反而更加自然,
+到最后,沈游侠向俺演示,怎么通过清除 class 令Python代码更短,运行更快…
+
+这才,从俺的世界观里彻底放弃了 OOP ,但是,一直没有找到为毛这样的根因,现在 王珢完成了这一结论性描述,收藏之!严正推荐之!
 
 
 # Changlog ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
