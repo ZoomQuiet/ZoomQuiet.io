@@ -100,7 +100,7 @@ The “authentic” OO style of Smalltalk promotes the notion of “extremely la
 An example for this feature is Smalltalk’s conditional structure, which looks like this:
 
 
-    :::lisp
+    :::smalltalk
     result := a > b
         ifTrue:[ 'greater' ]
         ifFalse:[ 'less or equal' ]
@@ -111,7 +111,7 @@ You send a message ifTrue: to a Boolean object, passing as an argument a block o
 First of all, if you really have a well-designed language, you shouldn’t be wanting to define your own control structures. As a seasoned Lisp/Scheme programmer, I have seen many custom-designed control structures (such as the various looping macros) over the years, but none of them turned out to be good ideas. I’d rather write slightly longer and more verbose code in the vanilla language than to learn those weird control structures. Second, if you are really genius enough to have invented another good control structure, the late binding feature of Smalltalk probably won’t provide you the necessary power for defining it. The power of functions as an abstraction tool is limited. It is strictly less powerful than Lisp/Scheme’s macros. Third, this feature of Smalltalk is not really a novel approach and it has a big problem. A similar but more beautiful conditional construct had been defined in lambda calculus since before computer science was born:
 
 
-    :::lisp
+    :::smalltalk
     TRUE = λx.λy.x
     FALSE = λx.λy.y
     IF = λb.λt.λf.b t f
@@ -416,6 +416,7 @@ Smalltalk 的延迟绑定功能,也难以提供足够的能力来定义它.
 在计算机科学诞生前就已经由 lambda演算科学定义出来了:
 
 
+    :::smalltalk
     TRUE = λx.λy.x
     FALSE = λx.λy.y
     IF = λb.λt.λf.b t f

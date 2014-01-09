@@ -25,9 +25,11 @@ Author: Zoom.Quiet
 
 语法高亮
 
-:::shell
-发件人： Zoom.Quiet
-发送至： Yin Wang
-日期：  2014年1月9日 上午12:54
-主题：  相关OOP的文章翻译授权 以及 珠海校园技术活动的支持.
+
+    :::python
+    发件人： Zoom.Quiet
+    发送至： Yin Wang
+    日期：  2014年1月9日 上午12:54
+    主题：  相关OOP的文章翻译授权 以及 珠海校园技术活动的支持.
+
 

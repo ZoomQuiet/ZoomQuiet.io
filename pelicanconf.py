@@ -7,11 +7,9 @@ from __future__ import unicode_literals
 AUTHOR = u'Zoom.Quiet'
 SITENAME = u''
 SITEDESC = u'ZoomQuiet.io'
-SITENOTE = u"官网"
+SITENOTE = u".io"
 SITETITLE = u'#是也乎#'
-
-SITEURL = 'http://blog.zoomquiet.io'
-DISQUS_SITENAME = u"blogzoomquietio" #填入你的Shortname
+SITEURL = ''
 
 MARKUP = ('md', 'rst',)#'rst', 'html', 
 READERS = {
@@ -37,7 +35,12 @@ PLUGINS=['_plugins.sitemap'
     #, '_plugins.gzip_cache'
     #, u"pelican.plugins.disqus_static"
     ]
-MD_EXTENSIONS = (['toc'])
+
+MD_EXTENSIONS = (['codehilite(css_class=highlight)'
+    , 'extra', 'abbr', 'attr_list', 'def_list', 'fenced_code', 'smart_strong'
+    , 'admonition', 'meta', 'tables', 'sane_lists'
+    , 'toc'
+    ])
 
 SITEMAP = {
     'format': 'xml',
@@ -55,6 +58,8 @@ SITEMAP = {
 
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
+
+TYPOGRIFY = True
 ###############################################################
 ###############################################################   Template abt.
 ###############################################################
@@ -73,13 +78,7 @@ MENUITEMS = (('PyChina', 'http://pychina.org')
     , ('OBP', 'http://obp.zoomquiet.io')
     )
 
-# Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-
-TRANSLATION_FEED_ATOM = None
-FEED_ALL_RSS = None
-CATEGORY_FEED_RSS= None
 
 SOCIAL = (('GitHub', 'https://github.com/PyConChina')
         , ('CPyUG', 'https://gitcafe.com/CPyUG')
@@ -95,8 +94,8 @@ LINKS =  None
 ###############################################################   Publish abt.
 ###############################################################
 USE_FOLDER_AS_CATEGORY = True
-DELETE_OUTPUT_DIRECTORY = None #因为嵌套仓库的原因,不能清除发布目录!
 DEFAULT_CATEGORY = u'Chaos'
+#DELETE_OUTPUT_DIRECTORY = None #因为嵌套仓库的原因,不能清除发布目录!
 
 TEMPLATE_PAGES = {
         "404.html": "404.html",
@@ -117,15 +116,6 @@ EXTRA_PATH_METADATA = {'_extra/robots.txt': {'path': 'robots.txt'}
     , '_extra/LICENSE': {'path': 'LICENSE'}
     }
 
-ARTICLE_URL = '{category}/{slug}.html'
-ARTICLE_SAVE_AS = ARTICLE_URL
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = PAGE_URL
-CATEGORY_URL = '{slug}/index.html'
-CATEGORY_SAVE_AS = CATEGORY_URL
-TAG_URL = 'tag/{slug}.html'
-TAG_SAVE_AS = TAG_URL
-TAGS_SAVE_AS = 'tag/index.html'
 # disable author pages
 #AUTHOR_SAVE_AS = ''
 #AUTHORS_SAVE_AS = ''
