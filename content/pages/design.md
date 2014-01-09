@@ -19,7 +19,7 @@ Author: Zoom.Quiet
 
 ## Slogen & Logo
 
-
+:octocat:
 
 ### stuff
 

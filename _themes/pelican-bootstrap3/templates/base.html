@@ -53,6 +53,12 @@
     <link href="{{ SITEURL }}/theme/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/css/pygments/github.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" type="text/css"/>
+
+    <!-- add emojify into Pelican -->
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/emojify.min.css" type="text/css" />
+    <script src="{{ SITEURL }}/theme/js/emojify.js"></script>
+
+
     <!-- JavaScript plugins (requires jQuery) -->
     <script src="//code.jquery.com/jquery.min.js"></script>
 
@@ -136,6 +142,20 @@
 {% include 'includes/disqus_comment_counts.html' %} 
 -->
 {% include 'includes/disqus_script.html' %}
+
+    <!-- add emojify into Pelican -->
+
+    <script>
+        emojify.setConfig({
+            emoticons_enabled: true,
+            people_enabled: true,
+            nature_enabled: true,
+            objects_enabled: true,
+            places_enabled: true,
+            symbols_enabled: true
+        });
+        emojify.run();
+    </script>
 
 </body>
 </html>
