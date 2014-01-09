@@ -476,8 +476,8 @@ OO 语言自我吹嘘他们的抽象弄清,其实抽象以及表述能力都很�
 以便避开OO 语言的固有局限性.
 后来又发现,
 [Peter Norvig](http://en.wikipedia.org/wiki/Peter_Norvig)
- 早在1998年就就指出,
-一但你完成了一流的功能,
+早在1998年就指出,
+一但你完成了 `高阶函数`(first-class function) ,
 大部分设计模式对你将是 "透明的".
 这证实了俺的发现 - `我不需要它们`.
 
@@ -487,12 +487,12 @@ OO 语言自我吹嘘他们的抽象弄清,其实抽象以及表述能力都很�
 但是, 智力=/=智慧.
 即便它们能作到函式语言作到的,也通常要复杂的多.
 选择艰难模式并不能真正证明自个儿的天才.
-当你完成了一流的功能,事儿就变得容易很多,
+当你完成了 `高阶函数`(first-class function) ,事儿就变得容易很多,
 你甚至于不会注意到用了什么设计模式.
 就象
 [Peter Norvig](http://en.wikipedia.org/wiki/Peter_Norvig)
 形容的,它们会变得的"透明".
-那么,良好的语言设计者,应该作的是尽可能增加一流的功能到语言,
+那么,良好的语言设计者,应该作的是尽可能增加 `高阶函数`(first-class function) 到语言,
 而不是提出设计模式作为解决方案.
 
 (`译注:`无法同意更多!只有减少程序员心智负担的开发语言才是有良心的.)
@@ -655,6 +655,7 @@ OO 就是`食脑魔`,能躲多远躲多远.
 
 # Changlog ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+- 140109 获得`王珢`授权,得以进行传播.
 - 140108 前后7.42小时完成快译.
 - 131224 翻越抄录在 medium.com
  
@@ -875,7 +876,7 @@ The design patterns are completely nonsense to me and I never used them. When I 
 Peter Norvig gave a talk on design patterns in 1998 pointing out most of the design patterns will be “transparent” once you have first-class functions. He was too polite to call design patterns nonsense or stupid, but that’s implied.
 
 Peter Norvig 在98年就设计模式指出,
-一但你完成了一流的功能,
+一但你完成了 `高阶函数`(first-class function) ,
 大部分设计模式对你将是 "透明的".
 他其实就是过于文雅的暗示: 设计模式就是废话或是愚蠢的.
 

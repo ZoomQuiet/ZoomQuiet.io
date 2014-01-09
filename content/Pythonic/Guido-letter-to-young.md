@@ -1,7 +1,7 @@
 Title: Letter to a young programmer
 Date: 2013-11-11
 Tags: OSS,Think,China
-Slug: oss-good-4-china-com
+Slug: guido-letter-2-young
 
 ![guido](https://d262ilb51hltx0.cloudfront.net/max/700/1*2m0OBPBnBJu0WrobbfnBkg.png)
 ~ Guido van Rossum (inventor of Python)
