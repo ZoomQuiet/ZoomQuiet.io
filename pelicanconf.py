@@ -36,6 +36,7 @@ PLUGINS=['_plugins.sitemap'
     #, u"pelican.plugins.disqus_static"
     ]
 
+#   upgraded Pelican 3.3 must self open them
 MD_EXTENSIONS = (['codehilite(css_class=highlight)'
     , 'extra', 'abbr', 'attr_list', 'def_list', 'fenced_code', 'smart_strong'
     , 'admonition', 'meta', 'tables', 'sane_lists'

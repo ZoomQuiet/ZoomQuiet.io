@@ -111,7 +111,7 @@ You send a message ifTrue: to a Boolean object, passing as an argument a block o
 First of all, if you really have a well-designed language, you shouldn’t be wanting to define your own control structures. As a seasoned Lisp/Scheme programmer, I have seen many custom-designed control structures (such as the various looping macros) over the years, but none of them turned out to be good ideas. I’d rather write slightly longer and more verbose code in the vanilla language than to learn those weird control structures. Second, if you are really genius enough to have invented another good control structure, the late binding feature of Smalltalk probably won’t provide you the necessary power for defining it. The power of functions as an abstraction tool is limited. It is strictly less powerful than Lisp/Scheme’s macros. Third, this feature of Smalltalk is not really a novel approach and it has a big problem. A similar but more beautiful conditional construct had been defined in lambda calculus since before computer science was born:
 
 
-    :::smalltalk
+    :::lisp
     TRUE = λx.λy.x
     FALSE = λx.λy.y
     IF = λb.λt.λf.b t f
@@ -416,7 +416,7 @@ Smalltalk 的延迟绑定功能,也难以提供足够的能力来定义它.
 在计算机科学诞生前就已经由 lambda演算科学定义出来了:
 
 
-    :::smalltalk
+    :::lisp
     TRUE = λx.λy.x
     FALSE = λx.λy.y
     IF = λb.λt.λf.b t f
@@ -653,8 +653,19 @@ OO 就是`食脑魔`,能躲多远躲多远.
 
 这才,从俺的世界观里彻底放弃了 OOP ,但是,一直没有找到为毛这样的根因,现在 王珢完成了这一结论性描述,收藏之!严正推荐之!
 
+PS:
 
-# Changlog ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- 有关 `first-class function` 的翻译
+- 最初俺是图样图森破的译为 `一流功能`
+- 王珢看了, 建议修订为 `高阶函数`
+- 很多朋友指出,不对! 应该是 `第一类`/`头等`/`第一级`/`一等公民`...函数
+- 我们大汉语的问题,就这样爆发了,多样可重载性...
+- 参考:[First-class function - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/First-class_function)
+    - 以及 [高阶函数与第一型_Higher-order function and First-class object | Web Development Machine](http://www.webdevelopmentmachine.com/blog/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E4%B8%8E%E7%AC%AC%E4%B8%80%E5%9E%8B_higher-order-function-and-first-class-object/) 等等吧
+- 俺个人感觉, `高阶函数` 的意向在这儿没有问题,只是我们过往的翻译习惯感觉哪儿有不对了...
+
+
+# Changlog ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - 140109 获得`王珢`授权,得以进行传播.
 - 140108 前后7.42小时完成快译.
