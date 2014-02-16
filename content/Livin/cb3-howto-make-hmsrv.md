@@ -1,4 +1,4 @@
-Title: 如何基于 CB3 构建家庭服务器
+Title: 如何基于CB3构建家庭服务器
 Date: 2014-01-27 23:48
 Tags: MAC,CT,Cubier,CubieBoard,Howto
 Slug: cb3-howto-make-hmsrv
@@ -8,6 +8,7 @@ Slug: cb3-howto-make-hmsrv
 
 [CBInstallfest 的体验](http://blog.zoomquiet.io/cbi-zq-install.html)
 之后,总是要一步步完成心目中的 家服务器
+
 ## Issue
 
 CB3 lununtu-server-VGA

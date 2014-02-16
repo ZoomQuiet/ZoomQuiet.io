@@ -9,7 +9,7 @@ SITENAME = u''
 SITEDESC = u'ZoomQuiet.io'
 SITENOTE = u".io"
 SITETITLE = u'#是也乎#'
-SITEURL = ''
+SITEURL = 'http://blog.zoomquiet.io'
 
 MARKUP = ('md', 'rst',)#'rst', 'html', 
 READERS = {
