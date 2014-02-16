@@ -3,6 +3,7 @@ Date: 2014-01-11
 Tags: MAC,CT,Cubier,CubieBoard,ZQ
 Slug: cbi-zq-install
 
+[TOC]
 
 ## CBI 
 [CBInstall.1 欢乐完成](http://blog.zhgdg.org/2014-01/et-cbi1/)
@@ -40,9 +41,7 @@ Slug: cbi-zq-install
     $ 7z x lubuntu-server-nand.img.gz
 
 - 为了防止手指意外的摸到带电元件,应该先将赠送的PV板安装上,注意:
-
 ![cubietruck_fel_button](http://dyhr.com/wp-content/uploads/Cubietruck_FEL_button-300x224.jpg)
-
     - 正确的次序
     - 以及要将板上的保护膜清除
     - 另外,应该用 CB 驱动激光雕刻仪,来给每个PV 板刻上 CB小猴纸的 logo ,建议已经严正向 Benn 吼过了
@@ -294,11 +293,12 @@ Slug: cbi-zq-install
 
 
 
+
 # 参考:
 [How to install Lubuntu Server on Cubietruck from Mac OS X](http://dyhr.com/2013/11/22/how-to-install-lubuntu-server-on-cubietruck-from-mac-os-x/)
 
 ## CbuieBoard
-[Cubieboard ：享誉国外 Linux 圈子的中国产品- 爱范儿· Beats of Bits](http://www.ifanr.com/367898)
+  [Cubieboard ：享誉国外 Linux 圈子的中国产品- 爱范儿· Beats of Bits](http://www.ifanr.com/367898)
 - [Cubieboard/zh cn - linux-sunxi.org](http://linux-sunxi.org/Cubieboard/zh_cn)
 
 - [Cubieboard3: Cubietruck is all ready](http://cubieboard.org/2013/10/30/cubieboard3-cubietruck-is-all-ready/) (cubieboard.org)
