@@ -72,7 +72,10 @@ THEME = "_themes/pelican-bootstrap3"
 BOOTSTRAP_THEME = 'readable'
 
 DEFAULT_PAGINATION = 1
+
+DISPLAY_TAGS_ON_SIDEBAR = False
 TAG_CLOUD_MAX_ITEMS = 10
+
 DISPLAY_CATEGORIES_ON_MENU = None      # 分类标签是否显示在导航
 # Social widget -> China jiathis.com
 ADDTHIS_PROFILE = None #True

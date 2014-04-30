@@ -101,11 +101,13 @@
                 {% for title, link in MENUITEMS %}
                     <li><a href="{{ link }}">{{ title }}</a></li>
                 {% endfor %}
+              
                 {% if DISPLAY_PAGES_ON_MENU %}
                     {% for page in PAGES %}
                         <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}
                 {% endif %}
+              
                 {% if DISPLAY_CATEGORIES_ON_MENU %}
                     {% for cat, null in categories %}
                         <li {% if cat == category %}class="active"{% endif %}>
@@ -149,11 +151,12 @@
         <a href="http://blog.zoomquiet.io/feeds/all.atom.xml">(feed)</a>
     </sub>
         </div>
+
         <div class="col-lg-3 well well-sm" id="sidebar">
             {% include 'includes/sidebar.html' %}
         </div>
+    
     </div>
-
 </div>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
