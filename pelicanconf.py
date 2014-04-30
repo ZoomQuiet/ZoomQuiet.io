@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True
+
 ###############################################################
 ###############################################################   Site abt.
 ###############################################################
@@ -10,6 +13,7 @@ SITEDESC = u'ZoomQuiet.io'
 SITENOTE = u".io"
 SITETITLE = u'#是也乎#'
 SITEURL = 'http://blog.zoomquiet.io'
+DISQUS_SITENAME = u"blogzoomquietio" #填入你的Shortname
 
 MARKUP = ('md', 'rst',)#'rst', 'html', 
 READERS = {
@@ -81,13 +85,13 @@ MENUITEMS = (('PyChina', 'http://pychina.org')
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
-SOCIAL = (('GitHub', 'https://github.com/PyConChina')
-        , ('CPyUG', 'https://gitcafe.com/CPyUG')
-        , ('News', 'http://news.pychina.org')
-        , ('Wiki', 'http://wiki.woodpecker.org.cn/moin/CPUG')
-        , ('rss', SITEURL + '/' + FEED_ALL_ATOM)
-        , ('weibo', 'http://weibo.com/pyconcn')
-        , ('O.B.P', 'http://weibo.com/openbookproject')
+SOCIAL = (('rss', SITEURL + '/' + FEED_ALL_ATOM)
+        , ('GitHub', 'https://github.com/ZoomQuiet')
+        , ('Wiki', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet')
+        , ('O.B.P', 'http://code.google.com/p/openbookproject/')
+        , ('Weekly', 'http://weekly.pychina.org/')
+        , ('weibo', 'http://weibo.com/zoomquiet')
+        , ('旧文', 'http://blog.zoomquiet.org/pyblosxom/')
         )
 # Blogroll
 LINKS =  None
@@ -122,8 +126,6 @@ EXTRA_PATH_METADATA = {'_extra/robots.txt': {'path': 'robots.txt'}
 #AUTHOR_SAVE_AS = ''
 #AUTHORS_SAVE_AS = ''
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
 
 
 

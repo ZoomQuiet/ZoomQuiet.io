@@ -35,5 +35,12 @@ continue [WyTiWyG](http://wiki.woodpecker.org.cn/moin/WyTiWyG) blogging...
 `i@zoomquiet.io`
 
 ## changelog
+- 140216 fixed, 加载非常慢的问题:
+
+    Uncaught SyntaxError: Unexpected token < emojify.js:4
+    Uncaught ReferenceError: emojify is not defined (index):360
+
+    GET http://blog.zoomquiet.io/theme/css/dppfsfkxrtxvae2bkdzp5lo3ldcazywl9si6vvxl-qu.woff 404 (Not Found) 
+
 
 - 140107 init. the base info of zoomquiet.io
