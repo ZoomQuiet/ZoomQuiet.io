@@ -117,6 +117,8 @@
                 {% endif %}
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ SITEURL }}/{{FEED_ALL_ATOM}}"><i class="icon-rss-sign"></i>rss</a></li>
+
                 <li><a href="{{ SITEURL }}/archives.html"><i class="icon-th-list"></i>Archives</a></li>
             </ul>
         </div>
@@ -130,26 +132,8 @@
             {% block content %}
             {% endblock %}
 
-    <hr/>
-    <sub>
-        © Copyright 2014 by Zoom.Quiet 
-        <br/>
-        Content licensed under the Creative Commons 
-        <b>attribution-noncommercial-sharealike</b> License.
-        <br/>
-        Contact me via 
-        , <code><a href="mailto:i@zoomquiet.io">mail</a> 
-            </code>
-        ,<code><a href="http://github.com/ZoomQuiet">github</a>
-            </code>
-        or
-        <code><a href="http://bitbucket.org/ZoomQuiet">bitbucket</a>
-            </code>.
-        Tip me via 
-        <code><a href="https://www.gittip.com/ZoomQuiet/">gittip</a>
-            </code>.
-        <a href="http://blog.zoomquiet.io/feeds/all.atom.xml">(feed)</a>
-    </sub>
+{% include 'includes/author.html' %}
+
         </div>
 
         <div class="col-lg-3 well well-sm" id="sidebar">

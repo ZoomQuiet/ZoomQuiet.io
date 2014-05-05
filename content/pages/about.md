@@ -19,7 +19,7 @@ esp. github is love .md
 
 ## re-start 2014
 
-- keep http://blog.zoomquiet.org/pyblosxom/
+- keep [blog.zoomquiet.org](http://blog.zoomquiet.org/pyblosxom/) all old contents
 - start new domain zoomquiet.io
 - usgae zoomquiet.github.io
 - CNAME as blog.zoomquiet.oi

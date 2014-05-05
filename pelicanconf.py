@@ -8,6 +8,8 @@ from __future__ import unicode_literals
 ###############################################################   Site abt.
 ###############################################################
 AUTHOR = u'Zoom.Quiet'
+AUTHOR_INFOS = True
+
 SITENAME = u''
 SITEDESC = u'ZoomQuiet.io'
 SITENOTE = u".io"
@@ -87,14 +89,14 @@ MENUITEMS = (('PyChina', 'http://pychina.org')
     )
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-
-SOCIAL = (('rss', SITEURL + '/' + FEED_ALL_ATOM)
+# ('rss', SITEURL + '/' + FEED_ALL_ATOM)
+SOCIAL = (('旧文', 'http://blog.zoomquiet.org/pyblosxom/')
+        , ('.io', 'http//ZoomQuiet.io')
         , ('GitHub', 'https://github.com/ZoomQuiet')
         , ('Wiki', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet')
         , ('O.B.P', 'http://code.google.com/p/openbookproject/')
         , ('Weekly', 'http://weekly.pychina.org/')
         , ('weibo', 'http://weibo.com/zoomquiet')
-        , ('旧文', 'http://blog.zoomquiet.org/pyblosxom/')
         )
 # Blogroll
 LINKS =  None
