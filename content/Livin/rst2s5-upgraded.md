@@ -1,7 +1,10 @@
 Title: rst2s5 小折腾
-Date: 2014-0507-30
+Date: 2014-05-07
 Tags: MAC,S5,rst2s5,ZQ
 Slug: rst2s5-upgraded
+
+[TOC]
+
 
 # 背景
 
@@ -25,6 +28,7 @@ Slug: rst2s5-upgraded
 
 - [Using Pygments in ReST documents — Pygments](http://pygments.org/docs/rstdirective/)
 - [Using rst for presentations](http://morgangoose.com/blog/2010/09/12/using-rst-for-presentations/)
+- [rst2s5 with syntax highlighting](http://hackmap.blogspot.com/2009/10/rst2s5-with-syntax-highlighting.html)
 - [python - Where can I find a gallery of Pygments CSS files - Super User](http://superuser.com/questions/374509/where-can-i-find-a-gallery-of-pygments-css-files)
 
 对比:

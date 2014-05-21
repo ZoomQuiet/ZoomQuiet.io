@@ -28,6 +28,14 @@ esp. github is love .md
 continue [WyTiWyG](http://wiki.woodpecker.org.cn/moin/WyTiWyG) blogging...
 
 
+repo.
+
+- [ZoomQuiet/ZoomQuiet.io](https://github.com/ZoomQuiet/ZoomQuiet.io) for Pelican
+- [ZoomQuiet/ZoomQuiet.github.io](https://github.com/ZoomQuiet/ZoomQuiet.github.io) for github-pages
+- working detail check: [ZoomQuiet.io/README.md at master · ZoomQuiet/ZoomQuiet.io](https://github.com/ZoomQuiet/ZoomQuiet.io/blob/master/README.md)
+    - and [How to from Jekyll jump into Pelican](http://qpython-android.github.io/chaos/jekyll-to-pelican.html)
+    
+
 ## historic mapping
 
 ## Contact

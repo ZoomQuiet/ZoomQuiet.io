@@ -144,6 +144,55 @@ ValueError: list.remove(x): x not in list
 
 ## DisplayLink
 
+## 140518
+zoomq @ MBP111216ZQ in ~
+$ brew upgrade
+==> Upgrading 32 outdated packages, with result:
+autojump 21.7.1, brew-cask 0.35.0, doxygen 1.8.7, ffmpeg 2.2.2, fftw 3.3.4, fribidi 0.19.6, ghc 7.6.3_2, git 1.9.3, glib 2.40.0_1, gmp 6.0.0a, gnupg2 2.0.22_1, go 1.2.2, harfbuzz 0.9.28, imagemagick 6.8.9-1, lftp 4.4.16, libass 0.11.2, libgpg-error 1.13, libtasn1 3.5, little-cms2 2.6, mongodb 2.6.1, mpc 0.25, mpd 0.18.11, nginx 1.6.0_1, node 0.10.28, orc 0.4.19, qt 4.8.6, readline 6.3.5, redis 2.8.9, rtmpdump 2.4+20131018, tree 1.7.0, wavpack 4.70.0, x264 r2412
+==> Upgrading autojump
+
+...
+
+==> Downloading https://storage.googleapis.com/golang/go1.2.2.src.tar.gz
+######################################################################## 100.0%
+==> ./make.bash --no-clean
+==> Caveats
+As of go 1.2, a valid GOPATH is required to use the `go get` command:
+  http://golang.org/doc/code.html#GOPATH
+
+`go vet` and `go doc` are now part of the go.tools sub repo:
+  http://golang.org/doc/go1.2#go_tools_godoc
+
+To get `go vet` and `go doc` run:
+  go get code.google.com/p/go.tools/cmd/godoc
+  go get code.google.com/p/go.tools/cmd/vet
+
+You may wish to add the GOROOT-based install location to your PATH:
+  export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completion has been installed to:
+  /usr/local/share/zsh/site-functions
+
+...
+
+==> Pouring nginx-1.6.0_1.mavericks.bottle.tar.gz
+==> Caveats
+Docroot is: /usr/local/var/www
+
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+To have launchd start nginx at login:
+    ln -sfv /usr/local/opt/nginx/*.plist ~/Library/LaunchAgents
+Then to load nginx now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+Or, if you don't want/need launchctl, you can just run:
+    nginx
+
+    
 
 # Changelog
 
