@@ -4,6 +4,8 @@ Tags: MAC,Leo,Pyenv,ZQ
 Slug: jump-into-mavericks
 
 
+[TOC]
+
 # 为毛
 得承认是被 老池的文章忽悠到了, 
 而且, 10.9 免费了, 进一步的通过OS 提高了电池/内存的使用效率,
@@ -14,13 +16,122 @@ Slug: jump-into-mavericks
 
 # 回顾
 
-## Leo
-About X11 and OS X 
-    http://support.apple.com/kb/HT5293
-XQuartz 
-    http://xquartz.macosforge.org/landing/
+宏观上没有想象的复杂,因为真心作到了零配置!
+几乎所有非第三方的配置,都继承了下来不用折腾!
+
+唯三的折腾:
+
+1. Python 环境
+2. Qt 环境
+3. sshfs
 
 
+严正推荐:
+
+[Mavericksでbrew upgradeしたらハマった話](file:///Users/zoomq/mnt/%E5%BF%AB%E7%9B%98/zScrapBook/ZqFLOSS/data/20131230190257/index.html)
+
+等等日文的相关纪要非常实在,直觉,顺序合理,值得,多参考.
+
+
+## Python + Qt for Leo
+
+大家知道俺是 [文学化编程](http://wiki.woodpecker.org.cn/moin/LiterateProgramming)
+的拥趸,
+所以,一直使用 [Leo](http://wiki.woodpecker.org.cn/moin/LeoEnvironment)
+作为主要编程环境的,
+
+10.9 以后 Python 不内置安装了,
+Qt 当然从来也没有内置过.
+所以,
+
+### Python
+
+当然,系统的用 `brew install python` 了,
+
+而其它各种项目开发时,就要综合使用
+
+#### Pyenv+VirtualEnv
+
+Pyenv 是这样一种神器:
+
+  完全的面向shell
+  通过环境变量的自动配置
+  形成复合Python版本共存
+
+VirtualEnv 有 Pyenv 的插件
+所以,可以利用已安装好的环境,快速复制出项目专用的,
+结果,引发了滥用,特别舒服的那种:
+
+```bash
+$ pyenv versions
+* system (set by /Users/zoomq/.pyenv/version)
+  2.7.3
+  2.7.5
+  2.7.6
+  273SAE
+  275lbTC
+  275pelican
+  276SphinxOBP
+  276chaos
+  276uliweb
+  3.2
+  3.3.2
+  32IPy
+  ipynotebook
+  pypy-2.2.1
+  pypy221chaos
+
+```
+
+主要遇到的问题是:
+
+    ==> Installing python3
+    ==> Downloading http://python.org/ftp/python/3.3.3/Python-3.3.3.tar.bz2
+    ######################################################################## 100.0%
+    ==> ./configure --prefix=/usr/local/Cellar/python3/3.3.3 --enable-ipv6 --datarootdir=/usr/local/Cellar/python3/3.3.3/share --datadir=/usr/lo
+    ==> make
+    ==> make install PYTHONAPPSDIR=/usr/local/Cellar/python3/3.3.3
+    ==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python3/3.3.3/share/python3
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+    Error in sitecustomize; set PYTHONVERBOSE for traceback:
+    ValueError: list.remove(x): x not in list
+
+
+指定具体版本,尝试,直到可以顺利安装出可用的就好.
+
+严正表扬一下 'Yamashita, Yuu`
+
+- [How to config pyenv's pip ? · Issue #95 · yyuu/pyenv](https://github.com/yyuu/pyenv/issues/95#issuecomment-31392999)
+- 绝对认真的回答了俺的提问,虽然不了了之,但是,一个常用工具的作者,可以如此关注一个不是问题的问题,实在太勤勉了,必须学习!
+
+
+### Qt for Leo
+
+参考:
+
+- [About X11 and OS X](http://support.apple.com/kb/HT5293)
+- [XQuartz](http://xquartz.macosforge.org/landing/)
+
+以及:
+
+```bash
 $ brew install pyqt
 ==> Downloading http://downloads.sf.net/project/pyqt/PyQt4/PyQt-4.10.3/PyQt-mac-gpl-4.10.3.tar.gz
 Already downloaded: /Library/Caches/Homebrew/pyqt-4.10.3.tar.gz
@@ -33,73 +144,18 @@ Use the QMAKESPEC environment variable to specify the correct platform.
 Determining the layout of your Qt installation...
 
 READ THIS: https://github.com/Homebrew/homebrew/wiki/troubleshooting
+```
+
+多多 Google 吧,很标准的环境驱动, Qt 官方提供了的,
+
+然后, Leo 只是一堆 Py 脚本下载下来,
+修订一下别名指向就好:
 
 
-
-## Pyenv
-
-
-
-
-==> Upgrading python3
-==> Installing python3 dependency: sqlite
-==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/sqlite-3.8.2.mavericks.bottle.tar.gz
-###################                                                       26.9%
-curl: (56) Recv failure: Connection reset by peer
-Warning: Bottle installation failed: building from source.
-==> Downloading http://www.sqlite.org/2013/sqlite-autoconf-3080200.tar.gz
-######################################################################## 100.0%
-==> ./configure --prefix=/usr/local/Cellar/sqlite/3.8.2 --enable-dynamic-extensions
-==> make install
-==> Caveats
-This formula is keg-only, so it was not symlinked into /usr/local.
-
-Mac OS X already provides this software and installing another version in
-parallel can cause all kinds of trouble.
-
-OS X provides an older sqlite3.
-
-Generally there are no consequences of this for you. If you build your
-own software and it requires this formula, you'll need to add to your
-build variables:
-
-    LDFLAGS:  -L/usr/local/opt/sqlite/lib
-    CPPFLAGS: -I/usr/local/opt/sqlite/include
-
-==> Summary
-🍺  /usr/local/Cellar/sqlite/3.8.2: 9 files, 2.0M, built in 48 seconds
-
-
-
-==> Installing python3
-==> Downloading http://python.org/ftp/python/3.3.3/Python-3.3.3.tar.bz2
-######################################################################## 100.0%
-==> ./configure --prefix=/usr/local/Cellar/python3/3.3.3 --enable-ipv6 --datarootdir=/usr/local/Cellar/python3/3.3.3/share --datadir=/usr/lo
-==> make
-==> make install PYTHONAPPSDIR=/usr/local/Cellar/python3/3.3.3
-==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python3/3.3.3/share/python3
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-Error in sitecustomize; set PYTHONVERBOSE for traceback:
-ValueError: list.remove(x): x not in list
-
-
+```bash
+# ~/.bashrc for running Leo
+alias leolanch="python /opt/bin/leo/launchLeo.py >> /dev/null 2>&1 &"
+```
 
 ## 伟光大的 sshfs
 
@@ -142,59 +198,15 @@ ValueError: list.remove(x): x not in list
     🍺  /usr/local/Cellar/osxfuse/2.6.2: 84 files, 5.0M
 
 
-## DisplayLink
+具体哪个管用,俺也没整明白,
+反正,怎么折腾,
+都是可以正当加载上 `Plan` 的内核库,
+然后就可以对家庭服务器的所有硬盘,远程加载为本地目录了..
 
-## 140518
-zoomq @ MBP111216ZQ in ~
-$ brew upgrade
-==> Upgrading 32 outdated packages, with result:
-autojump 21.7.1, brew-cask 0.35.0, doxygen 1.8.7, ffmpeg 2.2.2, fftw 3.3.4, fribidi 0.19.6, ghc 7.6.3_2, git 1.9.3, glib 2.40.0_1, gmp 6.0.0a, gnupg2 2.0.22_1, go 1.2.2, harfbuzz 0.9.28, imagemagick 6.8.9-1, lftp 4.4.16, libass 0.11.2, libgpg-error 1.13, libtasn1 3.5, little-cms2 2.6, mongodb 2.6.1, mpc 0.25, mpd 0.18.11, nginx 1.6.0_1, node 0.10.28, orc 0.4.19, qt 4.8.6, readline 6.3.5, redis 2.8.9, rtmpdump 2.4+20131018, tree 1.7.0, wavpack 4.70.0, x264 r2412
-==> Upgrading autojump
 
-...
-
-==> Downloading https://storage.googleapis.com/golang/go1.2.2.src.tar.gz
-######################################################################## 100.0%
-==> ./make.bash --no-clean
-==> Caveats
-As of go 1.2, a valid GOPATH is required to use the `go get` command:
-  http://golang.org/doc/code.html#GOPATH
-
-`go vet` and `go doc` are now part of the go.tools sub repo:
-  http://golang.org/doc/go1.2#go_tools_godoc
-
-To get `go vet` and `go doc` run:
-  go get code.google.com/p/go.tools/cmd/godoc
-  go get code.google.com/p/go.tools/cmd/vet
-
-You may wish to add the GOROOT-based install location to your PATH:
-  export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
-
-zsh completion has been installed to:
-  /usr/local/share/zsh/site-functions
-
-...
-
-==> Pouring nginx-1.6.0_1.mavericks.bottle.tar.gz
-==> Caveats
-Docroot is: /usr/local/var/www
-
-The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
-nginx can run without sudo.
-
-To have launchd start nginx at login:
-    ln -sfv /usr/local/opt/nginx/*.plist ~/Library/LaunchAgents
-Then to load nginx now:
-    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
-Or, if you don't want/need launchctl, you can just run:
-    nginx
-
-    
 
 # Changelog
 
+- 140616 再次精简,算是发布
 - 140505 快速简述完成
 - 140110 起意,总结

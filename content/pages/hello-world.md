@@ -34,12 +34,12 @@ Slug: hello-world
 
 ## ps: 测试语法顔色
 
-:::python
+```python
 import sys
 
 print "Hollo World!-)"
 
-
+```
 
 
 ## Changelog

@@ -131,6 +131,10 @@ Slug: pydata-0-mavericks
 参考:
 
 - [osx - How to uninstall Python 2.7 on a Mac OS X 10.6.4? - Stack Overflow](http://stackoverflow.com/questions/3819449/how-to-uninstall-python-2-7-on-a-mac-os-x-10-6-4)
+    - sudo rm -rf /Library/Frameworks/Python.framework/Versions/2.7
+    - sudo rm -rf "/Applications/Python 2.7"
+    - remove the symbolic links in /usr/local/bin that point to this python version see ls -l /usr/local/bin
+
 - [Installing Python on Mac OS X — The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/starting/install/osx/)
     - [Installing / Updating Python on OS X | Wolf Paulus](http://wolfpaulus.com/jounal/mac/installing_python_osx/)
     - [When I upgraded my Mac to OS X Mavericks, a lot of utilities (like Python, virtualenv, Xcode) broke, and it was pretty stressful trying to get it all set back up. Hopefully this guide can spare you some of that pain.Note: I'm by no means a Linux or Mac ex](https://gist.github.com/goldsmith/7163055)
