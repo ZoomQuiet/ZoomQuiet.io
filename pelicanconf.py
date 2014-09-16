@@ -91,7 +91,7 @@ MENUITEMS = (('PyChina', 'http://pychina.org')
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 # ('rss', SITEURL + '/' + FEED_ALL_ATOM)
 SOCIAL = (('旧文', 'http://blog.zoomquiet.org/pyblosxom/')
-        , ('.io', 'http//ZoomQuiet.io')
+        , ('.io', 'http://ZoomQuiet.io')
         , ('GitHub', 'https://github.com/ZoomQuiet')
         , ('Wiki', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet')
         , ('O.B.P', 'http://code.google.com/p/openbookproject/')

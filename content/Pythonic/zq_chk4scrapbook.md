@@ -1,4 +1,4 @@
-Title: pydata笔记:环境配置
+Title: ScrapBook彻查成果
 Date: 2014-07-11
 Tags: scrapbook,python,howto,mavericks
 Slug: zq-chk4scrapbook
@@ -30,6 +30,7 @@ Slug: zq-chk4scrapbook
 完成了自动化的差异发布.
 
 ### 可是!
+参考: [ScrapBook 生存指南](http://blog.zoomquiet.io/livin-scrapbook.html)
 
 - 从去年开始, 本地 `FLOSS` 仓库,就已经无法正常进行标准搜索了,一搜索,整个 FireFox 就僵死.
 - 而且,从其它仓库切换进入 FLOSS 时,要等待半分钟以上...
@@ -48,6 +49,86 @@ Slug: zq-chk4scrapbook
 
 总之就是要加速,无论本地/远程
 
+### 数据结构
+为了大家平滑的理解折腾之处,先简要说明一下 ScrapBook 的数据结构:
+
+```
+XX仓库/     对应 Multi-ScrapBook 开启后,不同的Book
+  +- data   实际本地网页存放入口, 类似 20050205102119 的子目录
+  +- tree   导出目录树后的 html 入口
+  +- ...
+  `- scrapbook.rdf 插件界面使用的 xml 数据仓库
+```
+
+`scrapbook.rdf 的关键数据约定`
+
+```
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NS2="http://amb.vis.ne.jp/mozilla/scrapbook-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  ...
+  主体内容
+</RDF:RDF>
+
+根列表:
+<RDF:Seq RDF:about="urn:scrapbook:root">
+    %(rdf_li)s
+  </RDF:Seq>
+
+目录容器:
+<RDF:Seq RDF:about="urn:scrapbook:%(rdf_item)s">
+    %(rdf_li)s
+  </RDF:Seq>
+
+目录节点条目:
+<RDF:li RDF:resource="urn:scrapbook:%(rdf_item)s"/>
+
+目录节点:
+<RDF:Description RDF:about="urn:scrapbook:%(rdf_item)s"
+        NS2:type="folder"
+        NS2:id="%(rdf_id)s"
+        NS2:title="%(rdf_title)s"
+        NS2:chars=""
+        NS2:icon=""
+        NS2:source=""
+        NS2:comment="" />
+
+页面节点:
+<RDF:Description RDF:about="urn:scrapbook:%(rdf_item)s"
+        NS2:type="%(rdf_type)s"
+        NS2:id="%(rdf_id)s"
+        NS2:title="%(rdf_title)s"
+        NS2:comment="%(rdf_comment)s"
+        NS2:icon="%(rdf_icon)s"
+        NS2:source="%(rdf_source)s" 
+        NS2:chars="UTF-8" />
+
+笔记节点:
+<RDF:Description RDF:about="urn:scrapbook:%(rdf_item)s"
+        NS2:type="note"
+        NS2:id="%(rdf_id)s"
+        NS2:title="%(rdf_title)s"
+        NS2:chars="UTF-8"
+        NS2:comment=""
+        NS2:icon=""
+        NS2:source=""/>
+
+分割线节点:
+<NC:BookmarkSeparator RDF:about="urn:scrapbook:%(rdf_item)s"
+        NS2:type="separator"
+        NS2:id="%(rdf_id)s"
+        NS2:title=""
+        NS2:chars=""
+        NS2:comment=""
+        NS2:icon=""
+        NS2:source="" />
+
+
+```
+
+以上 `%(rdf_id)s` 之类是 Py 内置模板的语法,
+在 `scrapbook.rdf` 实例中,都是形如: `20050205102119`
 
 ## 折腾
 
@@ -55,14 +136,109 @@ Slug: zq-chk4scrapbook
 
 ### 清查
 
+一切开始之前,的体积:
+
+```
+$ du -h * 
+...
+5.6G    ZqDevRel
+6.5G    ZqFLOSS
+3.7G    ZqSKM
+...
+
+$ ls ZqDevRel/data/ | wc
+   26214   26214  393210
+
+# 计划切分为
+  -> zqCoder 
+  -> zqSMM
+
+$ ls ZqFLOSS/data/ | wc
+   30767   30767  461505
+
+# 计划切分为
+  -> zqDevRes
+  -> zqSCM   
+  -> zqPythonic
+```
+
+先在仓库中,根据拆分目标,将内容树收纳到对应的目录中,
+以便复制,加载后,快速删除.
+
+#### pax
+
+`pax` 是个好工具,原先习惯性的用 `cp` 那叫个慢!
+搜索才知道,大量小文件的迁移就应该用 `pax`
+于是简单的起个背景周末跑吧....
 
 
+```
+$ du -hs *
+...
+5.7G    ZqDevRel
+  5.7G    zqCoder
+  5.7G    zqSMM
+
+6.5G    ZqFLOSS
+  6.5G    zqDevRes
+  6.5G    zqPythonic
+  6.5G    zqSCM
+
+...
+4.0K    scraptools
+...
+```
+
+体积占用激增3倍!
+
+然后,逐一用 ScrapBook 加载新的目录
+
+#### 手工删除目录树
+再对比几个仓库的体积:
+
+```
+~/KuaiPan/zScrapBook
+$ ls ZqFLOSS/data/ | wc -l
+   30767
+
+$ ls zqSCM/data/ | wc -l
+   25320
+
+$ du -hs *
+...
+5.3G    data
+...
+
+~/KuaiPan/zScrapBook
+$ ls zqDevRes/data/ | wc -l
+   24045
+
+$ ls zqPythonic/data/ | wc -l
+   24294
+
+$ ls zqSCM/data/ | wc -l
+   25319
+
+```
+
+#### 严正的不科学!
+手工折腾了半天,却发现几乎没有释放多少空间出来,
+好象总是有 20000 左右的目录,是不存在的页面节点...
 
 ### 解析
+首先,
+
 
 ### 重构
 
+[xml containing 1 child · Issue #14 · martinblech/xmltodict](https://github.com/martinblech/xmltodict/issues/14)
+
+`dict_constructor`
+
 ### 删除
+
+
+
 
 ## 回顾
 
@@ -94,14 +270,23 @@ $ du -hs *
 
 ```
 <RDF:Seq RDF:about="urn:scrapbook:search">
+....
 </RDF:Seq>
 ```
 
-而其它意外折腾出来的,这个节点都都有几万条记录!
-10行代码解决!
+这个节点中包含有意外的几万条记录!
+
+```
+for seq in doc['RDF:RDF']['RDF:Seq']:
+    if 'urn:scrapbook:search' == seq['@RDF:about']:
+        seq.pop('RDF:li')
+        break
+```
+
+几行代码解决!
 
 
-### 数据结构
+### 数据新结构
 
 ### 功能开关
 
@@ -120,78 +305,16 @@ $ du -hs *
 + 2.0H 再复制测试仓库,用 sh 小心的测试实际删除行为
 + 1.0H 通测
 + 2.5H 批量处置7 个新旧仓库,清删除 16万+ 个无用目标, 近25G+ 空间释放
-+ 2.0H 整理代码, 组织文档
++ 4.0H 整理代码, 组织文档
 
-21.5H+ 自然时间3天+ 业余时间
+24.5H+ 自然时间, 3+天业余时间
 ```
+
+- 140909 才算完成一个可以看的版本
+- 140711 完成所有功能,启动文档回顾
 
 
 #   140708 ScrapBook 分库
-
-5.6G    ZqDevRel
-$ ls ZqDevRel/data/ | wc
-   26214   26214  393210
-
--> zqCoder 
--> zqSMM
-
-6.5G    ZqFLOSS
-$ ls ZqFLOSS/data/ | wc
-   30767   30767  461505
-
--> zqDevRes
--> zqSCM   
--> zqPythonic
-
-3.7G    ZqSKM
-$ ls ZqSKM/data/ | wc
-    9486    9486  142290
-
-## PM15:00 pax 复制所有数据
-5.7G    ZqDevRel
-6.5G    ZqFLOSS
-351M    ZqKss
-3.7G    ZqSKM
-
-290M    backup
-4.0K    scraptools
-
-5.7G    zqCoder
-6.5G    zqDevRes
-6.5G    zqPythonic
-6.5G    zqSCM
-5.7G    zqSMM
-
-手工删除目录树:::
-
-zoomq @ MBP111216ZQ in ~/KuaiPan/zScrapBook/zqSCM
-$ ls data/ | wc -l
-   25320
-
-zoomq @ MBP111216ZQ in ~/KuaiPan/zScrapBook/zqSCM
-$ du -hs *
-...
-5.3G    data
-
-
-## +2H 严正的不科学!
-已经拆分的仓库:
-
-zoomq @ MBP111216ZQ in ~/KuaiPan/zScrapBook
-$ ls zqDevRes/data/ | wc -l
-   24045
-zoomq @ MBP111216ZQ in ~/KuaiPan/zScrapBook
-$ ls zqPythonic/data/ | wc -l
-   24294
-zoomq @ MBP111216ZQ in ~/KuaiPan/zScrapBook
-$ ls zqSCM/data/ | wc -l
-   25319
-
-zoomq @ MBP111216ZQ in ~/KuaiPan/zScrapBook
-$ ls ZqFLOSS/data/ | wc -l
-   30767
-
-好象总是有 20000 左右,不存在的东西....
 
 
 ## +2H click
@@ -507,7 +630,6 @@ ValueError: invalid literal for int() with base 10: '\x1b[1m\x1b[34m200412141019
 
 - 解决反复清查的问题
 - 提高效率
-
 
 
 $ du -hs *
