@@ -42,40 +42,48 @@ Slug: 140916-pycon-slogen
 
 - `@ZoomQuiet`
 
-    2007-> Life is short, use Python!
-    2013-> Life is shit,go Pythonic!
-    2014-> Life is short,suck Python!
+```
+2007-> Life is short, use Python!
+2013-> Life is shit,go Pythonic!
+2014-> Life is short,suck Python!
 
-    今年 PyCon 纪念 TEE 的文案,修订为:
-    Life such short,be Pythonic !
-    有妺纸说,人生苦短应该翻译为
-    Life such suck
-    很认同,但是,不敢用,,,
+今年 PyCon 纪念 TEE 的文案,修订为:
+Life such short,be Pythonic !
+有妺纸说,人生苦短应该翻译为
+Life such suck
+很认同,但是,不敢用,,,
 
-    Life is short,be Pythonic!
-    人生苦短 得Pythonic?
+Life is short,be Pythonic!
+人生苦短 得Pythonic?
+```
 
 
 - `@AlbertLee`
 
-    Life is short, suck py
-    I never stopped pythonic, I just stop showing it
-    If you don't python,you don't python
-    Pythonic than pythonic 
-        定要难受死处女座的...
+```
+Life is short, suck py
+I never stopped pythonic, I just stop showing it
+If you don't python,you don't python
+Pythonic than pythonic 
+    定要难受死处女座的...
+```
 
 - `@Lothar`
 
-    life's pathetic, let's pythonic
+```
+life's pathetic, let's pythonic
+```
 
 - `@Adam:`
 
-    go pythonic, no pathetic…..
+```
+go pythonic, no pathetic…..
 
-    人生苦短 Pythonic欢
-    苦海无涯，python是岸
-    人生苦短 Pythonic绽
-    总是我就是强迫症想押韵..
+人生苦短 Pythonic欢
+苦海无涯，python是岸
+人生苦短 Pythonic绽
+总是我就是强迫症想押韵..
+```
 
 - 为什么python程序员都这么短命... 还都这么痛苦... (逃)
 
@@ -86,6 +94,7 @@ Slug: 140916-pycon-slogen
     life’s pathetic, let’s pythonic
     人生苦短 得Pythonic?
 ```
+
 
 
 ## 思考

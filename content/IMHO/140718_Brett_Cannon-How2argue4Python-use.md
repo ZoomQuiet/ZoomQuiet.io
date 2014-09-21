@@ -1,7 +1,7 @@
 Title: How to argue for Python’s use
 Date: 2014-07-18 
 Tags: Brett,Pythoneer,Zh 
-Slug: 091110_jacob-what2write
+Slug: 140718_Brett_Cannon-How2argue4Python-use
 
 [TOC]
 
