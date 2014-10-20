@@ -7,142 +7,234 @@ Slug: guido-finding-his-way
 
 [Guido van Rossum on finding his way — Dropbox Makers — Medium](https://medium.com/dropbox-makers/guido-van-rossum-on-finding-his-way-e018e8b5f6b1)
 
-~ The Python creator and Dropbox engineer reflects on his early days in programming
+~ Python 缔造者,当前 Dropbox 工程师, 近期编程思考
 
-Guido van Rossum is the creator and benevolent dictator for life (a.k.a. BDFL) of the Python programming language. Here he reflects on his path and shares what he’s been working on since joining Dropbox. Read on for this and a hint at what’s next for Dropbox, for Python, and for the BDFL himself.
+Guido van Rossum 作为Python 的创造者,
+以及 `仁慈的独裁者` (又名 BDFL).
+在此篇采访中,反思了近来的思考,
+以及在 Dropbox 的经历.
+本文也召示了接下来老爹准备折腾什么.
 
-## You were an electronics hobbyist before becoming a programmer. How did you get started in electronics?
+(`译注:` 大妈无责任式快译, 只是作为私人阅读笔记性质的存在,
+强烈建议大家去原文自行理解一番,并能拨冗回来指点大妈的理解之谬 ;-)
 
-Okay, we’re going waaaay back. I don’t know exactly why I got into electronics as a kid. I remember that from the last grade in elementary school and probably through my second year in university, electronics kits and my own designs were one of my big passions.
+## 程序猿前,你是如何成为电子爱好者的?
 
-It wasn’t always an easy path. In elementary school, I took one of the first projects I built into class as a show and tell project. There was no one who understood what it was or why it was interesting or cared. It’s a very vague memory. I just know that I took it in, and it fell flat.
+嚓了,这事儿忒久了,久到基本记忆不能了,
+只是记得以前对电子很迷就是了.
 
-## Was there a time when you eventually found your people?
+## 那会儿子是怎么聚集小伙伴们的?
 
-In high school, I hung out with a few other guys who had similar hobbies. We were all the geekiest kids in class.
+高中时在课堂上相遇的,
+一起折腾物理老师指导下的各种电子设备.
 
-I remember our physics teacher really encouraging us. The three of us worked together to build a large electronic device that was then used in demonstrations in front of the classroom. That was very satisfying.
+整个高中只是对未来职业有个模糊的概念,
+认定自个儿在语言/社科上是没什么天份的,
+所以,决定进入数学专业.
 
-Throughout high school, I had a very vague idea of what kinds of careers would be open to me. My general idea was that I was good at both sciences and languages and not so good in social areas. I ended up choosing mathematics.
+## 最后乍从电子转变为程序猿的?
 
-## How did you go from electronics to programming?
-
-I went to the University of Amsterdam and enrolled in the mathematics department and started taking math classes there. Some of the classes turned out to be programming classes. As part of the class, you got access to a large mainframe computer that was in the basement of the building. I almost instantly discovered that was my passion.
+在Amsterdam大学,折腾数学时,
+涉及有编程,接触到大型计算机后,
+立即发现了俺真正的激情所在.
 
 ![AOw_zZbFbtEJAzwRQ](https://d262ilb51hltx0.cloudfront.net/max/700/1*5Z4e-AOw_zZbFbtEJAzwRQ.jpeg)
-Guido gave a talk on Python 3 during Hack Week 2014 at Dropbox in San Francisco. / Photo by Dan Stroud
 
-## What interested you about computer science?
+~ 旧金山 Dropbox 内的 Hack week 上,Guido 谈及了Py 3 / Dan Stroud 拍摄
 
-Having progressed through hobby electronics, from very simple analog circuits to somewhat complex digital circuits made with small integrated circuits—this was the early seventies—I was very excited to suddenly have access to a mainframe computer, even though initially I had to enter my programs using punch cards. It was a very slow and tedious process, but it was incredibly exciting to learn how it worked.
+## 对计算机科学的兴趣所在?
 
-I very quickly gave up on all the electronics stuff because the computer stuff was so much more interesting. In my second year in university, I already started realizing that programming was incredibly exciting and interesting. I was also very good at it, but the core of mathematics—whether it was Calculus or Algebra, or certainly any of the more advanced, “real” mathematical topics—were not really my thing.
+通过业余电子爱好,接触到了一系列计算设备,
+得以真正理解计算机,
+并确信,编程比电子好玩的多.
+而数学,无论多高端的课目,好象都和自己没什么关系.
 
-Then I somehow managed to change my curriculum—they were incredibly flexible about it—to a mixture of math and computer science. I took all the programming and computer science-related topics that were on offer.
+但是,专业上那时,没有办法灵活的转变方向,
+于是俺申请了大学数据中心兼职位置,
+开始长达5年的自学,
+即,本质上几近辍学.
 
-Then I applied for a part-time position at the university data center, and it turned out that there was a group there that had a very small number of openings for talented students. They instantly hired me, and I spent more than five years working there while I was still studying.
+## MOG,乍回事儿?!
 
-I was actually close to dropping out.
+这份工作很赞,
+而且,遇到了好人,
+数据中心的一位教授鼓励俺说: "小子,不错嘦你毕业,这儿可以是你的全职岗位!"
+(笑ing)
 
-## Oh my gosh! Why?
+结果就这么在岗位上毕业,并进入了研究所,
+真的全职程序猿了.
 
-The job was so fun, and studying for exams wasn’t. Fortunately, my manager at the data center, as well as one of my professors, cared enough about me to give me small nudges in the direction of, “Well, maybe it would be smart to graduate, and then you can do this full-time!” (laughing)
+## 推上曰过:"在米国我是荷兰人,但在荷兰我又表现的很美国#纠结",那么哪儿是你感觉最象自家的?
 
-And that worked. I did graduate, and I had a job lined up at a research institute, also in Amsterdam, doing programming right away.
+当然,在自个儿屋子里时..
+(笑ing)
 
-## On Twitter, you once wrote, “In America, I’m Dutch, but around Dutch folks I’m American. #conflicted.” Where do you feel most at home?
+俺老婆是老美,两儿子也都说E文,
+在米国也呆了超过18年,
+已经很难想象会回欧洲了!
 
-Well, I would say, I just feel most at home in my own house with my family. (laughing)
+目测余生多数时间肯定在米国了,
+而且就在湾区,这绝对是一个伟大的地方.
 
-My wife is American; my son has both nationalities, but he speaks English. I’ve lived in the US for eighteen years now. I actually don’t imagine I would ever go back to Europe for a long period of time. I expect I’ll spend most of the rest of my life in the US—probably in the Bay Area, because it’s such a great place.
 
-## What are you working on lately at Dropbox?
+## 在Dropbox最近折腾了什么?
 
-I’ve completed a new feature that we’ve needed for the 
+俺已经完成
 [Datastore API](https://www.dropbox.com/developers/datastore)
-for a long time. It’s the ability to 
-[share datastores](https://www.dropbox.com/developers/blog/107/new-datastore-features-shared-datastores-local-datastores-and-datastore-webhooks) with other users. It launches today.
+有日子了,
+今天上线,将发布给用户为
+[share datastores](https://www.dropbox.com/developers/blog/107/new-datastore-features-shared-datastores-local-datastores-and-datastore-webhooks) 
+
 
 ![NMJBScQgtLZE0zmeOA1nJw](https://d262ilb51hltx0.cloudfront.net/max/800/1*NMJBScQgtLZE0zmeOA1nJw.png)
 
-Is this something you’re working on with a team, or are you working more independently?
+## 带团队,还是更加独立?
 
-For this particular datastores feature, I’ve done most of the work independently, with two other people contributing, mainly in the form of code reviews. The datastore project as a whole has included a large team of contributors, including several talented interns.
+对于这一特殊的数据功能,
+俺独立完成主要工作,
+另外两位,主要进行测试,
+在发布后,将会融入更大的团队,
+并接纳实习生
+...
 
-## When you joined Dropbox, you specified that you would be a regular engineer, as opposed to a manager or a technical lead. Why was that distinction important to you?
 
-I think it was because I enjoy doing actual engineering work, and I don’t enjoy as much the formal aspect of management. In the past, I was thrown into such a role for a small team, and it never really worked out. I never really felt comfortable in that type of role. I was always much more comfortable just writing code. Over time, that has included technical leadership, but I like to be part of the work and not just tell people what to do or how to do it.
+## 进入 Dropbox 时,你要求当程序猿而不是经理,这对你很重要嘛?
 
-## How do you balance your two roles as Dropbox engineer and Python BDFL?
+因为俺更加喜欢实际的编程,
+以往俺被关进了一个团队,
+无论编程还是作管理,
+从来没有令俺舒服过.
+当然,随着时间的推移,俺的领导能力有所增长,
+可是,终究,俺是喜欢编程多过告诉其它人应该怎么作.
 
-In terms of time management, they overlap and compete. I don’t set aside a particular time of my day or my week or my year for Python BDFL stuff versus Dropbox stuff.
+## 你乍平衡 Dropbox 工程师和 Python BDFL 两种角色的?
 
-What happens in practice is that sometimes one thing requires a lot of attention and focus, and then I reduce my activity on the other front, and vice versa.
+在时间管理方面,
+这两个角色的确是冲突的.
+我并没有进行强制性的预订,为这两种角色.
+
+实践中,哪个角色必须投入更多精力时,
+就相应的减少另一个角色的.
 
 ![AriSTNW_leEP85c7r](https://d262ilb51hltx0.cloudfront.net/max/1200/1*AriSTNW_leEP85c7r-wcew.jpeg)
-Guido introduces Dropbox datastores at DBX 2013. / Photo by Doug Cody
 
-## What do you like most about working at Dropbox?
+~ 在DBX 2013 上 Guido 介绍 Dropbox 的数据存储. / Doug Cody 拍摄
 
-One of the most satisfying things here is to see such a large group of people being so enthusiastic about the products and the features, and being so creative; to see everybody working together and owning their mistakes and having fun going through all this stuff and being incredibly focused. It’s just very exciting to see this group be so productive and enthusiastic and powerful and capable.
+## 在 Dropbox 的工作什么令你最得劲?
 
-## What did you work on for your Hack Week project?
+在这儿,最令人满意的无外乎,
+能见到这么堆热情/专注/有生产力/强大的人,
+如此热衷的在推动产品和功能.
 
-Static typing for Python. It’s based on the PhD thesis of one of our engineers, Jukka Lehtosalo. He wrote a static typing tool for Python, and essentially what he did for his thesis work was a prototype. During Hack Week, with a group of seven people—including three guests and two interns—we improved the prototype, added a number of tools, did a whole bunch of integration work.
+身处其中,本身就非常赞!
 
-There’s even more stuff to do, of course. We didn’t produce an end product, but we did a lot of work on the tool, and we have a couple of very interesting ideas on how to move this forward.
+(`译注:`
+细思恐极哪,这意味着 Google 的团队的确如 `王珢` 所言,
+不是那么的...
+)
 
-## Why did you choose static typing for your project?
+## 你在 Hack Week 的项目是什么?
 
-I think that at least adding static typing as an optional part of Python is a good thing for the distant future. I also think that this particular tool may be able to help Dropbox convert our own Python 2-based codebase to Python 3.
+Python 的静态类型.
+来源自我们的一位实习工程师, Jukka Lehtosalo 的博士论文,
+他实际上完成了一个原型,
+在一周时间里,
+我们一组7 人,对原型进行了改进,并完成了大量的工具.
+
+至今并没有形成完备的产品,
+但是,大家都很期待这一够力的创意能产生出什么来.
+
+## 为毛你选择静态类型这一项目?
+
+俺认为增加静态类型,
+对未来是有益的,
+至少能先帮助 Dropbox 转换自身的 Python 2 和 3 的代码
+
 
 ![yemdZovwCmvm7b2Dkm6SRQ](https://d262ilb51hltx0.cloudfront.net/max/800/1*yemdZovwCmvm7b2Dkm6SRQ.png)
 
-The first lines of Dropbox code were written in Python, and Python Bees have featured at DBX and previous Dropbox hack weeks.
 
-## How do you balance the more immediate needs and requests from programmers with a long-term vision for Python?
+Dropbox 的第一行代码就是Python.
+而 Python Bees 将成为 DBX 以及 更早 Dropbox hack weeks 的新特性.
 
-Python has a large group of core developers who do a lot of the work and review even more of the work that goes into Python. The Python developer community has its own processes for evolving the language. Over more than twenty years of working on the language together as a community, we’ve learned some constraints on how we can evolve this particular programming language.
+## 如何平衡程序猿最新需求和 Python 长线版本间的冲突?
 
-If you change the language too fast, you leave your users behind, or your users complain that their programs are always broken by every new version. If you change too slowly, you get complaints from users that either their bugs don’t get fixed or their feature request never get executed. That’s a tricky balance, because one person’s mind-boggling speed is another person’s snail’s pace.
+Python 有一个很大的团队,
+长期审核进入 Python 的特性.
+在经过20多年的运营,我们已经很熟悉这一编程语言应该坚守的东西.
 
-Over time, there’s a whole body of knowledge around what, in general, is a good idea to add to the language or to the library, and what things are better left as open source projects that people can install as needed.
+语言变化太快,用户将抱怨项目总是无法稳定;
+变化太慢,程序猿就抱怨错误总是不修订或是要求的功能从来不响应;
+这里有种非常微妙的平衡在其中!
 
-Learning all that has been an incredible experience for me. I’m currently at a point where I’m pretty comfortable that if I decided to retire from that community, the rest of the developers understand the process and understand the reasons why we do things and how to have discussions that result in decisions on a reasonable timescale.
+所以,一般情况下,将变化快的东西,放在库中支持,
+优先确保核心语言特性的稳定,
+这样大家都根据需要安装对应的开源库就好.
 
-## Do you ever think about retiring from the Python community, and what you would do with your time then?
+学习到这点,对俺来说非常不可思异.
+目前俺处于非常舒适的状态,
+即使现在俺退出,后续开发者也能理解怎么取舍的.
 
-(laughing) That is a very good combo of questions because I definitely think about retirement and what that would mean for me and what I would do then, what it would mean for my family. So far, I’m just thinking about it.
+## 有想过从 Python 社区退休? 有规划这事儿卟?
 
-## Do you ever get nervous about new programming languages popping up and getting a lot of attention?
+(笑ing)
+这是一个很好的组合问题.
+因为,俺的确有这么想过,
+不过,当前还仅仅是想着.
 
-I find it an interesting phenomenon. It doesn’t make me nervous. It tends to make the more recent converts to a language nervous because they see that they spent three weeks or six weeks or two years becoming an expert at some level that is important to them. And then, with their limited experience, they might imagine that next year, everything they learned about Python will be useless and they’ll have to start over.
 
-I’ve seen cycles like that of the popularity of systems and languages and software. Things come and go. I don’t know where Python will be five years or fifteen years from now, but I’m not worried that Python will suddenly disappear. I expect that Python still has a large path ahead of it, where it will absorb new ideas and adapt to new environments. I also expect that, at some point, something else will happen that gradually takes over, maybe borrowing ideas from Python but putting them into a different shape or combining them differently with ideas from other languages.
+## 有没担心过更多新语言出现并替代 Python ?
+
+因为发现的一种现象,令俺从未不担心这事儿.
+
+那就是总是有人在切换开发语言,
+他们花了 三周/6周/两年, 就成为某种语言专家.
+基于这种经验,他们就担心,
+对 Python 的学习,可能也很快过时,必须重新开始.
+
+我见过各种语言/系统的普及以及更替,
+但是,我不知道 Python 的这种兴衰周期,
+5年?15年?
+我当然希望 Python 持续吸收新的语言特性,发展下去,适应新的时代.
+同时也期待,有更好的语言,借用 Python 的思想,
+在不同的形式上结合其它语言,发展出不同的道路来.
+
 
 ![omEEAJapdc0XY9IfR](https://d262ilb51hltx0.cloudfront.net/max/1200/1*omEEAJapdc0XY9IfR-mFlA.jpeg)
-~ Guido teamed up with Dropbox CEO Drew Houston in the DBX 2013 Python Bee. / Photos by Doug Cody
+
+~ 在 DBX 2013 Python Bee 集会上,Guido 和 Dropbox CEO Drew Houston 
+联手庆贺. /  Doug Cody 拍摄
 
 ![4saVabl5aGfdTVuPLBNBCQ](https://d262ilb51hltx0.cloudfront.net/max/1200/1*4saVabl5aGfdTVuPLBNBCQ.jpeg)
 
 ![ziwbjd1WMkmuuoFK9q0Q](https://d262ilb51hltx0.cloudfront.net/max/1200/1*w-ziwbjd1WMkmuuoFK9q0Q.jpeg)
 
-## In your [letter to a young programmer](http://neopythonic.blogspot.com/2013/10/letter-to-young-programmer.html), you wrote that you hoped they would dream big. But one of the challenges for programmers now is that there are so many big dreams to be had, so many opportunities competing for their attention. Do you have any advice for finding direction early on?
+## 在 [给年轻程序猿的信](http://neopythonic.blogspot.com/2013/10/letter-to-young-programmer.html) 中,你号召要有大梦想,可现实挑战是大梦想忒多了,面对这么多的机会,你有什么建议给早鸟们?
 
-中译: [Letter to a young programmer](http://blog.zoomquiet.io/guido-letter-2-young.html)
+(`译注:`中译: [Letter to a young programmer](http://blog.zoomquiet.io/guido-letter-2-young.html)
+)
 
+早期职业生涯?
+俺可能没有什么很好的经验,
+因为,俺可是用了很长时间,才明白自个儿应该作什么的.
+回想,基本上只是开开心心的编程,一切就自然来到面前.
 
-Early in their careers? Well, I would not be the expert on that myself, because I took a long time to settle in my career. Looking back—I’m obviously very happy with how everything turned out—but I do think I was probably too passive in choosing what I wanted.
+实际上,俺从来没有争取过什么工作,
+只是等待,直到有人询问合作意愿,才进行考虑.
 
-I’ve almost never applied for a job. I’ve always waited until someone asked me. And while that worked out well for me, I think in general that may not be the best strategy.
+我从不强调一切在掌握之中,
+的确有那么一种病叫:`怕错过`
 
-But don’t stress out too much about being in control of everything. There’s so much that you can’t possibly know. There’s something called the “fear of missing out.” And there are so many people who feel that if they don’t control every aspect of their curriculum, they’re not going to get the super job they want.
+实际上, 那些尝试控制一切的人并没有比我多快乐些什么.
 
-Well, it turns out that those people who do all those things aren’t any happier than the people who make some mistakes. So I think it’s good to realize that when it comes to your long-term career, you can’t be completely in control. If you pick a particular thing too soon, you may miss an opportunity for an unexpected left turn.
+所以,对于长期职业,你并不能真正控制一切.
+有时,对一件事儿决定太快,
+你可能就真正错过了一次意想不到机会.
+
 
 ...
 
 ## Changlog
 
-- 140921 官方通知邮件引发直觉思考
+- 140921 蠎周刊:133 期,推荐文章,不自觉的认真读完,形成了这一快译.
  
