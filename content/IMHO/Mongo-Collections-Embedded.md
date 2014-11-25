@@ -12,7 +12,7 @@ Slug: mongo-collections-embdded-think
 
 When someone is approaching MongoDB from the SQL world, a very common confusion regarding database structure is when to use embedded documents, and when to create an entirely new collection. This distinction is very important because, although MongoDB is schemaless in nature, whether or not an element of your database is structured as embedded documents or a separate collection will change your code a fair amount. Making this change later on can represent a fair amount of work, so it helps to get this right the first time.
 
-There is no “right answer” to this question, as it depends entirely on the situation at hand. The natural tendency of people coming from the SQL world is to stick everything in separate collections, but often this is very unnecessary and will cause serious performance impacts. However, mistakenly placing something within another document may lead to pain further down the road.
+There is no "right answer" to this question, as it depends entirely on the situation at hand. The natural tendency of people coming from the SQL world is to stick everything in separate collections, but often this is very unnecessary and will cause serious performance impacts. However, mistakenly placing something within another document may lead to pain further down the road.
 
 A set of rules I have found useful is to ask yourself the following questions:
 
@@ -58,12 +58,12 @@ The answer here will often be yes. If you want any sort of student information p
 
 Probably no for this one. It depends on what operation we are doing most often with the class, but I imagine that when we fetch a class we would likely need at least one student as well.
 
-Overall, students in a class are probably better suited for a separate collection. It’s important to keep in mind the scope of the problem you are solving with the data, and the operations that will be done most commonly. That said, a student is a very relational piece of data and better fits a separate collection.
+Overall, students in a class are probably better suited for a separate collection. It's important to keep in mind the scope of the problem you are solving with the data, and the operations that will be done most commonly. That said, a student is a very relational piece of data and better fits a separate collection.
 
 >>> 尝试翻译为中文:
 
 
-如果刚刚从SQL 世界进入 MongoDB, 最常见的困惑就是 “嵌入式文档” 以及何时创建新的”集合”?
+如果刚刚从SQL 世界进入 MongoDB, 最常见的困惑就是 "嵌入式文档" 以及何时创建新的"集合"?
 这类困惑的根源就是还没有建立起来 MongoDB 的自由结构世界观 ;-)
 SQL 世界的来客,总是试图先建立起一个完美的关系体系可以兼容以后的所有业务变化, 而 Mongo们,则是更加愿意先将已知的数据舒服的收集起来,随着业务的理解,不断的调整结构,同时代码永远可用!
 
@@ -80,7 +80,7 @@ SQL 世界的来客,总是试图先建立起一个完美的关系体系可以兼
 
 ### blog 的评注
 你可能创建过类似blog 的系统,允许用户创建评注.问题在于你无法确定这堆评注,是存储在文章对象中呢,还是另外创建集合来保存?
-动用以上问题来考查一下…
+动用以上问题来考查一下... 
 
 #### 嵌入的文档,同其它集合有一个或以上的关联嘛?
 

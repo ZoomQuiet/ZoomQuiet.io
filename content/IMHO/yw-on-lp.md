@@ -71,10 +71,10 @@ Slug: reply-yw-on-literate-programming
 - 140109 pub. as zoomquiet.io's blog
 - 120918 邮件 as:
 
-        发件人：     Zoom.Quiet <zoom.quiet@gmail.com>
-        发送至：     shredderyin@gmail.com
-        日期：  2012年9月18日 下午5:22
-        主题：  [via On Literate Programming] 我的体验
+        发件人:     Zoom.Quiet <zoom.quiet@gmail.com>
+        发送至:     shredderyin@gmail.com
+        日期:  2012年9月18日 下午5:22
+        主题:  [via On Literate Programming] 我的体验
 
         很有感觉,但是没有找到评注入口,只好直接邮件了;
 

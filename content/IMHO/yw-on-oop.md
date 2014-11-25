@@ -19,53 +19,53 @@ Slug: 131224-yw-on-oop
 
 [written at the end of 2013 AD, during the Dark Ages of programming]
 
-The programmer’s world is full of fads and superstitions. Every now and then there will be somebody who come up and announce: “I can save the world!” No matter whether the ideas are good or not, there will always be followers, and the ideas soon become their religion. They then develop their community or camp, try to let those ideas dominate the world, and try to make the ideas live forever.
+The programmer's world is full of fads and superstitions. Every now and then there will be somebody who come up and announce: "I can save the world!" No matter whether the ideas are good or not, there will always be followers, and the ideas soon become their religion. They then develop their community or camp, try to let those ideas dominate the world, and try to make the ideas live forever.
 
-Object-oriented programming (OOP) is such a religion which claimed to be able to save the world from the so-called “software crisis”. As a hindsight after so many years since it was introduced, not only didn’t OOP save us, it brought us more confusion and harm than benefits. Unfortunately its dogmas and mispractices have become wide-spread and deeply intrenched. In this article, I hope to provide my viewpoint into this matter and try to find out the lessons that we can learn.
+Object-oriented programming (OOP) is such a religion which claimed to be able to save the world from the so-called "software crisis". As a hindsight after so many years since it was introduced, not only didn't OOP save us, it brought us more confusion and harm than benefits. Unfortunately its dogmas and mispractices have become wide-spread and deeply intrenched. In this article, I hope to provide my viewpoint into this matter and try to find out the lessons that we can learn.
 
 Like every article on my blog, the opinions are completely personal and not representing my employers or professors.
 
 
 ## Is everything an object?
-“Everything is an object” is the core dogma of OOP and deemed as the highest standards of OO language design. Now let’s take a careful look to see if it is true, or if it is a good idea to make things that way.
+"Everything is an object" is the core dogma of OOP and deemed as the highest standards of OO language design. Now let's take a careful look to see if it is true, or if it is a good idea to make things that way.
 
 
-Many people take “everything is an object” for granted because when this sentence is taken literally it matches their everyday experience. Since the word “object” in English basically means “a thing”, how can “everything is an object” be not true? But be careful since the definition of an “object” in OOP has a specific meaning which is very different from what it means in English.
+Many people take "everything is an object" for granted because when this sentence is taken literally it matches their everyday experience. Since the word "object" in English basically means "a thing", how can "everything is an object" be not true? But be careful since the definition of an "object" in OOP has a specific meaning which is very different from what it means in English.
 
-OOP’s definition of an 
+OOP's definition of an 
 [object](http://en.wikipedia.org/wiki/Object-oriented_programming)
- is “a combination of 
+ is "a combination of 
  [data fields](http://en.wikipedia.org/wiki/Field_(computer_science))
   (attributes that describe the object) and associated procedures known as 
 [methods](http://en.wikipedia.org/wiki/Method_(computer_science))
-“. Can you really fit everything into this model?
+". Can you really fit everything into this model?
 
 
-First let’s look at the real world and see if this definition can capture everything. Cars, trees, animals may sometimes be thought of as objects, but what about a change of the objects’ position, its velocity and duration? What methods do they have? Well, you may define classes called Velocity or Time, with methods such as addition, but do velocity and time really contain the things that you call “methods”? They don’t. They are just your imagination. You can add the velocities or time, but how can velocities or time contain the addition procedure? This is like saying that the bullets contain the gun.
+First let's look at the real world and see if this definition can capture everything. Cars, trees, animals may sometimes be thought of as objects, but what about a change of the objects' position, its velocity and duration? What methods do they have? Well, you may define classes called Velocity or Time, with methods such as addition, but do velocity and time really contain the things that you call "methods"? They don't. They are just your imagination. You can add the velocities or time, but how can velocities or time contain the addition procedure? This is like saying that the bullets contain the gun.
 
 
-So the most you can say is that “everything is an object” is a good way of thinking, but that is not true either. The definition of an object implies that a method can only belong to one object, but most of the time it doesn’t make sense thinking of functions as belonging to any object. Say we have the expression 1+2, does the operator ‘+’ belong to 1, or does it belong to 2? You have to make some arbitrary choice. Since you can make a choice, this means the ‘+’ operator doesn’t really belong to either of them. It is inherently outside of the objects.
+So the most you can say is that "everything is an object" is a good way of thinking, but that is not true either. The definition of an object implies that a method can only belong to one object, but most of the time it doesn't make sense thinking of functions as belonging to any object. Say we have the expression 1+2, does the operator '+' belong to 1, or does it belong to 2? You have to make some arbitrary choice. Since you can make a choice, this means the '+' operator doesn't really belong to either of them. It is inherently outside of the objects.
 
 
 So thinking of some things as objects may be helpful, but thinking of 
-`everything` as an object is neither true nor useful.  Unfortunately “everything is an object” has been taken as a dogma and the highest standard of OO language design. Some OO languages claim that everything is an object in them. Whenever you notice that something is not an object, somebody will try to make it one. They may succeed in that, but things get very complicated that way, because that’s not how things work.
+`everything` as an object is neither true nor useful.  Unfortunately "everything is an object" has been taken as a dogma and the highest standard of OO language design. Some OO languages claim that everything is an object in them. Whenever you notice that something is not an object, somebody will try to make it one. They may succeed in that, but things get very complicated that way, because that's not how things work.
 
 
-The idealism of “everything is an object” is similar to “everything is a function” in the functional programming world and “everything is a set” in the math world. Before computer science was conceived there was a thing called the 
+The idealism of "everything is an object" is similar to "everything is a function" in the functional programming world and "everything is a set" in the math world. Before computer science was conceived there was a thing called the 
 [lambda calculus](http://en.wikipedia.org/wiki/Lambda_calculus)
-. Some people encoded everything including numbers and their operations, various data structures and control structures, … all in lambdas. One of the encodings of numbers is called the 
+. Some people encoded everything including numbers and their operations, various data structures and control structures, ...  all in lambdas. One of the encodings of numbers is called the 
 [Church numeral](http://en.wikipedia.org/wiki/Church_encoding)
-. Every programming language researcher has played with them during their training. But unlike “everything is an object”, “everything is a function” has never become a dogma or marketing phrase. Those formulations sometimes provide mental exercises and inspirations to the researchers but nobody really use them for actual computation, because they are inefficient and they are not really how things work. They are just approximations (models) to some essence of computation that we can’t see. If you really use them for practical projects, things become complicated.
+. Every programming language researcher has played with them during their training. But unlike "everything is an object", "everything is a function" has never become a dogma or marketing phrase. Those formulations sometimes provide mental exercises and inspirations to the researchers but nobody really use them for actual computation, because they are inefficient and they are not really how things work. They are just approximations (models) to some essence of computation that we can't see. If you really use them for practical projects, things become complicated.
 
 
-Mathematicians have a similar thing: set theory. Some geniuses encoded everything — numbers, operations on numbers, mathematical structures, … all in sets. Everything is just sets containing sets containing sets and so on. What’s the problem? But when they really tried to do their proofs using those sets, the proofs fell under their own weights. Too complicated. Even with the complexity, set theory is not expressive enough to capture whatever the mathematicians have to say. Many people tried to fix it, but they all failed.
+Mathematicians have a similar thing: set theory. Some geniuses encoded everything — numbers, operations on numbers, mathematical structures, ...  all in sets. Everything is just sets containing sets containing sets and so on. What's the problem? But when they really tried to do their proofs using those sets, the proofs fell under their own weights. Too complicated. Even with the complexity, set theory is not expressive enough to capture whatever the mathematicians have to say. Many people tried to fix it, but they all failed.
 
 
-So “everything is an object” is in some sense on the same track of “everything is a function” and “everything is a set”. Good thought exercise, but doesn’t really work well in practice. I don’t think that there is some “one true language”, but this model of OOP is too far from correct or practical. It’s somewhat like the 
+So "everything is an object" is in some sense on the same track of "everything is a function" and "everything is a set". Good thought exercise, but doesn't really work well in practice. I don't think that there is some "one true language", but this model of OOP is too far from correct or practical. It's somewhat like the 
 [flat earth theory](http://en.wikipedia.org/wiki/Flat_Earth)
 . Until today 
 [some people](http://theflatearthsociety.org/)
-still believe that the earth is flat and make all kinds of theories to prove it. Some of their arguments look very scientific, but do you believe in their formulas or a picture of the earth from the ISS? When you get the fundamental things wrong and don’t throw them away, you have to patch them endlessly with even more complicated theories. And that’s what happened to OOP.
+still believe that the earth is flat and make all kinds of theories to prove it. Some of their arguments look very scientific, but do you believe in their formulas or a picture of the earth from the ISS? When you get the fundamental things wrong and don't throw them away, you have to patch them endlessly with even more complicated theories. And that's what happened to OOP.
 
 
 ![yw_flat-earth.png](http://zoomq.qiniudn.com/ZQCollection/img/yw_flat-earth.png)
@@ -74,15 +74,15 @@ still believe that the earth is flat and make all kinds of theories to prove it.
 
 ## Are functions objects? 
 
-From what I know, the original motivation of putting functions inside objects was to support GUI applications. You click on a button and some function (a callback) will be invoked. For the convenience of referring to the button, the callback takes the triggered object as its first argument. Since the callback does nothing more than this, it seems to be convenient to just store it inside the button. And thus we had an “object” which combines the attributes of the button and a method (the callback). Indeed this is a good idea, but this limited usage case can’t really justify a universal notion of “everything is an object”, just like a two-mile walk can’t prove that the earth is flat.
+From what I know, the original motivation of putting functions inside objects was to support GUI applications. You click on a button and some function (a callback) will be invoked. For the convenience of referring to the button, the callback takes the triggered object as its first argument. Since the callback does nothing more than this, it seems to be convenient to just store it inside the button. And thus we had an "object" which combines the attributes of the button and a method (the callback). Indeed this is a good idea, but this limited usage case can't really justify a universal notion of "everything is an object", just like a two-mile walk can't prove that the earth is flat.
 
-If you really understand what is abstraction, you may have noticed that even the above story contains a subtle mistake: the callback in the button is not really a method. The true purpose of a method is to provide abstraction to the attributes, but the callback’s purpose is not to provide abstraction. It is just a usual function triggered by the button, which happens to take the button as its first argument.
+If you really understand what is abstraction, you may have noticed that even the above story contains a subtle mistake: the callback in the button is not really a method. The true purpose of a method is to provide abstraction to the attributes, but the callback's purpose is not to provide abstraction. It is just a usual function triggered by the button, which happens to take the button as its first argument.
 
-Very few functions should be considered methods of an object. If you look carefully, most of the time the objects just serve as a namespace (or module) in which you can store attributes and functions, but those functions don’t logically belong to the objects. They just take the objects as inputs and produce some output. Only the functions that are most intimately connected to the attributes and provide an abstraction layer to them should be considered methods. Most of those are called “getters”, “setters” or “iterators”.
+Very few functions should be considered methods of an object. If you look carefully, most of the time the objects just serve as a namespace (or module) in which you can store attributes and functions, but those functions don't logically belong to the objects. They just take the objects as inputs and produce some output. Only the functions that are most intimately connected to the attributes and provide an abstraction layer to them should be considered methods. Most of those are called "getters", "setters" or "iterators".
 
-In some languages such as Scala or Python, functions are also treated as objects. But actually they just wrapped the functions into an object, give them some name such as “apply” or “__call__”, so that when the objects are “invoked” you know which functions to call. But putting a function into an object doesn’t really mean that functions are also objects, just like inviting friends to your house doesn’t make them your family.
+In some languages such as Scala or Python, functions are also treated as objects. But actually they just wrapped the functions into an object, give them some name such as "apply" or "__call__", so that when the objects are "invoked" you know which functions to call. But putting a function into an object doesn't really mean that functions are also objects, just like inviting friends to your house doesn't make them your family.
 
-Functions are fundamental constructs. They don’t belong to objects. They describe a change, transition or transformation of objects. They are not objects and can’t be simulated by objects. They are like a base case of an inductive definition. They are where the illusion of “everything is an object” ends.
+Functions are fundamental constructs. They don't belong to objects. They describe a change, transition or transformation of objects. They are not objects and can't be simulated by objects. They are like a base case of an inductive definition. They are where the illusion of "everything is an object" ends.
 
 
 
@@ -91,13 +91,13 @@ The major appeal of OOP is abstraction (and thus code reusing and DRY), but actu
 
 ![yw_screen-shot-2014-01-02-at-2-02-38-am.png](http://zoomq.qiniudn.com/ZQCollection/img/yw_screen-shot-2014-01-02-at-2-02-38-am.png)
 
-For the purpose of code reusing, OO encourages a level of abstraction which makes programs hard to understand and hard to analyze. I often see Java programs with multiple levels of inheritance, overloading and design patterns, but actually doing very little. And because there is so much code that doesn’t do useful things, it is really hard to find out which part of the code is doing the thing you want. It is like going through a maze. Another nice word for this is “robustness”. If I have to go into all this trouble to make code reusable or robust, I’d rather just make copies of the code and modify them, but keep each copy simple and easy to understand.
+For the purpose of code reusing, OO encourages a level of abstraction which makes programs hard to understand and hard to analyze. I often see Java programs with multiple levels of inheritance, overloading and design patterns, but actually doing very little. And because there is so much code that doesn't do useful things, it is really hard to find out which part of the code is doing the thing you want. It is like going through a maze. Another nice word for this is "robustness". If I have to go into all this trouble to make code reusable or robust, I'd rather just make copies of the code and modify them, but keep each copy simple and easy to understand.
 
-Whenever you criticize Java or C++ for their verbosity, OO proponents will tell you that they are not authentic OO languages. They would ask you to look at Smalltalk. If Smalltalk’s ways are that good, why almost nobody is using Smalltalk now? Because there are real problems in its approach. I think Smalltalk is the origin of over-abstraction and over-complication you find in other OO languages.
+Whenever you criticize Java or C++ for their verbosity, OO proponents will tell you that they are not authentic OO languages. They would ask you to look at Smalltalk. If Smalltalk's ways are that good, why almost nobody is using Smalltalk now? Because there are real problems in its approach. I think Smalltalk is the origin of over-abstraction and over-complication you find in other OO languages.
 
-The “authentic” OO style of Smalltalk promotes the notion of “extremely late binding”, which basically means that the meaning of the program constructs is determined as late as possible. Late binding gives you a chance to swap out the underlying implementation without forcing the upper levels to change, but this also means that you are no longer sure what a piece of code means. When I look at expressions such as ’1+2′ and ‘if (t) then … else …’ in Java or C++, I at least know for sure that they mean an integer addition and an usual conditional. But I’m no longer sure about this in an “extremely late binding language”, because the meaning of ‘+’ and ‘if” can be redefined. Giving the programmers the power of defining control structures is a bad idea, because soon your language will be abundant of quirky control structures designed by programmers who try to be clever. It will no longer be the language that you used to know.
+The "authentic" OO style of Smalltalk promotes the notion of "extremely late binding", which basically means that the meaning of the program constructs is determined as late as possible. Late binding gives you a chance to swap out the underlying implementation without forcing the upper levels to change, but this also means that you are no longer sure what a piece of code means. When I look at expressions such as '1+2′ and 'if (t) then ...  else ... ' in Java or C++, I at least know for sure that they mean an integer addition and an usual conditional. But I'm no longer sure about this in an "extremely late binding language", because the meaning of '+' and 'if" can be redefined. Giving the programmers the power of defining control structures is a bad idea, because soon your language will be abundant of quirky control structures designed by programmers who try to be clever. It will no longer be the language that you used to know.
 
-An example for this feature is Smalltalk’s conditional structure, which looks like this:
+An example for this feature is Smalltalk's conditional structure, which looks like this:
 
 
     :::smalltalk
@@ -108,7 +108,7 @@ An example for this feature is Smalltalk’s conditional structure, which looks 
 
 You send a message ifTrue: to a Boolean object, passing as an argument a block of code to be executed if and only if the Boolean receiver is true.
 
-First of all, if you really have a well-designed language, you shouldn’t be wanting to define your own control structures. As a seasoned Lisp/Scheme programmer, I have seen many custom-designed control structures (such as the various looping macros) over the years, but none of them turned out to be good ideas. I’d rather write slightly longer and more verbose code in the vanilla language than to learn those weird control structures. Second, if you are really genius enough to have invented another good control structure, the late binding feature of Smalltalk probably won’t provide you the necessary power for defining it. The power of functions as an abstraction tool is limited. It is strictly less powerful than Lisp/Scheme’s macros. Third, this feature of Smalltalk is not really a novel approach and it has a big problem. A similar but more beautiful conditional construct had been defined in lambda calculus since before computer science was born:
+First of all, if you really have a well-designed language, you shouldn't be wanting to define your own control structures. As a seasoned Lisp/Scheme programmer, I have seen many custom-designed control structures (such as the various looping macros) over the years, but none of them turned out to be good ideas. I'd rather write slightly longer and more verbose code in the vanilla language than to learn those weird control structures. Second, if you are really genius enough to have invented another good control structure, the late binding feature of Smalltalk probably won't provide you the necessary power for defining it. The power of functions as an abstraction tool is limited. It is strictly less powerful than Lisp/Scheme's macros. Third, this feature of Smalltalk is not really a novel approach and it has a big problem. A similar but more beautiful conditional construct had been defined in lambda calculus since before computer science was born:
 
 
     :::lisp
@@ -117,61 +117,61 @@ First of all, if you really have a well-designed language, you shouldn’t be wa
     IF = λb.λt.λf.b t f
 
 
-This is very beautiful and can be done in any functional language, but why none of the functional languages implement conditionals this way? Because when you see an expression IF b t f, you will have no idea whether it is a conditional or not, because IF can be redefined in the program. Also because IF is just a function, it may also accept unexpected values other than TRUE or FALSE. This may happen to make the conditional construct work but cause trouble later on. This is called “unintentional semantics”. This kind of bug can be very hard to track down.
+This is very beautiful and can be done in any functional language, but why none of the functional languages implement conditionals this way? Because when you see an expression IF b t f, you will have no idea whether it is a conditional or not, because IF can be redefined in the program. Also because IF is just a function, it may also accept unexpected values other than TRUE or FALSE. This may happen to make the conditional construct work but cause trouble later on. This is called "unintentional semantics". This kind of bug can be very hard to track down.
 
-This approach also makes compiler and static analysis hard. When the compiler sees IF b t f, it no longer knows that it is a conditional and thus optimize it that way. It has to treat it as a usual function call. Similarly when the type checker sees it, it doesn’t know what type to expect for b, because it may not be a conditional at all. The above argument against the lambda calculus can easily be adapted to Smalltalk.
+This approach also makes compiler and static analysis hard. When the compiler sees IF b t f, it no longer knows that it is a conditional and thus optimize it that way. It has to treat it as a usual function call. Similarly when the type checker sees it, it doesn't know what type to expect for b, because it may not be a conditional at all. The above argument against the lambda calculus can easily be adapted to Smalltalk.
 
 So abstraction is a powerful weapon when used moderately, but when you do it in excess, it backfires. Not only does it make it hard for humans to understand the code, it makes automated analysis tools and compiler optimizations difficult or impossible to make.
 
 ## Design patterns, the brain eater
 
-Although OO languages are touted for their ways of abstraction, they are actually not strong in terms of abstraction ability and expressiveness. There are certain things that are very easy to do in traditional procedural languages and functional languages, but was made unnecessarily hard in OO languages. This is why design patterns appeared. Design patterns’ origin was mostly due to the dogma of “everything is an object”, the lack of high-order functions (or the correct implementation of them) and OO’s tendency of mystifying things.
+Although OO languages are touted for their ways of abstraction, they are actually not strong in terms of abstraction ability and expressiveness. There are certain things that are very easy to do in traditional procedural languages and functional languages, but was made unnecessarily hard in OO languages. This is why design patterns appeared. Design patterns' origin was mostly due to the dogma of "everything is an object", the lack of high-order functions (or the correct implementation of them) and OO's tendency of mystifying things.
 
-When I first heard about design patterns I was already a PhD student at Cornell doing some PL research. I mostly used Standard ML and Haskell. After hearing my friends’ high opinions of the 
+When I first heard about design patterns I was already a PhD student at Cornell doing some PL research. I mostly used Standard ML and Haskell. After hearing my friends' high opinions of the 
 [Design Patterns](http://en.wikipedia.org/wiki/Design_Patterns)
-book (nicknamed the “GoF” book), I developed curiosity about its fame, so I borrowed one from the library. Within a few hours I found a mapping from all the weird names it introduced to the programming techniques I had been using all the time. Some of them are so fundamental and exist in every high-level language, so they don’t really need names. Most of the advanced ones (such as visitor) are transcriptions of functional programming concepts into a convoluted form in order to get around OO language’s limitations. Later on I found that Peter Norvig already gave a 
+book (nicknamed the "GoF" book), I developed curiosity about its fame, so I borrowed one from the library. Within a few hours I found a mapping from all the weird names it introduced to the programming techniques I had been using all the time. Some of them are so fundamental and exist in every high-level language, so they don't really need names. Most of the advanced ones (such as visitor) are transcriptions of functional programming concepts into a convoluted form in order to get around OO language's limitations. Later on I found that Peter Norvig already gave a 
 [talk](http://norvig.com/design-patterns)
-on design patterns as early as 1998, pointing out that almost all of the design patterns will be “transparent” once you have first-class functions. This confirmed my observations — I don’t need them.
+on design patterns as early as 1998, pointing out that almost all of the design patterns will be "transparent" once you have first-class functions. This confirmed my observations — I don't need them.
 
-I have to admit that some of the design patterns are cleverly designed and contain some ingenuity. You really need to get to the essence of the OO languages’ internal designs and also understand lots of functional programming techniques in order to create them. But intelligence =/= wisdom. Even if they can achieve what functional languages can do, they are usually a lot more complicated. Choosing the hard ways can’t really prove your genius. When you have first-class functions, things become so much easier and you won’t even notice the design patterns’ existence. Like Peter Norvig said, they will become transparent. So what a good language designer should do is to add first-class functions into the language instead of proposing design patterns as workarounds.
+I have to admit that some of the design patterns are cleverly designed and contain some ingenuity. You really need to get to the essence of the OO languages' internal designs and also understand lots of functional programming techniques in order to create them. But intelligence =/= wisdom. Even if they can achieve what functional languages can do, they are usually a lot more complicated. Choosing the hard ways can't really prove your genius. When you have first-class functions, things become so much easier and you won't even notice the design patterns' existence. Like Peter Norvig said, they will become transparent. So what a good language designer should do is to add first-class functions into the language instead of proposing design patterns as workarounds.
 
 Every time I remove a design pattern (some other people wrote), the code becomes simpler and more manageable. I just removed the last visitor pattern from my Java code a few days ago and I felt so relieved. They gave me nothing but extra work when they existed. They hindered my progress. By deeply understanding how OO languages are implemented, you can write more advanced things than those provided by visitor patterns but without actually using them. I owe these insights into design patterns to some functional programming people. If you really want to understand the essence of OO design patterns and how NOT to use them, 
 [this little book](http://www.amazon.com/Little-Java-Few-Patterns/dp/0262561158)
 may be a good starting point.
 
-Unfortunately design patterns somehow got really popular in companies, to the degree of unbearable. I saw the GoF book on almost every bookshelf when I interned at Google. Even if you don’t write them yourself, there was almost no way you could avoid other people slipping design patterns into your code. Design patterns’ marketing strategy as I perceived was much like weight loss products: “It can burn your fat without you doing any work!” They appeal to some new programmers’ hope that they can write programs without understanding the fundamental concepts of computer science. Just by applying several patterns and patching things together, they hope to have a good program. This is too good to be true. You end up doing more work than you hoped to avoid. Design patterns eat programmers’ brains. After using design patterns for some time, they no longer see things or write programs in clear and straightforward ways.
+Unfortunately design patterns somehow got really popular in companies, to the degree of unbearable. I saw the GoF book on almost every bookshelf when I interned at Google. Even if you don't write them yourself, there was almost no way you could avoid other people slipping design patterns into your code. Design patterns' marketing strategy as I perceived was much like weight loss products: "It can burn your fat without you doing any work!" They appeal to some new programmers' hope that they can write programs without understanding the fundamental concepts of computer science. Just by applying several patterns and patching things together, they hope to have a good program. This is too good to be true. You end up doing more work than you hoped to avoid. Design patterns eat programmers' brains. After using design patterns for some time, they no longer see things or write programs in clear and straightforward ways.
 
 
 
 ## What is an OO language any way?
 
-To this point we haven’t yet talked about what makes a language an “OO language” and what makes it not. Is it an OO language just because I can put both data fields and functions into a record? Or is it an OO language only if it also provides extremely late binding? How about inheritance, overloading, etc etc? Must I have all of them? Any of them?
+To this point we haven't yet talked about what makes a language an "OO language" and what makes it not. Is it an OO language just because I can put both data fields and functions into a record? Or is it an OO language only if it also provides extremely late binding? How about inheritance, overloading, etc etc? Must I have all of them? Any of them?
 
-It turns out that there is no good answer to this question. There really is no such thing as an “object-oriented language”. Objects can be part of a language, but it is just a small part of it. You can’t really say that a language is object-oriented just because it provides objects as a feature. The so-called OO languages are solidly rooted in traditional procedural programming (PP). OOP basically stole everything from PP, renamed the terminologies and acted as if the ideas were its own.
+It turns out that there is no good answer to this question. There really is no such thing as an "object-oriented language". Objects can be part of a language, but it is just a small part of it. You can't really say that a language is object-oriented just because it provides objects as a feature. The so-called OO languages are solidly rooted in traditional procedural programming (PP). OOP basically stole everything from PP, renamed the terminologies and acted as if the ideas were its own.
 
-Historically the term OO was mainly used for marketing reasons. It could give a language some advantages of attracting people if you claim it to be an OO language, but now this advantage is diminishing because more and more people have realized the problems of OO’s methodology.
+Historically the term OO was mainly used for marketing reasons. It could give a language some advantages of attracting people if you claim it to be an OO language, but now this advantage is diminishing because more and more people have realized the problems of OO's methodology.
 
 
 ## Harm in education and industry
 
-Although OO has lots of problems, it is very successful in marketing and has risen to a dominant position over the years. Under social and market pressure, many colleges started using OO languages such as Java as their introductory language, replacing traditional procedural languages such as Pascal and functional languages such as Scheme. This in a large degree caused the students’ failure to learn the most essential concepts of programming. The only thing that OO emphasizes is code reusing, but how can you teach it to the students who can’t even write usable code, not to mention that code reusing is not really as important as some people believe.
+Although OO has lots of problems, it is very successful in marketing and has risen to a dominant position over the years. Under social and market pressure, many colleges started using OO languages such as Java as their introductory language, replacing traditional procedural languages such as Pascal and functional languages such as Scheme. This in a large degree caused the students' failure to learn the most essential concepts of programming. The only thing that OO emphasizes is code reusing, but how can you teach it to the students who can't even write usable code, not to mention that code reusing is not really as important as some people believe.
 
-At both Cornell and Indiana, I have been a TA for introductory programming courses in Java. I did it for multiple semesters. I still remember how confused the students were. Most of them had trouble understanding things such as the meaning of “this”, why everything needs to be put inside classes, why make every field private and use getters, the difference between a method and a static method, etc etc.
+At both Cornell and Indiana, I have been a TA for introductory programming courses in Java. I did it for multiple semesters. I still remember how confused the students were. Most of them had trouble understanding things such as the meaning of "this", why everything needs to be put inside classes, why make every field private and use getters, the difference between a method and a static method, etc etc.
 
-There is a good reason that they don’t understand — because OO is not how things work. Most of the time I feel that I was teaching design flaws and dogmas. Many of them learned very little in the end. Worse, some of those students really believed in OO. They ended up being proud of writing over-engineered and convoluted code. They no longer see things or write programs in straightforward ways. This is sad. I feel that we are no longer educating students as creative and critical thinkers, but mindless assembly line workers.
+There is a good reason that they don't understand — because OO is not how things work. Most of the time I feel that I was teaching design flaws and dogmas. Many of them learned very little in the end. Worse, some of those students really believed in OO. They ended up being proud of writing over-engineered and convoluted code. They no longer see things or write programs in straightforward ways. This is sad. I feel that we are no longer educating students as creative and critical thinkers, but mindless assembly line workers.
 
 
 ![yw_modern-times.jpg](http://zoomq.qiniudn.com/ZQCollection/img/yw_modern-times.jpg)
 
-In industry, OO hasn’t really proved its effectiveness with evidence. Good systems may be built in a “OO language”, but the code is often written by people who understand the problems of OO and don’t embrace “everything is an object” or “design patterns”. Good programmers usually use workarounds in OO languages and are essentially writing in a traditional procedural style combined with bits from functional programming. So some OO languages and their tools may be pretty widely used, but the OO style doesn’t really have much influence on the advancements of programming as a field.
+In industry, OO hasn't really proved its effectiveness with evidence. Good systems may be built in a "OO language", but the code is often written by people who understand the problems of OO and don't embrace "everything is an object" or "design patterns". Good programmers usually use workarounds in OO languages and are essentially writing in a traditional procedural style combined with bits from functional programming. So some OO languages and their tools may be pretty widely used, but the OO style doesn't really have much influence on the advancements of programming as a field.
 
 ## Final word
 
-So what does this post has to say? A jihad against OO languages? Advocate functional programming? Neither. As I said, there is no such thing as an “OO language”, so where is the war? Every so-called OO language also contains good elements that it borrowed (or stole) from procedural languages or sometimes functional languages, so they are not completely useless.
+So what does this post has to say? A jihad against OO languages? Advocate functional programming? Neither. As I said, there is no such thing as an "OO language", so where is the war? Every so-called OO language also contains good elements that it borrowed (or stole) from procedural languages or sometimes functional languages, so they are not completely useless.
 
-But honestly, it is the extra features added by OO (in addition to procedural programming, PP) that are causing most of the problems. There is no denial of PP’s value. Those extra “true OO techniques” contain way more confusion than real value, to the point that their value is negligible. In my experience, accepting even one or two of those ideas may put you into a series of troubles and wrong ways of thinking which may take a long time to examine and recover.
+But honestly, it is the extra features added by OO (in addition to procedural programming, PP) that are causing most of the problems. There is no denial of PP's value. Those extra "true OO techniques" contain way more confusion than real value, to the point that their value is negligible. In my experience, accepting even one or two of those ideas may put you into a series of troubles and wrong ways of thinking which may take a long time to examine and recover.
 
-Thus I suggest not to buy OO’s way of thinking and don’t try to exploit its “features”. They are usually brain eaters that you want to stay away from. By eschewing those problematic features, you can still produce acceptable programs in an “OO language”, because you are basically using it as an non-OO procedural language.
+Thus I suggest not to buy OO's way of thinking and don't try to exploit its "features". They are usually brain eaters that you want to stay away from. By eschewing those problematic features, you can still produce acceptable programs in an "OO language", because you are basically using it as an non-OO procedural language.
 
 
 
@@ -182,7 +182,7 @@ Thus I suggest not to buy OO’s way of thinking and don’t try to exploit its 
 
 [写在2013年尾,编程的黑暗时代.]
 
-程序猿的世界充斥着各种时髦迷信.不时就有人跳出来吼:”俺能拯救世界!”诡异的是,无论多不靠谱的想法,总有追随者,并快速打造成全站的宗教,结成社区,尽量迫使其它所有人认同,以使这想法永存下去.
+程序猿的世界充斥着各种时髦迷信.不时就有人跳出来吼:"俺能拯救世界!"诡异的是,无论多不靠谱的想法,总有追随者,并快速打造成全站的宗教,结成社区,尽量迫使其它所有人认同,以使这想法永存下去.
 
 面向对象编程(OOP)就是宣称能将世界从所谓:"编程危机"中拯救出来的宗教.
 然而,
@@ -223,11 +223,11 @@ OOP中
 "
 你真能在所有情景中适应这种模式嘛?
 
-首先来设想一下OOP 模式是否能对真实世界加以解释. 汽车/树木/动物 视作对象的话, 那么它们的位置/速度/时间的 变化 乍说? 有什么对应的方法? 好吧, OOP 信徒可能叫你将类称为 速度 或是 时间 然后将方法增加进去. 可是速度/时间真的含有这种称为”方法”的东西 ? 当然没有, 这不过是想象罢了. 
+首先来设想一下OOP 模式是否能对真实世界加以解释. 汽车/树木/动物 视作对象的话, 那么它们的位置/速度/时间的 变化 乍说? 有什么对应的方法? 好吧, OOP 信徒可能叫你将类称为 速度 或是 时间 然后将方法增加进去. 可是速度/时间真的含有这种称为"方法"的东西 ? 当然没有, 这不过是想象罢了. 
 你可以追加速度/时间,但是,怎么令其包含`加`处理? 
 这就好比说:`子弹包含了枪`.
 
-哪,信徒们最常说的:”一切皆对象”只是种好的思维方法,但事实并非如此. 一个对象的定义意味着一个方法只能属于一个对象,但大部分时间此思想并没有作用于任何对象. 当我们论及表达式: 1+2 , 是否得说 “+” 属于 1 ,或是算 2 的? 你必须作出属性方法归属的选择,而选择本身就已经意味着 “+” 操作其实并不真正属于任何一个对象,而是固有在对象之外的.
+哪,信徒们最常说的:"一切皆对象"只是种好的思维方法,但事实并非如此. 一个对象的定义意味着一个方法只能属于一个对象,但大部分时间此思想并没有作用于任何对象. 当我们论及表达式: 1+2 , 是否得说 "+" 属于 1 ,或是算 2 的? 你必须作出属性方法归属的选择,而选择本身就已经意味着 "+" 操作其实并不真正属于任何一个对象,而是固有在对象之外的.
 
 只能说 `有些` 事儿上对象是有帮助的,而 一切 皆对象这事儿即不真实也无用. 
 悲摧的是, `一切皆对象` 已经成为面向对象语言设计的最高教条. 
@@ -305,8 +305,8 @@ OOP中
 据俺所知,将函式塞到对象中的原始动机是为了支持 GUI 开发.
 点击一个按钮时,一些代码(回调)就应该被触发. 为了指明按了具体哪个按钮,回调的函式就需要触发的对象作为其一个参数.
 因为回调就这么单纯,看起来将其存储在按钮中没有什么不好. 
-于是我们有了个”对象”, 包含了按钮的属性以及方法(回调). 的确挺方便. 
-但 GUI 应用只是个非常有限的情景,并不能真正证明 “一切皆对象”的普世性. 
+于是我们有了个"对象", 包含了按钮的属性以及方法(回调). 的确挺方便. 
+但 GUI 应用只是个非常有限的情景,并不能真正证明 "一切皆对象"的普世性. 
 就象用两里路的平坦是不能证明地球是平的.
 
 如果你真的理解什么是抽象,
@@ -379,7 +379,7 @@ OO信徒总是比其它语言更加强调抽象,好象这是OO 独创的.
 而不用强制变更上层.
 但是,同时也意味着你也无法及时明确一段代码究竟会作什么!
 比如,在 JAVA 或是 C++ 中看到诸如
-`1+2` 或是 `if (t) then … else …` 的表达式时,
+`1+2` 或是 `if (t) then ...  else ... ` 的表达式时,
 至少俺知道是作整数相加,以及往常一般的条件判别.
 但是,若在"极迟绑定"语言中就完全一头雾水了!
 因为 `+` 和 `if` 都是可以重新定义的.
@@ -642,14 +642,14 @@ OO 就是`食脑魔`,能躲多远躲多远.
 
 # 是也乎
 
-对于 `王珢` , 关注了太久了,久到成为习惯了…
-但是,认真翻译他翻越后的技术思考成果,还是第一次,可惜也只能用自个儿的语气来快译,真正涉及的所有技术细节,俺还没有能力逐一印证,俺也只是个期望简洁的结论,记忆下来,直接使用的那种知其然,不知所以然的家伙…
+对于 `王珢` , 关注了太久了,久到成为习惯了... 
+但是,认真翻译他翻越后的技术思考成果,还是第一次,可惜也只能用自个儿的语气来快译,真正涉及的所有技术细节,俺还没有能力逐一印证,俺也只是个期望简洁的结论,记忆下来,直接使用的那种知其然,不知所以然的家伙... 
 
 但是,不得不说,对于 OOP 从第N次使用JAVA 败退后,
 就一直对 OOP 的编程思想抱有深深的焦虑,
 原先总是对自个儿为毛无法自然的对象化所有事物而自我嫌弃,
 然后是奇怪为毛不用 OOP 编程反而更加自然,
-到最后,沈游侠向俺演示,怎么通过清除 class 令Python代码更短,运行更快…
+到最后,沈游侠向俺演示,怎么通过清除 class 令Python代码更短,运行更快... 
 
 这才,从俺的世界观里彻底放弃了 OOP ,但是,一直没有找到为毛这样的根因,现在 王珢完成了这一结论性描述,收藏之!严正推荐之!
 
@@ -677,18 +677,18 @@ PS:
 review 时发现 yw 增补了原blog ,有些段落已经发生了调整,只有回收了:
 
 
-The programmers’ world is full of fads and superstitions. Every now and then there will be somebody come up and announce: “I can save the world!” No matter how bad the ideas are, there will always be followers, and the ideas soon become their religion. They then develop their community or camp, try to make the rest of the world adopt those ideas, and try to make the ideas live forever.
+The programmers' world is full of fads and superstitions. Every now and then there will be somebody come up and announce: "I can save the world!" No matter how bad the ideas are, there will always be followers, and the ideas soon become their religion. They then develop their community or camp, try to make the rest of the world adopt those ideas, and try to make the ideas live forever.
 
-程序猿的世界充斥着各种时髦迷信.不时就有人跳出来吼:”俺能拯救世界!”诡异的是,无论多不靠谱的想法,总有追随者,并快速打造成全站的宗教,结成社区,尽量迫使其它所有人认同,以史这想法永存下去.
+程序猿的世界充斥着各种时髦迷信.不时就有人跳出来吼:"俺能拯救世界!"诡异的是,无论多不靠谱的想法,总有追随者,并快速打造成全站的宗教,结成社区,尽量迫使其它所有人认同,以史这想法永存下去.
 
 
-Whenever you criticize a programming language or paradigm, people would think you are a proponent of some other language or paradigm. Since I wrote the article pointing out the drawbacks of purely functional programming and monads, some people have apparently taken me as a proponent of object-oriented programming. That’s far from the case. I don’t like OO at all. I use almost none of the OO techniques even when I write programs in Java.
+Whenever you criticize a programming language or paradigm, people would think you are a proponent of some other language or paradigm. Since I wrote the article pointing out the drawbacks of purely functional programming and monads, some people have apparently taken me as a proponent of object-oriented programming. That's far from the case. I don't like OO at all. I use almost none of the OO techniques even when I write programs in Java.
 
 
 当你开始批评某编程语言或是范式时,人们就认为你一定是另外某某党的拥趸. 自从俺写文章黒 纯函式 编程以及单子的问题后, 有的就以为俺已经投入到 OOP 的怀抱中了. 图样图森破,俺从来就没有尿过 OOP, 即便在使用JAVA 编程时.
 
 
-I have a scientific mind. I do research on programming languages and I make some of my own. I have implemented almost every feature in every language. So programming languages have no power upon me. I play with them like toys. I never see a language or a paradigm as a whole. I can dissect them and take the good parts that I liked, and discard the parts that don’t work well.
+I have a scientific mind. I do research on programming languages and I make some of my own. I have implemented almost every feature in every language. So programming languages have no power upon me. I play with them like toys. I never see a language or a paradigm as a whole. I can dissect them and take the good parts that I liked, and discard the parts that don't work well.
 
 俺具备科学思想.进行过编程语言的研究,而且自行实现过一些. 在任何语言上俺都能实现几乎所有语言特性. 因此,编程语言已经蒙不住俺了.俺能象玩具一般把玩它们, 在俺眼中它们只是一堆零件,可以任意折腾,提取俺喜欢的,丢弃俺不屑的.
 
@@ -698,19 +698,19 @@ Actually in the first version of the previous article I also criticized OOP, but
 其实以往文章有部分已经对 OOP 吐糟过了,但是,很快反应过来这可能不是个有趣的话题. 俺以为大多数程序猿已经对 OOP 以及关联的设计模式的缺陷,没必要强调了. 然而,事实证明是俺图样图森破了,在自个儿可爱的小世界中呆久了,容易忘记外面的混沌.
 
 
-I just saw this InfoQ talk by Gilad Bracha today. He dislikes the purely functional cult as much as I do, but unlike me, he has subscribed to another cult that is OOP. Although he made some good points, the general message I got from the talk was that OOP the “one true king” is going to rule the world, and FP will be deconstructed and serve as a subordinate of it. OOP will live forever. This is ridiculous.
+I just saw this InfoQ talk by Gilad Bracha today. He dislikes the purely functional cult as much as I do, but unlike me, he has subscribed to another cult that is OOP. Although he made some good points, the general message I got from the talk was that OOP the "one true king" is going to rule the world, and FP will be deconstructed and serve as a subordinate of it. OOP will live forever. This is ridiculous.
 
-刚看到今天 InfoQ 上 Gilad Bracha 的访谈 . 他象俺一样不是性能崇拜者, 但是,他已经是邪恶的OOP 教派成员了, 虽然传达了一些很好的意见,但是,整体上对于 OOP 是”真圣”, FP 将解构为 OOP 的下属, 而 OOP 将永存. 这就过了吼!
+刚看到今天 InfoQ 上 Gilad Bracha 的访谈 . 他象俺一样不是性能崇拜者, 但是,他已经是邪恶的OOP 教派成员了, 虽然传达了一些很好的意见,但是,整体上对于 OOP 是"真圣", FP 将解构为 OOP 的下属, 而 OOP 将永存. 这就过了吼!
 
 
-FP has its problems, but it deserves a lot more respect than this. Although I dislike some purely functional language’s cult-like culture, FP in general is highly valued. FP taught me a lot more and contains a lot more value than OOP. The education I received from some of the best FP people made me a better programmer. Even when I use a OO language, I avoid its shortcomings and write in a much cleaner way than the usual OO style. Some OO languages have been learning (or stealing) from FP languages for long and benefitted from it. To make a living, some highly educated FP people work on OO languages, make good compilers or tools for them. I feel terrible that somebody talks about FP that way.
+FP has its problems, but it deserves a lot more respect than this. Although I dislike some purely functional language's cult-like culture, FP in general is highly valued. FP taught me a lot more and contains a lot more value than OOP. The education I received from some of the best FP people made me a better programmer. Even when I use a OO language, I avoid its shortcomings and write in a much cleaner way than the usual OO style. Some OO languages have been learning (or stealing) from FP languages for long and benefitted from it. To make a living, some highly educated FP people work on OO languages, make good compilers or tools for them. I feel terrible that somebody talks about FP that way.
 
 FP 当然有自身的固有问题,但是它值得更多的尊重. 虽然俺不喜欢一些 纯函式 语言邪教般的文化, 但是 FP 具有很高的价值. FP 教了俺很多好东西,含有比 OOP 更多价值. 从那些 FP 程序员身上接受的教导令俺成为更好的程序员. 甚至当我使用一个 面向对象 的语言时, 俺也习惯性的在躲避其缺点, 使用更加简洁的方式来完成功能. 一些 面向对象的语言,其实一直在向 FP 窃取思想而从中受惠. 限于生计, 有些受过 FP 高级教育的程序员,却在为 面向对象的语言工作,为其编写更好的编译或其它工具. 这令俺细思恐极.
 
 
-Gilad criticized some bad designs in FP, but highly promoted the bad designs from OOP, to the degree of calling them “the one true way”. Many aspects of OOP have been bringing harm to the software industry and computer science education for long, but he didn’t mentioned them. The more I forget about those ideas from OO, the simpler and better my code becomes. I thought many people have learned these lessons, but it looks that’s not true.
+Gilad criticized some bad designs in FP, but highly promoted the bad designs from OOP, to the degree of calling them "the one true way". Many aspects of OOP have been bringing harm to the software industry and computer science education for long, but he didn't mentioned them. The more I forget about those ideas from OO, the simpler and better my code becomes. I thought many people have learned these lessons, but it looks that's not true.
 
-Gilad 批评了一些FP 中不好的设计, 但鼓吹 OOP 的设计模式是 “唯一正当”的,这更加要命. 事实上 OOP 对计算机科学的教育以及软件产业已经造成了深远的伤害. 虽然俺自觉的忘记 OOP ,用更加简洁的方式改善代码. 原本以为大家都跟俺一样,但看来现实并非如此.
+Gilad 批评了一些FP 中不好的设计, 但鼓吹 OOP 的设计模式是 "唯一正当"的,这更加要命. 事实上 OOP 对计算机科学的教育以及软件产业已经造成了深远的伤害. 虽然俺自觉的忘记 OOP ,用更加简洁的方式改善代码. 原本以为大家都跟俺一样,但看来现实并非如此.
 
 
 Thus I realized that my original criticism of OOP had some value, and I decided to write a dedicated article about it.
@@ -723,7 +723,7 @@ Thus I realized that my original criticism of OOP had some value, and I decided 
 ### 过度抽象的代价
 ~ The cost of excessive abstraction 
 
-The major appeal of OOP is abstraction, but OO programmers usually overdo it. I know the value of abstraction. I build abstractions every day, in all kinds of languages. But OOP advocates a level of abstraction which makes programs hard to understand and hard to analyze. I often see Java programs with multiple levels of inheritance and overloading but doing very little. And worse, because there are so much code that doesn’t do real things, it is very hard to find out which part of the code is doing the thing you want.
+The major appeal of OOP is abstraction, but OO programmers usually overdo it. I know the value of abstraction. I build abstractions every day, in all kinds of languages. But OOP advocates a level of abstraction which makes programs hard to understand and hard to analyze. I often see Java programs with multiple levels of inheritance and overloading but doing very little. And worse, because there are so much code that doesn't do real things, it is very hard to find out which part of the code is doing the thing you want.
 
 OOP 的主要吸引力就是抽象,
 但是, OO程序猿总是作过头.
@@ -734,7 +734,7 @@ OOP 的主要吸引力就是抽象,
 更糟的是,正因堆砌了如此多的代码,却没有真正在作事儿,
 以至于难以找到哪部分是你真正想作的东西.
 
-Whenever you complain about Java or C++, OO proponents will tell you that they are not authentic OO languages. They would ask you to take a look at Smalltalk. If Smalltalk’s ways are that good, why almost nobody is using Smalltalk now? Because there are real problems in its approach. The “authentic” OO style of Smalltalk promotes the notion of “extremely late binding”, which basically means that the meaning of the program constructs is determined as late as possible.
+Whenever you complain about Java or C++, OO proponents will tell you that they are not authentic OO languages. They would ask you to take a look at Smalltalk. If Smalltalk's ways are that good, why almost nobody is using Smalltalk now? Because there are real problems in its approach. The "authentic" OO style of Smalltalk promotes the notion of "extremely late binding", which basically means that the meaning of the program constructs is determined as late as possible.
 
 每当你抱怨 JAVA/C++ 时,OO程序猿就说,那些不是真正的 OO 语言.
 一准向你推荐 Smalltalk 的.
@@ -743,13 +743,13 @@ Whenever you complain about Java or C++, OO proponents will tell you that they a
 提倡的风格是 "极迟绑定" (extremely late binding),
 意味着,要尽可能晩的确定概念的意义再进行构建.
 
-Late binding means that you have a chance to swap out the underlying implementation without forcing the upper levels to change, but it also means that you are no longer sure what a piece of code means! When I look at expressions such as ’1+2′ and ‘if (t) then … else …’ in Java or C++, I at least know for sure that they mean an integer addition and an usual conditional. But I’m not sure about this in an “extremely late binding language”, because even the meaning of ‘+’ and ‘if” can be redefined. A similar problem happens to Lisp family languages’ macro systems. It is bad idea of giving the programmers the power of defining control structures, because soon your language will be abundant of quirky control structures designed by programmers who try to be clever.
+Late binding means that you have a chance to swap out the underlying implementation without forcing the upper levels to change, but it also means that you are no longer sure what a piece of code means! When I look at expressions such as '1+2′ and 'if (t) then ...  else ... ' in Java or C++, I at least know for sure that they mean an integer addition and an usual conditional. But I'm not sure about this in an "extremely late binding language", because even the meaning of '+' and 'if" can be redefined. A similar problem happens to Lisp family languages' macro systems. It is bad idea of giving the programmers the power of defining control structures, because soon your language will be abundant of quirky control structures designed by programmers who try to be clever.
 
 这样,你有机会换出(swap out)底层实现,
 而不用强制变更上层.
 但是,同时也意味着你也无法及时明确一段代码究竟会作什么!
 比如,在 JAVA 或是 C++ 中看到诸如
-`1+2` 或是 `if (t) then … else …` 的表达式时,
+`1+2` 或是 `if (t) then ...  else ... ` 的表达式时,
 至少俺知道是作整数相加,以及往常一般的条件判别.
 但是,若在"极迟绑定"语言中就完全一头雾水了!
 因为 `+` 和 `if` 都是可以重新定义的.
@@ -758,7 +758,7 @@ Late binding means that you have a chance to swap out the underlying implementat
 这主意很囧,因为立即就会发现,自作聪明的程序猿都在努力向语言里塞满各种特殊的控制结构.
 
 
-Abstraction is a good idea when used moderately, but when you do it in excess, it backfires. Not only does it make it hard for humans to understand the code, it makes automated analysis tools and compiler optimizations difficult or impossible to make. I built an advanced static analysis tool for Python called PySonar. It works okay in general, but under the premise that the programs don’t use the “deep magic” of Python (which are possibly learned from Smalltalk). If you do, there are all sorts of ways you can confuse the analysis, but for that I can do nothing to help. Nothing can analyze or optimize the code if you put expensive or undecidable computations into the abstraction layer.
+Abstraction is a good idea when used moderately, but when you do it in excess, it backfires. Not only does it make it hard for humans to understand the code, it makes automated analysis tools and compiler optimizations difficult or impossible to make. I built an advanced static analysis tool for Python called PySonar. It works okay in general, but under the premise that the programs don't use the "deep magic" of Python (which are possibly learned from Smalltalk). If you do, there are all sorts of ways you can confuse the analysis, but for that I can do nothing to help. Nothing can analyze or optimize the code if you put expensive or undecidable computations into the abstraction layer.
 
 
 适度使用时,抽象是个好主意,
@@ -787,18 +787,18 @@ So is there any value of making those deep abstractions an option but not encour
 
 ### Are functions objects? 
 
-The original motivation of putting functions inside objects was to support GUI applications. You click on a button and some code (a callback) will be invoked. For the convenience of referring to the button that gets clicked, the callback takes the triggered object as its first argument. Since the callback does nothing more than this, it seems to be convenient to just store it inside the button. And thus we had an “object” which combines the attributes of the button and its method (the callback). Indeed it is convenient and a good idea. But the limited usage case of GUI applications can’t really justify a universal notion of “everything is an object”. Computer science often suffers from such over-generalizations.
+The original motivation of putting functions inside objects was to support GUI applications. You click on a button and some code (a callback) will be invoked. For the convenience of referring to the button that gets clicked, the callback takes the triggered object as its first argument. Since the callback does nothing more than this, it seems to be convenient to just store it inside the button. And thus we had an "object" which combines the attributes of the button and its method (the callback). Indeed it is convenient and a good idea. But the limited usage case of GUI applications can't really justify a universal notion of "everything is an object". Computer science often suffers from such over-generalizations.
 
 
-将函式塞到对象中的原始动机是在 GUI 开发中.点击一个按钮时,一些代码(回调)就应该被触发. 为了指明按了具体哪个按钮,回调的函式就想要一个指代的对象. 因为回调就这么单纯,看起来将其存储在按钮中没有什么不好. 于是我们有了个”对象”. 的确挺方便. 但 GUI 应用只是个非常有限的情景,并不能真正证明 “一切皆对象”的普世性. 可惜计算机科学这种过度概括是常态.
+将函式塞到对象中的原始动机是在 GUI 开发中.点击一个按钮时,一些代码(回调)就应该被触发. 为了指明按了具体哪个按钮,回调的函式就想要一个指代的对象. 因为回调就这么单纯,看起来将其存储在按钮中没有什么不好. 于是我们有了个"对象". 的确挺方便. 但 GUI 应用只是个非常有限的情景,并不能真正证明 "一切皆对象"的普世性. 可惜计算机科学这种过度概括是常态.
 
-But even the above contains a subtle mistake: the callback in the button is not really a method. It is just a usual function. Very few procedures should be considered methods of an object, and most others are just functions. If you look carefully, most of the time the objects just serve as a namespace (or module) in which you can put data fields and functions. But those functions can also live on their own (such as addition of velocities or time). They just take the objects as inputs and produce some output. Only the functions that are most intimately connected to the fields and provide an “abstraction layer” should be considered methods. Most of those are “getters”, “setters” or “iterators”. Functions don’t necessarily belong to objects. They are not objects. They describe a change, transition or transformation of objects. They are external to the objects.
-
-
-但是，即使上述包含一个微妙的错误：在按钮的回调是不是一个真正的方法。这只是一个平常的功能。很少有程序应被视为一个对象的方法，而大多数人都只是功能。如果你仔细观察，大部分时间的对象只是作为一个命名空间（或模块）中，你可以把数据域和功能。但是，这些功能也可以生活在他们自己的（如加速度或时间）。他们只是把对象作为输入，并产生一些输出。只有那些最密切相关的领域，并提供了一个“抽象层”的功能，应考虑方法。其中大部分是“干将”，“二传手”或“迭代器”。功能不一定属于对象。他们不是对象。他们描述的改变，转变或物体的转型。它们是外部的对象。
+But even the above contains a subtle mistake: the callback in the button is not really a method. It is just a usual function. Very few procedures should be considered methods of an object, and most others are just functions. If you look carefully, most of the time the objects just serve as a namespace (or module) in which you can put data fields and functions. But those functions can also live on their own (such as addition of velocities or time). They just take the objects as inputs and produce some output. Only the functions that are most intimately connected to the fields and provide an "abstraction layer" should be considered methods. Most of those are "getters", "setters" or "iterators". Functions don't necessarily belong to objects. They are not objects. They describe a change, transition or transformation of objects. They are external to the objects.
 
 
-In some languages such as Scala or Python, functions are also treated as objects. But they actually just wrapped the functions into an object, give them some name such as “apply” or “__call__”, so that when the objects are “invoked”, you know which functions to call. But putting a function into an object doesn’t really mean functions are also objects, just like inviting friends to your house doesn’t make them your family.
+但是,即使上述包含一个微妙的错误:在按钮的回调是不是一个真正的方法. 这只是一个平常的功能. 很少有程序应被视为一个对象的方法,而大多数人都只是功能. 如果你仔细观察,大部分时间的对象只是作为一个命名空间(或模块)中,你可以把数据域和功能. 但是,这些功能也可以生活在他们自己的(如加速度或时间). 他们只是把对象作为输入,并产生一些输出. 只有那些最密切相关的领域,并提供了一个"抽象层"的功能,应考虑方法. 其中大部分是"干将","二传手"或"迭代器". 功能不一定属于对象. 他们不是对象. 他们描述的改变,转变或物体的转型. 它们是外部的对象. 
+
+
+In some languages such as Scala or Python, functions are also treated as objects. But they actually just wrapped the functions into an object, give them some name such as "apply" or "__call__", so that when the objects are "invoked", you know which functions to call. But putting a function into an object doesn't really mean functions are also objects, just like inviting friends to your house doesn't make them your family.
 
 
 在一些语言,比如 Scala/Python, 函式也被视作对象.
@@ -817,7 +817,7 @@ In some languages such as Scala or Python, functions are also treated as objects
 
 ~ Everything is an actor? 
 
-In his talk, Gilad Bracha disagrees with the FP hypes such as monads and pattern matching (with some good points), but he over-valued the ways of OOP and the actor model. From the blog posts he refers to, you can see that he thinks of the actor model as the “one true way”.
+In his talk, Gilad Bracha disagrees with the FP hypes such as monads and pattern matching (with some good points), but he over-valued the ways of OOP and the actor model. From the blog posts he refers to, you can see that he thinks of the actor model as the "one true way".
 
 在 Gilad Bracha 的有关言论中,
 他不认同 FP 的炒作,
@@ -826,7 +826,7 @@ In his talk, Gilad Bracha disagrees with the FP hypes such as monads and pattern
 从他的blog 文章中可以看到,他宣称 角色模式是 "唯一正解".
 
 
-I’m always wary of such notion as “one true way” or “everything is…” I actually read Carl Hewitt’s actor model paper a long time ago and also some of his other concepts such as Direct LogicTM (Yes, there is a trademark sign on it). I didn’t really appreciate the papers and his way of writing, with the “dedicated to some-big-names” headlines, trademark signs and grand claims.
+I'm always wary of such notion as "one true way" or "everything is... " I actually read Carl Hewitt's actor model paper a long time ago and also some of his other concepts such as Direct LogicTM (Yes, there is a trademark sign on it). I didn't really appreciate the papers and his way of writing, with the "dedicated to some-big-names" headlines, trademark signs and grand claims.
 
 俺对任何宣称 "唯一..." 或是 "一切..."
 的概念有疑虑.
@@ -854,7 +854,7 @@ The actor model suffers from the same drawbacks of OOP as I mentioned: over-abst
 ### 面向对象设计模式的傻缺
 ~ The stupidity of OO design patterns 
 
-It may not be inherent in all OO languages, but OO design patterns (such names as Factory, Facade, Flyweight, Singleton, Visitor etc) have been the major source of over-complication and confusion. Their origin was mostly due to the dogma of “everything is an object” and the lack of high-order functions (or the correct implementation of them).
+It may not be inherent in all OO languages, but OO design patterns (such names as Factory, Facade, Flyweight, Singleton, Visitor etc) have been the major source of over-complication and confusion. Their origin was mostly due to the dogma of "everything is an object" and the lack of high-order functions (or the correct implementation of them).
 
 可能不是所有 OO 语言固有的,
 但 面向对象设计模式 
@@ -864,7 +864,7 @@ It may not be inherent in all OO languages, but OO design patterns (such names a
 (或正确的执行它们).
 
 
-The design patterns are completely nonsense to me and I never used them. When I first heard about them I was already a PhD student at Cornell doing some PL research. I was curious about the book’s fame and borrowed one from the library. But I soon found a mapping from all those weird names to the programming techniques I have been using all the time. I don’t understand how such a book as GoF can ever be published which contains nothing but just giving new and weird names to existing programming techniques that I use every day. If you say the purpose of writing this book is to “improve communication of programmers”, then I would write a book and give new names to air, water and all kinds of food, in order to “improve the communication of all human beings”.
+The design patterns are completely nonsense to me and I never used them. When I first heard about them I was already a PhD student at Cornell doing some PL research. I was curious about the book's fame and borrowed one from the library. But I soon found a mapping from all those weird names to the programming techniques I have been using all the time. I don't understand how such a book as GoF can ever be published which contains nothing but just giving new and weird names to existing programming techniques that I use every day. If you say the purpose of writing this book is to "improve communication of programmers", then I would write a book and give new names to air, water and all kinds of food, in order to "improve the communication of all human beings".
 
 这类设计模式完全是胡说八道,
 俺从未使用过它们.
@@ -885,7 +885,7 @@ The design patterns are completely nonsense to me and I never used them. When I 
 以 `改善全人类的沟通`!
 
 
-Peter Norvig gave a talk on design patterns in 1998 pointing out most of the design patterns will be “transparent” once you have first-class functions. He was too polite to call design patterns nonsense or stupid, but that’s implied.
+Peter Norvig gave a talk on design patterns in 1998 pointing out most of the design patterns will be "transparent" once you have first-class functions. He was too polite to call design patterns nonsense or stupid, but that's implied.
 
 Peter Norvig 在98年就设计模式指出,
 一但你完成了 `高阶函数`(first-class function) ,

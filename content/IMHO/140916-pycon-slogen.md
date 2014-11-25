@@ -5,7 +5,7 @@ Slug: 140916-pycon-slogen
 
 [TOC]
 
-![SimpleIsBeautiful（PNG 图像，731x681 像素）](http://wiki.woodpecker.org.cn/moin/SimpleIsBeautiful?action=AttachFile&do=get&target=130416-zq-simple-is-beautiful.png)
+![SimpleIsBeautiful(PNG 图像,731x681 像素)](http://wiki.woodpecker.org.cn/moin/SimpleIsBeautiful?action=AttachFile&do=get&target=130416-zq-simple-is-beautiful.png)
 
 可记得去年的[蠎年蠎衫(PythonisT-shirt)设计大赛! — Python China](http://python-china.org/topic/544#reply5)
 ?
@@ -13,15 +13,15 @@ Slug: 140916-pycon-slogen
 今年又来尝试了....
 
 ## 背景
-- [“Life is short
-(You need Python)”~sebsauvage.net - Python](http://sebsauvage.net/python/)
-- [“Life is short, use Python” 最初是谁在什么情况下说的？ - 知乎](http://www.zhihu.com/question/20830223)
+- ["Life is short
+(You need Python)"~sebsauvage.net - Python](http://sebsauvage.net/python/)
+- ["Life is short, use Python" 最初是谁在什么情况下说的? - 知乎](http://www.zhihu.com/question/20830223)
 
 是的,一句无意间的代码注释,在 2007年,演化为 CPyUG 社区纪念TEE 的设计出处:
 
 - 演化成了: `Life is short, use Python!` 
 - Gudio 那年也穿上了身
-[LpyAttachZoomq（JPEG 图像，800x533 像素）](http://wiki.woodpecker.org.cn/moin/ObpLovelyPython/LpyAttachZoomq?action=AttachFile&do=get&target=beginning-1-zeuux-fashion-guido.jpg)
+[LpyAttachZoomq(JPEG 图像,800x533 像素)](http://wiki.woodpecker.org.cn/moin/ObpLovelyPython/LpyAttachZoomq?action=AttachFile&do=get&target=beginning-1-zeuux-fashion-guido.jpg)
 
 然后,就没有然后了,,,因为 ZEUUX 的沉默,
 做到 2013年, PyConChina 才在北京/珠海场的纪念TEE 上重构了设计,并发布为:
@@ -77,10 +77,10 @@ life's pathetic, let's pythonic
 - `@Adam:`
 
 ```
-go pythonic, no pathetic…..
+go pythonic, no pathetic... ..
 
 人生苦短 Pythonic欢
-苦海无涯，python是岸
+苦海无涯,python是岸
 人生苦短 Pythonic绽
 总是我就是强迫症想押韵..
 ```
@@ -91,7 +91,7 @@ go pythonic, no pathetic…..
 ## 暂定
     
 ```
-    life’s pathetic, let’s pythonic
+    life's pathetic, let's pythonic
     人生苦短 得Pythonic?
 ```
 
