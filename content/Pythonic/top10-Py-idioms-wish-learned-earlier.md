@@ -1,5 +1,5 @@
 Title: 十大早该知道的Python技巧
-Date: 2013-11-26
+Date: 2014-11-26
 Tags: Pythonic,FW,idioms,tutorial
 Slug: top10-Py-idioms-wish-learned-earlier
 
