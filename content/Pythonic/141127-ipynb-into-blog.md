@@ -1,4 +1,4 @@
-Title: 十大早该知道的Python技巧
+Title: 如何将 ipynb 发布到 blog 中?
 Date: 2014-11-27
 Tags: Pythonic,FW,ipynb,tutorial
 Slug: 141127-ipynb-into-blog
