@@ -300,5 +300,4 @@ We are no longer the knights who say Ni! We are now the knights who say ekki-ekk
 
 ## Changelog
 
-- 140107 move into Pelican as zoomquiet.io
-- 131106 pub. [EKR to Chinese programmer — I. M. H. O. — Medium](https://medium.com/i-m-h-o/9520fee0b59f)
+- 141130 move into Pelican as zoomquiet.io
