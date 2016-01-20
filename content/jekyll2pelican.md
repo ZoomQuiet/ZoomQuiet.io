@@ -280,6 +280,7 @@ fixed!
 
 ## Changelog
 
+- 160120 ZoomQuiet re-deploy in sora
 - 140127 ZoomQuiet 增补宏观理解
 - 140120 ZoomQuiet 复制到 QPython 的 Pelican 工程
 - 131219 ZoomQuiet 为 [CPyUG/weekly - GitCafe](https://gitcafe.com/CPyUG/weekly/blob/master/README.md) 创建

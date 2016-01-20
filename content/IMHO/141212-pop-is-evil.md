@@ -110,7 +110,7 @@ hello,
 
 
 ## Change log
-
+原稿: [流行之恶](http://blog.zoomquiet.io/141212-pop-is-evil.html)
 
 - 141212 后台运算了两天,尝试输出第一次
 - 141210 被戳提问

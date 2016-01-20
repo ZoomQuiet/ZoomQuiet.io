@@ -335,14 +335,16 @@ for seq in doc['RDF:RDF']['RDF:Seq']:
 
 - 用 sh 删除目录
 
-    tree_nodes:  3574
-    exp_items:  4164
-    dirs:  590
-    DESC : 24190
-    chaos: 20616
-    有效: 3574
-$ ls reDevRel/data/ | wc -l
-    2996
+:
+
+        tree_nodes:  3574
+        exp_items:  4164
+        dirs:  590
+        DESC : 24190
+        chaos: 20616
+        有效: 3574
+    $ ls reDevRel/data/ | wc -l
+        2996
 
 
 - 用 lxml/模板 重构 rdf
@@ -358,76 +360,79 @@ $ ls reDevRel/data/ | wc -l
 ### untangle
 [stchris/untangle](https://github.com/stchris/untangle)
 
-RDF:Seq         579
-RDF_Description     24190
-NC:BookmarkSeparator    57
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x100666ed0>
-        exp_level_idx() RUNed~ 2263.57079 ms
+    RDF:Seq         579
+    RDF_Description     24190
+    NC:BookmarkSeparator    57
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x100666ed0>
+            exp_level_idx() RUNed~ 2263.57079 ms
 
 快,但是,无法Dump,而且书写不直觉, 要将 ":" 变成 "_"
     obj.RDF_RDF.RDF_Description
 
 
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x100769ed0>
-Traceback (most recent call last):
-  File "scraptools/zq_chk4scrap.py", line 457, in <module>
-    RDFD = exp_level_idx(MYBOOK)
-  File "scraptools/zq_chk4scrap.py", line 161, in cal_time
-    result = func(*args)
-  File "scraptools/zq_chk4scrap.py", line 205, in exp_level_idx
-    pickle.dump(obj.RDF_RDF, output)
-  File "/Users/zoomq/.pyenv/versions/2.7.6/lib/python2.7/pickle.py", line 1370, in dump
-    Pickler(file, protocol).dump(obj)
-  File "/Users/zoomq/.pyenv/versions/2.7.6/lib/python2.7/pickle.py", line 224, in dump
-    self.save(obj)
-  File "/Users/zoomq/.pyenv/versions/2.7.6/lib/python2.7/pickle.py", line 286, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/Users/zoomq/.pyenv/versions/2.7.6/lib/python2.7/pickle.py", line 719, in save_inst
-    getstate = obj.__getstate__
-  File "/Users/zoomq/.pyenv/versions/276chaos/lib/python2.7/site-packages/untangle.py", line 66, in __getattr__
-    raise IndexError('Unknown key <%s>' % key)
-IndexError: Unknown key <__getstate__>
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x100769ed0>
+    Traceback (most recent call last):
+      File "scraptools/zq_chk4scrap.py", line 457, in <module>
+        RDFD = exp_level_idx(MYBOOK)
+      File "scraptools/zq_chk4scrap.py", line 161, in cal_time
+        result = func(*args)
+      File "scraptools/zq_chk4scrap.py", line 205, in exp_level_idx
+        pickle.dump(obj.RDF_RDF, output)
+      File "/Users/zoomq/.pyenv/versions/2.7.6/lib/python2.7/pickle.py", line 1370, in dump
+        Pickler(file, protocol).dump(obj)
+      File "/Users/zoomq/.pyenv/versions/2.7.6/lib/python2.7/pickle.py", line 224, in dump
+        self.save(obj)
+      File "/Users/zoomq/.pyenv/versions/2.7.6/lib/python2.7/pickle.py", line 286, in save
+        f(self, obj) # Call unbound method with explicit self
+      File "/Users/zoomq/.pyenv/versions/2.7.6/lib/python2.7/pickle.py", line 719, in save_inst
+        getstate = obj.__getstate__
+      File "/Users/zoomq/.pyenv/versions/276chaos/lib/python2.7/site-packages/untangle.py", line 66, in __getattr__
+        raise IndexError('Unknown key <%s>' % key)
+    IndexError: Unknown key <__getstate__>
 
 
 ### xmltodict
 [martinblech/xmltodict](https://github.com/martinblech/xmltodict)
 
-[u'RDF:RDF']
-RDF:Seq         579
-RDF:Description     24190
-NC:BookmarkSeparator    57
-        exp_level_idx() RUNed~ 4997.31612 ms
+    [u'RDF:RDF']
+    RDF:Seq         579
+    RDF:Description     24190
+    NC:BookmarkSeparator    57
+            exp_level_idx() RUNed~ 4997.31612 ms
 
 慢,但是,能 dump 而且书写直觉
     doc['RDF:RDF']['RDF:Seq']
 
-[u'RDF:RDF']
-RDF:Seq         579
-RDF:Description     24190
-NC:BookmarkSeparator    57
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10f26d420>
-        exp_level_idx() RUNed~ 16878.75390 ms
+    [u'RDF:RDF']
+    RDF:Seq         579
+    RDF:Description     24190
+    NC:BookmarkSeparator    57
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10f26d420>
+            exp_level_idx() RUNed~ 16878.75390 ms
 
 同时,能反写出XML 来!
 
 主要问题是行为不统一!
-  <RDF:Seq RDF:about="urn:scrapbook:item20070113201921">
-    <RDF:li RDF:resource="urn:scrapbook:item20070113201940"/>
-    <RDF:li RDF:resource="urn:scrapbook:item20070113201941"/>
-  </RDF:Seq>
+
+    <RDF:Seq RDF:about="urn:scrapbook:item20070113201921">
+      <RDF:li RDF:resource="urn:scrapbook:item20070113201940"/>
+      <RDF:li RDF:resource="urn:scrapbook:item20070113201941"/>
+    </RDF:Seq>
+
+
 时 唯一的 RDF:Li 不是 List!!
 
-K2SEQ[crt_id]>RDF:Li OrderedDict([(u'@RDF:resource', u'urn:scrapbook:item20070113201921')])
-K2SEQ[crt_id]['RDF:li'].len:: 1
-    <class 'collections.OrderedDict'>
-K2SEQ[crt_id]>RDF:Li @RDF:resource
-     try crt_node.keys:
-@RDF:resource
-K2SEQ[crt_id]>RDF:Li OrderedDict([(u'@RDF:resource', u'urn:scrapbook:item20070527160000')])
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-K2SEQ[crt_id]>RDF:Li OrderedDict([(u'@RDF:resource', u'urn:scrapbook:item20061006133550')])
-K2SEQ[crt_id]['RDF:li'].len:: 9
-    <type 'list'>
+    K2SEQ[crt_id]>RDF:Li OrderedDict([(u'@RDF:resource', u'urn:scrapbook:item20070113201921')])
+    K2SEQ[crt_id]['RDF:li'].len:: 1
+        <class 'collections.OrderedDict'>
+    K2SEQ[crt_id]>RDF:Li @RDF:resource
+         try crt_node.keys:
+    @RDF:resource
+    K2SEQ[crt_id]>RDF:Li OrderedDict([(u'@RDF:resource', u'urn:scrapbook:item20070527160000')])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    K2SEQ[crt_id]>RDF:Li OrderedDict([(u'@RDF:resource', u'urn:scrapbook:item20061006133550')])
+    K2SEQ[crt_id]['RDF:li'].len:: 9
+        <type 'list'>
 
 
 [odd parse for same xml structure · Issue #67 · martinblech/xmltodict](https://github.com/martinblech/xmltodict/issues/67)
@@ -435,180 +440,183 @@ K2SEQ[crt_id]['RDF:li'].len:: 9
 
 ### 4H 折腾明白了:
 
-$ python scraptools/zq_chk4scrap.py reDevRel/
-/Users/zoomq/mnt/快盘/zScrapBook/reDevRel/scrapbook.rdf
-[u'RDF:RDF']
-RDF:Seq         579
-RDF:Description     24190
-NC:BookmarkSeparator    57
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10f17a660>
-        exp_level_idx() RUNed~ 17073.48084 ms
+    $ python scraptools/zq_chk4scrap.py reDevRel/
+    /Users/zoomq/mnt/快盘/zScrapBook/reDevRel/scrapbook.rdf
+    [u'RDF:RDF']
+    RDF:Seq         579
+    RDF:Description     24190
+    NC:BookmarkSeparator    57
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10f17a660>
+            exp_level_idx() RUNed~ 17073.48084 ms
 
-_chaos/scraotools_reDevRel.pkl
-RDF:ROOT            13
-RDF:Seq         578
-RDF:Description     24190
-NC:BookmarkSeparator    57
-        _load_pkl() RUNed~ 7872.95103 ms
+    _chaos/scraotools_reDevRel.pkl
+    RDF:ROOT            13
+    RDF:Seq         578
+    RDF:Description     24190
+    NC:BookmarkSeparator    57
+            _load_pkl() RUNed~ 7872.95103 ms
 
-     _RIGHT_NODES: 6926
-     RIGHT_NODES: 3631
-        re_xmltodict_rdf() RUNed~ 191.21003 ms
+         _RIGHT_NODES: 6926
+         RIGHT_NODES: 3631
+            re_xmltodict_rdf() RUNed~ 191.21003 ms
 
 有这么多垃圾!
-24190 vs 3631 !!!!
+
+    24190 vs 3631 !!!!
 
 
 但是,居然无法一次性清理干净?!
 
 一扫::
 
-$ python scraptools/zq_chk4scrap.py reDevRel/
-/Users/zoomq/mnt/快盘/zScrapBook/reDevRel/scrapbook.rdf
-[u'RDF:RDF']
-RDF:Seq         579
-RDF:Description     24190
-NC:BookmarkSeparator    57
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10f2376f0>
-        exp_level_idx() RUNed~ 17013.92913 ms
+    $ python scraptools/zq_chk4scrap.py reDevRel/
+    /Users/zoomq/mnt/快盘/zScrapBook/reDevRel/scrapbook.rdf
+    [u'RDF:RDF']
+    RDF:Seq         579
+    RDF:Description     24190
+    NC:BookmarkSeparator    57
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10f2376f0>
+            exp_level_idx() RUNed~ 17013.92913 ms
 
-     _RIGHT_NODES: 6926
-     RIGHT_NODES: 3631
-clean notes:    11153
-cleanned DESC:  13037
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10eecff60>
-_chaos/scrapbook_reDevRel.rdf
-        re_xmltodict_rdf() RUNed~ 131239.34913 ms
+         _RIGHT_NODES: 6926
+         RIGHT_NODES: 3631
+    clean notes:    11153
+    cleanned DESC:  13037
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10eecff60>
+    _chaos/scrapbook_reDevRel.rdf
+            re_xmltodict_rdf() RUNed~ 131239.34913 ms
 
 
 2扫:
 
 
-$ python scraptools/zq_chk4scrap.py reDevRel/
-_chaos/scraotools_reDevRel.pkl
-RDF:ROOT    13
-RDF:Seq         578
-RDF:Description     13037
-NC:BookmarkSeparator    57
-        _load_pkl() RUNed~ 4292.33599 ms
+    $ python scraptools/zq_chk4scrap.py reDevRel/
+    _chaos/scraotools_reDevRel.pkl
+    RDF:ROOT    13
+    RDF:Seq         578
+    RDF:Description     13037
+    NC:BookmarkSeparator    57
+            _load_pkl() RUNed~ 4292.33599 ms
 
-     _RIGHT_NODES: 6926
-     RIGHT_NODES: 3631
-clean notes:    5506
-cleanned DESC:  7531
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x108874f60>
-_chaos/scrapbook_reDevRel.rdf
-        re_xmltodict_rdf() RUNed~ 44531.90279 ms
+         _RIGHT_NODES: 6926
+         RIGHT_NODES: 3631
+    clean notes:    5506
+    cleanned DESC:  7531
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x108874f60>
+    _chaos/scrapbook_reDevRel.rdf
+            re_xmltodict_rdf() RUNed~ 44531.90279 ms
 
 
 3扫::
 
-$ python scraptools/zq_chk4scrap.py reDevRel/
-_chaos/scraotools_reDevRel.pkl
-RDF:ROOT    13
-RDF:Seq         578
-RDF:Description     7531
-NC:BookmarkSeparator    57
-        _load_pkl() RUNed~ 3115.18502 ms
+    $ python scraptools/zq_chk4scrap.py reDevRel/
+    _chaos/scraotools_reDevRel.pkl
+    RDF:ROOT    13
+    RDF:Seq         578
+    RDF:Description     7531
+    NC:BookmarkSeparator    57
+            _load_pkl() RUNed~ 3115.18502 ms
 
-     _RIGHT_NODES: 6926
-     RIGHT_NODES: 3631
-clean notes:    2616
-cleanned DESC:  4915
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x105d1edb0>
-_chaos/scrapbook_reDevRel.rdf
-        re_xmltodict_rdf() RUNed~ 19026.94511 ms
+         _RIGHT_NODES: 6926
+         RIGHT_NODES: 3631
+    clean notes:    2616
+    cleanned DESC:  4915
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x105d1edb0>
+    _chaos/scrapbook_reDevRel.rdf
+            re_xmltodict_rdf() RUNed~ 19026.94511 ms
 
 
 4扫::
 
-$ python scraptools/zq_chk4scrap.py reDevRel/
-_chaos/scraotools_reDevRel.pkl
-RDF:ROOT    13
-RDF:Seq         578
-RDF:Description     4915
-NC:BookmarkSeparator    57
-        _load_pkl() RUNed~ 2528.49293 ms
+    $ python scraptools/zq_chk4scrap.py reDevRel/
+    _chaos/scraotools_reDevRel.pkl
+    RDF:ROOT    13
+    RDF:Seq         578
+    RDF:Description     4915
+    NC:BookmarkSeparator    57
+            _load_pkl() RUNed~ 2528.49293 ms
 
-     _RIGHT_NODES: 6926
-     RIGHT_NODES: 3631
-clean notes:    1045
-cleanned DESC:  3870
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10429ced0>
-_chaos/scrapbook_reDevRel.rdf
-        re_xmltodict_rdf() RUNed~ 11538.43212 ms
+         _RIGHT_NODES: 6926
+         RIGHT_NODES: 3631
+    clean notes:    1045
+    cleanned DESC:  3870
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x10429ced0>
+    _chaos/scrapbook_reDevRel.rdf
+            re_xmltodict_rdf() RUNed~ 11538.43212 ms
 
 5扫:
 
-$ python scraptools/zq_chk4scrap.py reDevRel/
-_chaos/scraotools_reDevRel.pkl
-RDF:ROOT    13
-RDF:Seq         578
-RDF:Description     3870
-NC:BookmarkSeparator    57
-        _load_pkl() RUNed~ 2422.85681 ms
+    $ python scraptools/zq_chk4scrap.py reDevRel/
+    _chaos/scraotools_reDevRel.pkl
+    RDF:ROOT    13
+    RDF:Seq         578
+    RDF:Description     3870
+    NC:BookmarkSeparator    57
+            _load_pkl() RUNed~ 2422.85681 ms
 
-     _RIGHT_NODES: 6926
-     RIGHT_NODES: 3631
-clean notes:    286
-cleanned DESC:  3584
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x102c5d300>
-_chaos/scrapbook_reDevRel.rdf
-        re_xmltodict_rdf() RUNed~ 9368.47901 ms
+         _RIGHT_NODES: 6926
+         RIGHT_NODES: 3631
+    clean notes:    286
+    cleanned DESC:  3584
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x102c5d300>
+    _chaos/scrapbook_reDevRel.rdf
+            re_xmltodict_rdf() RUNed~ 9368.47901 ms
 
 
 6扫::
 
-$ python scraptools/zq_chk4scrap.py reDevRel/
-_chaos/scraotools_reDevRel.pkl
-RDF:ROOT    13
-RDF:Seq         578
-RDF:Description     3584
-NC:BookmarkSeparator    57
-        _load_pkl() RUNed~ 2225.17014 ms
+    $ python scraptools/zq_chk4scrap.py reDevRel/
+    _chaos/scraotools_reDevRel.pkl
+    RDF:ROOT    13
+    RDF:Seq         578
+    RDF:Description     3584
+    NC:BookmarkSeparator    57
+            _load_pkl() RUNed~ 2225.17014 ms
 
-     _RIGHT_NODES: 6926
-     RIGHT_NODES: 3631
-clean notes:    10
-cleanned DESC:  3574
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x102c2af60>
-_chaos/scrapbook_reDevRel.rdf
-        re_xmltodict_rdf() RUNed~ 8464.92100 ms
+         _RIGHT_NODES: 6926
+         RIGHT_NODES: 3631
+    clean notes:    10
+    cleanned DESC:  3574
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x102c2af60>
+    _chaos/scrapbook_reDevRel.rdf
+            re_xmltodict_rdf() RUNed~ 8464.92100 ms
 
 
 7扫:
 
-$ python scraptools/zq_chk4scrap.py reDevRel/
-_chaos/scraotools_reDevRel.pkl
-RDF:ROOT    13
-RDF:Seq         578
-RDF:Description     3574
-NC:BookmarkSeparator    57
-        _load_pkl() RUNed~ 2317.77310 ms
+    $ python scraptools/zq_chk4scrap.py reDevRel/
+    _chaos/scraotools_reDevRel.pkl
+    RDF:ROOT    13
+    RDF:Seq         578
+    RDF:Description     3574
+    NC:BookmarkSeparator    57
+            _load_pkl() RUNed~ 2317.77310 ms
 
-     _RIGHT_NODES: 6926
-     RIGHT_NODES: 3631
-clean notes:    0
-cleanned DESC:  3574
-<open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x1021b3030>
-_chaos/scrapbook_reDevRel.rdf
-        re_xmltodict_rdf() RUNed~ 8694.52500 ms
+         _RIGHT_NODES: 6926
+         RIGHT_NODES: 3631
+    clean notes:    0
+    cleanned DESC:  3574
+    <open file '_chaos/scraotools_reDevRel.pkl', mode 'wb' at 0x1021b3030>
+    _chaos/scrapbook_reDevRel.rdf
+            re_xmltodict_rdf() RUNed~ 8694.52500 ms
 
 
 ### 2小时 目录对比
 
 sh->ls 出来时,
+
 是 STDOUT 有隐藏字符!
 兰色...居然没有意识到!
 
-20041214101930
-<type 'str'>
-Traceback (most recent call last):
-  File "scraptools/zq_chk4scrap.py", line 724, in <module>
-    mv_chaos_data(REPO_NAME, XRDF)
-  File "scraptools/zq_chk4scrap.py", line 524, in mv_chaos_data
-    print len(int(li)) #.strip()
-ValueError: invalid literal for int() with base 10: '\x1b[1m\x1b[34m20041214101930\x1b[39;49m\x1b[0m'
+
+    20041214101930
+    <type 'str'>
+    Traceback (most recent call last):
+      File "scraptools/zq_chk4scrap.py", line 724, in <module>
+        mv_chaos_data(REPO_NAME, XRDF)
+      File "scraptools/zq_chk4scrap.py", line 524, in mv_chaos_data
+        print len(int(li)) #.strip()
+    ValueError: invalid literal for int() with base 10: '\x1b[1m\x1b[34m20041214101930\x1b[39;49m\x1b[0m'
 
 
 
@@ -631,17 +639,18 @@ ValueError: invalid literal for int() with base 10: '\x1b[1m\x1b[34m200412141019
 - 解决反复清查的问题
 - 提高效率
 
+:
 
-$ du -hs *
-5.1G    ZqDevRel
-950M    reDevRel
-    5.2G    zqCoder
-    4.9G    zqSMM
-8.0M    _chaos
-4.2G    _stuff
+    $ du -hs *
+    5.1G    ZqDevRel
+    950M    reDevRel
+        5.2G    zqCoder
+        4.9G    zqSMM
+    8.0M    _chaos
+    4.2G    _stuff
 
-6.5G    ZqFLOSS
-    5.2G    zqDevRes
-    5.2G    zqPythonic
-    5.3G    zqSCM
-3.7G    ZqSKM
+    6.5G    ZqFLOSS
+        5.2G    zqDevRes
+        5.2G    zqPythonic
+        5.3G    zqSCM
+    3.7G    ZqSKM
