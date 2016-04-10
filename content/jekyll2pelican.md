@@ -4,7 +4,6 @@ Tags: howto, pelican
 Slug: jekyll-to-pelican
 Author: Zoom.Quiet
 
-
 [TOC]
 
 # 如何从 Jekyll 转进入 Pelican
@@ -284,3 +283,8 @@ fixed!
 - 140127 ZoomQuiet 增补宏观理解
 - 140120 ZoomQuiet 复制到 QPython 的 Pelican 工程
 - 131219 ZoomQuiet 为 [CPyUG/weekly - GitCafe](https://gitcafe.com/CPyUG/weekly/blob/master/README.md) 创建
+
+
+
+
+...

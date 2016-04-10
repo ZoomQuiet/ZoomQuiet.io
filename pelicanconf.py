@@ -115,16 +115,18 @@ STATIC_PATHS = ['_images', '_files'
     , '_extra/robots.txt'
     , '_extra/favicon.ico'
     , '_extra/README.log'
-    , '_extra/CNAME'
     , '_extra/LICENSE'
+    , '_extra/CNAME'
+    , '_extra/.nojekyll'
+    
     ]
-
     
 EXTRA_PATH_METADATA = {'_extra/robots.txt': {'path': 'robots.txt'}
     , '_extra/favicon.ico': {'path': 'favicon.ico'}
+    , '_extra/LICENSE': {'path': 'LICENSE'}
     , '_extra/README.log': {'path': 'README.md'}
     , '_extra/CNAME': {'path': 'CNAME'}
-    , '_extra/LICENSE': {'path': 'LICENSE'}
+    , '_extra/.nojekyll': {'path': '.nojekyll'}
     }
 
 # disable author pages

@@ -667,6 +667,9 @@ PS:
 
 # Changlog ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+- 160322 发现 `王珢` 在原文中给出了俺的翻译链接!
+    + [![131224_oop_linkback](http://zoomq.qiniudn.com/ZQCollection/snap/yw/131224_oop_linkback.png)](https://yinwang0.wordpress.com/2013/12/24/oop/)
+    + 是也乎,(￣▽￣) 感动!
 - 140109 获得`王珢`授权,得以进行传播.
 - 140108 前后7.42小时完成快译.
 - 131224 翻越抄录在 medium.com
