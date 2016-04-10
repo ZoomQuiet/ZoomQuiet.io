@@ -41,7 +41,7 @@ def reserve():
 #def preview():
 #    local('pelican -s publishconf.py')
 
-def pub4hub():
+def pub():
     build()
     local('cd {deploy_path} && '
             'pwd && '
