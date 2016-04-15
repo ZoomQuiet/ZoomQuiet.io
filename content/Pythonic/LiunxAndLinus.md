@@ -1,5 +1,5 @@
 Title: Linux 后的思想
-Date: 2016-06-10
+Date: 2016-04-10
 Tags: geek,linux,floss,linux
 Slug: linux-linus-not-only-be-fun
 

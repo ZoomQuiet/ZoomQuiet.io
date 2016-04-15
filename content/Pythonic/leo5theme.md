@@ -216,6 +216,6 @@ appended nodes:
     + log 界面的 dark theme
     + find 界面的 dark theme
     + ...
-
+- 参考颜色: [Leo Color Map](http://leo-editor.github.io/snippets/colormap.html)
 
    
