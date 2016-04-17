@@ -83,7 +83,7 @@ appended nodes:
 - 是 令德华([Edward K. Ream](http://leoeditor.com/ekr.html)) 独立创建并长期维护的,完备的文学化编辑环境
 - 09年从 Tk 迁移到 Qt 后平滑的跟随俺转战 M$/Ubuntu/MAC 所有桌面系统
 - 嗯哼,完全基于 Python 开发的...
-- 详细介绍,参考 [PyConChina2013-EKR-final-v2](http://zoomq.qiniudn.com/pychina/PyCon2013China/PyConChina2013-EKR-final-v2) ~ 老令公 在 PyCon2013China 大会上分享的视频
+- 详细介绍,参考 [PyConChina2013-EKR-final-v2](http://zoomq.qiniudn.com/pychina/PyCon2013China/PyConChina2013-EKR-final-v2.mp4) ~ 老令公 在 PyCon2013China 大会上分享的视频
 
 ## 问题
 但是,使用最性感的编辑器 sublime text 后, 对 Leo 默认的界面就万般难以忍受了...
