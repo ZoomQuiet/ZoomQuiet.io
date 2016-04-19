@@ -7,59 +7,83 @@ Slug: jump-into-ssd
 [TOC]
 
 # 为毛
-
+不解释, 人家都免费给你升级了哪!
 
 # 新梗
+~ 嗯哼,各种关键记要,不进行解释了...
 
 ## npm
 
-$ brew install npm
-==> Downloading https://homebrew.bintray.com/bottles/node-0.12.2_1.yosemite.bottle.tar.gz
-######################################################################## 100.0%
-==> Pouring node-0.12.2_1.yosemite.bottle.tar.gz
-==> Caveats
-If you update npm itself, do NOT use the npm update command.
-The upstream-recommended way to update npm is:
-  npm install -g npm@latest
+    $ brew install npm
+    ==> Downloading https://homebrew.bintray.com/bottles/node-0.12.2_1.yosemite.bottle.tar.gz
+    ######################################################################## 100.0%
+    ==> Pouring node-0.12.2_1.yosemite.bottle.tar.gz
+    ==> Caveats
+    If you update npm itself, do NOT use the npm update command.
+    The upstream-recommended way to update npm is:
+      npm install -g npm@latest
 
 Bash completion has been installed to:
   /usr/local/etc/bash_completion.d
 
 
-## subl
+`是也乎:` 后来也全部升级为 **nvm** 了
 
-要
+## subl
+~ [sublime-text - 如何在mac中用命令行时用sublime打开文件 - SegmentFault](https://segmentfault.com/q/1010000002397241)
+
+> sudo ln -s "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
 
 ## /User
 
-$ sudo mv /Users /Users_SSD
-$ sudo ln -s /Volumes/Macintosh\ HD/Users/ Users
+    $ sudo mv /Users /Users_SSD
+    $ sudo ln -s /Volumes/Macintosh\ HD/Users/ Users
+
+### AMD-Action:authenticate:SP
+~ 为了复用原先的配置,结果引发了这个大问题!
+
+参考: [Grh.am - Pesky "AMD-Action:authenticate:SP" and its Fix](https://grh.am/2015/amd-action-authenticate/)
+
+最后还是小心的对应折腾了一下:
+
+- 将 `Users/Shared` 中的全部内容 `ditto` 到 SSD 中
+- 其它的目录,逐一 `ln -s` 过去
+
+这样才好:
+
+    /Users༽
+    ༆  ls -1l
+    Guest -> ../Users_SSD/Guest/
+    Shared
+    zoomq -> /Volumes/MacintoshHD/Users/zoomq/
+    ...
+
 
 ## XCode 
 
 
-/Volumes/Macintosh\ HD/Applications/Xcode.app/
-$ xcode-select --switch /Applications/Xcode.app
+    /Volumes/Macintosh\ HD/Applications/Xcode.app/
+    $ xcode-select --switch /Applications/Xcode.app
 
 
 ## svn
 
 
-$ brew install subversion
-==> Installing dependencies for subversion: openssl, apr-util, readline, sqlite, scons
-==> Installing subversion dependency: openssl
-==> Downloading https://www.openssl.org/source/openssl-1.0.2a.tar.gz
-Already downloaded: /Library/Caches/Homebrew/openssl-1.0.2a-1.tar.gz
-==> perl ./Configure --prefix=/opt/bin/homebrew/Cellar/openssl/1.0.2a-1 --openssldir=/Volumes/Macintosh HD
-==> make depend
-==> make
-==> make test
-==> make install MANDIR=/opt/bin/homebrew/Cellar/openssl/1.0.2a-1/share/man MANSUFFIX=ssl
-installing CA.sh
-usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
-       cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
-make[1]: *** [install] Error 64
-make: *** [install_sw] Error 1
+    $ brew install subversion
+    ==> Installing dependencies for subversion: openssl, apr-util, readline, sqlite, scons
+    ==> Installing subversion dependency: openssl
+    ==> Downloading https://www.openssl.org/source/openssl-1.0.2a.tar.gz
+    Already downloaded: /Library/Caches/Homebrew/openssl-1.0.2a-1.tar.gz
+    ==> perl ./Configure --prefix=/opt/bin/homebrew/Cellar/openssl/1.0.2a-1 --openssldir=/Volumes/Macintosh HD
+    ==> make depend
+    ==> make
+    ==> make test
+    ==> make install MANDIR=/opt/bin/homebrew/Cellar/openssl/1.0.2a-1/share/man MANSUFFIX=ssl
+    installing CA.sh
+    usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+           cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
+    make[1]: *** [install] Error 64
+    make: *** [install_sw] Error 1
 
 READ THIS: https://git.io/brew-troubleshooting
 
@@ -92,90 +116,91 @@ Python modules have been installed and Homebrew's site-packages is not
 in your Python sys.path, so you will not be able to import the modules
 this formula installed. If you plan to develop with these modules,
 please run:
-  mkdir -p /Users/zoomq/Library/Python/2.7/lib/python/site-packages
-  echo 'import site; site.addsitedir("/Volumes/Macintosh HD/Users/zoomq/lib/python2.7/site-packages")' >> /Users/zoomq/Library/Python/2.7/lib/python/site-packages/homebrew.pth
-==> Summary
-🍺  /opt/bin/homebrew/Cellar/sip/4.16.5: 10 files, 864K, built in 5 seconds
+
+      mkdir -p /Users/zoomq/Library/Python/2.7/lib/python/site-packages
+      echo 'import site; site.addsitedir("/Volumes/Macintosh HD/Users/zoomq/lib/python2.7/site-packages")' >> /Users/zoomq/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+    ==> Summary
+    🍺  /opt/bin/homebrew/Cellar/sip/4.16.5: 10 files, 864K, built in 5 seconds
 
 
+    $ brew install pyqt
+    ==> Installing pyqt dependency: qt
+    ==> Downloading https://download.qt.io/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tgz
 
 
-$ brew install pyqt
-==> Installing pyqt dependency: qt
-==> Downloading https://download.qt.io/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.tgz
+    $ brew install pyqt
+    ==> Downloading https://downloads.sf.net/project/pyqt/PyQt4/PyQt-4.11.3/PyQt-mac-gpl-4.11.3.tar.gz
+    Already downloaded: /Library/Caches/Homebrew/pyqt-4.11.3.tar.gz
+    ==> python configure.py --confirm-license --bindir=/opt/bin/homebrew/Cellar/pyqt/4.11.3/bin --destdir=/opt
 
+    Error: /Volumes/Macintosh HD/Users/zoomq/opt/qt/bin/qmake failed to create a
+    makefile. Make sure you have a working Qt qmake on your PATH or use the -q
+    argument to explicitly specify a working Qt qmake.
+    Determining the layout of your Qt installation...
 
-$ brew install pyqt
-==> Downloading https://downloads.sf.net/project/pyqt/PyQt4/PyQt-4.11.3/PyQt-mac-gpl-4.11.3.tar.gz
-Already downloaded: /Library/Caches/Homebrew/pyqt-4.11.3.tar.gz
-==> python configure.py --confirm-license --bindir=/opt/bin/homebrew/Cellar/pyqt/4.11.3/bin --destdir=/opt
+    READ THIS: https://git.io/brew-troubleshooting
 
-Error: /Volumes/Macintosh HD/Users/zoomq/opt/qt/bin/qmake failed to create a
-makefile. Make sure you have a working Qt qmake on your PATH or use the -q
-argument to explicitly specify a working Qt qmake.
-Determining the layout of your Qt installation...
+    /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/http.rb:878:in `initialize': Failed to connect to: https://api.github.com/search/issues?q=pyqt+repo:Homebrew/homebrew+in:title+state:open&per_page=100 (GitHub::Error)
+    getaddrinfo: nodename nor servname provided, or not known
 
-READ THIS: https://git.io/brew-troubleshooting
-
-/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/net/http.rb:878:in `initialize': Failed to connect to: https://api.github.com/search/issues?q=pyqt+repo:Homebrew/homebrew+in:title+state:open&per_page=100 (GitHub::Error)
-getaddrinfo: nodename nor servname provided, or not known
-
-$ brew search qmake
-No formula found for "qmake".
-Searching pull requests...
-Closed pull requests:
-qmake gets installed by QT (https://github.com/Homebrew/homebrew/pull/31336)
-Added patch for XCode4 support for qmake. (https://github.com/Homebrew/homebrew/pull/10475)
-PyQT5.rb Specify qt5 version of qmake. (https://github.com/Homebrew/homebrew/pull/27059)
-PyQt: patch to fix handling of qmake inline comments (https://github.com/Homebrew/homebrew/pull/25225)
-qscintilla2: define 10.9 qmake make spec for lib and python module (https://github.com/Homebrew/homebrew/pull/25882)
+    $ brew search qmake
+    No formula found for "qmake".
+    Searching pull requests...
+    Closed pull requests:
+    qmake gets installed by QT (https://github.com/Homebrew/homebrew/pull/31336)
+    Added patch for XCode4 support for qmake. (https://github.com/Homebrew/homebrew/pull/10475)
+    PyQT5.rb Specify qt5 version of qmake. (https://github.com/Homebrew/homebrew/pull/27059)
+    PyQt: patch to fix handling of qmake inline comments (https://github.com/Homebrew/homebrew/pull/25225)
+    qscintilla2: define 10.9 qmake make spec for lib and python module (https://github.com/Homebrew/homebrew/pull/25882)
 
 
 - 先安装 [XQuartz](http://xquartz.macosforge.org/landing/)
 - 重启
-- 再:
+
+再:
 
 
-$ brew install pyqt
-==> Installing pyqt dependency: qt
-==> Downloading https://download.qt.io/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.t
-Already downloaded: /Library/Caches/Homebrew/qt-4.8.6.tar.gz
-==> Downloading https://raw.githubusercontent.com/DomT4/scripts/440e3cafde5bf6ec6f50cd28fa5bf89c280f1b53/H
-Already downloaded: /Library/Caches/Homebrew/qt--patch-57246a33460246118a1fab7460c79f2077d3a929.diff
-==> Patching
-patching file src/gui/dialogs/qcolordialog_mac.mm
-patching file src/gui/dialogs/qfiledialog_mac.mm
-patching file src/gui/dialogs/qfontdialog_mac.mm
-patching file src/gui/kernel/qapplication_mac.mm
-patching file src/gui/kernel/qcocoaapplication_mac.mm
-patching file src/gui/kernel/qcocoaapplicationdelegate_mac.mm
-Hunk #4 succeeded at 295 (offset -13 lines).
-Hunk #5 succeeded at 342 (offset -13 lines).
-patching file src/gui/kernel/qcocoaapplicationdelegate_mac_p.h
-patching file src/gui/kernel/qcocoamenuloader_mac.mm
-patching file src/gui/kernel/qcocoasharedwindowmethods_mac_p.h
-patching file src/gui/kernel/qeventdispatcher_mac.mm
-patching file src/gui/kernel/qt_cocoa_helpers_mac.mm
-patching file src/gui/kernel/qwidget_mac.mm
-patching file src/gui/styles/qmacstyle_mac.mm
-patching file src/gui/util/qsystemtrayicon_mac.mm
-patching file src/gui/widgets/qcocoamenu_mac.mm
-patching file src/gui/widgets/qmenu_mac.mm
-==> ./configure -prefix /opt/bin/homebrew/Cellar/qt/4.8.6 -system-zlib -qt-libtiff -qt-libpng -qt-libjpeg
-==> make
+    $ brew install pyqt
+    ==> Installing pyqt dependency: qt
+    ==> Downloading https://download.qt.io/official_releases/qt/4.8/4.8.6/qt-everywhere-opensource-src-4.8.6.t
+    Already downloaded: /Library/Caches/Homebrew/qt-4.8.6.tar.gz
+    ==> Downloading https://raw.githubusercontent.com/DomT4/scripts/440e3cafde5bf6ec6f50cd28fa5bf89c280f1b53/H
+    Already downloaded: /Library/Caches/Homebrew/qt--patch-57246a33460246118a1fab7460c79f2077d3a929.diff
+    ==> Patching
+    patching file src/gui/dialogs/qcolordialog_mac.mm
+    patching file src/gui/dialogs/qfiledialog_mac.mm
+    patching file src/gui/dialogs/qfontdialog_mac.mm
+    patching file src/gui/kernel/qapplication_mac.mm
+    patching file src/gui/kernel/qcocoaapplication_mac.mm
+    patching file src/gui/kernel/qcocoaapplicationdelegate_mac.mm
+    Hunk #4 succeeded at 295 (offset -13 lines).
+    Hunk #5 succeeded at 342 (offset -13 lines).
+    patching file src/gui/kernel/qcocoaapplicationdelegate_mac_p.h
+    patching file src/gui/kernel/qcocoamenuloader_mac.mm
+    patching file src/gui/kernel/qcocoasharedwindowmethods_mac_p.h
+    patching file src/gui/kernel/qeventdispatcher_mac.mm
+    patching file src/gui/kernel/qt_cocoa_helpers_mac.mm
+    patching file src/gui/kernel/qwidget_mac.mm
+    patching file src/gui/styles/qmacstyle_mac.mm
+    patching file src/gui/util/qsystemtrayicon_mac.mm
+    patching file src/gui/widgets/qcocoamenu_mac.mm
+    patching file src/gui/widgets/qmenu_mac.mm
+    ==> ./configure -prefix /opt/bin/homebrew/Cellar/qt/4.8.6 -system-zlib -qt-libtiff -qt-libpng -qt-libjpeg
+    ==> make
 
 
-$ which qmake
-/Volumes/Macintosh HD/Users/zoomq/bin/qmake
+    $ which qmake
+    /Volumes/Macintosh HD/Users/zoomq/bin/qmake
 
 
-$ /opt/bin/homebrew/Cellar/qt/4.8.6/bin/qmake -v
-QMake version 2.01a
-Using Qt version 4.8.6 in /opt/bin/homebrew/Cellar/qt/4.8.6/lib
+    $ /opt/bin/homebrew/Cellar/qt/4.8.6/bin/qmake -v
+    QMake version 2.01a
+    Using Qt version 4.8.6 in /opt/bin/homebrew/Cellar/qt/4.8.6/lib
 
-$ qmake -v
-QMake version 2.01a
-Using Qt version 4.8.6 in /opt/bin/homebrew/Cellar/qt/4.8.6/lib
+    $ qmake -v
+    QMake version 2.01a
+    Using Qt version 4.8.6 in /opt/bin/homebrew/Cellar/qt/4.8.6/lib
+
 
 哈哈!!!上百M 的怪物哪...
 
@@ -188,87 +213,87 @@ Using Qt version 4.8.6 in /opt/bin/homebrew/Cellar/qt/4.8.6/lib
 删除 /opt/bin/homebrew 的非常安装
 
 
-$ brew install qt sip pyqt
-==> Downloading https://homebrew.bintray.com/bottles/qt-4.8.6.yosemite.bottle.6.tar.gz
-######################################################################## 100.0%
-==> Pouring qt-4.8.6.yosemite.bottle.6.tar.gz
-==> Caveats
-We agreed to the Qt opensource license for you.
-If this is unacceptable you should uninstall.
+    $ brew install qt sip pyqt
+    ==> Downloading https://homebrew.bintray.com/bottles/qt-4.8.6.yosemite.bottle.6.tar.gz
+    ######################################################################## 100.0%
+    ==> Pouring qt-4.8.6.yosemite.bottle.6.tar.gz
+    ==> Caveats
+    We agreed to the Qt opensource license for you.
+    If this is unacceptable you should uninstall.
 
-.app bundles were installed.
-Run `brew linkapps qt` to symlink these to /Applications.
-==> Summary
-🍺  /usr/local/Cellar/qt/4.8.6: 2790 files, 122M
+    .app bundles were installed.
+    Run `brew linkapps qt` to symlink these to /Applications.
+    ==> Summary
+    🍺  /usr/local/Cellar/qt/4.8.6: 2790 files, 122M
 
 
 ...
 
 
-==> ./configure --prefix=/usr/local/Cellar/python/2.7.9 --enable-ipv6 --datarootdir=/usr/local/Cellar/pyth
-==> make
-==> make install PYTHONAPPSDIR=/usr/local/Cellar/python/2.7.9
-==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python/2.7.9/share/python
-==> Downloading https://pypi.python.org/packages/source/s/setuptools/setuptools-15.0.tar.gz
-######################################################################## 100.0%
-==> Downloading https://pypi.python.org/packages/source/p/pip/pip-6.1.0.tar.gz
-######################################################################## 100.0%
-==> Caveats
-Pip and setuptools have been installed. To update them
-  pip install --upgrade pip setuptools
+    ==> ./configure --prefix=/usr/local/Cellar/python/2.7.9 --enable-ipv6 --datarootdir=/usr/local/Cellar/pyth
+    ==> make
+    ==> make install PYTHONAPPSDIR=/usr/local/Cellar/python/2.7.9
+    ==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python/2.7.9/share/python
+    ==> Downloading https://pypi.python.org/packages/source/s/setuptools/setuptools-15.0.tar.gz
+    ######################################################################## 100.0%
+    ==> Downloading https://pypi.python.org/packages/source/p/pip/pip-6.1.0.tar.gz
+    ######################################################################## 100.0%
+    ==> Caveats
+    Pip and setuptools have been installed. To update them
+      pip install --upgrade pip setuptools
 
-You can install Python packages with
-  pip install <package>
+    You can install Python packages with
+      pip install <package>
 
-They will install into the site-package directory
-  /usr/local/lib/python2.7/site-packages
+    They will install into the site-package directory
+      /usr/local/lib/python2.7/site-packages
 
-See: https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Homebrew-and-Python.md
+    See: https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Homebrew-and-Python.md
 
-.app bundles were installed.
-Run `brew linkapps python` to symlink these to /Applications.
+    .app bundles were installed.
+    Run `brew linkapps python` to symlink these to /Applications.
 
-...
+    ...
 
-==> Pouring sip-4.16.5.yosemite.bottle.1.tar.gz
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-AttributeError: 'module' object has no attribute 'getusersitepackages'
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-AttributeError: 'module' object has no attribute 'getusersitepackages'
-==> Caveats
-The sip-dir for Python is /usr/local/share/sip.
+    ==> Pouring sip-4.16.5.yosemite.bottle.1.tar.gz
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+    AttributeError: 'module' object has no attribute 'getusersitepackages'
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+    AttributeError: 'module' object has no attribute 'getusersitepackages'
+    ==> Caveats
+    The sip-dir for Python is /usr/local/share/sip.
 
-Python modules have been installed and Homebrew's site-packages is not
-in your Python sys.path, so you will not be able to import the modules
-this formula installed. If you plan to develop with these modules,
-please run:
-  mkdir -p
-  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> homebrew.pth
-==> Summary
-🍺  /usr/local/Cellar/sip/4.16.5: 10 files, 864K
+    Python modules have been installed and Homebrew's site-packages is not
+    in your Python sys.path, so you will not be able to import the modules
+    this formula installed. If you plan to develop with these modules,
+    please run:
+      mkdir -p
+      echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> homebrew.pth
+    ==> Summary
+    🍺  /usr/local/Cellar/sip/4.16.5: 10 files, 864K
 
-...
+    ...
 
-==> Pouring pyqt-4.11.3.yosemite.bottle.tar.gz
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-AttributeError: 'module' object has no attribute 'getusersitepackages'
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-AttributeError: 'module' object has no attribute 'getusersitepackages'
-==> Caveats
-Phonon support is broken.
+    ==> Pouring pyqt-4.11.3.yosemite.bottle.tar.gz
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+    AttributeError: 'module' object has no attribute 'getusersitepackages'
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+    AttributeError: 'module' object has no attribute 'getusersitepackages'
+    ==> Caveats
+    Phonon support is broken.
 
-Python modules have been installed and Homebrew's site-packages is not
-in your Python sys.path, so you will not be able to import the modules
-this formula installed. If you plan to develop with these modules,
-please run:
-  mkdir -p
-  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> homebrew.pth
-==> Summary
-🍺  /usr/local/Cellar/pyqt/4.11.3: 560 files, 19M
+    Python modules have been installed and Homebrew's site-packages is not
+    in your Python sys.path, so you will not be able to import the modules
+    this formula installed. If you plan to develop with these modules,
+    please run:
+      mkdir -p
+      echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> homebrew.pth
+    ==> Summary
+    🍺  /usr/local/Cellar/pyqt/4.11.3: 560 files, 19M
 
 
 
@@ -389,20 +414,18 @@ $ pyenv versions
 
 以及:
 
-```bash
-$ brew install pyqt
-==> Downloading http://downloads.sf.net/project/pyqt/PyQt4/PyQt-4.10.3/PyQt-mac-gpl-4.10.3.tar.gz
-Already downloaded: /Library/Caches/Homebrew/pyqt-4.10.3.tar.gz
-==> Patching
-patching file configure.py
-==> /usr/local/opt/python/bin/python2 configure.py --confirm-license --bindir=/usr/local/Cellar/pyqt/4.10.3/bin --destdir=/usr/local/Cellar/
-Error: Unable to find the qmake configuration file
-/usr/local/Cellar/qt/4.8.5/mkspecs/unsupported/macx-clang-libc++/qmake.conf.
-Use the QMAKESPEC environment variable to specify the correct platform.
-Determining the layout of your Qt installation...
+    $ brew install pyqt
+    ==> Downloading http://downloads.sf.net/project/pyqt/PyQt4/PyQt-4.10.3/PyQt-mac-gpl-4.10.3.tar.gz
+    Already downloaded: /Library/Caches/Homebrew/pyqt-4.10.3.tar.gz
+    ==> Patching
+    patching file configure.py
+    ==> /usr/local/opt/python/bin/python2 configure.py --confirm-license --bindir=/usr/local/Cellar/pyqt/4.10.3/bin --destdir=/usr/local/Cellar/
+    Error: Unable to find the qmake configuration file
+    /usr/local/Cellar/qt/4.8.5/mkspecs/unsupported/macx-clang-libc++/qmake.conf.
+    Use the QMAKESPEC environment variable to specify the correct platform.
+    Determining the layout of your Qt installation...
 
-READ THIS: https://github.com/Homebrew/homebrew/wiki/troubleshooting
-```
+    READ THIS: https://github.com/Homebrew/homebrew/wiki/troubleshooting
 
 多多 Google 吧,很标准的环境驱动, Qt 官方提供了的,
 
@@ -465,6 +488,8 @@ alias leolanch="python /opt/bin/leo/launchLeo.py >> /dev/null 2>&1 &"
 
 # Changelog
 
+- 160419 增补后来的折腾
 - 140616 再次精简,算是发布
 - 140505 快速简述完成
 - 140110 起意,总结
+

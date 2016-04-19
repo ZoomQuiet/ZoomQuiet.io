@@ -298,7 +298,7 @@ Overwrite the outline node?
 
 ![ekr2](http://leoeditor.com/ekr2.gif)
 
-只能祝 LLP 了
+只能祝 **LL&P** 了
 
 `live long and prosper`
 
