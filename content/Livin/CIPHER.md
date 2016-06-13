@@ -1,4 +1,4 @@
-Title: KnewOne-talk 之 大妈 篇
+Title: who's gonna...
 Date: 1996-11-11 11:11
 Tags: manga,Livin,Zoomq
 Slug: cipher-who-s-gonna
