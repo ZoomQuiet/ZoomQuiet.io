@@ -42,6 +42,8 @@ Bash completion has been installed to:
 ### AMD-Action:authenticate:SP
 ~ 为了复用原先的配置,结果引发了这个大问题!
 
+
+
 参考: [Grh.am - Pesky "AMD-Action:authenticate:SP" and its Fix](https://grh.am/2015/amd-action-authenticate/)
 
 最后还是小心的对应折腾了一下:
