@@ -1,4 +1,4 @@
-Title: 为毛俺不担心所谓Python用户流失
+Title: 再见了 Python
 Date: 2015-01-10
 Tags: Weekly,Zh
 Slug: saying-ggodby-python-zh
