@@ -62,7 +62,7 @@ This seems to reproduce the native syntax highlighting of IPython.
 ```
 
 ## 是也乎
-原未 `IPy[:] notebook` 天然就内置了这种能力!
+原来... `IPy[:] notebook` 天然就内置了这种能力!
 
 ## Changelog
 

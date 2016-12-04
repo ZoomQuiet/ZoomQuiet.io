@@ -104,5 +104,12 @@ Anyway, that’s where I am now. No longer a language partisan, unclear of what 
 
 ## Changelog
 
+- 161201 是也乎,(￣▽￣)
+    + 发现也没有必要逐字翻译
+    + 作者是位勤劳的 Pythonista, 创造了从 SQLObject 到 Silver Lining 等等一系列
+    + 不成功的模块/工具/工程
+    + 现在是 `TogetherJS` 发起人
+    + 之所以从 Python 转进 JS 世界,只是因为感觉在 Python 中无论折腾什么都会进入混乱的竞争
+    + 细思恐极...
 - 150112 整理到个人 blog
 - 150110 从周刊中发现,决定翻译
