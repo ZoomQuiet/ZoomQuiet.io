@@ -1,7 +1,7 @@
 Title: 设计
 Date: 2013-12-19
 Tags: doc
-Slug: designing
+Slug: design
 Author: Zoom.Quiet
 
 # Design for everything

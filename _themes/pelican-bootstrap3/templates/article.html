@@ -19,10 +19,12 @@
                         {% include "includes/article_info.html" %}
                     </div>
                 </div>
-
 {% if article.toc %}
+    <nav class="toc">
     {{ article.toc }}
+    </nav>
 {% endif %}
+
                 {{ article.content }}
             </div>
             <!-- /.entry-content -->

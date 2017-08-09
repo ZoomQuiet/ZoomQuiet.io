@@ -3,7 +3,9 @@
 from __future__ import unicode_literals
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-
+'''Problem Faced when integrating with Elegant Themes. - Surprise. · Archer Imagine 
+    http://archerimagine.com/articles/pelican/integration-problem-with-elegant-theme.html
+'''
 ###############################################################
 ###############################################################   Site abt.
 ###############################################################
@@ -13,7 +15,7 @@ AUTHOR_INFOS = True
 SITENAME = u''
 SITEDESC = u'ZoomQuiet.io'
 SITENOTE = u".io"
-SITETITLE = u'#是也乎#'
+SITETITLE = u'是也乎(￣▽￣)'
 SITEURL = 'http://blog.zoomquiet.io'
 DISQUS_SITENAME = u"blogzoomquietio" #填入你的Shortname
 
@@ -36,18 +38,26 @@ FILENAME_METADATA = '(?P<slug>.*)'
 ###############################################################   Plugins abt.
 ###############################################################
 # Plugins 
-PLUGINS=['_plugins.sitemap'
-    , '_plugins.extract_toc'
+PLUGIN_PATHS = ['_plugins']
+PLUGINS=['sitemap'
+    , 'extract_toc'
+    , 'neighbors'
     #, '_plugins.gzip_cache'
     #, u"pelican.plugins.disqus_static"
     ]
 
 #   upgraded Pelican 3.3 must self open them
-MD_EXTENSIONS = (['codehilite(css_class=highlight)'
-    , 'extra', 'abbr', 'attr_list', 'def_list', 'fenced_code', 'smart_strong'
-    , 'admonition', 'meta', 'tables', 'sane_lists'
-    , 'toc'
-    ])
+#MD_EXTENSIONS = (['toc'])
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.toc' :{'permalink' : 'true'},
+    },
+    'output_format': 'html5',
+}
 
 SITEMAP = {
     'format': 'xml',
@@ -86,7 +96,10 @@ ADDTHIS_PROFILE = None #True
 MENUITEMS = (('PyChina', 'http://pychina.org')
     #, ('Zoom.Quiet', 'http://zoomquiet.io')
     , ('OBP', 'http://obp.zoomquiet.io')
+    , ('abt.', '/pages/about.html')
+    , ('design', '/pages/design.html')
     )
+DISPLAY_PAGES_ON_MENU = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 # ('rss', SITEURL + '/' + FEED_ALL_ATOM)

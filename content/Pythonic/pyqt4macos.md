@@ -6,7 +6,7 @@ Slug: pyqt4macos
 
 [TOC]
 
-## 背景
+### 背景
 
 最近在折腾 Qt , 因为在 mac 中开发运行在 win10 中,
 用 PyQt 是必然选择哪.
