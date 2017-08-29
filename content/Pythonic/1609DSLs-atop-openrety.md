@@ -471,6 +471,544 @@ sregex 将是 OpenResty 接下来的重心!
 (`好吧, 重要的事儿得说三次`)
 
 
+![p38](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide38_A-Web-Platform-As-A-Virtual-Machine.png)
+
+回到主题: 建立在 OpenResty 上的 DSL
+
+先分享了一系列 OpenResty 的新功能,
+
+但是,更重要的是, 春哥认为:
+
+- OpenResty 可以视作 VM(虚拟机)
+- 就象 JVM
+- 可以更加强大, 更加面向 web
+
+
+![p39](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide39_lz.taobao.com_.png)
+
+这个实验其实是7~8年前完成的,不算新鲜,但是,实验是值得回味的.
+
+那时春哥供职 taobao, 是 alibaba 集团子公司, 是中国最大的 B2C 平台,
+当时在数据分析部门,
+客户是 taobao 的商家, 类似 eBay 的商家就是卖家一样.
+
+客户需要一个流量分析工具, 
+来统计店面的流量,和广告部署/销售间的影响力关系,
+这是个非常大的产品.
+
+(`是也乎:`
+
+为什么大? 因为要分析的数据量,相当于好几个 twitter 的数据量....
+)
+
+![p40](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide40_Taobao-homepage.png)
+
+
+这是产品首页
+
+
+![p41](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide41_chart.png)
+
+给出了类似 google 分析样漂亮的图表,
+所不同的是有更多数据报告.
+
+
+![p42](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide42_data-volume.png)
+
+由于 yaobao 的体量,数据量很大, 非常的大
+
+
+![p43](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide43_experiment-on-the-client-side.png)
+
+当时春哥 放胆在客户端进行各种尝试,8年前:
+
+- 整个儿应用逻辑已经全部在前端了
+- 类似 gmail ,完全由一组运行在网页中的脚本构建
+- 还引入了客户端模板:
+    + 构建了一个能从模板生成 JS 代码的引擎
+- 另外也提供了 web 服务来驱动客户端应用
+- 总之, web 服务是关键,是唯一运行在服务器上的东西
+    + 将 JSON 发送给客户端
+    + JS 用编译后的模板生成页面区域
+
+
+![p44](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide44_server-side-.png)
+
+量子统计整体架构如上:
+
+- OpenResty 位于后端和浏览器之间
+- 后端是 MySQL 集群,因为数据量大, 光卷就有超过1亿个
+- 另外还有实时统计集群作支撑
+- 同时还作为一个开放平台发布 JSON 的 API
+- 以及 Memcached 和 Tokyo Tyrant 集群来管理其它元数据
+- 但是, 相比其它系统要简洁的多,只用 PHP 来运行
+
+
+![p45](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide45_-Inventing-LZSQL.png)
+
+春哥很快意识到关键问题:
+
+- 没有足够的人力来支撑开发
+- 整个儿团队只有两个实习生
+- 但是, 不得不将原先 PHP 编写的整个儿数据分析产品迁移到 OpenResty 平台
+- 即使迫使实习生拼命写 Lua 代码,但是,面对复杂到狂乱的业务逻辑,这是个不可能的任务
+
+春哥用了一个晚上思考, 决定:
+
+- 基于对数据分析核心模型/模式的理解
+- 构建自己的 DSL
+- 以便用更加自然的形式来描述业务
+
+毕竟: `什么是编程?`
+
+- 本质上是和机器对话
+- 令机器理解我们的意图
+- 从而快速/便宜/可靠的完成业务
+
+所以, 编程的关键是:
+
+    提高同机器对话的效率
+
+
+那么, 如果你能用两个词或是一个句子来表达一个想法,
+为毛要使用十多行代码? 那也忒自虐了!
+
+所以, 春哥不喜欢 JAVA, 因为要输入的代码太多了,
+Lua 也不是个好形式, 以及其它现有的所有命令式通用开发语言
+
+
+![p46](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide46_to-convey-the-idea-to-the-machine.png)
+
+
+所以有了第一个 DSL: `LZSQL`
+
+- 基于SQL 的形式, 快速传达想法给系统
+- 为什么选择 SQL ? 
+    + 因为数据分析产品本质上是基于关系型数据模型的
+    + 无论是否使用 SQL 数据库
+- 我们可以在 SQL 中定义变量和用户变量, 作为第一公民
+- SQL 可以在一些 MySQL 后端运行
+- 也可以在 NGINX 中运行
+    + 因为实现了包含 SQL 引擎的内存数据库
+    + 只有100行左右的 Lua 代码
+    + 运行良好
+- 复杂性来源是因为数据不得不来自很多不同的 MySQL 数据库
+- 然后在内存中重新关联, 并组合成最终结果发送到客户端
+- 这其中涉及很多棘手的问题:
+    + 必须能分解 SQL 到不同节点上运行
+    + 同时还能自动优化 SQL 查询 
+        * ~ MySQL 自己的优化器通常无法完成海量优化
+        * 特别是在 OLAP 场景中
+        * (在线分析过程)
+
+
+![p47](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide47_writing-the-business-logic-in-LZSQL-files.png)
+
+最终, 实际上我们用 LZSQL 来记述业务逻辑,
+用编译器生成 Lua 代码,
+在线发布 Lua 代码并运行,
+而线上不再需要编译器.
+
+这就是 `编译` 的美妙所在.
+
+
+![p48](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide48_to-compile-the-LZSQL-files.png)
+
+当前的, 提供 CLI 工具,
+完成 LZSQL 脚本的编译, 链接到最终 Lua 应用程序.
+
+
+![p49](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide49_The-result.png)
+
+其结果非常赞:
+
+- 因为编译器可以进行很多优化
+- 人通常不能, 甚至于不能正确运行
+
+旧业务是 PHP 编写的,新接口由春哥编译器生成 Lua 代码,
+
+- 请求延迟下降超过 90%,
+- 甚至于这包含了 MySQL 的延迟,
+- 上图是一次完整的 接口 HTTP 延迟对比
+
+值得注意的是, 这时使用的还是标准的 Lua 解释器
+
+
+![p50](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide50_still-using-the-interpreter-only.png)
+
+进一步的, 仅仅切换为 LuaJIT , 速度就获得进一步加强
+
+
+![p51](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide51_4000-lines-of-Perl.png)
+
+而实际上, LZSQL 编译器,仅仅是 4000行 Perl 代码,
+但是,包含了非常复杂的优化和类型检查以及一应上下文相关的分析过程.
+
+
+![p52](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide52_several-code-emitters.png)
+
+而且, 编译器包含了:
+
+- 一个解析自己的解析器
+- 一个 AST(抽象语法树)
+- 一堆优化器
+- 一个代码映射器
+    + 其实是多种映射器
+    + 因为 LZSQL 支持多种语言后端
+
+
+
+![p53](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide53_why-not-C-code.png)
+
+是的, 当时可以生成 Lua 代码,
+当然, 也可以生成 C 代码.
+
+
+![p54](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide54_generate-an-NGINX-model.png)
+
+是的, 当时后端是一个实时数据库, 提供了非常具体和复杂的线程协议,以至难以人工完成客户端.
+
+但是, 数据库发布有一个完备的wiki 文档:
+
+- 那么为毛不让电脑可以理解文档
+- 自动生成一个 NGINX C 模块来调用呢?
+
+于是, 春哥实现了这个想法
+
+
+![p55](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide55_Ticpy.png)
+
+![p56](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide56_implementation-example.png)
+
+是的, 嘦很小的 DSL 抽象就可以解析 wiki 文档.
+
+
+![p57](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide57_a-very-quick-Perl-script.png)
+
+于是, 再再再次用 Perl 快速完成了一个编译器来从文档生成 NGINX C 模块,
+可以自由的通过 NGINX 来和数据库交互,
+
+这算 NGINC 的上游模块.
+
+
+![p58](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide58_just-300-lines-of-code.png)
+
+是的, 文档只有300行, 但是生成的 C 模块有12000行代码.
+
+
+![p59](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide59_Writing-Programs-to-Write-Programs-to-Write-Programs.png)
+
+这一案例说明:
+
+- 编程就是和机器沟通
+- 如果文档足够完备
+- 那么完全可以直接转换给机器
+- 从而避免了人工编程的各种糟心事儿
+- 这一切指向了一个觉悟:
+
+:
+ 
+    宁愿写程序上编程来生成代码
+
+(`是也乎:` 也嫑直接写业务代码)
+
+
+![p60](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide60_Test-Scaffold.png)
+
+同时我们的测试脚手架也是基于 DSL 的:
+
+- `Test::Nginx::Socket` 被所有 OpenResty 工程引用
+- 以规范的形式来描述测试用例
+
+即使你不会 Perl 也没有关系:
+
+- 嘦按照规范提供描述
+- 服务就能理解并进行对应测试
+
+
+![p61](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide61_How-About-Tests.png)
+
+幻灯参考: http://search.cpan.org/perldoc?Cheater
+
+
+接下来的一件大事:
+
+- 对于新产品
+- 数据库中还没有真实的业务数据时
+- 如何进行测试?
+- 我们需要数据来测试 SQL 查询/网页/服务/...
+
+所以, 春哥再再再再次用 Perl 实现了一个类似 SQL 语言的建数据表用的 DSL
+
+
+![p62](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide62_Cheater.png)
+
+就是 Cheater 工具:
+
+- 用正则表达式来指定允许渲染的字段
+- 并能指定依赖的外链
+- 那么这工具就能生成满足所有约束和要求的随机数据
+
+
+![p63](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide63_The-OpenResty-Model-Language.png)
+
+回到 OpenResty 场景中, 从多年前的实验中可以学到:
+
+- 可以通过设计/实现模式语言来简化开发
+- 可以在 OpenResty 中使用 SQL 
+- 编译器知道在哪儿运行:
+    + 本地或是远程
+    + 又或是混合
+- 在不同数据库中运行 SQL ,甚至于不一定是关系型数据库
+
+
+![p64](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide64_The-OpenResty-View-Language.png)
+
+另外, 也发布有 OpenResty View 语言:
+
+- 基于 [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) 模型
+- 在 View 层:
+    + Perl 有 TT2
+    + Python 有 Jinja2
+- 现在有了自己的 DSL 就可以生成客户端 JS 或是服务端 Lua 代码
+- 这是 DSL 的优势
+
+
+![p65](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide65_Jemplate-Lemplate.png)
+
+
+- Jemplate 将 Perl 的 TT2 模板转换为 JS 代码
+- Lemplate 则编译成 OpenResty Lua 代码
+
+
+![p66](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide66_The-OpenResty-Controller-Language.png)
+
+这又是一件大事儿
+
+
+![p67](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide67_it%E2%80%99s-a-Lua-based-language.png)
+
+看起来是这样的:
+
+- 基于规则的语言
+    + 你只需要描述一系列规则
+    + 箭头左侧是谓词, 类似条件
+    + 箭头右侧是行为, 比如重定向/返回错误码...
+- 那些谓词其实是无效的 (不会导致执行具体的行动)
+- 编译器进一步优化的话, 就能将机关的谓词合并起来
+- 多数 CDN 业务编辑都可以如此表述<--这就是 CDN 市场的本质
+
+不同的商业模式包含共同的内在特性:
+
+- 这是可能的也是可以的
+- 比如数据分析业务共同的模式是关系模式
+- SQL 语言洽好是这种模式的表述形式
+
+对于 CDN 或是 WAF 型的业务:
+
+- 应该就是规则集的模型
+- 理论上是个 `前向链专家系统模型`
+
+春哥是 AI 的资深粉丝
+
+- 高中时就研究过各种流派的 AI 实现
+- 当前机器学习是热点
+- 而专家系统是 AI 的分支, 并没有过时
+- 比如说:
+    + 基于 Prolog 的语法解析, 在自然语言研究领域很流行
+    + 而语义解析, 则多用 CLISP
+- 70年代 NASA 就折腾过类似的
+
+
+![p68](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide68_remove-all-the-C-comments.png)
+
+OpenResty 也支持组合多个 正则表达式 来执行复杂的过滤:
+
+- 这样,所有替换在 NGNIX 输出过滤器中
+    + 是缓冲实时完成的
+    + 所以, 定长缓冲区, 无限数据流处理
+- 非常 COOL , 不是嘛?
+
+上图是批量从 C++ 中删除注释的案例
+
+- 你可以稍微修订就能支持 CSS/JS 的注释删除
+- 当然的,这是基于 sregex 的
+
+
+![p69](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide69_-WAF-Hot.png)
+
+
+WAF 是热点, 公司已在为 NGINX 推出 ModSecurity 端口,
+
+春哥看来 WAF 本身就可以基于前述控制语言来完成.
+
+
+![p70](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide70_ModSecurity-a-Horrible-DSL.png)
+
+ModSecurity 本身作为 DSL 很可怕
+
+![p71](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide72_-Example-of-a-Poor-Rule.png)
+
+这是 ModSecurity 一个线路的描述
+
+已经复杂到天际了, 而厂商们还发明了各种更加复杂 WAF 语法,
+只是为了表述类似 `if-else` 的逻辑
+
+那么为什么不创建我们这样简洁的 DSL ?
+
+
+![p72](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide71_it%E2%80%99s-a-Lua-based-language-2.png)
+
+这样的语法就干净很多:
+
+- 也支持短路:如果第一条匹配了,就跳过后续的
+- 本质上只是个 `if-else` 不必要进行深度嵌套
+- 如果查阅其它 CDN 厂商的 VSL 代码
+    + 其实就是一堆堆的 `if-else`
+    + 是的, 很疯狂
+
+
+
+![p73](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide73_Model-View-Controller.png)
+
+- 模式 ~ 不同种类的商业系统都有内在相似的模型,从而抽象为一个 DSL
+- 视图 ~ 已经完成很多种模板语言,都是 DSL
+- 控制 ~ 也已经展示了, 通过规则的描述可以简洁的完成 WAF 业务的定义
+
+
+![p74](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide74_SportLang.png)
+
+运动类游戏当然也可以拥有自己的语言, 来描述业务系统.
+
+    还能更 COOL 嘛?
+
+我们作为软件行业的专业人士,
+讲真, 强迫其它行业用户(如物理/数学/建筑/哲学...)来使用计算机语言,
+这本身算是种耻辱吧.
+
+理想情景中, 我们应该支持用户:
+
+- 使用他们熟悉的领域语言
+- 自然的描述
+- 而机器可以理解并运算
+
+而且, 同时:
+
+- DSL 还包含了大量的自动优化过程
+- 毕竟这不是每个程序猿都知道的技巧
+
+
+![p75](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide75_The-Y-Language.png)
+
+
+当前我们内部已经在使用 Y 语言:
+
+这是全新的能调试多种语言的工具, 类似 GDB, SystemTap, LuaJIT
+
+
+![p76](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide76_CoffeeScript.png)
+
+
+另外也支持 CoffeeScript :
+
+- 毕竟 CoffeeScript 很受欢迎
+- 这种 DSL 可以生成 JS
+- 现在我们可以从 CoffeeScript 生成 OpenResty Lua 代码
+
+
+![p77](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide77_A-Meta-DSL.png)
+
+我们也有元DSL:
+
+- 用来生成其它所有 DSL 的 DSL
+- 包含 元DSL 本身
+
+我们还有创建编译器的 DSL, 能生成:
+
+- DSL 编译器
+- DSL 优化器
+
+Perl 一直是 春哥 的第一序列武器,
+但是,并一定是最好的,
+最终可能为构建编译创建专用 DSL
+
+
+
+![p78](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide78_Clean-Separation.png)
+
+
+我们可以在业务描述和业务实现间进行清晰的隔离.
+
+这意味着我们可以一夜之间, 完成业务系统实现技术桟的切换,而不用触动具体的业务代码.
+
+比如说:
+
+- 我们可以将当前运行在 OpenResty 上的业务系统
+- 一键迁移到 C 甚至于汇编代码上
+- 而不会变动业务逻辑
+- 甚至于将来迁移到新技术桟上, 也不用改变业务代码
+    + 只需要编写一个新的后端优化器
+    + 并添加到现有的 DSL 编译器中就好
+
+
+![p79](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide79_Compiling-Style-Web-Frameworks.png)
+
+此外, 我们也将获得全新的 web 应用框架:
+
+- 编译型的
+- 不再依赖一层层的嵌套, 从而令开发运行都越来越慢
+
+我们必须同时实现美丽和效率:
+
+> 这是未来商业产品级工程的必须特性
+
+
+![p80](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide80_The-Best-Language.png)
+
+最好的语言就是 `商业语言` 正如春哥意识到的
+
+基于商业语言开发,还有一个好处就是:
+
+- 一但完成了一个 DSL 
+- 将一些业务逻辑放入后
+- 如果有幸拿到客户原始需求文档
+- 两厢对比,发现接近
+- 就意味着作对了 ;-)
+
+
+其实, 还有最好的方式来描述具体的领域问题:
+
+
+![p81](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide81_The-Machine-Truly-Understands-Business-Logic.png)
+
+
+是的, 只有机器真正理解你的业务逻辑, 那么:
+
+- 可以获得比以往更多的嗯哼
+- 比如自动生成测试用例
+- 完成上下文分析
+- 或者干脆为你即时生成真正可运行的实例
+
+(`是也乎:`
+
+这, 才是 OpenResty 真正的目标:
+
+> 逼所有程序猿变成产品经理
+
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## TLog
 
 - .5h 决定
