@@ -57,6 +57,7 @@ OpenResty 不仅仅将 LuaJIT 嵌入到 NGINX ,
 - timers
 
 
+### OR 的世界观
 
 ![p6](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide6_The-All-Inclusive-Philosophy.png)
 
@@ -178,6 +179,9 @@ golang 其实也借鉴了我们这一设计
 还有人拿个模块实现了类似 syslog 的 TCP 守护进程,
 来接收远程的大量日志.
 
+
+
+
 ![p18](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide18_Advanced-Debugging-Profiling-Tools-Based-on-GDB-SystemTap.png)
 
 多年以来, 我们积累了大量的专用测试工具.
@@ -202,6 +206,7 @@ golang 其实也借鉴了我们这一设计
 嗯哼? LISP 构造的系统, 从一开始就这样的哪?!
 )
 
+### OR 的应用场景
 
 ![p19](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide19_C2000K.png)
 
@@ -360,6 +365,8 @@ Datanet 则是另外一个类似的项目,
 )
 
 
+### 大事儿: sregex
+
 ![p29](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide29_Sregex.png)
 
 sregex <-- 春哥一直在造的轮那 ~ 正则表达式引擎,
@@ -470,6 +477,7 @@ sregex 将是 OpenResty 接下来的重心!
 
 (`好吧, 重要的事儿得说三次`)
 
+### DSL实验: LZSQL
 
 ![p38](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide38_A-Web-Platform-As-A-Virtual-Machine.png)
 
@@ -726,6 +734,8 @@ Lua 也不是个好形式, 以及其它现有的所有命令式通用开发语�
 - 服务就能理解并进行对应测试
 
 
+### DSL 的爆发
+
 ![p61](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide61_How-About-Tests.png)
 
 幻灯参考: http://search.cpan.org/perldoc?Cheater
@@ -868,6 +878,7 @@ ModSecurity 本身作为 DSL 很可怕
     + 是的, 很疯狂
 
 
+### OR 的目标
 
 ![p73](https://cdn-1.wp.nginx.com/wp-content/uploads/2017/08/Yichun_Zhang-conf2016-slide73_Model-View-Controller.png)
 
@@ -1001,14 +1012,8 @@ Perl 一直是 春哥 的第一序列武器,
 
 
 
-
-
-
-
-
-
-
-
 ## TLog
 
-- .5h 决定
+- .5h 决定嗯哼
+- 2.h 完成上篇
+- 2.5h 完成下篇
