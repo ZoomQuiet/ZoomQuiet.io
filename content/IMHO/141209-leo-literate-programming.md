@@ -1,4 +1,4 @@
-Title: 熟练使用文学编程（literate programming）是怎样一番体验?
+Title: 熟练使用文学编程(literate programming)是怎样一番体验?
 Date: 2014-12-09 21:21:21 
 Tags: DAMA, Pythoneer, Leo
 Slug: 141209-leo-literate-programming
@@ -7,7 +7,7 @@ Slug: 141209-leo-literate-programming
 
 ![Literate_Programming_book_cover](http://upload.wikimedia.org/wikipedia/en/thumb/6/62/Literate_Programming_book_cover.jpg/220px-Literate_Programming_book_cover.jpg)
 
-[熟练使用文学编程（literate programming）是怎样一番体验? - 知乎](http://www.zhihu.com/question/26978956)
+[熟练使用文学编程(literate programming)是怎样一番体验? - 知乎](http://www.zhihu.com/question/26978956)
 
 然后有人戳了俺...
 

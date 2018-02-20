@@ -5,7 +5,7 @@ Slug: 141212-hierarchy-of-disagreement
 
 [TOC]
 
-![141212-ask-binghe.lisp.jpg（JPEG 图像，1024x650 像素）](http://zoomq.qiniudn.com/ZQCollection/snap/141212-ask-binghe.lisp.jpg?imageView2/2/w/512)
+![141212-ask-binghe.lisp.jpg(JPEG 图像,1024x650 像素)](http://zoomq.qiniudn.com/ZQCollection/snap/141212-ask-binghe.lisp.jpg?imageView2/2/w/512)
 
 人称伞哥的传奇人物: [田春](http://www.ituring.com.cn/article/553)
 怎么应对的呢?...
@@ -16,7 +16,7 @@ Slug: 141212-hierarchy-of-disagreement
 
 揭晓答案前, 俺忍不住, 得推荐一下古今中外有关骂人相关的经验了:
 
-- [梁实秋《骂人的艺术》- 现代散文](http://www.ccview.net/htm/xiandai/wen/liangshiqiu009.htm)
+- [梁实秋"骂人的艺术"- 现代散文](http://www.ccview.net/htm/xiandai/wen/liangshiqiu009.htm)
 - [如何优雅的对待他人的批评 - MacTalk By 池建强](http://www.zhixuan.com/toutiao/article/5431)
 - [Paul Graham的如何嘴炮 金字塔](http://phiphicake.blogspot.hk/2012/01/paul-graham.html)
     + 解读: [反驳别人的七个层次 | 左岸读书](http://www.zreading.cn/archives/4137.html)
@@ -25,12 +25,12 @@ Slug: 141212-hierarchy-of-disagreement
 
 再来看 伞哥 的回复:
 
-![141212-answer-binghe.lisp.jpg（JPEG 图像，1024x713 像素）](http://zoomq.qiniudn.com/ZQCollection/snap/141212-answer-binghe.lisp.jpg)
+![141212-answer-binghe.lisp.jpg(JPEG 图像,1024x713 像素)](http://zoomq.qiniudn.com/ZQCollection/snap/141212-answer-binghe.lisp.jpg)
 
 
 对比学术化的 "反驳的层级" 分析图谱
 
-![hierarchy_of_disagreement.jpg（JPEG 图像，640x554 像素）](http://zoomq.qiniudn.com/ZQCollection/snap/hierarchy_of_disagreement.jpg)
+![hierarchy_of_disagreement.jpg(JPEG 图像,640x554 像素)](http://zoomq.qiniudn.com/ZQCollection/snap/hierarchy_of_disagreement.jpg)
 
 可以清晰的感受到:
 
