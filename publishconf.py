@@ -9,7 +9,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://blog.zoomquiet.io'
+SITEURL = 'https://blog.zoomquiet.io'
 DISQUS_SITENAME = u"blogzoomquietio" #填入你的Shortname
 DELETE_OUTPUT_DIRECTORY = None #因为嵌套仓库的原因,不能清除发布目录!
 

@@ -105,6 +105,8 @@ Slug: jump-into-ssl
 
 - 而且人家立即有挽救邮件来问, 为毛走哪....
 
+![邮件事务](_images/ssl-domain-transfer-flow.png)
+
 
 > namecheap 中进行恢复
 
@@ -169,6 +171,13 @@ Slug: jump-into-ssl
 
 ![资源丢失](_images/ssl-res-load-err.png)
 
+修订配置文件 `pelicanconf.py`: 
+
+    SITEURL = 'http://blog.zoomquiet.io'
+    -->
+            'https://blog.zoomquiet.io'
+
+
 
 
 ### gl-pages
@@ -229,3 +238,12 @@ Slug: jump-into-ssl
     + [iwantmyname \| How do I transfer a domain to another re\.\.\.](https://help.iwantmyname.com/customer/portal/articles/184477-how-do-i-transfer-a-domain-to-another-registrar-)
     + [iwantmyname \| Domain Transfer](https://help.iwantmyname.com/customer/portal/topics/83858-domain-transfer)
     + ...
+
+
+## Sayeahooo
+
+- 4h 资料搜索理解
+- 2d gitlab 尝试/生效
+- 4h github 嗯哼
+    + 3h 域名迁移尝试
+

@@ -16,7 +16,7 @@ SITENAME = u''
 SITEDESC = u'ZoomQuiet.io'
 SITENOTE = u".io"
 SITETITLE = u'是也乎(￣▽￣)'
-SITEURL = 'http://blog.zoomquiet.io'
+SITEURL = 'https://blog.zoomquiet.io'
 DISQUS_SITENAME = u"blogzoomquietio" #填入你的Shortname
 
 MARKUP = ('md', 'rst',)#'rst', 'html', 
@@ -103,7 +103,7 @@ DISPLAY_PAGES_ON_MENU = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 # ('rss', SITEURL + '/' + FEED_ALL_ATOM)
-SOCIAL = (('.io', 'http://ZoomQuiet.io')
+SOCIAL = (('.io', 'https://ZoomQuiet.io')
 
         , ('Wiki', 'http://wiki.zoomquiet.io')
         , ('旧曰', 'http://blog.zoomquiet.org/pyblosxom/')
