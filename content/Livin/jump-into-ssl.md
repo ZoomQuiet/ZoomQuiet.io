@@ -21,6 +21,14 @@ Slug: jump-into-ssl
 
 ## logging
 
+整体上, 无论在哪个 `*-pages` 平台, 要折腾的事儿相似, 就3步:
+
+- 追加配置含 `SSL` 解析能力的 DNS 服务主机 `A` 地址
+    + 并解决引发的有关 `CANEM` 冲突问题
+- 在 `*-pages` 平台配置 `Enforce HTTPS` 有关嗯哼
+- 优雅的等待一切生效 ;-)
+    + 并解决可能的资源冲突问题
+
 ### gh-pages
 
 原先的:
@@ -167,6 +175,7 @@ Slug: jump-into-ssl
 
 ![检验](_images/ssl-chrome-chk.png)
 
+
 当然, 原先模板中一系列资源指向老 `http` 资源都无法使用了
 
 ![资源丢失](_images/ssl-res-load-err.png)
@@ -177,11 +186,39 @@ Slug: jump-into-ssl
     -->
             'https://blog.zoomquiet.io'
 
+但是, 进行 push 失败:
+
+    ༄  git pu
+
+    To github.com:ZoomQuiet/ZoomQuiet.github.io.git
+     ! [rejected]        master -> master (fetch first)
+    error: failed to push some refs to 'git@github.com:ZoomQuiet/ZoomQuiet.github.io.git'
+    hint: Updates were rejected because the remote contains work that you do
+    hint: not have locally. This is usually caused by another repository pushing
+    hint: to the same ref. You may want to first integrate the remote changes
+    hint: (e.g., 'git pull ...') before pushing again.
+    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+> 因为仓库目录中 `CNAME` 文件自动构建过,和本地没同步上
+
+![CNAME 重建](_images/ssl-domain-cname-renew.png)
+
+> 再重新编译->push->等待 gh-pages 完成发布
+
+![等待部署](_images/gh-pages-waitting.png)
+
+那个褐色小点, 变成绿色对勾, 就说明一切安好...
+
+
+![WOLA](_images/ssl-all-ok.png)
 
 
 
 ### gl-pages
+其实, gitlab 上网站先持证上岗的...
 
+先出示一下成果:
 
 > ༄  dig 101.camp +nostats +nocomments +nocmd
 
@@ -194,15 +231,149 @@ Slug: jump-into-ssl
     gitlab.io.      48445   IN  NS  ns-926.awsdns-51.net.
     gitlab.io.      48445   IN  NS  ns-1697.awsdns-20.co.uk.
     gitlab.io.      48445   IN  NS  ns-288.awsdns-36.com.
-    ns-288.awsdns-36.com.   147125  IN  A   205.251.193.32
-    ns-926.awsdns-51.net.   48349   IN  A   205.251.195.158
-    ns-1116.awsdns-11.org.  136520  IN  A   205.251.196.92
-    ns-1697.awsdns-20.co.uk. 48327  IN  A   205.251.198.161
-    ns-288.awsdns-36.com.   136726  IN  AAAA    2600:9000:5301:2000::1
-    ns-926.awsdns-51.net.   48349   IN  AAAA    2600:9000:5303:9e00::1
-    ns-1116.awsdns-11.org.  136520  IN  AAAA    2600:9000:5304:5c00::1
-    ns-1697.awsdns-20.co.uk. 48327  IN  AAAA    2600:9000:5306:a100::1
+    ...
 
+#### domain
+> 首先操作就撞到神奇形象
+
+![DNSPod 升级?](_images/SSL-dnspod-acord-error.png)
+
+![DNSPod 冲突](_images/SSL-dnspod-cname-error.png)
+
+> 不得以, 迁移回 neamcheap 来配置, 顺畅完成:
+
+![neamcheap 可配](_images/SSL-namecheap-acords.png)
+
+- 当然, 这波配置, 看错文档, 配置成 github 解析主机了
+- 但是, 证明 DNSPod 完全不可用了...
+
+
+#### pages
+> 配置证书前, 得先生成, gitlab 不象 github 为用户自动生成, 得自行嗯哼
+
+- 先安装 [Certbot](https://certbot.eff.org/)
+- [Let's Encrypt](https://letsencrypt.org/) 官方推出的证书生成工具
+
+> brew install certbot
+
+然后手工给对应域名生成密匙对:
+
+    $ sudo certbot certonly -a manual -d 101.camp --email zoom.quiet@gmail.com
+
+- 注意, 这里 `-d` 参数可以叠加
+- 不过, 毎生成一个, 必须同时完成自证检验,才能继续
+- 否则, 等于放弃当前生成的密匙
+
+> 即, 蔱根据提示完成:
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    Create a file containing just this data:
+
+    iIpSoAbePD ... 1tTDSskcHQFs
+
+    And make it available on your web server at this URL:
+
+    http://101.camp/.well-known/acme-challenge/iIpSoAbePDhDmGwPUDfER-Czl_bxduu2Cp6qE-IxjLI
+
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Press Enter to Continue
+
+此时, 千万别按回车:
+
+- 得回到仓库中
+- 构建 `.well-known/acme-challenge/iIpSoAbePDhDmGwPUDfER-Czl_bxduu2Cp6qE-IxjLI` 目录
+- 并在其中构建 `index.html` 文件
+- 文件内容就那一行提供的用来检验的数据
+- 当然, 对于 gl-pages 网站
+- 只是手工建立目录和文件, 复制进入数据
+- 再 `git push` 就好
+- 只是, 按回车前, 一定要先
+    + 访问那个 URI
+    + 看一眼, 是否可以获得对应数据
+
+> 按下回车
+
+    Waiting for verification...
+    Cleaning up challenges
+
+    IMPORTANT NOTES:
+     - Congratulations! Your certificate and chain have been saved at:
+       /etc/letsencrypt/live/101.camp/fullchain.pem
+       Your key file has been saved at:
+       /etc/letsencrypt/live/101.camp/privkey.pem
+       Your cert will expire on 2019-04-23. To obtain a new or tweaked
+       version of this certificate in the future, simply run certbot
+       again. To non-interactively renew *all* of your certificates, run
+       "certbot renew"
+     - If you like Certbot, please consider supporting our work by:
+
+       Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+       Donating to EFF:                    https://eff.org/donate-le
+       
+
+嗯哼, 好了, 出现以上类似信息
+
+- 说明, 已经在官方注册好并检验通过私人证书了
+- 不过, 这种证书只有 4个月 寿命
+- 到时得运行 `certbot renew` 一下
+
+接下来正常重新配置一下 gl-pages 中的域名
+
+![gl 强制嗯哼](_images/SSL-gl-pages-ssl.png)
+
+> 打开 HTTPS 开关
+
+![gl 域名上证](_images/SSL-gl-pages-redomain.png)
+
+> 根据提示, 从本地 `letsencrypt` 证书目录中复制出有关嗯哼就好
+       
+
+- 当然, 别忘记重新在域名解析商, 配置新的 `TXT` 字串
+
+
+#### waitting
+首先..
+
+![证件无效](_images/SSL-chrome-chk-CA-not.png)
+
+然后可以看到:
+
+![检验通过](_images/SSL-CAX3-ok.png)
+
+接着...
+
+![还未安全](_images/SSL-chrome-chk-CA-ok.png)
+
+最后...
+
+![部分安全](_images/SSL-chrome-chk-info.png)
+
+这是因为有的图片/css/js 资源, 还是用 hhtp 引用的, 得升级:
+
+![iPic](_images/ipic-http.png)
+
+俺采购的工具, 才发现主要图床还是 http 的
+
+追查文档:
+
+![7牛有关页面](_images/SSL-7niu-cdn.png)
+
+> 对比隔壁 ...
+
+![UPYUN 有关页面](_images/SSL-upyun-https.png)
+
+嚓, 这不很明显, 只能选择后者了...
+
+- 当然, 又引发了欠费等等额外处置事务
+- 那就是另外的故事了
+- 但是, 反正可以先直接用 gl-pages 空间嘛
+    + 已经 HHTPS 光辉笼罩下的资源渠道...
+
+
+![一切安全](_images/SSL-chrome-chk-good.png)
+
+终于...收功
 
 
 ## summary
@@ -246,4 +417,4 @@ Slug: jump-into-ssl
 - 2d gitlab 尝试/生效
 - 4h github 嗯哼
     + 3h 域名迁移尝试
-
+- 2h 截屏,文档嗯哼...
