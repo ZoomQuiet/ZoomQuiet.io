@@ -7,6 +7,10 @@ Slug: jump-into-ssl
 
 ## BG
 
+[Let's Encrypt 2019：带来更多振奋人心的新功能 - 开源中国](https://mp.weixin.qq.com/s/qig7l-Tc1P6gp_Ldm2bQJg)
+
+被成功安利...
+
 ## goal
 
 ## logging
