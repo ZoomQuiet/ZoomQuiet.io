@@ -413,8 +413,8 @@ Slug: jump-into-ssl
 
 ## Sayeahooo
 
-- 4h 资料搜索理解
+- 1.5h 资料搜索理解
 - 2d gitlab 尝试/生效
 - 4h github 嗯哼
-    + 3h 域名迁移尝试
+    + 3.5h 域名迁移尝试
 - 2h 截屏,文档嗯哼...
