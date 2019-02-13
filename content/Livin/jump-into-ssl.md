@@ -391,9 +391,14 @@ Slug: jump-into-ssl
 
 ![SSL 配置](https://ipic.zoomquiet.top/2019-02-13-%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-13%2016.32.44.png)
 
-- 最后再回到对应云存储控制界面中, 再次绑定域名
+- 再回到对应云存储控制界面中, 再次绑定域名
+- 最后,参考: [如何进行 HTTPS 配置？ – 又拍云-文档帮助中心](https://help.upyun.com/knowledge-base/cdn-https/)
+    + 还得 `服务管理 > 功能配置 > HTTPS`, 点击 `管理` 才能真正打开 HTTPS
+
+![](https://ipic.zoomquiet.top/2019-02-13-%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-13%2017.17.32.png)
+
 - 这样就完成了隐藏的云端 SSL 密匙部署, 以及空间域名绑定过程
-- 是的, 以上两张图片都是 `HTTPS` 持证资源了
+- 是的, 以上3张图片都是 `HTTPS` 持证资源了
 
 
 
