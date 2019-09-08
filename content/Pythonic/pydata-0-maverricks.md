@@ -8,7 +8,7 @@ Slug: pydata-0-mavericks
 
 ## 背景
 
-![s27157694.jpg（JPEG 图像，300x300 像素）](http://img3.douban.com/lpic/s27157694.jpg)
+![s27157694.jpg(JPEG 图像,300x300 像素)](http://img3.douban.com/lpic/s27157694.jpg)
 
 [利用Python进行数据分析](http://book.douban.com/subject/25779298/)
 
@@ -149,4 +149,4 @@ Mavericks 对 Python 框架的调整,也的确有其原由的...
 ## Changelog
 
 - 140603 完成环境探索,总结
-- 140527 [《利用Python进行数据分析》 Wes McKinney, 唐学韬 (Kindle电子书)](http://www.amazon.cn/gp/product/B00KD7Q7U2/ref=oh_d__o00_details_o00__i00?ie=UTF8&psc=1)
+- 140527 ["利用Python进行数据分析" Wes McKinney, 唐学韬 (Kindle电子书)](http://www.amazon.cn/gp/product/B00KD7Q7U2/ref=oh_d__o00_details_o00__i00?ie=UTF8&psc=1)

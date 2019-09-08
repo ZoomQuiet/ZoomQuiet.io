@@ -67,7 +67,7 @@ This seems to reproduce the native syntax highlighting of IPython.
 ## Changelog
 
 - 160322 @TANG ZhiXiong 提醒:
-    + 其实放在 GitHub，然后分享一个 Jupyter 链接是最好的
+    + 其实放在 GitHub,然后分享一个 Jupyter 链接是最好的
     + `是也乎` 这的确是 2015-7 之后更好的解决方案了 ;-)
 - 140107 move into Pelican as zoomquiet.io
 - 131106 pub. [EKR to Chinese programmer — I. M. H. O. — Medium](https://medium.com/i-m-h-o/9520fee0b59f)

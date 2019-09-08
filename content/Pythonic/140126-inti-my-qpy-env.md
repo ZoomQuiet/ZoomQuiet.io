@@ -9,7 +9,7 @@ Author: Zoom.Quiet
 
 ## 背景
 
-QPython 知道有两年了,是看 [Head First Python（中文版） (豆瓣)](http://book.douban.com/subject/10561367/) 时,发现竟然有 
+QPython 知道有两年了,是看 [Head First Python(中文版) (豆瓣)](http://book.douban.com/subject/10561367/) 时,发现竟然有 
 [SL4A](http://code.google.com/p/android-scripting/)
 
 这种神器! Google 果断是业界良心哪,
@@ -113,7 +113,7 @@ Android 呢,就是 Linux 哪,当然应该用 `scp` 安全上传了!
 
 - [Android tips](http://gailly.net/android/android-tips.html)
 - [10 Android Apps for Linux Server Admins - ConnectBot, QuickSSHd, SwiFTP, AndFTP, Wyse PocketCloud - Reviews - LinuxPlanet](http://www.linuxplanet.com/linuxplanet/reviews/7301/1)
-- [SSHDroid（SSH Server for Android）通过PC或命令连接android - bugeasy - 开源中国社区](http://my.oschina.net/winHerson/blog/84716)
+- [SSHDroid(SSH Server for Android)通过PC或命令连接android - bugeasy - 开源中国社区](http://my.oschina.net/winHerson/blog/84716)
 
 经过快速的尝试,
 明确 `SSHDroid` 最简洁可用,
@@ -245,7 +245,7 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 
 综合,搜索来的相关说明:
 
-- [【转】linux虚拟内核文件系统介绍 - shy.ang - 博客园](http://www.cnblogs.com/shyang--TechBlogs/archive/2011/10/27/2226664.html)
+- [[转]linux虚拟内核文件系统介绍 - shy.ang - 博客园](http://www.cnblogs.com/shyang--TechBlogs/archive/2011/10/27/2226664.html)
 - [Mount Android System Partition With Read/Rrite Access](http://www.xdracco.net/mount-android-system-partition-with-readwrite-access/)
 - [Android tips](http://gailly.net/android/android-tips.html) 
 
@@ -377,7 +377,7 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 一行解决:
 
     :::sh
-    $ sed -i -e ’36d’ ~/.ssh/known_hosts
+    $ sed -i -e '36d' ~/.ssh/known_hosts
 
 
 
@@ -522,9 +522,9 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 豆瓣首席架构师/布道官/CTO 洪教授 亲手玩的项目:
 
     :::text
-    跨平台的桌面应用开发库，
-    使用HTML5+CSS3制作用户界面，
-    用Javascript编写交互逻辑，
+    跨平台的桌面应用开发库,
+    使用HTML5+CSS3制作用户界面,
+    用Javascript编写交互逻辑,
     同时提供用写web后端的技术编写后台逻辑!
 
 

@@ -36,7 +36,7 @@ In this script we first of all imported the path module. Then we set the num_fil
 
 ## Finding the number of files recursively in a directory:
 
-That was easy! Wasn’t it? So now our work is to find the number of files recursively in a directory. In order to acomplish this task we are given the walk() method by path.py. This is the same as os.walk(). So lets write a simple script for recursively listing all files in a directory and its subdirectories in Python.
+That was easy! Wasn't it? So now our work is to find the number of files recursively in a directory. In order to acomplish this task we are given the walk() method by path.py. This is the same as os.walk(). So lets write a simple script for recursively listing all files in a directory and its subdirectories in Python.
 
     from path import path
     file_count = 0
@@ -100,7 +100,7 @@ In the above script I did not implement any logging and error handling. That is 
 
 ## Deleting files based on their extension
 
-Just suppose you want to remove all the ‘.pyc’ files from the directory. How would you go about dealing with this problem. Here is a solution which I came up with in path.py.
+Just suppose you want to remove all the '.pyc' files from the directory. How would you go about dealing with this problem. Here is a solution which I came up with in path.py.
 
     from path import path
     d = path(DIRECTORY)
@@ -155,7 +155,7 @@ So we have also learned how to remove files based on their last modified time. I
 
 ## Goodbye
 
-So that was it. I hope you liked the post. In the end I would like to make a public apology that my English is not good so you may find some grammar mistakes. You are requested to email them to me so that I can improve my English. If you liked this post then don’t forget to follow me on twitter and facebook. A retweet won’t hurt either! If you want to send me a pm then use this email.
+So that was it. I hope you liked the post. In the end I would like to make a public apology that my English is not good so you may find some grammar mistakes. You are requested to email them to me so that I can improve my English. If you liked this post then don't forget to follow me on twitter and facebook. A retweet won't hurt either! If you want to send me a pm then use this email.
 
 ## Changelog
 

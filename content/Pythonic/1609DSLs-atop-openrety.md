@@ -220,8 +220,8 @@ OpenResty 已在真实客户单主机上支持住了 200万 级别的并发请�
 另外一个常见领域是接口和微服务,
 
 很多人使用 OpenResty 构建这类服务,比如:
-[Mashape’s Kong](https://github.com/Mashape/kong)平台,
-以及 [Adobe’s API Gateway](https://github.com/adobe-apiplatform/apigateway)
+[Mashape's Kong](https://github.com/Mashape/kong)平台,
+以及 [Adobe's API Gateway](https://github.com/adobe-apiplatform/apigateway)
 
 此外, 一些美国银行使用 OpenResty 来管理路由器流量,
 

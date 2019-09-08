@@ -30,7 +30,7 @@ Slug: 140106-pycon2013tee-guido
 - 当然有 Guido:
     - [Twitter / gvanrossum: T shift from Chinese user group. ...](https://twitter.com/gvanrossum/status/420249260961968128)
 
-![140107-guido-twitter.png（PNG 图像，558x580 像素）](http://zoomq.qiniudn.com/CPyUG/zoomquiet-design-collection/140107-guido-twitter.png)
+![140107-guido-twitter.png(PNG 图像,558x580 像素)](http://zoomq.qiniudn.com/CPyUG/zoomquiet-design-collection/140107-guido-twitter.png)
 
 
 以上,有关蠎衫的故事,就是这些,再过12年,又能发生什么?!

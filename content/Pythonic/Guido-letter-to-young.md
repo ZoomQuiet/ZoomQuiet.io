@@ -10,14 +10,14 @@ Slug: guido-letter-2-young
 
 Dear (insert name here),
 
-I heard you enjoy a certain programming language named Python. Programming is a wonderful activity. I am a little jealous that you have access to computers at your age; when I grew up I didn’t even know what a computer was! I was an electronics hobbyist though, and my big dream was to build my own electronic calculator from discrete components. I never did do that, but I did build several digital clocks, and it was amazing to build something that complex and see it work. I hope you dream big too — programmers can make computers (and robots!) do amazing things, and this is a great time to become a programmer. Just imagine how much faster computers will be in five or ten years, and what you will be able to do with your skills then!
+I heard you enjoy a certain programming language named Python. Programming is a wonderful activity. I am a little jealous that you have access to computers at your age; when I grew up I didn't even know what a computer was! I was an electronics hobbyist though, and my big dream was to build my own electronic calculator from discrete components. I never did do that, but I did build several digital clocks, and it was amazing to build something that complex and see it work. I hope you dream big too — programmers can make computers (and robots!) do amazing things, and this is a great time to become a programmer. Just imagine how much faster computers will be in five or ten years, and what you will be able to do with your skills then!
 
     —Guido van Rossum (inventor of Python)
     THURSDAY, OCTOBER 24, 2013
 
 
 从
-[Pycoder’s Weekly (Issue #89): Mavericks](http://us4.campaign-archive1.com/?u=9735795484d2e4c204da82a29&id=c8c36205c4)
+[Pycoder's Weekly (Issue #89): Mavericks](http://us4.campaign-archive1.com/?u=9735795484d2e4c204da82a29&id=c8c36205c4)
 知道的 Guido 好萌信,`
 
 >>> 尝试翻译一下:
@@ -37,7 +37,7 @@ I heard you enjoy a certain programming language named Python. Programming is a 
     这是个令程序员伟大的时代.
     现在就设想,5到10年后,能运用你的功能操作更快的计算机作到什么?! 
 
-    哗…
+    哗... 
 
 
 ## Changelog

@@ -79,7 +79,7 @@ Slug: how2rename-mac-screen-shot
     + 试用 Platypus 一下子就形成了无界面后台运行的 app
 - 配合 HotKay 达成目标效果 ;-)
 
-![](https://ipic.zoomquiet.top/2019-02-13-screenshot_190213-23.03.43.jpg)
+![screenshot_190213](https://ipic.zoomquiet.top/2019-02-13-screenshot_190213-23.03.43.jpg)
 
 
 ## refer
