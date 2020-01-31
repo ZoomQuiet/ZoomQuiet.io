@@ -1,4 +1,4 @@
-Title: 内圈梗集锦(人工智能简史)书评
+Title: 什么是开放社区初探....
 Date: 2020-01-31 16:42:24 
 Tags: DAMA, Book, FLOSS
 Slug: 200131-what-is-community
