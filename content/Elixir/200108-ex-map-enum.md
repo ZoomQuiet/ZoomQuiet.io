@@ -110,10 +110,10 @@ Slug: 200108-ex-map-enum
 
 所以:
 
-  defp echo_vars(keys, fields) do 
-    Enum.each(fields, fn(s) -> IO.puts(s) end)
-    LOG.info("chk. as #{keys} ;-)")
-  end
+    defp echo_vars(keys, fields) do 
+        Enum.each(fields, fn(s) -> IO.puts(s) end)
+        LOG.info("chk. as #{keys} ;-)")
+    end
 
 但是, 各种出错, 因为这时, 传入的 keys 是只有请求 Map 中的键;
 

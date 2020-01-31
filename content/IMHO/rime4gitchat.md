@@ -43,9 +43,9 @@ Slug: rime4gitchat
 
 > 结果->放弃
 
-- 首先, 中文标点有很大一批是成对却不同形状 `“”　《　》`
+- 首先, 中文标点有很大一批是成对却不同形状 `""　"　"`
     + 原先工具替换时是统一替换为同一形状
-    + 比如,无论 `“` 或是 `”` 都嗯哼为 `"`
+    + 比如,无论 `"` 或是 `"` 都嗯哼为 `"`
     + 现在想相反, 远没那么简单
 - 另外, 原先替换的目标字符在 ASCII 范畴, 无论什么编码都兼容
     + 现在则不同, 中文标点只存在少数几种编码中
@@ -121,13 +121,13 @@ Slug: rime4gitchat
 
 - [Chat 发布与写作指南](https://gitbook.cn/books/5c47da3ef79c0c1f90492403/index.html)
 - [中文排版需求](http://w3c.github.io/clreq/zh/)
-    + [从《中文排版规范》开始](http://devrel.zoomquiet.top/data/20150402184838/index.html)
+    + [从"中文排版规范"开始](http://devrel.zoomquiet.top/data/20150402184838/index.html)
     + 对比: [Requirements for Japanese Text Layout](https://www.w3.org/TR/jlreq/)
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.md#%E7%A9%BA%E6%A0%BC)
-    + [vinta/pangu.js: 為什麼你們就是不能加個空格呢？](https://github.com/vinta/pangu.js?utm_source=www.appinn.com)
+    + [vinta/pangu.js: 為什麼你們就是不能加個空格呢?](https://github.com/vinta/pangu.js?utm_source=www.appinn.com)
 - [全角半角碎碎念 - The Type](https://mp.weixin.qq.com/s/Vu-20r7_LCTToyaOeli7tg)
-    + `...可见，中文的标点符号既可以是「全宽」的也可以是「半宽」的，「中文＝全角」完全是技术问题导致的误解。`
-    + [全角和半角 \- 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2)
+    + `...可见,中文的标点符号既可以是'全宽'的也可以是'半宽'的,'中文＝全角'完全是技术问题导致的误解. `
+    + [全角和半角 \- 维基百科,自由的百科全书](https://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2)
 
 ## Sayeahooo
 
