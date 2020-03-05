@@ -103,14 +103,13 @@ DISPLAY_PAGES_ON_MENU = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 # ('rss', SITEURL + '/' + FEED_ALL_ATOM)
-SOCIAL = (('.io', 'https://ZoomQuiet.io')
-
-        , ('Wiki', 'http://wiki.zoomquiet.io')
+SOCIAL = (('Root', 'https://ZoomQuiet.io')
+        , ('维基', 'http://wiki.zoomquiet.io')
         , ('旧曰', 'http://blog.zoomquiet.org/pyblosxom/')
-        , ('啄木鸟', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet')
-        , ('GitHub', 'https://github.com/ZoomQuiet')
-        , ('O.B.P', 'https://github.com/OpenBookProjects/wiki/blob/master/HowToBuildBookOnline.md')
-        , ('Weekly', 'http://weekly.pychina.org/')
+        #, ('啄木鸟', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet')
+        #, ('GitHub', 'https://github.com/ZoomQuiet')
+        #, ('O.B.P', 'https://github.com/OpenBookProjects/wiki/blob/master/HowToBuildBookOnline.md')
+        , ('周刊', 'http://weekly.pychina.org/')
         , ('weibo', 'http://weibo.com/zoomquiet')
         )
 # Blogroll
