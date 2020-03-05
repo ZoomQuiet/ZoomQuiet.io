@@ -2,7 +2,8 @@ Title: 设计
 Date: 2013-12-19
 Tags: doc
 Slug: design
-Author: Zoom.Quiet
+Author: ZoomQuiet
+Status: draft
 
 # Design for everything
 
@@ -46,3 +47,4 @@ Author: Zoom.Quiet
     主题：  相关OOP的文章翻译授权 以及 珠海校园技术活动的支持.
 
 
+了

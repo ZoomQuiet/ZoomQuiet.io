@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}
-    {{ article.slug }}
+    {{ article.title }}
 {% endblock %}
 
 {% block content %}
@@ -26,12 +26,14 @@
 {% endif %}
 
                 {{ article.content }}
+
             </div>
             <!-- /.entry-content -->
+
+            {% include 'includes/comments.html' %}
+
             {% include 'includes/announce.html' %}
 
-            {% include 'includes/addthis.html' %}
-            {% include 'includes/comments.html' %}
         </article>
     </section>
 

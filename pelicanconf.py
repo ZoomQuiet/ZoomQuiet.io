@@ -17,7 +17,7 @@ SITEDESC = u'ZoomQuiet.io'
 SITENOTE = u".io"
 SITETITLE = u'是也乎(￣▽￣)'
 SITEURL = 'https://blog.zoomquiet.io'
-DISQUS_SITENAME = u"blogzoomquietio" #填入你的Shortname
+#DISQUS_SITENAME = u"blogzoomquietio" #填入你的Shortname
 
 MARKUP = ('md', 'rst',)#'rst', 'html', 
 READERS = {
@@ -83,7 +83,7 @@ TYPOGRIFY = True
 THEME = "_themes/pelican-bootstrap3"
 BOOTSTRAP_THEME = 'readable'
 
-DEFAULT_PAGINATION = 3
+DEFAULT_PAGINATION = 5
 
 DISPLAY_TAGS_ON_SIDEBAR = False
 TAG_CLOUD_MAX_ITEMS = 10
@@ -93,24 +93,40 @@ DISPLAY_CATEGORIES_ON_MENU = None      # 分类标签是否显示在导航
 ADDTHIS_PROFILE = None #True
     
 #GITHUB_USER = "ZoomQuiet"
-MENUITEMS = (('PyChina', 'http://pychina.org')
-    #, ('Zoom.Quiet', 'http://zoomquiet.io')
-    , ('OBP', 'http://obp.zoomquiet.io')
-    , ('abt.', '/pages/about.html')
-    , ('design', '/pages/design.html')
+MENUITEMS = (
+    # ('PyChina', 'http://pychina.org')
+    ('大妈', 'http://zoomquiet.io')
+    , ('课程', 'https://py.101.camp/')
+    , ('星球', 'https://t.zsxq.com/iaIEQ3N')
+    #, ('友链', 'https://t.zsxq.com/iaIEQ3N')
+    , ('蟒周刊', 'http://weekly.pychina.org/')
+    , ('怼周报', 'https://du.101.camp/duw/')
+    #, ('不折腾要屎行径', '/pages/about.html')
+    , ('友链', '/pages/friendly-links.html')
+    , ('好物', '/pages/affiliate.html')
+    , ('关于', '/pages/zoomquiet.html')
+    #, ('收集', 'https://zoomquiet.io/collection.html')
+    #, ('OBP', 'https://zoomquiet.io/obp/index.html')
+    # , ('design', '/pages/design.html')
     )
 DISPLAY_PAGES_ON_MENU = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 # ('rss', SITEURL + '/' + FEED_ALL_ATOM)
 SOCIAL = (('Root', 'https://ZoomQuiet.io')
+        #, ('啄木鸟', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet')
+        #, ('O.B.P', 'https://github.com/OpenBookProjects/wiki/blob/master/HowToBuildBookOnline.md')
+        , ('思否', 'https://segmentfault.com/u/zoomquiet')
+        , ('知乎', 'https://www.zhihu.com/people/zoomquiet')
+        , ('掘金', 'https://juejin.im/user/5aa4848951882577b45ea1fe')
+        , ('极术', 'https://aijishu.com/u/zoomquiet')
+        , ('开源中国', 'https://my.oschina.net/zoomquiet')
+        #, ('周刊', 'http://weekly.pychina.org/')
+        , ('GitHub', 'https://github.com/ZoomQuiet')
+        , ('gitlab', 'https://gitlab.com/ZoomQuiet')
+        , ('weibo', 'http://weibo.com/zoomquiet')
         , ('维基', 'http://wiki.zoomquiet.io')
         , ('旧曰', 'http://blog.zoomquiet.org/pyblosxom/')
-        #, ('啄木鸟', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet')
-        #, ('GitHub', 'https://github.com/ZoomQuiet')
-        #, ('O.B.P', 'https://github.com/OpenBookProjects/wiki/blob/master/HowToBuildBookOnline.md')
-        , ('周刊', 'http://weekly.pychina.org/')
-        , ('weibo', 'http://weibo.com/zoomquiet')
         )
 # Blogroll
 LINKS =  None

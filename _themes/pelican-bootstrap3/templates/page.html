@@ -14,14 +14,13 @@
         {% endif %}
         <div class="entry-content">
             {{ page.content }}
-        </div>
-            <!-- /.entry-content 
-            {% include 'includes/addthis.html' %}
-            
-            -->
-            
-            {% include 'includes/page_comments.html' %}
 
+
+            {% include 'includes/comments.html' %}
+
+            {% include 'includes/announce.html' %}
+
+        </div>
 
     </section>
 {% endblock %}

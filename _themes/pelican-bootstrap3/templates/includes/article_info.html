@@ -6,8 +6,8 @@
         <i class="icon-calendar"></i>{{ article.locale_date }}
     </span>
 
-    {# Uncomment if you want the author shown #}
 <!--
+    {# Uncomment if you want the author shown #}
     {% if article.author %}
     <span class="label">By</span>
     <i class="icon-user"></i>
@@ -15,16 +15,17 @@
     {% endif %}
 
     {# Uncomment if you want to show Categories#}
-    <span class="label label-default">Category</span>
-    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
--->
-
 
     {% if PDF_PROCESSOR %}
         <span class="label label-default">
             <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
         </span>
     {% endif %}
+-->
+
+    <span class="label label-default">Category</span>
+    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+
 
     {% include 'includes/taglist.html' %}
     {% include 'includes/translations.html' %}
