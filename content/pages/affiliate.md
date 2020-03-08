@@ -8,11 +8,25 @@ Status: published
 
 ## Server && Domain
 
-[![vultr](https://www.vultr.com/media/banners/banner_468x60.png)](https://www.vultr.com/?ref=8333895)
 
 
-<a href="https://www.vultr.com/?ref=8333895"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
+<a alt="最合算的 VPS"
+    href="https://www.vultr.com/?ref=8333895"><img 
+    src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
 
+
+<a href="https://namecheap.pxf.io/c/2105677/487333/5618" id="487333"><img src="//a.impactradius-go.com/display-ad/5618-487333" border="0" 
+    alt="域名，托管，SSL和mor的大折扣" width="728" height="90"/></a><img height="0" width="0" src="//namecheap.pxf.io/i/2105677/487333/5618" style="position:absolute;visibility:hidden;" border="0" />
+
+
+
+------
+## Things
+> 自己各种折腾后, 终于稳定舒服的东西...
+
+- [RK(ROYAL KLUDGE)987机械键盘 有线/蓝牙键盘 87键PBT键帽](https://union-click.jd.com/jdc?e=&p=AyIGZRtbHQsRBFwbUhYyFQJRHVoWByJDCkMFSjJLQhBaGR4cDF8QTwcKXg1cAAQJS14MQQVYDwtFSlMTBAtHR0pZChUdRUFGfwAXXBAGFAZWHmtOaU1fM00eVWJGTy94JxdcVHggHQFlDh43VCtbFAMRBVYYWRcFIjdVHGtXbMeM8MLjltSYiYy698y5kjdUK1sRCxACVBtaHAobBlcrXBULImwLRQd1RkpTECtrJQEiN2UbaxYyUGkHGwgcUhJXUh9fR1EXDgEYCEVVFw9QTloXAUIEVUhaEzIQBlQfUg%3D%3D) ~ 自用, 配置 rMBP 非常合手, 从 HHKB Lites2 迁移过来的..
+- [【送流量卡】华为随行WiFi 2随身移动E5577三网车载4G无线路由器](https://union-click.jd.com/jdc?e=&p=AyIGZRtaHAoSBVEfWBQyEQZWGF8XChQHURtrUV1KWQorAlBHU0VeBUVNR0ZbSkdETlcNVQtHRVNSUVNLXANBRA1XB14DS10cQQVYD21XHgRUGFgRABoBVR9bJUNwUz5%2FLnNAcVAreB91WmhVEmwnXkQeC2UaaxUDEwRXGFgXABU3ZRtcJUN8AVcSWhEGIgZlG18cABcAUBxTFQEVAmUcWxwyeVkLRztRWkZCZStrFjIiN1UrWCVAfAcBGF4RUBEAVR5aFwcRAFBLXhwLEwdQTlJCVhUGB0xSJQATBlES) ~ 物联网卡, 专注流量, 无论旅游/工作都很稳...
+- ... 
 
 
 ------
@@ -57,10 +71,3 @@ Status: published
     + [奇特的一生:柳比歇夫坚持56年的"时间统计法"](https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIQBVUcWREyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFwASAFcfa2hhbEdVTzhQYRdxE1MGSGplQAVDOmUOHjdUK1sUAxEFVhhZFwUiN1Uca0NsEgZUGloUBxEFUCtaJQIWDlcYWBAEEg5dEl0lBRIOZXAFS15yQw1PHiUyIgRlK2sVMhE3F3VcRwVGBFEbUkIEGwBQGFwRUkZVVB8IQQAbBVwaCEYCRzdXGloRCw%3D%3D) ~ Panel 时, 吕老师推荐的时间帐单方法出处
     + [重来2:更为简单高效的工作方式](https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEXDlwfXRwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAsbA1MSa2d7SncoaVlXYWdPAFNaY0AUDwMfKUMOHjdUK1sUAxEFVhhZFwUiN1Uca0NsEgZUGloUBxEFUStaJQIWDlcYXhcEFgZcGl0lBRIOZXAFS15yQw1PHiUyIgRlK2sVMhE3F3UJQgpBA1ZIUxxVGlVQHFpHUhQOAklaEwFBDgdPWhACFzdXGloRCw%3D%3D) ~ 37signals 原创神书, 是 Remote (远程办公) 一书的进一步阐发
 
-
-------
-## Things
-> 自己各种折腾后, 终于稳定舒服的东西...
-
-- [RK(ROYAL KLUDGE)987机械键盘 有线/蓝牙键盘 87键PBT键帽](https://union-click.jd.com/jdc?e=&p=AyIGZRtbHQsRBFwbUhYyFQJRHVoWByJDCkMFSjJLQhBaGR4cDF8QTwcKXg1cAAQJS14MQQVYDwtFSlMTBAtHR0pZChUdRUFGfwAXXBAGFAZWHmtOaU1fM00eVWJGTy94JxdcVHggHQFlDh43VCtbFAMRBVYYWRcFIjdVHGtXbMeM8MLjltSYiYy698y5kjdUK1sRCxACVBtaHAobBlcrXBULImwLRQd1RkpTECtrJQEiN2UbaxYyUGkHGwgcUhJXUh9fR1EXDgEYCEVVFw9QTloXAUIEVUhaEzIQBlQfUg%3D%3D) ~ 自用, 配置 rMBP 非常合手, 从 HHKB Lites2 迁移过来的..
-- ... 

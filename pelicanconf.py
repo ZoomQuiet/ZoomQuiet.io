@@ -99,8 +99,6 @@ MENUITEMS = (
     , ('课程', 'https://py.101.camp/')
     , ('星球', 'https://t.zsxq.com/iaIEQ3N')
     #, ('友链', 'https://t.zsxq.com/iaIEQ3N')
-    , ('蟒周刊', 'http://weekly.pychina.org/')
-    , ('怼周报', 'https://du.101.camp/duw/')
     #, ('不折腾要屎行径', '/pages/about.html')
     , ('友链', '/pages/friendly-links.html')
     , ('好物', '/pages/affiliate.html')
@@ -114,6 +112,8 @@ DISPLAY_PAGES_ON_MENU = True
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 # ('rss', SITEURL + '/' + FEED_ALL_ATOM)
 SOCIAL = (('Root', 'https://ZoomQuiet.io')
+    , ('蟒周刊', 'http://weekly.pychina.org/')
+    , ('怼周报', 'https://du.101.camp/duw/')
         #, ('啄木鸟', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet')
         #, ('O.B.P', 'https://github.com/OpenBookProjects/wiki/blob/master/HowToBuildBookOnline.md')
         , ('思否', 'https://segmentfault.com/u/zoomquiet')
