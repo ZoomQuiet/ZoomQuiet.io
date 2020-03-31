@@ -60,15 +60,15 @@ Slug: imho-murmur-dns-sad-story
 
 > 追查了一下国内可用公共 DNS 服务, 在路由器上配置
 
-![](http://ydlj.zoomquiet.top/ipic/2020-03-31-cnPUBDNS.jpg)
+![cnPUBDNS](http://ydlj.zoomquiet.top/ipic/2020-03-31-cnPUBDNS.jpg)
 
 对比, 无法配置 AP 的有线宽带:
 
-![](http://ydlj.zoomquiet.top/ipic/2020-03-31-cnNOMDNS.jpg)
+![cnNOMDNS](http://ydlj.zoomquiet.top/ipic/2020-03-31-cnNOMDNS.jpg)
 
 以及一直可以访问, 但是很慢的 mifi :
 
-![](http://ydlj.zoomquiet.top/ipic/2020-03-31-mifi.jpg)
+![mifi](http://ydlj.zoomquiet.top/ipic/2020-03-31-mifi.jpg)
 
 
 -------------
