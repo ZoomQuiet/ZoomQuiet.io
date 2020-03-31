@@ -109,7 +109,7 @@ Slug: oldtouch-codeing-lady-380s
 不说编程发明人就是 Ada 女神了, 也不说 NASA 早期神级程序媛, 登月系统主程以及架构师 
 M.Hamilton ...
 
-![](http://ydlj.zoomquiet.top/ipic/2020-03-04-ScreenShot%202020-03-04%2023.06.42.jpg)
+![380](http://ydlj.zoomquiet.top/ipic/2020-03-04-ScreenShot%202020-03-04%2023.06.42.jpg)
 
 
 就回顾一下俺以往遇见过的程序媛吧:
