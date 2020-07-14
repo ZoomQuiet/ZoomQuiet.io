@@ -1,4 +1,4 @@
-Title: ScrapBook彻查成果
+Title: Python 列表为毛从0开始索引?
 Date: 2019-03-23
 Tags: guido,python,gplus
 Slug: 131023-why0base-indexing-python
