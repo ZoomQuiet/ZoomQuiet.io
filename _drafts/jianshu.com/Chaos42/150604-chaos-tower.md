@@ -1,4 +1,4 @@
-Title: "[大妈吐糟]Tower 之功能残念集"
+Title: [大妈吐糟]Tower 之功能残念集
 Date: 2015-06-04 19:42
 Tags: IMHO,DAMA,disscuss
 Slug: 150604-chaos-tower

@@ -1,4 +1,4 @@
-Title: "[大妈吐糟] 虾米音乐的系列猜想"
+Title: [大妈吐糟] 虾米音乐的系列猜想
 Date: 2015-02-05 19:42
 Tags: IMHO,DAMA,disscuss
 Slug: 150205-chaos-xiami

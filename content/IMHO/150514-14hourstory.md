@@ -1,4 +1,4 @@
-Title: "14小时反省分析"
+Title: 14小时反省分析
 Date: 2015-05-14 19:42
 Tags: IMHO,DAMA,disscuss
 Slug: 150514-14hourstory

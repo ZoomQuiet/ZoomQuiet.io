@@ -1,4 +1,4 @@
-Title: "[大妈吐糟]小密圈 之功能残念集"
+Title: [大妈吐糟]小密圈 之功能残念集
 Date: 2017-04-03 19:42
 Tags: IMHO,DAMA,diss
 Slug: 170403-chaos-xiaomi
