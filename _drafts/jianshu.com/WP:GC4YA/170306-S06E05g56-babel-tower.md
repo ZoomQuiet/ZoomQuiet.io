@@ -1,3 +1,10 @@
+Title: S06E05g56/ 巴别塔
+Date: 2017-03-06 20:42
+Tags: DAMA,write,GC4
+Slug: 170306-S06E05g56-babel-tower
+Author: ZoomQuiet
+Status: published
+
 # S06E05g56: 巴别塔
 
 
