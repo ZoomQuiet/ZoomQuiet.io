@@ -8,7 +8,7 @@ Status: published
 
 # Zoom.Quiet (大妈)
 
-![](http://ydlj.zoomquiet.top/ipic/2020-07-04-dama101camp-cube.png?imageView2/2/w/420)
+![dama101camp](http://ydlj.zoomquiet.top/ipic/2020-07-04-dama101camp-cube.png?imageView2/2/w/420)
 
 
 中国Python社区中最长情的贡献者, 

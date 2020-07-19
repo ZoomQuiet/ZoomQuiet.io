@@ -1,7 +1,9 @@
 Title: 好中文写作课私人体验
-Date: 2017-11-09 
+Date: 2017-11-09 19:42
 Tags: IMHO,write,GC4
 Slug: 171109-GC4-feeling
+Author: ZoomQuiet
+Status: published
 
 ------
 [TOC]
