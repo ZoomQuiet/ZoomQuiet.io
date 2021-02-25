@@ -1,4 +1,4 @@
-Title: ZoomQuiet大妈使用手册
+Title: 大妈/ZoomQuiet 使用手册
 Date: 2013-11-17 10:42
 Modified: 2020-03-05 16:42
 Tags: people
@@ -6,7 +6,6 @@ Slug: zoomquiet
 Author: ZoomQuiet
 Status: published
 
-# Zoom.Quiet (大妈)
 
 ![dama101camp](http://ydlj.zoomquiet.top/ipic/2020-07-04-dama101camp-cube.png?imageView2/2/w/420)
 
@@ -28,7 +27,7 @@ Status: published
 目前 Indie Hacker 在珠海:
 
 - 个人网站: https://zoomquiet.io
-- Blog: http://blog.zoomquiet.org/
+- Blog: http://blog.zoomquiet.io/
 - 课程框架: https://doc.101.camp
 - 微博:  http://weibo.com/zoomquiet
 
@@ -46,15 +45,15 @@ Status: published
     + 2042~2242
 - 预订/占用ed:
     + 周一 2000~2042
-    + 周一 2000~2042
+    + 周二 2000~2042;2200~2342;
     + 周三 2000~2242
+    + 周五 2200~2342;
     + 周六 2042~2242
     + 周日 2042~2342
 - 异常状态 无法保证:
     + 放假
     + 受伤
     + 交通
-    + 生产
     + ...
 - 其它:
     + 如果出差可保证的时间不定
@@ -149,6 +148,7 @@ repo.
 
 ## changelog
 
+- 210130 增补, new booking times
 - 200704 增补, 并追加使用指南
 - 140216 fixed, 加载非常慢的问题:
 

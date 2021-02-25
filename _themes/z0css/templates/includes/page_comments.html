@@ -1,0 +1,12 @@
+{% if DISQUS_SITENAME and SITEURL %}
+    <hr />
+
+    <section class="comments" id="comments">
+        <h3>Comments</h3>
+
+{% include 'includes/utterance_script.html' %}
+
+    <hr />
+
+    </section>
+{% endif %}

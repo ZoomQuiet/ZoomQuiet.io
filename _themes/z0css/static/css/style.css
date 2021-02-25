@@ -1,0 +1,216 @@
+/* PyChina.org design by Zoom.Quiet
+.highlight pre {
+    background-color: #202020;
+    color: #777;
+}
+*/
+
+.navbar-nav {
+    float: left;
+    margin: 0px 0px 0px -10px;
+}
+.navbar-nav a:hover {
+    background-color: #eee;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 10px 0px 4px 15px;
+}
+
+
+.list-group-zip {
+    padding-left: 0;
+    margin-bottom: 4px;
+}
+.list-group-item-zip {
+    position: relative;
+    display: block;
+    padding: 2px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+span.violet-site  {
+    display: inline;
+    font-size: 10px;
+    font-weight: 600;
+    color: #525252;
+    background: #d8d8d8;
+    line-height: 12px;
+    position: relative;
+    border-radius: 7px 0px 7px 0;
+    padding: 0px 5px 0 3px;
+    top: -23px;
+    left: -5px;
+}
+
+/*
+span.violet-site {
+    display: inline;
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #525252;
+    background: #d8d8d8;
+    position: absolute;
+    padding: 0px 10px 0 10px;
+    border-radius: 7px 0px 7px 0;
+    top: 2px;
+    left: 160px;
+}
+*/
+
+/* original design */
+body {
+    padding-top: 70px;
+}
+
+#sidebar .list-group, #sidebar .list-group-item {
+    background-color: transparent;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.tag-1 {
+    font-size: 13pt;
+}
+
+.tag-2 {
+    font-size: 10pt;
+}
+
+.tag-2 {
+    font-size: 8pt;
+}
+
+.tag-4 {
+    font-size: 6pt;
+}
+
+#sidebar {
+    padding-top: 0px;
+}
+
+#sidebar a {
+    color: inherit;
+}
+
+i {
+    margin-right: 10px;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+.entry-content a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+.entry-content a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#categories ul, #tags ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+/* ::::: http://lucumr.pocoo.org/static/style.css ::::: */
+
+/* ::::: http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic ::::: */
+
+@font-face {
+    font-family: "Ubuntu Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Ubuntu Mono"), local("UbuntuMono-Regular"), url('vizhet7ak-lrxzmxzuafkbria-7acmaedbvuclsi6gc.woff') format("woff");
+}
+@font-face {
+    font-family: "Ubuntu Mono";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Ubuntu Mono Bold"), local("UbuntuMono-Bold"), url('ceqtzgkhipo8pjj4molythbnbkkeowrkgshdregcocg.woff') format("woff");
+}
+@font-face {
+    font-family: "Ubuntu Mono";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Ubuntu Mono Italic"), local("UbuntuMono-Italic"), url('kakuhxahzoeecowahsrka4o3zsltyfjv0r05cazkwn8.woff') format("woff");
+}
+@font-face {
+    font-family: "Ubuntu Mono";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Ubuntu Mono Bold Italic"), local("UbuntuMono-BoldItalic"), url('n_d8tv_joiiyymxr4eav9shgnb6vkvpdra9lsakgxzw.woff') format("woff");
+}
+/* ::::: http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,400italic ::::: */
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Roboto Light"), local("Roboto-Light"), url('hgo13k-tfspn0qi1sfdufbo3ldcazywl9si6vvxl-qu.woff') format("woff");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Regular"), local("Roboto-Regular"), url('cryjsngjrrcn0pd9vqsnfovvdin1pk8aktelpez5c0a.woff') format("woff");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url('rxzjdnzeo3r5zsexge8uubo3ldcazywl9si6vvxl-qu.woff') format("woff");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Roboto Bold"), local("Roboto-Bold"), url('d-6iyplofoccackzxwxsolo3ldcazywl9si6vvxl-qu.woff') format("woff");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Roboto Light Italic"), local("Roboto-LightItalic"), url('7m8l7tlfo-s3vkhhur0at7ria-7acmaedbvuclsi6gc.woff') format("woff");
+}
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Roboto Italic"), local("Roboto-Italic"), url('1po9euap8psf8vnrtp3xnnyhjbspvc47ee6xr_80hnw.woff') format("woff");
+}
+/* ::::: http://fonts.googleapis.com/css?family=Amatic+SC:400,700 ::::: */
+
+@font-face {
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Amatic SC Regular"), local("AmaticSC-Regular"), url('dppfsfkxrtxvae2bkdzp5lo3ldcazywl9si6vvxl-qu.woff') format("woff");
+}
+@font-face {
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Amatic SC Bold"), local("AmaticSC-Bold"), url('idnkrtpgcrsvo50uyynk76rdozjipcynfooougcosrk.woff') format("woff");
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Amatic SC',serif; font-weight: 400; color: rgb(34, 34, 34); }
+
+/* ::::: http://lucumr.pocoo.org/static/_pygments.css ::::: */
+

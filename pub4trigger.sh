@@ -15,7 +15,7 @@ VER="pub4trigger v.200306.2142"
 #DATE=`date "+%y%m%d"`
 #NOW=$(date +"%Y-%m-%d")
 
-PBIN=~/.pyenv/versions/dama2712/bin
+PBIN=~/.pyenv/versions/ztop380/bin
 SELF=~/Sites/zoomquiet.io/blog
 
 GIT=$( which git)
@@ -33,14 +33,15 @@ MONTH=`date +"%m"`
 #TARGET=/opt/log/yazi/_upd_trigger.log
 #=========================================================== action defines
 source $ACTI
-$PIP list | grep pelican
+$PIP list #| grep pelican
 python -V
 
 cd $SELF
 
-fab ?
-
-fab pub
+#fab ?
+#fab pub
+inv -l
+inv pub
 
 
 #=========================================================== action DONE

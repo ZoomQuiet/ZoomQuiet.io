@@ -80,10 +80,11 @@ TYPOGRIFY = True
 ###############################################################
 ###############################################################   Template abt.
 ###############################################################
-THEME = "_themes/pelican-bootstrap3"
+#THEME = "_themes/pelican-bootstrap3"
+THEME = "_themes/z0css"
 BOOTSTRAP_THEME = 'readable'
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 7
 
 DISPLAY_TAGS_ON_SIDEBAR = False
 TAG_CLOUD_MAX_ITEMS = 10
