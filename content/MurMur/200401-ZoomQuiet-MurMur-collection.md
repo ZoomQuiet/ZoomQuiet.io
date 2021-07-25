@@ -1,4 +1,4 @@
-Title: 呢喃/ 20.3
+Title: 呢喃s/ 20.4
 Date: 2020-04-01 20:42
 Authors: ZoomQuiet
 Category: MurMur
@@ -9,10 +9,10 @@ Summary: MurMur/ daily historic card writing, collection in 2020.4
 ## 呢喃 at 2020.4
 > 不为什么, 就这么开始了日历卡连载
 
-![200401](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2004.001.jpeg)
+![200401](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.001.jpeg)
 
+![200402](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.002.jpeg)
 
-![200402](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2004.002.jpeg)
 
 > 呢喃/ NN 3971
 
@@ -22,7 +22,8 @@ Summary: MurMur/ daily historic card writing, collection in 2020.4
 不过, 怎么看都无法对抗日本漫画构造的万画世界.
 儿童其实并不特殊和俺们一样.
 
-![200403](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2004.003.jpeg)
+
+![200403](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.003.jpeg)
 
 > 呢喃/ NN 3972
 
@@ -33,8 +34,8 @@ COVID-19 不可逆转的改变了整个人类社会结构;
 人类不过是盖亚皮屑里的微虫, 拼力折腾能叮痒地球,后果Orz
 
 
-![200404](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2004.004.jpeg)
 
+![200404](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.004.jpeg)
 
 > 呢喃/ NN 3973
 
@@ -49,7 +50,8 @@ COVID-19 不可逆转的改变了整个人类社会结构;
 最应该哀悼的, 是人类用了5千年才形成的全球化,
 却瞬间断裂成孤岛式关系, 那么...
 
-![200405](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2004.005.jpeg)
+![200405](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.005.jpeg)
+
 
 > 呢喃/ NN 3974
 
@@ -59,7 +61,8 @@ COVID-19 不可逆转的改变了整个人类社会结构;
 为什么?
 
 
-![200406](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2004.006.jpeg)
+![200406](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.006.jpeg)
+
 
 > 呢喃/ NN 3975
 
@@ -73,9 +76,10 @@ Asimov 并非最喜爱的 SiFi 作家, 却是最敬佩的.
 
 
 
+![200407](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.007.jpeg)
 
 
-
+![200408](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.008.jpeg)
 
 
 

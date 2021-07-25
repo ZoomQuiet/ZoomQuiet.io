@@ -9,10 +9,10 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 ## 呢喃 at 2020.3
 > 不为什么, 就这么开始了日历卡连载
 
-![200301](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.002.jpeg)
+![200301](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.002.jpeg)
 
 
-![200302](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.003.jpeg)
+![200302](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.003.jpeg)
 选择什么内容放在日历卡上?
 历史上的今天, 是理工直男的自然选择了;
 真正开始制作和选择, 才发现自己真正的兴趣偏爱...
@@ -21,7 +21,8 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 
 是也乎,(￣▽￣)
 
-![200303](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.004.jpeg)
+
+![200303](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.004.jpeg)
 图片限制就是 Twitter 的140字, 比纯文本的500字要小很多;非常象命题作文;-)
 这几天都在想, 38节所在月份, 蟒营™Python 入门班应该以什么力度来表示? 最后决定:
 凡是女生, 全部优惠 380 元
@@ -29,12 +30,12 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 
 是也乎,(￣▽￣)
 
-![200304](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.005.jpeg)
+![200304](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.005.jpeg)
 
 伊能 静, 当年那盘专辑 "19岁的最后一天", 连续听了半年, 生生听掉了磁粉;
 从那之后, 才接触到了流行音乐, 并进一步探索到 Bach ...
 
-![200305](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.006.jpeg)
+![200305](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.006.jpeg)
 
 > 呢喃/ NN 3942
 
@@ -44,7 +45,8 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 从而在各种事情上都能作的不差...
 所以, 信心比能力重要.
 
-![200306](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.007.jpeg)
+![200306](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.007.jpeg)
+
 
 > 呢喃/ NN 3944
 
@@ -55,7 +57,8 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 这就是经典的报复性工作.
 
 
-![200307](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.008.jpeg)
+![200307](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.008.jpeg)
+
 > 呢喃/ NN 3944
 
 昨天 王佩 老师的写作班, 布置作业是要采访同学, 并用 "意象阶梯" 手法来尝试阐述;
@@ -65,7 +68,9 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 通过持续写作来逐渐逼近自己, 最靠谱.
 
 
-![200308](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.009.jpeg)
+
+![200308](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.009.jpeg)
+
 > 呢喃/ NN 3946
 
 妇女节是一个多世纪前美国女工大罢工而争取到的,
@@ -78,9 +83,7 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 只有真正爱入心髓, 才会怕失去.
 这次疫情主动隔离了一个月,全家人扎实的腻在一起...
 
-
-
-![200309](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.010.jpeg)
+![200309](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.010.jpeg)
 
 > 呢喃/ NN 3947
 
@@ -91,7 +94,8 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 编程真是0->1级别的跃迁啊.
 
 
-![200310](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.011.jpeg)
+
+![200310](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.011.jpeg)
 
 > 呢喃/ NN 3947
 
@@ -99,7 +103,9 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 俺被投票指定为小组被采访对象; 快速直觉的42分钟对谈中,听到自己说的那些,才发现:
 原来, 从来就没长大过, 依旧是那个乐于站书摊前几小时蹭完最新漫画的中二少年 ;-)
 
-![200311](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.012.jpeg)
+
+![200311](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.012.jpeg)
+![200311-](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.013.jpeg)
 
 > 呢喃/ NN 3934
 
@@ -109,7 +115,7 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 (￣▽￣)发布时就有预感了...原版可以去 t.cn/A6zyHiUK 看
 
 
-![200312](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.014.jpeg)
+![200312](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.014.jpeg)
 
 > 呢喃/ NN 3950
 
@@ -118,8 +124,8 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 但是, 对于普通人还是眼前的日子最重要;
 也只有历史自觉的人, 才会为后代着想,从而 对环境/生态/..担心.
 
+![200313](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.015.jpeg)
 
-![200313](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.015.jpeg)
 
 > 呢喃/ NN 3951
 
@@ -128,7 +134,8 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 抱到医院一验, 肌酐指数超过正常十几倍, 基本肾衰竭...
 对11岁的老喵,也只能当活马试一下, 点滴/保温/流食/...标准流程下来,半天就没了.
 
-![200314](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.016.jpeg)
+
+![200314](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.016.jpeg)
 
 > 呢喃/ NN 3952
 
@@ -137,14 +144,16 @@ Summary: MurMur/ daily historic card writing, collection in 2020.3
 
 
 
-![200315](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.017.jpeg)
+![200315](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.017.jpeg)
+
 
 > 呢喃/ NN 3953
 
 Indie Hacker 最常见困扰之一, 就是家务; 相比职场中各种形式会议对思考的中断, 家务更象宿命, 无法逃避; 不过, 换种形式来管理家务却又可以当成一种身体锻炼及亲子活动; 可能技巧就是~ 0: 提前约定/1: 定期进行/2: 共同执行 ;-)
 
 
-![200316](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.018.jpeg)
+![200316](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.018.jpeg)
+
 
 > 呢喃/ NN 3954
 
@@ -154,7 +163,8 @@ Indie Hacker 最常见困扰之一, 就是家务; 相比职场中各种形式会
 另外, 沟通时对事不对人, 在社区中也是自然状态; 其它场景中难矣.
 
 
-![200317](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.019.jpeg)
+![200317](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.019.jpeg)
+
 
 > 呢喃/ NN 3955
 上周自怼圈例会触发新运动: W2W ~ 以文唤文;
@@ -168,9 +178,7 @@ Writing to Writing .. 有点儿象杂志约稿:
 
 才联合发布, 好玩;-)
 
-
-
-![200318](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.020.jpeg)
+![200318](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.020.jpeg)
 
 > 呢喃/ NN 3956
 
@@ -181,7 +189,8 @@ Writing to Writing .. 有点儿象杂志约稿:
 日历卡嘛...
 
 
-![200319](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.021.jpeg)
+![200319](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.021.jpeg)
+
 
 > 呢喃/ NN 3957
 
@@ -191,7 +200,8 @@ HBO 则创造性在原故事框架中, 注入大尺度时间, 以及 AI 生命�
 成功变成神剧, 不得不真诚担心烂尾了..
 
 
-![200320](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.022.jpeg)
+![200320](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.022.jpeg)
+
 
 > 呢喃/ NN 3958
 
@@ -200,7 +210,8 @@ HBO 则创造性在原故事框架中, 注入大尺度时间, 以及 AI 生命�
 嗯哼, 这个问题很值得探讨呢..
 
 
-![200321](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.023.jpeg)
+![200321](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.023.jpeg)
+
 
 > 呢喃/ NN 3959
 
@@ -211,7 +222,8 @@ HBO 则创造性在原故事框架中, 注入大尺度时间, 以及 AI 生命�
 不过,也证明W2W有效果, 一起来唤哈
 
 
-![200322](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.024.jpeg)
+![200322](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.024.jpeg)
+
 
 > 呢喃/ NN 3960
 
@@ -222,7 +234,8 @@ HBO 则创造性在原故事框架中, 注入大尺度时间, 以及 AI 生命�
 历史事件/人物/..太多, 但最触动的还是这三类;
 对大家呢?
 
-![200323](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.025.jpeg)
+
+![200323](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.025.jpeg)
 
 > 呢喃/ NN 3961
 
@@ -233,7 +246,8 @@ HBO 则创造性在原故事框架中, 注入大尺度时间, 以及 AI 生命�
 发现/展/明/..各种科学嗯嗯姿势Orz
 
 
-![200324](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.026.jpeg)
+![200324](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.026.jpeg)
+
 
 > 呢喃/ NN 3960
 
@@ -244,8 +258,8 @@ BUKA 熬了四周终于还是离开人间.
 但又舍不得直接安乐, 唉...愿上苍保祐她下一世更好
 
 
+![200325](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.027.jpeg)
 
-![200325](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.027.jpeg)
 
 > 呢喃/ NN 3963
 
@@ -257,7 +271,7 @@ Indie Hacker 最大的困难是什么?
 下意识找各种能作的事儿, 忙到没空去想;
 那么,慢慢来..
 
-![200326](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.028.jpeg)
+![200326](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.028.jpeg)
 
 > 呢喃/ NN 3964
 
@@ -268,8 +282,8 @@ Indie Hacker 最大的困难是什么?
 以及非常传奇的家庭生活,太羡慕...
 
 
+![200327](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.029.jpeg)
 
-![200327](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.029.jpeg)
 
 > 呢喃/ NN 3964
 
@@ -282,8 +296,8 @@ W2W就是以文唤文: 抛弃无脑点赞,用文章唤取文章;
 > askdama@googlegroups.com
 
 
+![200328](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.030.jpeg)
 
-![200328](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.030.jpeg)
 
 > 呢喃/ NN 3966
 
@@ -293,8 +307,7 @@ W2W就是以文唤文: 抛弃无脑点赞,用文章唤取文章;
 得专门人工配置开绿灯才能恢复教学.
 地命海心...
 
-
-![200329](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.031.jpeg)
+![200329](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.031.jpeg)
 
 > 呢喃/ NN 3867
 
@@ -303,8 +316,8 @@ COVID-19 被爆发, 各社区不得不将以往线下活动迁移到线上;
 12年在豆瓣公司现场组织两天的黑客松时,用 join.me 共享屏幕+QQ 群语音直播;
 现在统一 zoom Pro. 帐号, 爽.
 
+![200330](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.032.jpeg)
 
-![200330](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.032.jpeg)
 > 呢喃/ NN 3968
 
 昨夜首次尝试前后两期学员混合在一起网络直播,
@@ -313,8 +326,7 @@ COVID-19 被爆发, 各社区不得不将以往线下活动迁移到线上;
 AKA 原则是可以包含课程其它期的呢.
 因为, 这是真正意义上的薪火相传...
 
-
-![200331](http://ydlj.zoomquiet.top/ipic/2021-07-25-zq42-today-card-2003.033.jpeg)
+![200331](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2003.033.jpeg)
 
 > 呢喃/ NN 3969
 
