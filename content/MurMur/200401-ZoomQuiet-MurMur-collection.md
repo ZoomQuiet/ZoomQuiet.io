@@ -11,6 +11,14 @@ Summary: MurMur/ daily historic card writing, collection in 2020.4
 
 ![200401](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.001.jpeg)
 
+> 呢喃/ NN 3970
+
+当年各种免费邮箱都是5M左右, 付费的也才100M;
+Gmail 上来就给 1G , 而且劝大家千万别删, 永久归档就好...
+那是种多荒诞的感觉啊, 还专门选在 4.1 发布;
+结果呢? 爽到至今.
+蟒营™课程也触动一下->今天报名直接享受 7折 优惠.
+
 ![200402](https://ipic.zoomquiet.top/2021-07-25-zq42-today-card-2004.002.jpeg)
 
 
