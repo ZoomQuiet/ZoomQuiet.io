@@ -187,8 +187,8 @@ Slug: 211114M1max-re-inti-MBP
         - $ sudo xcodebuild -license accept 
     + 再来, 也就都流畅完成了
 
-![12G](https://ipic.zoomquiet.top/2021-11-14-WechatIMG36612.jpeg)
 
+![12G](https://ipic.zoomquiet.top/2021-11-14-ScreenShot2021-11-15%2000.11.27.jpg)
 
 甚至于, 原先在 老 rMBP 每次安装要编译半小时的 ffmpeg 也无缝自动完成升级:
 
