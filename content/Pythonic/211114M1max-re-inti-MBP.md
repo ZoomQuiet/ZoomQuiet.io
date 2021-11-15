@@ -146,9 +146,12 @@ Slug: 211114M1max-re-inti-MBP
         - 当然, 要先确保在同一个网络中
     + 看起来可行, 开始:   
 
-![80万文件](https://ipic.zoomquiet.top/2021-11-14-ScreenShot2021-11-14%2023.32.28.jpg)
+![p2p](https://ipic.zoomquiet.top/2021-11-15-ScreenShot2021-11-15%2009.55.38.jpg)
 
 嗯嗯嗯...嘦10小时等一晩上就好,
+
+![80万文件](https://ipic.zoomquiet.top/2021-11-14-ScreenShot2021-11-14%2023.32.28.jpg)
+
 
 果然:
 
