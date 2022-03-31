@@ -119,7 +119,7 @@ Android 呢,就是 Linux 哪,当然应该用 `scp` 安全上传了!
 明确 `SSHDroid` 最简洁可用,
 那就上:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140127-qpy-sshdroid.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140127-qpy-sshdroid.jpg)
 
 - 安装,配置都没有什么可说的
 - 只是,非专业版,只能用口令登录,先忍着
@@ -165,7 +165,7 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 - 所以,程序猿有 [BusyBox](http://www.busybox.net/)
 - 一安装,批量将大堆习惯的工具,灌到 `system/xbin/`
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-busybox-tail.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-busybox-tail.jpg)
 
 
 这样,才能远程观察, QPython 项目目录中,
@@ -181,7 +181,7 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 
 就能运行成功,跳出最简单的发布公告框了!
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-hollo.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-hollo.jpg)
 
 
 
@@ -238,7 +238,7 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 `注意:` 这货一定要加载到 QPython 中,用脚本形式来跑,
 如果也是从后台 shell 环境中跑,是获得不了主要关键参数的!
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-gen-profile.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-gen-profile.jpg)
 
 
 然后!? 肿么,让 shell 环境每次都能自动加载上这堆配置?
@@ -259,7 +259,7 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 
 再关闭,重启 `SSHDroid` 后,远程登入,测试:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-this-zen.png)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-this-zen.png)
 
 
 然后,远程人工从 shell 调用
@@ -271,19 +271,19 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 
 手机无论在什么桌面,都能跳出来俺的 `hollo.py` 运行结果:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-console-hollo.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-console-hollo.jpg)
 
 
 然后,本地,习惯性的,就可以用 [tmux](http://tmux.sourceforge.net/) 同时
 观察/管理本地以及远程的开发/测试/运行情况了:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140127-qpy-tumx.png)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140127-qpy-tumx.png)
 
 
 #### BETA乱入
 作者看俺这么努力的折腾从内部机密放送俺最新开发版本,兴奋的安装上:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140127-qpy-new-version.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140127-qpy-new-version.jpg)
 
 然后,再运行...
 
@@ -310,13 +310,13 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 所以,必须:
 
 - 从项目中打开脚本:
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140127-qpy-env-proj.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140127-qpy-env-proj.jpg)
 
 - 从 QEditor 中运行
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140127-qpy-env-run.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140127-qpy-env-run.jpg)
 
 - 在 console 中生成:
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140127-qpy-env-gen-again.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140127-qpy-env-gen-again.jpg)
 
 
 #### QPython头声明
@@ -366,7 +366,7 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 果断的: 
 
 - 先将本地公匙用口令登录的方式推上手机
-- 然后,[sshdroid-cracked.apk](http://zoomq.qiniudn.com/CPyUG/QPython/apk/berserker.android.apps.sshdroid-cracked-signed.apk)
+- 然后,[sshdroid-cracked.apk](http://0.zoomquiet.top/CPyUG/QPython/apk/berserker.android.apps.sshdroid-cracked-signed.apk)
 - 然后,就没有然后了 ;-)
 
 只是,唯一的问题:
@@ -553,19 +553,19 @@ droid.makeToast(u'Hello, Username!是也乎 ;-)')
 
 可惜:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-bottle-error.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-bottle-error.jpg)
 
 原来:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-install-wsgi.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-install-wsgi.jpg)
 
 然后:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-bottle-running.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-bottle-running.jpg)
 
 没有然后:
 
-![snap4qpy](http://zoomq.qiniudn.com/CPyUG/QPython/snap/140126-qpy-bottle-hello.jpg)
+![snap4qpy](http://0.zoomquiet.top/CPyUG/QPython/snap/140126-qpy-bottle-hello.jpg)
 
 
 哈哈! 一切如愿!
