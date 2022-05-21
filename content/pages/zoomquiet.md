@@ -7,7 +7,7 @@ Author: ZoomQuiet
 Status: published
 
 
-![dama101camp](http://ydlj.zoomquiet.top/ipic/2020-07-04-dama101camp-cube.png?imageView2/2/w/420)
+![dama101camp](https://ipic.zoomquiet.top/2022-05-21-2020-07-04-dama101camp-cube.png!/fw/420)
 
 
 中国Python社区中最长情的贡献者, 
@@ -15,10 +15,12 @@ Status: published
 长年为 Pythonic 在中国的推广/实践进行各种尝试;
 连续四届主持PyCon中国大会筹办;
 发起 Open.Book.Project 主持原创/翻译多本 Python 技术图书;
-主持编撰了
-[<<可爱的Python>>](http://book.douban.com/subject/3884108/);
-并原创 蟒营®开源网络课程框架, 希望大家以后再也不用买课程;
-是大家公认的 "大妈"(Zoom.Quiet)
+主持编撰
+[<<可爱的Python>>](http://book.douban.com/subject/3884108/) ;
+并原创 
+[蟒营®101.camp 开源网络课程框架](https://doc.101.camp/)
+, 希望大家以后再也不用买课程;
+是大家公认的 "大妈"([Zoom.Quiet](https://zoomquiet.io/))
 
 坚持用 Pythonic 感化国人进入 FLOSS世界进行学习 / 分享 / 创造...
 
@@ -39,17 +41,17 @@ Status: published
 ~ 可 touch 时间段
 
 - 工作日:
-    + 0800~0842
+    + 2100~2142
 - 周末:
-    + 1000~1142 (只能手机)
-    + 2042~2242
-- 预订/占用ed:
+    + 1000~1042
+    + 2142~2242
+- 已预订/占用ed:
     + 周一 2000~2042
-    + 周二 2000~2042;2200~2342;
+    + 周二 2000~2042
     + 周三 2000~2242
     + 周五 2200~2342;
-    + 周六 2042~2242
-    + 周日 2042~2342
+    + 周六 2000~2142
+    + 周日 1100~1242
 - 异常状态 无法保证:
     + 放假
     + 受伤
@@ -148,6 +150,7 @@ repo.
 
 ## changelog
 
+- 220521 增补, blocked times
 - 210130 增补, new booking times
 - 200704 增补, 并追加使用指南
 - 140216 fixed, 加载非常慢的问题:
