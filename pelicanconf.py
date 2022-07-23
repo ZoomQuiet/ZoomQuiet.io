@@ -80,11 +80,12 @@ TYPOGRIFY = True
 ###############################################################
 ###############################################################   Template abt.
 ###############################################################
-#THEME = "_themes/pelican-bootstrap3"
-THEME = "_themes/z0css"
-BOOTSTRAP_THEME = 'readable'
+THEME = "_themes/pelican-bootstrap3"
+#THEME = "_themes/z0css"
+#BOOTSTRAP_THEME = 'readable'
+#JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
-DEFAULT_PAGINATION = 7
+DEFAULT_PAGINATION = 4
 
 DISPLAY_TAGS_ON_SIDEBAR = False
 TAG_CLOUD_MAX_ITEMS = 10
@@ -119,7 +120,7 @@ SOCIAL = (('Root', 'https://ZoomQuiet.io')
         #, ('O.B.P', 'https://github.com/OpenBookProjects/wiki/blob/master/HowToBuildBookOnline.md')
         , ('思否', 'https://segmentfault.com/u/zoomquiet')
         , ('知乎', 'https://www.zhihu.com/people/zoomquiet')
-        , ('掘金', 'https://juejin.im/user/5aa4848951882577b45ea1fe')
+        #, ('掘金', 'https://juejin.im/user/5aa4848951882577b45ea1fe')
         , ('极术', 'https://aijishu.com/u/zoomquiet')
         , ('开源中国', 'https://my.oschina.net/zoomquiet')
         #, ('周刊', 'http://weekly.pychina.org/')
