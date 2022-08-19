@@ -29,12 +29,12 @@ Summary: MurMur/ FLOSS lifestyle logging+1
 也就到浦东租房时, 从爷爷那儿扛了架弹簧折叠床, 算是解决了基础问题.
 
 原本是作为前端工程师入职的, 然后, 发现也能作后端开发,
-慢慢的也就什么都作了;
+慢慢的也就什么都开始干;
 
 在上海期间, 为公司完成的主要工程应该有:
 
+- 公司核心 ERP 产品的, XSL 皮肤系统
 - 配套上海市交通局, 实时交通状态监察系统, 动态地图前端, 用 Flash 完成, 配合后台提供的 XML 接口
-- 公司核心ERP 产品的, XSL 皮肤系统
 - 上海市政府党委办公室官网 CMS 系统, Windows NT+Apache+MySQL+PHP
 
 其中, 党委官网是手工原创 CMS 系统,
@@ -44,6 +44,7 @@ Summary: MurMur/ FLOSS lifestyle logging+1
 
 不过, 为了完成这个任务, 拓展出的 LAMP 技能, 
 算是真正进入了 FLOSS 世界;
+
 
 
 
