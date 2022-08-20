@@ -95,6 +95,9 @@ PS:
 可以说, 前20多年的准备,
 是接下来去上海工作时, 进入开源世界的必要条件了...
 
+### refer.
+
+- [CLAMP-saintWar](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/1999-1-4-CLAMP-saintWar.jpg) 99年用 Illstartor 9.1 完成的习作, 用以设计岗位招聘
 
 
 ### logging

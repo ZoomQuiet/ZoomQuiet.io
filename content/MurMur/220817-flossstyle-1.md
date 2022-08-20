@@ -137,18 +137,131 @@ IRC + mailling-list, 是关键技术讨论空间;
 
 直到遇见 Python...
 
+整体上线索关系是这样的:
 
+- 0: 学PHP, 作网站
+- 1: 知道 CMS 概念, 挖掘出一系列 CMS 系统
+- 2: 然后所有 CMS 系统社区都在歌唱 Plone 才是 CMS 之神
+- 3: 进一步发现 Plone 是基于 Zope 构建的
+- 4: 又经过学习才知道 Zope 是 Python 开发的
+- 5: 那么想用好 Plone 自然得先学会 Python 并掌握 Zope
+- ...
 
+当然, 这是事后以上帝视角整理后的逻辑,
+当年, 中间也夹杂了各种旁路探索, 
+比如当时无意中找到的网页: [程序设计语言介绍/2002.6.21](http://web.archive.org/web/20030205031354/http://cdtzx.51.net/pimage/programs.htm)
+其中介绍的所有语言, 都去尝试学习使用过,
+结果只有 Python 和那时自身兴趣有关联, 从而真正上手;
 
+而这个上手过程并不简单,
+比如, 记忆中人生第一个可运行的 Python 工具是:
+
+天气预报网络自动抓取工具/getSHwunderground,
+简单说是就从 https://www.wunderground.com/ 网站自动抓取上海地区的天气数据,
+在 CLI/终端 上整理为中文, 汇报出来;
+
+当时基于 Python 1.5, 在 windows NT 环境中开发,
+成体系的建功立业资料, 只有一本:
+[Python学习手册 (Mark Lutz) 第一版](https://book.douban.com/subject/3948354/)
+而且, 人家示例代码都运行在 mac 环境中, 
+其中要突破的坑, 现在想也就几个,
+当年整整用了一个月的业余时间...
+
+过程中, 可能最大的收获是认识了中国 Python 社区中关键的两位人物,
+
+- Limodou, UliPad/UliWeb 创始人
+- 老潘, CZUG社区/润普公司 创始人
+
+就是在 CZUG 吵起来而认识的, 记忆中是个什么事儿呢?
+俺在 CZUG 中讨论 Zope/Python 的学习, 感谢 CZUG 提供一个免费社区空间,
+
+- 发现背后主持公司叫 `润普` , 感觉这是 Zope 的谐音,建议, `润璞` 更加好;
+- Linodou 反对, 认为这种难以念出来的字对公司发展不好
+- 俺就引用各种理论来反驳
+- 老潘 不时出来维护气氛
+- ...我们仨儿, 几乎占了每个月, CZUG 论坛上1/3 的流量
+- 可以说不吵不相识
+
+过程中, 老潘也认识了 zoomquiet 这个ID,
+甚至于开放了部分网站权限,
+也就将以往积累的前端技能, 为 CZUG 定制了几款皮肤, 比如其中一款:
+
+[2004-0930-effeBDragon.png (899×431)](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/2004-0930-effeBDragon.png)
+
+其中那个龙标的 logo 设计稿:
+[Zdragon-cloud](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/2004-0930-Zdragon-cloud-exp.png)
+就是用`盗版` Coredraw 完成的;
+
+类似折腾其实, 发现在很多社区中,
+其中多数社区现在早已从互联网中消失, 
+当然, 其中的大人物, 依然活跃在世界各地;
+
+从上海得以北漂北京的关键人事就是: [HD](https://wiki.woodpecker.org.cn/moin/HD),
+当时, 也只知道是国内 Python 大佬,
+曾经在移动公司短信网关上, 用Python 完成重要系统;
+
+应该也是在 CZUG 中认识的,
+HD 不怎么说教, 只是发布项目, 号召大家来尝试,
+但是, 很积极回答具体技术问题;
+
+首先在大家倡议下, 
+俺主动承担新近社区: 啄木鸟社区的邮件列表构建任务,
+在已经慢慢熟悉的 redhat 系统中,
+在公司闲置 PC 机上, 安装了 Mailman 系统,
+从各种 Python 相关 BBS 论坛版块中宣传,
+很快就有 200+ 订阅,
+每天讨论各种 Python 开发问题;
+(后来此列表由 exoweb.com 公司赞助, 迁移为 python-chinese@lists.python.cn)
+
+进一步, 又主动安装 moinmoin 维基系统,
+通过公司网关解析, 使用临时域名发布出来,
+供给大家积累议题/资料;
+
+并进一步, 参与了其中一个通用模板组件的开发:
+[Otter \- Woodpecker Wiki for CPUG](https://wiki.woodpecker.org.cn/moin/Otter)
+就是用 Python 合理对 XML 模板进行解析以及修改;
+算是进一步夯实了当时并不熟练的 Python 开发技能;
+
+神奇的是, 经过一次线上会议答辩:
+
+![OtTXMLengine](https://ipic.zoomquiet.top/2022-08-20-OtTXMLengine.gif)
+
+配合用 Coredraw 绘制的解析过程图谱,
+通过 QQ 语音给大家解说明白思想和代码;
+
+没想到这次普通的社区项目沟通会议, 其实是 SINA 面试考察,
+因此获得了职位, 得以进入大型 IT 公司去接触不同的世界.
 
 
 ### summary
 > 小结
 
+在上海几年, 无知者无畏, 完全好奇心驱动下, 
+持续自学, 慢慢恢复自学能力,
+通过 开源技术, 结识开源社区/人物/项目,
+通过义务贡献, 参与具体工程,
+无意中入得关键人物法眼,
+在自身现实社会渠道之外, 闯出全新道路;
+
+这一切是因为什么, 后来才慢慢明白, 
+只是, 当时反复看的电影, 并没有将所有关联融合起来:
+
+[操作系统革命/RevolutionOS](http://woodpecker.up.zoomquiet.top/media/020215-RevolutionOS.rmvb)
+
+
 ### refer.
 > 有关链接
 
 - [Nucleus Documentation v3.2](http://nucleuscms.org/docs/)
+- [Plone - The Open Source CMS — Plone Documentation v5.2](https://docs.plone.org/intro/index.html#what-does-plone-mean-how-is-it-pronounced)
+- [Zope documentation — Zope documentation 5.3 documentation](https://zope.readthedocs.io/en/latest/operation.html#special-access-user-accounts)
+- [Zope指南 (豆瓣)](https://book.douban.com/subject/1096066/)
+- [About "Learning Python, 1st Edition"](https://learning-python.com/about-lp1e.html)
+- ...
+- [程序设计语言介绍/2002.6.21](http://web.archive.org/web/20030205031354/http://cdtzx.51.net/pimage/programs.htm)
+- ...
+- [中文Zope用户组(CZUG) - Zoomq's ContentPanels](http://web.archive.org/web/20040605125007/http://www.czug.org/Members/Zoomq)
+- [GNU Mailman](https://www.list.org/)
 
 ### logging
 
