@@ -99,6 +99,9 @@ PS:
 
 - [CLAMP-saintWar](http://0.zoomquiet.top/CPyUG/zoomquiet-design-collection/1999-1-4-CLAMP-saintWar.jpg) 99年用 Illstartor 9.1 完成的习作, 用以设计岗位招聘
 
+下一篇:
+
+[开源生活实录.1.LAMP之辉](/220817-flossstyle-1.html)
 
 ### logging
 

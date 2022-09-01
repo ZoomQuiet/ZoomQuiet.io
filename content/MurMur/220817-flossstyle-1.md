@@ -12,6 +12,7 @@ Summary: MurMur/ FLOSS lifestyle logging+1
 ### background
 > 书接上回
 
+[开源生活实录.0.从哪儿知道的?](/220817-flossstyle-0.html)
 
 从常州切换回软件行业, 
 在老同学推荐下, 面试成功, 转战上海,
@@ -264,6 +265,9 @@ HD 不怎么说教, 只是发布项目, 号召大家来尝试,
 - [GNU Mailman](https://www.list.org/)
 
 ### logging
+
+下一篇: [开源生活实录.2.GNU之魂](/220820-flossstyle-2.html)
+
 
 - 220819 ZQ 发布
 - 220818 ZQ 规划
