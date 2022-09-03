@@ -260,7 +260,7 @@ Summary: MurMur/ FLOSS lifestyle logging+3
 
 
 ### logging
-下一篇:  ???
+下一篇:  [开源生活实录.4.PKM到EKM](/220903-flossstyle-4.html)
 
 
 
