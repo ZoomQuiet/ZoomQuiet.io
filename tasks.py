@@ -28,14 +28,14 @@ def reserve(c):
 
 def gh_pages(c):
     c.run('cd {deploy_path} && '
-          'pwd && '
-          'git st && '
-          'git add --all . && '
-          'git ci -am "re-build from local by markdoc @MBP111216ZQ" && '
-          # 'git pu cafe gitcafe-page '
-          'git pu && '
-          'date '.format(**env)
-          )
+        'pwd && '
+        'git st && '
+        'git add --all . && '
+        'git ci -am "re-build from local by markdoc @MBP111216ZQ" && '
+        # 'git pu cafe gitcafe-page '
+        'git pu && '
+        'date '.format(**env)
+        )
 
 @task
 def pub(c):

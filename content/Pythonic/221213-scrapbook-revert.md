@@ -9,7 +9,6 @@ Status: published
 
 [TOC]
 
-
 ## Background
 
 ![neofetch](https://ipic.zoomquiet.top/2022-12-13-zshot%202022-12-14%2000.18.51.jpg)
@@ -133,6 +132,7 @@ Status: published
 ## logging
 
 - 221213 zoomquiet 终于解决
+    - 230106 重新发布
 - 221111 zoomquiet M1macOS 升级后再次无法使用
 - 2017 zoomquiet 撞上 FireFox 放弃所有 XUL 扩展问题
 - 2005 zoomquiet init. scrapbook in FireFox
