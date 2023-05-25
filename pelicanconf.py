@@ -77,8 +77,8 @@ PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 ###############################################################
 ###############################################################   Template abt.
 ###############################################################
-THEME = "_themes/pelican-bootstrap3"
-# THEME = "_themes/z0css"
+# THEME = "_themes/pelican-bootstrap3"
+THEME = "_themes/z0css"
 # BOOTSTRAP_THEME = 'readable'
 # JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
