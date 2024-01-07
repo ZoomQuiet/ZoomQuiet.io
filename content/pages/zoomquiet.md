@@ -7,35 +7,44 @@ Author: ZoomQuiet
 Status: published
 
 
-![dama101camp](https://ipic.zoomquiet.top/2022-05-21-2020-07-04-dama101camp-cube.png!/fw/420)
+![dama101camp](https://ipic.zoomquiet.top/2022-05-21-2020-07-04-dama101camp-cube.png!/fw/360)
 
 
-中国Python社区中最长情的贡献者, 
+AIGCx珠海创始人, 也是中国Python社区中最长情的贡献者, 
 从04年共同创建 CPyUG(中国Python用户组)以来,
 长年为 Pythonic 在中国的推广/实践进行各种尝试;
 连续四届主持PyCon中国大会筹办;
-发起 Open.Book.Project 主持原创/翻译多本 Python 技术图书;
+发起 Open.Book.Project ;
 主持编撰
-[<<可爱的Python>>](http://book.douban.com/subject/3884108/) ;
+[<<可爱的Python>>](http://book.douban.com/subject/3884108/)/翻译多本 Python 技术图书 ;
 并原创 
 [蟒营®101.camp 开源网络课程框架](https://doc.101.camp/)
 , 希望大家以后再也不用买课程;
 是大家公认的 "大妈"([Zoom.Quiet](https://zoomquiet.io/))
 
-坚持用 Pythonic 感化国人进入 FLOSS世界进行学习 / 分享 / 创造...
+- 当前转战自媒体, 分享有趣有料有种的事儿.
+- https://www.youtube.com/@Chaos42DAMA
 
+坚持用 Pythonic 感化国人进入 FLOSS世界进行学习 / 分享 / 创造...
 
 
 目前 Indie Hacker 在珠海:
 
-- 个人网站: https://zoomquiet.io
+- 网站: https://zoomquiet.io
 - Blog: http://blog.zoomquiet.io/
-- 课程框架: https://doc.101.camp
-- 微博:  http://weibo.com/zoomquiet
+- X: https://twitter.com/zoomq
 
 
 ## usage
 > 为合理沟通,效率协作,公开 大妈的调用手册 
+
+> Buy me a coffee
+
+- https://www.buymeacoffee.com/zoomquiet
+- 支付宝:
+  + ![alipay](https://ipic.zoomquiet.top/2023-12-08-alipay.jpg!/fw/360)
+- 微信:
+  + ![wxpay](https://ipic.zoomquiet.top/2023-12-08-wxpay.jpg!/fw/360)
 
 ### 作习
 ~ 可 touch 时间段
@@ -48,13 +57,11 @@ Status: published
 - 已预订/占用ed:
     + 周二 2100~2242
     + 周四 2100~2242
-    + 周五 2100~2242;
     + 周六 2000~2142
-    + 周日 1100~1242
-    + 周日 2100~2242
 - 异常状态 无法保证:
-    + 放假
+    + 公假
     + 受伤
+    + 疾病
     + 交通
     + ...
 - 其它:
@@ -62,10 +69,6 @@ Status: published
 - 预约:
     + 提前两天邮件商定
 
-### 课程
-> 大妈主持运营的各种课程
-
-- [蟒营®编程思维提高班Python版](https://py.101.camp/)
 
 
 ### 服务
@@ -102,6 +105,10 @@ Status: published
     + 1242-1341
     + 1842-2341
 
+### 课程
+> 大妈主持运营的各种课程
+
+- [蟒营®编程思维提高班Python版](https://py.101.camp/)
 
 
 ## 戳
@@ -149,6 +156,7 @@ repo.
 
 ## changelog
 
+- 231208 增补, buy me coffee...
 - 230109 增补, blocked times
 - 220521 增补, blocked times
 - 210130 增补, new booking times

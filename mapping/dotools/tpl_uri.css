@@ -1,0 +1,5 @@
+#%(dataID)s {
+    margin-left: %(imgWidth)spx;
+    background-image: url('data:image/%(picType)s;base64,%(dataURI)s') top left no-repeat;
+}
+

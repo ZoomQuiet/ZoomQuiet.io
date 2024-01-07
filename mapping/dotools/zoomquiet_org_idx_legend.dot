@@ -1,0 +1,63 @@
+digraph zoomquiet_org_idx_legend {
+    /*生成命令:
+$ dot -Tjpeg zoomquiet_org_idx_legend.dot -o zoomquiet_org_idx_legend.jpg
+    全局设定
+    */
+    graph [label=""
+        ,fontsize=10.0,fontcolor=snow
+        ,labeljust="l",labelloc="t",center=1
+        ,ranksep=0.3,center=1,ratio=compress
+        ,rankdir=LR
+        ,truecolor bgcolor="#333333"
+        ];
+
+    node[fontsize=11.0,height=0.4
+        ,style="filled,setlinewidth(0.5)",fillcolor="#333333",color=gray,fontcolor=snow
+        ,shape=plaintext
+        ];
+
+    edge [color=snow,fontsize=9.0,fontcolor=snow
+        ,arrowsize=0.5,arrowhead=vee,arrowtail=none
+        ,style="setlinewidth(0.5)"
+        ];
+
+    /*图元声明
+    start       [label="流程开始/结束",shape=point];
+    end         [label="",shape=doublecircle,fillcolor=red];
+
+    box         [label="实体/对象",shape=box];
+    ellipse     [label="行动/节点",shape=ellipse];
+    egg         [label="用户/人物",shape=egg];
+    plaintext   [label="状态/属性",shape=plaintext,fillcolor=whitesmoke];
+    diamond     [label="判别",shape=diamond];
+    note        [label="注释",shape=note];
+    tab         [label="目录/模块",shape=tab];
+    db          [label="数据库",shape=box3d];
+    component   [label="主机/组件",shape=component];
+  ,style="rounded,dotted"];
+    */
+    box         [label="处置",shape=box];
+    act [label="行动",shape=ellipse,style="filled,dashed,setlinewidth(5)"
+        ,color="#333333",fillcolor=dimgray];
+    egg         [label="角色",shape=egg];
+    diamond     [label="判别",shape=diamond];
+    note        [label="文注",shape=note];
+    db          [label="工程",shape=box3d];
+    component   [label="组件",shape=component];
+    tab         [label="组别",shape=tab];
+    class       [label="分类",shape=folder];
+
+    title       [label="图例::"];
+    nodeA       [label="节点",];
+    nodeB       [label="节点",shape=ellipse,style="dotted"];
+
+    nodeA->nodeA [label="默认",color=azure];
+    nodeA->nodeB [label="筹备",color=azure,style="dashed,setlinewidth(0.5)"];
+    nodeA->nodeB [label="日常",color=azure,style="setlinewidth(1)"];
+    nodeA->nodeB [label="活跃",color=azure,style="setlinewidth(2)"];
+    nodeA->nodeB [label="兴奋",color=azure,style="setlinewidth(3)"];
+
+    edge [style=invis];
+    title->db;
+    nodeB->db->component->class->tab->note->box->act->diamond->egg;
+}

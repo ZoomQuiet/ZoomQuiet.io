@@ -113,10 +113,11 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 SOCIAL = (
     ('Root', 'https://ZoomQuiet.io'),
     ('GitHub', 'https://github.com/ZoomQuiet/ZoomQuiet.io'),
+    ('大妈的多重宇宙', 'https://www.youtube.com/@Chaos42DAMA'),
+    ('豆瓣', 'https://www.douban.com/people/zoomq/'),
     ('蟒周刊', 'http://weekly.pychina.org/'),
     ('锈周刊', 'https://weekly.rs.101.so/'),
-    ('豆瓣', 'https://www.douban.com/people/zoomq/'),
-    ('周看/电子报', 'https://zoomquiet.substack.com/'),
+    # ('周看/电子报', 'https://zoomquiet.substack.com/'),
     # ('怼周报', 'https://du.101.camp/duw/')
     # , ('O.B.P', 'https://github.com/OpenBookProjects/wiki/blob/master/HowToBuildBookOnline.md'),
     # ('思否', 'https://segmentfault.com/u/zoomquiet'),
@@ -130,6 +131,7 @@ SOCIAL = (
     ('啄木鸟', 'http://wiki.woodpecker.org.cn/moin/ZoomQuiet'),
     ('维基', 'http://wiki.zoomquiet.io'),
     ('旧曰', 'http://blog.zoomquiet.org/pyblosxom/'),
+    ('小红花Club', 'https://xhh.club/'),
 )
 # Blogroll
 LINKS = None

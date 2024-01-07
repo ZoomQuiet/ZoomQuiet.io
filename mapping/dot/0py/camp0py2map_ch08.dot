@@ -1,0 +1,201 @@
+digraph camp0py2map_ch08 {
+/*生成命令:
+$ dot -Tjpeg camp0py2map_ch08.dot -o camp0py2map_ch08.jpg -Tcmapx -o camp0py2map_ch08.map
+$ python ../dotools/gen2htm4io101camp.py  -t ../dotools/tpl_idx.htm -i "py.101.camp ch08 mapping" -d camp0py2map_ch08.dot -o camp0py2map_ch08.html
+
+$ python ../dotools/gen2htm4io101camp.py --neato -t ../dotools/tpl_idx.htm -i "py.101.camp ch08 mapping" -d camp0py2map_ch08.dot -o camp0py2map_ch08.html
+
+##############################################################################
+#   全局设定
+##############################################################################
+*/
+    graph [label="py.101.camp 课程知识点关系\n{gen. by Graphviz}"
+        ,fontsize=12.0,fontcolor=snow
+        ,labeljust="l",labelloc="t",center=1
+        ,ranksep=0.1,center=1,ratio=compress
+        ,rankdir=LR
+        ,bgcolor="#333333"
+        ];
+
+    node[fontsize=11.0,height=0.4
+        ,style="filled,setlinewidth(0.5)",fillcolor="#334233",color=gray,fontcolor=snow
+        ,shape=plaintext
+        ];
+
+    edge [fontsize=9.0,fontcolor=gray
+        ,color=azure
+        ,arrowsize=0.5,arrowhead=vee,arrowtail=none
+        ,style="setlinewidth(0.5)"
+        ];
+
+/*
+##############################################################################
+#   block relation
+##############################################################################
+*/
+
+    PYC [label="蠎营\nPythoniCamp",shape=box3d
+            ,URL="https://gitlab.com/101camp"];
+    ch00  [label="ch00\n周蠎",shape=tab,URL="#"];
+        py2  [label="Python 2.7" ,URL="https://www.python.org/"];
+        zhpy  [label="zhpy" ,URL="https://github.com/gasolin/zhpy"];
+        pip  [label="pip" ,URL="https://pypi.org/"];
+
+    ch00->py2->{zhpy pip};
+
+
+    ch01  [label="ch01\nCLI",shape=tab,URL="#"];
+        shell  [label="shell" ,URL="https://en.wikipedia.org/wiki/Shell_(computing)"];
+            bash   [label="bash  ",URL="https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29"];
+            zsh    [label="zsh   ",URL="https://en.wikipedia.org/wiki/Z_shell"];
+            iterm2 [label="iterm2",URL="https://iterm2.com"];
+            cmder  [label="cmder ",URL="http://cmder.net/"];
+        py3 [label="Python 3.7",URL="https://docs.python.org/3/"];
+            REPL [label="REPL ",URL="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop"];
+
+        click [label="Click",URL="https://click.palletsprojects.com/en/7.x/"];
+            stdin [label="stdin",URL="https://en.wikipedia.org/wiki/Standard_streams"];
+            stdout [label="stdout",URL="https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)"];
+            stderr [label="stderr",URL="https://en.wikipedia.org/wiki/Standard_streams#Standard_error_(stderr)"];
+    ch01->{shell py3};
+        shell->{bash zsh terminal};
+        py3->{click REPL};
+            click->{stdin stdout stderr}
+
+
+    ch02  [label="ch02\nhelp",shape=tab,URL="#"];
+        print [label="print()",URL="https://docs.python.org/3.7/library/functions.html#print"];
+        pprint [label="pprint",URL="https://docs.python.org/3/library/pprint.html"];
+        format [label="format()",URL="https://docs.python.org/3/library/stdtypes.html?highlight=format#str.format"];
+        dir [label="dir()",URL="https://docs.python.org/3.7/library/functions.html#dir"];
+        help [label="help()",URL="https://docs.python.org/3.7/library/functions.html#help"];
+
+    ch02->{print help dir};
+        print->{format pprint};
+
+    ch03  [label="ch03\ngit",shape=tab,URL="#"];
+        git [label="git",URL="https://git-scm.com/"];
+        github [label="github",URL="https://github.com/"];
+        gitlab [label="gitlab",URL="https://gitlab.com/"];
+        issue [label="issue",URL="https://gitlab.com/help/user/project/issues/index.md"];
+        wiki [label="wiki",URL="https://gitlab.com/help/user/project/wiki/index.md"];
+        comm [label="commit comments",URL="https://gitlab.com/help/user/discussions/index.md"];
+    ch03->{git};
+        git->{github gitlab};
+            gitlab->{issue wiki comm};
+
+    ch04  [label="ch04\npip",shape=tab,URL="#"];
+        logging [label="logging",URL="https://docs.python.org/3.7/library/logging.html"];
+            fileH [label="file\nHandler",URL="https://docs.python.org/3.7/library/logging.html#handler-objects"];
+            bLevel [label="Bug Level",URL="https://docs.python.org/3.7/library/logging.html#levels"];
+                blCRITICAL  [label="CRITICAL",URL="#"];
+                blERROR     [label="ERROR",URL="#"];
+                blWARNING   [label="WARNING",URL="#"];
+                blINFO      [label="INFO",URL="#"];
+                blDEBUG     [label="DEBUG",URL="#"];
+    ch04->{ logging};
+        logging->{fileH bLevel};
+            bLevel->{blCRITICAL blERROR blWARNING blINFO blDEBUG};
+
+    ch05  [label="ch05\ntext",shape=tab,URL="#"];
+        csv [label="csv",URL="https://en.wikipedia.org/wiki/Comma-separated_values"];
+        dict [label="dict",URL="https://docs.python.org/3/library/stdtypes.html?highlight=dict#dict"];
+        pickle [label="pickle",URL="https://docs.python.org/3.7/library/pickle.html"];
+    ch05->{csv dict pickle};
+
+    ch06  [label="ch06\nweb",shape=tab,URL="#"];
+        curl [label="cURL",URL="https://curl.haxx.se/"];
+        web [label="web",URL="https://en.wikipedia.org/wiki/World_Wide_Web"];
+            css [label="css",URL="https://www.w3schools.com/Css/"];
+            htm [label="html",URL="https://www.w3schools.com/html/"];
+            js [label="JavaScript",URL="https://en.wikipedia.org/wiki/JavaScript"];
+            REST [label="RESTful",URL="https://en.wikipedia.org/wiki/Representational_state_transfer"];
+        fwork [label="framework",URL="https://en.wikipedia.org/wiki/Web_framework"];
+            bottle [label="bottle",URL="https://bottlepy.org/"];
+                flask [label="flask",URL="http://flask.pocoo.org/"];
+                django [label="django",URL="https://www.djangoproject.com/"];
+            route [label="route",URL="https://bottlepy.org/docs/dev/routing.html"];
+            get [label="get",URL="#"];
+            post [label="post",URL="#"];
+            request [label="request",URL="http://docs.python-requests.org/en/master/"];
+    ch06->{web fwork curl};
+        fwork->{bottle flask django};
+            bottle->{route get post request};
+        web->{css htm REST js};
+            REST->{curl bottle flask django};
+
+    ch07  [label="ch07\nlogging",shape=tab,URL="#"];
+        http [label="http",URL="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol"];
+        url [label="url",URL="https://en.wikipedia.org/wiki/Uniform_Resource_Locator"];
+        uri [label="uri",URL="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier"];
+    ch07->{web http};
+        http->{uri url};
+
+    ch08  [label="ch08\nSaaS",shape=tab,URL="#"];
+        SaaS [label="SaaS",URL="https://en.wikipedia.org/wiki/Software_as_a_service"];
+            SAE [label="SAE",URL="http://www.sinacloud.com/sae.html"];
+            AWS [label="AWS",URL="https://aws.amazon.com"];
+            etc [label="...",URL="#"];
+            Heroku [label="Heroku",URL="https://www.heroku.com/"];
+                hcli [label="Heroku-CLI",URL="https://github.com/heroku/cli"];
+                redis [label="redis",URL="https://redis.io/"];
+                    NoSQL [label="NoSQL",URL="https://en.wikipedia.org/wiki/NoSQL"];
+                        Mango [label="MongoDB",URL="https://www.mongodb.com/"];
+                        Couch [label="CouchDB",URL="http://couchdb.apache.org/"];
+                    RDBMS [label="RDBMS",URL="https://en.wikipedia.org/wiki/Relational_database_management_system"];
+                        MySQL [label="MySQL",URL="https://www.mysql.com/"];
+                        Pg [label="PostgreSQL",URL="https://www.postgresql.org/"];
+                    SQL [label="SQL",URL="https://www.w3schools.com/sql/"];
+                ENV [label="ENV",URL="https://www.computerhope.com/unix/uenv.htm"];
+        gunicorn [label="gunicorn",URL="https://gunicorn.org/"];
+
+    ch08->SaaS->{SAE GAE AWS Heroku etc};
+        Heroku->{hcli NoSQL RDBMS ENV gunicorn};
+        NoSQL->{redis Mango Couch};
+        RDBMS->{MySQL Pg}->SQL;
+
+    ch09  [label="ch09\nAPI",shape=tab,URL="#"];
+
+    ch10  [label="ch10\nMVP",shape=tab,URL="#"];
+        
+    ch11  [label="ch11\nCI",shape=tab,URL="#"];
+
+    ch12  [label="ch12\n探索",shape=tab,URL="#"];
+
+            
+
+/*
+##############################################################################
+#   global relation
+##############################################################################
+*/
+
+    PYC->ch00 [label="project0",style="setlinewidth(4)",color=green];
+    ch00->ch01->ch02->ch03->ch04->ch05->ch06->ch07->ch08->ch09->ch10->ch11->ch12 [label="",style="setlinewidth(3)",color=green];
+
+
+    pip->{zhpy click logging request};
+    terminal->{ngrok tmux iterm2 cmder curl SSH};
+
+    mailme [label="邮件吼俺",shape=ellipse,style="filled,dashed,setlinewidth(5)"
+        ,color="#333333",fillcolor=dimgray
+        ,URL="mailto:pythonicamp@googlegroups.com?subject=[101 mapping] "];
+
+    ZQ  [label="返回\n",shape=ellipse,style="dotted"
+        ,URL="https://gitlab.com/pythonicamp"];
+
+
+    edge [style=invis];
+    {mailme ZQ}->PYC;
+    
+/*
+    title->ZQ;
+    mailme->OBP;
+
+    title [label="101.pythonic\n课程知识点关系\n{gen. by Graphviz}"
+                URL="#"];
+    
+
+*/
+
+}
