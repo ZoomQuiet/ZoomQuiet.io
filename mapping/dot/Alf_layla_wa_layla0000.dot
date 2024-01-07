@@ -8,7 +8,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 #   全局设定
 ##############################################################################
 */
-    graph [label="101camp1py 知识点图谱\n{gen. by Graphviz}"
+    graph [label="《天方夜谭》故事线索图谱 \n{by Zoom.Quiet for Chaos42DAMA\n powerded Graphviz}"
         , fontsize=14.0
         , fontcolor="#D33682"
         , fontname="思源宋体 CN,Heavy"
@@ -50,7 +50,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
     ch0000_2  [label="弟:沙赫泽曼"];
         ch0000_3  [label="\"匣中女\""];
 
-    //ch0000_3->ch0000_11;
+    ch0000_3->ch0000_11;
 
     ch0000_11  [label="宰相"];
         ch0000_111  [label="长女:莎赫札德"];
@@ -67,7 +67,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0000_1->ch0001_0;
     ch0001_0  [label="第1夜",fillcolor="#586E75"];
         ch0001_1  [label="《商人与魔鬼的故事》"];
-            ch0001_11  [label="羚羊是堂妹"];
+            ch0001_11  [label="羚羊堂妹"];
             ch0001_12  [label="两狗兄弟"];
             ch0001_13  [label="花斑骡妻子"];
 
@@ -89,69 +89,32 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 
         ch0004_0->ch0003_11;
         ch0003_1->ch0003_11;
-        ch0003_11->ch0003_111;
+        ch0003_11->{ch0003_111,ch0003_112};
 
     ch0004_0->ch0005_0;
     ch0005_0  [label="第5夜",fillcolor="#586E75"];
         ch0003_111  [label="尤南国王:《国王与猎鹰的故事》"];
+        ch0003_112  [label="大臣:《王子与食人鬼的故事》"];
+        ch0003_113  [label="鲁扬医师:鳄鱼的故事"];
 
-        ch0005_0->ch0003_111;
-
-/*
-    subgraph cluster1 {
-        label="第1夜";
-        color="#93A1A1";
-        ch0001_0  [label="《商人与魔鬼的故事》"];
-            ch0001_1  [label="羚羊是堂妹"];
-
-    ch0001_0->ch0001_1;
-    }
-
-    ch0000_111->ch0000_1->ch0001_0;
-
-    subgraph cluster2 {
-        label="第2夜";
-        color="#93A1A1";
-        ch0001_2  [label="两狗兄弟"];
-        ch0001_3  [label="花斑骡妻子"];
-
-    ch0001_0->{ch0001_2,ch0001_3};
-    }
+        ch0005_0->{ch0003_111,ch0003_112};
+        ch0003_11->ch0003_113[style="dotted"];
 
 
-        ch0000_111->ch0000_1->ch0003_0;
+    ch0005_0->ch0006_0;
+    ch0006_0  [label="第6夜",fillcolor="#586E75"];
+        ch0003_12  [label="魔鬼:《乌马迈与阿蒂凯》"];
 
-    subgraph cluster3 {
-        label="第3夜";
-        color="#93A1A1";
-        ch0003_0  [label="《渔夫与魔鬼的故事》"];
-
-        //ch0003_0->ch0003_0;
-    
-    }
-    subgraph cluste4 {
-        label="第4夜";
-        color="#93A1A1";
-        ch0003_1  [label="渔夫:《国王与医师的故事》"];
-
-        ch0003_0->ch0003_1;
-
-    }
+        ch0006_0->ch0003_12[style="dotted"];
+        ch0006_0->ch0003_1->ch0003_12;
 
 
-    subgraph cluste5 {
-        label="第5夜";
-        color="#93A1A1";
-        ch0003_11  [label="尤南国王:《国王与猎鹰的故事》"];
-    ch0003_1->ch0003_11;
 
-    }
-    
 
 ##############################################################################
 #   global relation
 ##############################################################################
-*/
+
 
 
     
