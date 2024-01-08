@@ -1,4 +1,4 @@
-digraph Alf_layla_wa_layla0000 {
+digraph Alf_layla_wa_layla0008 {
 /*生成命令:
 $ dot -Tjpeg Alf_layla_wa_layla0000.dot -o Alf_layla_wa_layla0000.jpg
  -Tcmapx -o map101camp1py_ch00.map
@@ -108,22 +108,22 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0003_131  [label="国王发现:四色鱼"];
 
         ch0006_0->ch0003_12[style="dotted"];
-        ch0006_0->ch0003_1->{ch0003_12,ch0003_13};
+        ch0006_0->ch0003_13;
         ch0003_13->ch0003_131;
 
     ch0006_0->ch0007_0;
     ch0007_0  [label="第7夜",fillcolor="#586E75"];
         ch0003_132  [label="国王发现:半身石青年"];
 
-        ch0003_131->ch0003_132;
+        {ch0003_131,ch0007_0}->ch0003_132;
 
     ch0007_0->ch0008_0;
     ch0008_0  [label="第8夜",fillcolor="#586E75"];
         ch0003_1321  [label="半身石青年:四色鱼的故事"];
         ch0003_133  [label="国王解救:半身石青年"];
 
-        ch0003_132->ch0003_1321;
-        ch0003_131->ch0003_133;
+        {ch0003_132,ch0008_0}->ch0003_1321;
+        ch0003_1321->ch0003_133;
 
 
 
