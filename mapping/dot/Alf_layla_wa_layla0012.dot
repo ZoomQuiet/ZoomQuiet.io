@@ -1,4 +1,4 @@
-digraph Alf_layla_wa_layla0011 {
+digraph Alf_layla_wa_layla0012 {
 /*生成命令:
 $ dot -Tjpeg Alf_layla_wa_layla0000.dot -o Alf_layla_wa_layla0000.jpg
  -Tcmapx -o map101camp1py_ch00.map
