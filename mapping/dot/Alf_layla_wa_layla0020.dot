@@ -1,0 +1,246 @@
+digraph Alf_layla_wa_layla {
+/*生成命令:
+$ dot -Tjpeg Alf_layla_wa_layla0000.dot -o Alf_layla_wa_layla0000.jpg
+ -Tcmapx -o map101camp1py_ch00.map
+$ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1py ch0 知识点图谱" -d map101camp1py_ch00.dot -o map101camp1py_ch00.html
+
+##############################################################################
+#   全局设定
+##############################################################################
+*/
+    graph [label="《天方夜谭》故事线索图谱 \n{by Zoom.Quiet for Chaos42DAMA\n powerded Graphviz}"
+        , fontsize=14.0
+        , fontcolor="#D33682"
+        , fontname="思源宋体 CN,Heavy"
+
+        , labeljust="l",labelloc="t",center=1
+        , ranksep=0.1,center=1,ratio=compress
+        , rankdir=TB
+        //, rankdir=LR
+        , bgcolor="#002B36"
+        , dpi = 200  /* 300 600 1200 */
+        , outputorder="edgesfirst"
+        ];
+
+    node[fontsize=12.0,height=0.4
+        , style="filled,setlinewidth(0.5)"
+        , fillcolor="#073642"
+        , fontcolor="#FDF6E3"
+        , color=gray
+        , shape=plaintext
+        , fontname="更纱黑体 Mono SC Nerd"
+        ];
+
+    edge [fontsize=10.0
+        , fontcolor="#EEE8D5"
+        , color="#2AA198"
+        , arrowsize=0.5,arrowhead=vee,arrowtail=none
+        , style="setlinewidth(0.5)"
+        ];
+
+/*
+##############################################################################
+#   block relation
+##############################################################################
+*/
+
+
+    ch0000_0  [label="萨桑王国"];
+    ch0000_1  [label="兄:舍赫亚尔"];
+    ch0000_2  [label="弟:沙赫泽曼"];
+        ch0000_3  [label="\"匣中女\""];
+
+    ch0000_3->ch0000_11;
+
+    ch0000_11  [label="宰相"];
+        ch0000_111  [label="长女:莎赫札德"];
+        ch0000_112  [label="次女:杜娅札德"];
+    ch0000_12  [label="《毛驴、黄牛与农夫的故事》"];
+
+    ch0000_0->{ch0000_1,ch0000_2}->ch0000_3;
+    ch0000_11->{ch0000_111,ch0000_112};
+    ch0000_11->ch0000_12->ch0000_111;
+
+    //ch0000_1->ch0000_11;
+
+    ch0000_111->ch0000_1;
+        ch0000_1->ch0001_0;
+    ch0001_0  [label="第1夜",fillcolor="#586E75"];
+        ch0001_1  [label="《商人与魔鬼的故事》"];
+            ch0001_11  [label="羚羊堂妹"];
+            ch0001_12  [label="两狗兄弟"];
+            ch0001_13  [label="花斑骡妻子"];
+
+    
+    ch0001_0->ch0001_1->{ch0001_12,ch0001_13,ch0001_11};
+
+    ch0001_0->ch0002_0;
+    ch0002_0  [label="第2夜",fillcolor="#586E75"];
+        ch0002_0->{ch0001_12,ch0001_13};
+
+    ch0002_0->ch0003_0;
+    ch0003_0  [label="第3夜",fillcolor="#586E75"];
+        ch0003_1  [label="《渔夫与魔鬼的故事》"];
+        ch0003_0->ch0003_1;
+
+    ch0003_0->ch0004_0;
+    ch0004_0  [label="第4夜",fillcolor="#586E75"];
+        ch0003_11  [label="渔夫:\n《国王与医师的故事》"];
+
+        ch0004_0->ch0003_11;
+        ch0003_1->ch0003_11;
+        ch0003_11->{ch0003_111,ch0003_112};
+
+    ch0004_0->ch0005_0;
+    ch0005_0  [label="第5夜",fillcolor="#586E75"];
+        ch0003_111  [label="尤南国王:\n《国王与猎鹰的故事》"];
+        ch0003_112  [label="大臣:\n《王子与食人鬼的故事》"];
+        ch0003_113  [label="鲁扬医师:\n鳄鱼的故事"];
+
+        ch0005_0->{ch0003_111,ch0003_112};
+        ch0003_11->ch0003_113[style="dotted"];
+
+
+    ch0005_0->ch0006_0;
+    ch0006_0  [label="第6夜",fillcolor="#586E75"];
+        ch0003_12  [label="魔鬼:\n《乌马迈与阿蒂凯》"];
+        ch0003_13  [label="渔夫进献国王:\n四色鱼"];
+        ch0003_131  [label="国王发现:\n四色鱼"];
+
+        ch0006_0->ch0003_12[style="dotted"];
+        {ch0006_0,ch0003_1}->ch0003_13;
+        ch0003_13->ch0003_131;
+
+    ch0006_0->ch0007_0;
+    ch0007_0  [label="第7夜",fillcolor="#586E75"];
+        ch0003_132  [label="国王发现:\n着魔青年"];
+
+        {ch0003_131,ch0007_0}->ch0003_132;
+
+    ch0007_0->ch0008_0;
+    ch0008_0  [label="第8夜",fillcolor="#586E75"];
+        ch0003_1321  [label="着魔青年:\n四色鱼的故事"];
+        ch0003_133  [label="国王解救:\n着魔青年"];
+
+        {ch0003_132,ch0008_0}->ch0003_1321;
+        ch0003_1321->ch0003_133;
+
+    ch0008_0->ch0009_0;
+    ch0009_0  [label="第9夜",fillcolor="#586E75"];
+
+        ch0003_134  [label="国王纳着魔青年为王子"];
+        ch0003_2  [label="结束《渔夫与魔鬼的故事》"];
+        ch0009_1  [label="《脚夫与姑娘的故事》"];
+
+    {ch0009_0,ch0003_133}->ch0003_134->ch0003_2;
+    ch0009_0->ch0009_1;
+
+    ch0009_0->ch0010_0;
+    ch0010_0  [label="第10夜",fillcolor="#586E75"];
+
+        ch0009_11 [label="看门姑娘惊变\n国王要问\n房主姑娘要杀..."];
+        {ch0009_1,ch0010_0}->ch0009_11;
+
+
+    ch0010_0->ch0011_0;
+    ch0011_0  [label="第11夜",fillcolor="#586E75"];
+
+        ch0009_111 [label="第一位独眼流浪汉的故事"];
+        {ch0009_11,ch0011_0}->ch0009_111;
+
+    ch0011_0->ch0012_0;
+    ch0012_0  [label="第12夜",fillcolor="#586E75"];
+
+        ch0009_112 [label="第二位独眼流浪汉的故事"];
+        {ch0009_111,ch0012_0}->ch0009_112;
+
+
+    ch0012_0->ch0013_0;
+    ch0013_0  [label="第13夜",fillcolor="#586E75"];
+
+        ch0009_1121 [label="被魔鬼变成猴子的王子\n终于被公主认出"];
+        {ch0009_112,ch0013_0}->ch0009_1121;
+
+
+    ch0013_0->ch0014_0;
+    ch0014_0  [label="第14夜",fillcolor="#586E75"];
+
+        ch0009_113 [label="第三位独眼流浪汉的故事"];
+        {ch0009_112,ch0014_0}->ch0009_113;
+
+    ch0014_0->ch0015_0;
+    ch0015_0  [label="第15夜",fillcolor="#586E75"];
+
+        ch0009_114 [label="第三位独眼流浪汉\n和40位公主以及宝库"];
+        {ch0009_113,ch0015_0}->ch0009_114;
+
+    ch0015_0->ch0016_0;
+    ch0016_0  [label="第16夜",fillcolor="#586E75"];
+
+        ch0009_115 [label="房主姑娘\n人畜皆黑石的拜火教城"];
+        {ch0009_114,ch0016_0}->ch0009_115;
+
+    ch0016_0->ch0017_0;
+    ch0017_0  [label="第17夜",fillcolor="#586E75"];
+
+        ch0009_116 [label="房主姑娘姐姐被变黑狗\n看门姑娘被婚配又遭遗弃"];
+        {ch0009_115,ch0017_0}->ch0009_116;
+
+    ch0017_0->ch0018_0;
+    ch0018_0  [label="第18夜",fillcolor="#586E75"];
+
+        ch0018_1 [label="《三个苹果的故事》"];
+        {ch0009_116,ch0018_0}->ch0018_1;
+
+    ch0018_0->ch0019_0;
+    ch0019_0  [label="第19夜",fillcolor="#586E75"];
+
+        ch0019_1 [label="《兄弟宰相的故事》"];
+        {ch0018_1,ch0019_0}->ch0019_1;
+
+    ch0019_0->ch0020_0;
+    ch0020_0  [label="第20夜",fillcolor="#586E75"];
+
+        ch0019_11 [label="果然同日结婚生子女\n又都遭受变故"];
+        {ch0019_1,ch0020_0}->ch0019_11;
+
+
+##############################################################################
+#   global relation
+##############################################################################
+
+
+
+    
+/*
+    PYC->ch00 [label="project0",style="setlinewidth(4)",color=green];
+    ch00->ch01->ch02->ch03->ch04->ch05->ch06->ch07->ch08->ch09 [label="",style="setlinewidth(3)",color=green];
+
+    ch09->PYC [label="",style="dotted",color=green];
+
+    mailme [label="邮件",shape=ellipse,style="filled,dashed,setlinewidth(5)"
+        ,color="#333333",fillcolor=dimgray
+        ,URL="mailto:guru101camp@googlegroups.com?subject=[101camp1py] "];
+
+    H2AQTSW [label="提问的智慧",shape=ellipse
+        ,style="filled,dashed,setlinewidth(3)"
+        ,color="#353535",fillcolor=dimgray
+        ,URL="https://github.com/DebugUself/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md"];
+
+    ZQ  [label="返回\n",shape=ellipse,style="dotted"
+        ,URL="https://gitlab.com/101camp"];
+
+
+    edge [style=invis];
+    {mailme ZQ H2AQTSW}->PYC;
+
+    title->ZQ;
+    mailme->OBP;
+
+    title [label="101.pythonic\n课程知识点关系\n{gen. by Graphviz}"
+                URL="#"];
+    
+
+*/
+
+}
