@@ -1,0 +1,116 @@
+digraph Issac_Asimov_Foundation {
+/*生成命令:
+$ dot -Tjpeg Alf_layla_wa_layla0000.dot -o Alf_layla_wa_layla0000.jpg
+ -Tcmapx -o map101camp1py_ch00.map
+$ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1py ch0 知识点图谱" -d map101camp1py_ch00.dot -o map101camp1py_ch00.html
+
+##############################################################################
+#   全局设定
+##############################################################################
+*/
+    graph [label="《基地》故事线索图谱 \n{by Zoom.Quiet for Chaos42DAMA\n powerded Graphviz}"
+        , fontsize=14.0
+        , fontcolor="#D33682"
+        , fontname="思源宋体 CN,Heavy"
+
+        , labeljust="l",labelloc="t",center=1
+        , ranksep=0.1,center=1,ratio=compress
+        , rankdir=TB
+        //, rankdir=LR
+        , bgcolor="#002B36"
+        , dpi = 200  /* 300 600 1200 */
+        , outputorder="edgesfirst"
+        ];
+
+    node[fontsize=12.0,height=0.4
+        , style="filled,setlinewidth(0.5)"
+        , fillcolor="#073642"
+        , fontcolor="#FDF6E3"
+        , color=gray
+        , shape=plaintext
+        , fontname="更纱黑体 Mono SC Nerd"
+        ];
+
+    edge [fontsize=10.0
+        , fontcolor="#EEE8D5"
+        , color="#2AA198"
+        , arrowsize=0.5,arrowhead=vee,arrowtail=none
+        , style="setlinewidth(0.5)"
+        ];
+
+/*
+##############################################################################
+#   block relation
+##############################################################################
+*/
+
+
+    F1  [label="基地"];
+    F2  [label="基地与帝国"];
+    F3  [label="第二基地"];
+    F4  [label="基地前奏"];
+    F5  [label="迈向基地"];
+    F6  [label="基地边缘"];
+    F7  [label="基地与地球"];
+
+    F1->F2->F3->F4->F5->F6->F7;
+
+    Seldon  [label="哈里·谢顿"];
+    F1->Seldon  [label="心理史学"];
+    
+    crisis_1  [label="第1次危机",fillcolor="#586E75"];
+    crisis_2  [label="第2次危机",fillcolor="#586E75"];
+    crisis_3  [label="第3次危机",fillcolor="#586E75"];
+    crisis_4  [label="第4次危机",fillcolor="#586E75"];
+
+
+    F1->crisis_1 [label="基地+50年"];
+    F1->crisis_2[label="基地+80年"];
+    F1->crisis_3 [label="基地+165年"];
+
+    Seldon->{crisis_1,crisis_2,crisis_3};
+
+    crisis_1->crisis_2[label="哈定:共享技术"];
+    crisis_2->crisis_3[label="哈定:技术神教"];
+    crisis_3->crisis_4[label="马洛:???"];
+    
+
+##############################################################################
+#   global relation
+##############################################################################
+
+
+
+    
+/*
+    PYC->ch00 [label="project0",style="setlinewidth(4)",color=green];
+    ch00->ch01->ch02->ch03->ch04->ch05->ch06->ch07->ch08->ch09 [label="",style="setlinewidth(3)",color=green];
+
+    ch09->PYC [label="",style="dotted",color=green];
+
+    mailme [label="邮件",shape=ellipse,style="filled,dashed,setlinewidth(5)"
+        ,color="#333333",fillcolor=dimgray
+        ,URL="mailto:guru101camp@googlegroups.com?subject=[101camp1py] "];
+
+    H2AQTSW [label="提问的智慧",shape=ellipse
+        ,style="filled,dashed,setlinewidth(3)"
+        ,color="#353535",fillcolor=dimgray
+        ,URL="https://github.com/DebugUself/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md"];
+
+    ZQ  [label="返回\n",shape=ellipse,style="dotted"
+        ,URL="https://gitlab.com/101camp"];
+
+
+    edge [style=invis];
+    {mailme ZQ H2AQTSW}->PYC;
+
+    title->ZQ;
+    mailme->OBP;
+
+    title [label="101.pythonic\n课程知识点关系\n{gen. by Graphviz}"
+                URL="#"];
+    
+
+*/
+
+}
