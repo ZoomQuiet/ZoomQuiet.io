@@ -45,13 +45,13 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 */
 
 
-    F1  [label="基地"];
-    F2  [label="基地与帝国"];
-    F3  [label="第二基地"];
-    F4  [label="基地前奏"];
-    F5  [label="迈向基地"];
-    F6  [label="基地边缘"];
-    F7  [label="基地与地球"];
+    F1  [label="基地"       ,fillcolor="#657B83"]; 
+    F2  [label="基地与帝国" ,fillcolor="#657B83"];
+    F3  [label="第二基地"   ,fillcolor="#657B83"];
+    F4  [label="基地前奏"   ,fillcolor="#657B83"];
+    F5  [label="迈向基地"   ,fillcolor="#657B83"];
+    F6  [label="基地边缘"   ,fillcolor="#657B83"];
+    F7  [label="基地与地球" ,fillcolor="#657B83"];
 
     F1->F2->F3->F4->F5->F6->F7;
 
@@ -68,7 +68,8 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
     F1->crisis_2[label="基地+80年"];
     F1->crisis_3 [label="基地+165年"];
 
-    Seldon->{crisis_1,crisis_2,crisis_3};
+    Seldon->crisis_1[label="银河百科全书"];
+    Seldon->{crisis_2,crisis_3};
 
     crisis_1->crisis_2[label="哈定:共享技术"];
     crisis_2->crisis_3[label="哈定:技术神教"];
