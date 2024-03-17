@@ -6,7 +6,11 @@ from invoke import task
 # from fabric.api import env, lcd, local, task
 
 # Local path configuration (can be absolute or relative to fabfile)
-env = {"input_path": "content", "deploy_path": "output"}
+env = {
+    "input_path": "content",
+    "deploy_path": "output",
+    "extra_path": "content/_extra",
+}
 
 
 @task
@@ -28,7 +32,7 @@ def reserve(c):
 
 def gh_pages(c):
     c.run(
-        "cd {deploy_path} && "
+        "ls {deploy_path} && "
         "pwd && "
         "git st && "
         "git add --all . && "
@@ -40,10 +44,21 @@ def gh_pages(c):
 
 
 @task
+def ads(c):
+    """cp ads.txt for deloy"""
+    c.run(
+        "ls {extra_path} && "
+        "cp -vf {extra_path}/ads.txt {deploy_path}/ads.txt && "
+        "date ".format(**env)
+    )
+
+
+@task
 def pub(c):
     pull_data(c)
     build(c)
     # CNAME()
+    ads(c)
     gh_pages(c)
 
 
