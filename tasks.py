@@ -32,7 +32,7 @@ def reserve(c):
 
 def gh_pages(c):
     c.run(
-        "ls {deploy_path} && "
+        "cd {deploy_path} && "
         "pwd && "
         "git st && "
         "git add --all . && "
