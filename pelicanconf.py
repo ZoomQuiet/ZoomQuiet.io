@@ -83,7 +83,7 @@ THEME = "_themes/pelican-bootstrap3"
 # BOOTSTRAP_THEME = 'readable'
 # JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
-DEFAULT_PAGINATION = 4
+DEFAULT_PAGINATION = 7
 
 DISPLAY_TAGS_ON_SIDEBAR = False
 TAG_CLOUD_MAX_ITEMS = 10
@@ -96,7 +96,7 @@ ADDTHIS_PROFILE = None  # True
 MENUITEMS = (
     # ('PyChina', 'http://pychina.org')
     ("大妈", "http://zoomquiet.io"),
-    ("课程", "https://py.101.camp/"),
+    # ("课程", "https://py.101.camp/"),
     ("油管", "https://www.youtube.com/@Chaos42DAMA"),
     # , ('友链', 'https://t.zsxq.com/iaIEQ3N')
     # , ('不折腾要屎行径', '/pages/about.html')
@@ -131,7 +131,7 @@ SOCIAL = (
     # ('weibo', 'http://weibo.com/zoomquiet'),
     ("啄木鸟", "http://wiki.woodpecker.org.cn/moin/ZoomQuiet"),
     ("维基", "http://wiki.zoomquiet.io"),
-    ("旧曰", "http://blog.zoomquiet.org/pyblosxom/"),
+    ("旧blog", "https://org.zoomquiet.io/pyblosxom/"),
     ("小红花Club", "https://xhh.club/"),
 )
 # Blogroll
