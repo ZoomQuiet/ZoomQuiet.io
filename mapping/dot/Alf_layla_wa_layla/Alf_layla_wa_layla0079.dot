@@ -563,6 +563,11 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         {ch0044_44,ch0078}->ch0044_45
 
 
+    ch0078->ch0079;
+    ch0079 [label="第79夜",fillcolor="#586E75"];
+
+        ch0044_46 [label="宰相佟丹回顾\n老太婆领来5位姑娘\n逐一展现才学"];
+        {ch0044_45,ch0079}->ch0044_46
 
 
 
@@ -571,4 +576,16 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 ##############################################################################
 
 
+    
+/*
+    edge [style=invis];
+    {mailme ZQ H2AQTSW}->PYC;
+
+    title->ZQ;
+    mailme->OBP;
+*/
+
 }
+
+
+

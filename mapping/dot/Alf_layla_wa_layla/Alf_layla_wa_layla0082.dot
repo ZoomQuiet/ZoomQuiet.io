@@ -562,6 +562,29 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0044_45 [label="杜姆康逐批接见大臣后,向宰相问死因"];
         {ch0044_44,ch0078}->ch0044_45
 
+    ch0078->ch0079;
+    ch0079 [label="第79夜",fillcolor="#586E75"];
+
+        ch0044_46 [label="宰相佟丹回顾\n老太婆领来5位姑娘\n逐一展现才学"];
+        {ch0044_45,ch0079}->ch0044_46
+
+    ch0079->ch0080;
+    ch0080 [label="第80夜",fillcolor="#586E75"];
+
+        ch0044_47 [label="宰相佟丹回顾\n第一位说完\n第二位上来说"];
+        {ch0044_46,ch0080}->ch0044_47
+
+    ch0080->ch0081;
+    ch0081 [label="第81夜",fillcolor="#586E75"];
+
+        ch0044_48 [label="宰相佟丹回顾\n第二位说完\n第三,四位接替来说"];
+        {ch0044_47,ch0081}->ch0044_48
+
+    ch0081->ch0082;
+    ch0082 [label="第82夜",fillcolor="#586E75"];
+
+        ch0044_49 [label="宰相佟丹回顾\n第四位说完\n第五位接上来说"];
+        {ch0044_48,ch0082}->ch0044_49
 
 
 
@@ -571,4 +594,16 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 ##############################################################################
 
 
+    
+/*
+    edge [style=invis];
+    {mailme ZQ H2AQTSW}->PYC;
+
+    title->ZQ;
+    mailme->OBP;
+*/
+
 }
+
+
+
