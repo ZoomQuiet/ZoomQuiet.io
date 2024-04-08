@@ -625,6 +625,10 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0044_56 [label="老太婆出谋,伊斯兰大军12万,大胜基督徒160万人马"];
         {ch0044_55,ch0089}->ch0044_56
 
+    ch0089->ch0090;
+    ch0090 [label="第90夜",fillcolor="#586E75"];
+        ch0044_57 [label="舒尔康投还沙姆鲁特的短矛,同时追加一矛扎死鲁本"];
+        {ch0044_56,ch0090}->ch0044_57
 
 
 
