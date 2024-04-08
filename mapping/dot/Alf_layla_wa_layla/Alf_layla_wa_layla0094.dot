@@ -647,7 +647,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 
     ch0093->ch0094;
     ch0094 [label="第94夜",fillcolor="#586E75"];
-        ch0044_61 [label="商队在大草原和向伊斯兰大军撞上"];
+        ch0044_61 [label="商队在大草原和伊斯兰大军撞上"];
         {ch0044_60,ch0094}->ch0044_61
 
 
