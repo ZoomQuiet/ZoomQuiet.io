@@ -156,6 +156,7 @@ repo.
 
 ## changelog
 
+- 240526 增补, PayPal 按钮
 - 231208 增补, buy me coffee...
 - 230109 增补, blocked times
 - 220521 增补, blocked times
