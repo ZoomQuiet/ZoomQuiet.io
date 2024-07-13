@@ -17,6 +17,7 @@ env = {
     "tpl_dot": "main_j2tpl.dot",
     #"j2spot": "chapters",
     "exp_dot": "ns1001",
+    "exp_jpg": "_jpg",
     
 }
 
@@ -28,9 +29,11 @@ def ver(c):
         ''')
 
 @task
-def exp(c):
+def exp(c, jpg="ns1001"):
+    print(f"export {jpg} from .dot")
+    #return None
     redot(c)
-    _cmd =f"dot -Tjpeg {env['exp_dot']}.dot -o {env['exp_dot']}.jpg"
+    _cmd =f"dot -Tjpeg {env['exp_dot']}.dot -o {env['exp_jpg']}/{jpg}.jpg"
     print(f"run: {_cmd}") 
     c.run(_cmd)
 

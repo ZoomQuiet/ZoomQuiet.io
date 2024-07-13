@@ -1017,10 +1017,52 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0164_1 [label="高海尔救回盗贼掳走的毕卡尔和莎姆丝"];
         {ch0164,ch0163_1}->ch0164_1
 
+    ch0164->ch0165;
+    ch0165 [label="第165夜",fillcolor="#586E75"];
+        ch0165_1 [label="莎姆丝贴身侍女和高海尔核对事实"];
+        {ch0165,ch0164_1}->ch0165_1
+
+    ch0165->ch0166;
+    ch0166 [label="第166夜",fillcolor="#586E75"];
+        ch0166_1 [label="侍女转述莎姆丝亲身经历"];
+        {ch0166,ch0165_1}->ch0166_1
+
+    ch0166->ch0167;
+    ch0167 [label="第167夜",fillcolor="#586E75"];
+        ch0167_1 [label="毕卡尔入病侍女通告宫中变故"];
+        {ch0167,ch0166_1}->ch0167_1
+
+    ch0167->ch0168;
+    ch0168 [label="第168夜",fillcolor="#586E75"];
+        ch0168_1 [label="毕卡尔和高海尔出逃途中毕卡尔瘁死"];
+        {ch0168,ch0167_1}->ch0168_1
+
+    ch0168->ch0169;
+    ch0169 [label="第169夜",fillcolor="#586E75"];
+        ch0169a [label="侍女通告莎姆丝也暴毙宫中"];
+        {ch0169,ch0168_1}->ch0169a
 
 
 
 
+
+
+    ch0169->ch0170;
+    ch0170 [label="第170夜",fillcolor="#586E75"];
+        ch0170a [label="[[莎赫札德开始讲:]]"];
+        ch0170b [label="《盖麦尔与布杜尔的故事》"];
+        ch0170c [label="舍赫曼国王老来得子盖麦尔"];
+        {ch0170a,ch0170}->ch0170b->ch0170c
+
+    ch0170->ch0171;
+    ch0171 [label="第171夜",fillcolor="#586E75"];
+        ch0171a [label="盖麦尔信先贤书不想结婚"];
+        {ch0171,ch0170c}->ch0171a
+
+    ch0171->ch0172;
+    ch0172 [label="第172夜",fillcolor="#586E75"];
+        ch0172a [label="盖麦尔20岁还是不想结婚被关起来"];
+        {ch0172,ch0171a}->ch0172a
 
 
 
