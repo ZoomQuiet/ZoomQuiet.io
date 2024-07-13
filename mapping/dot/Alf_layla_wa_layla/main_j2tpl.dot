@@ -1,0 +1,68 @@
+digraph Alf_layla_wa_layla {
+/*生成命令:
+$ dot -Tjpeg Alf_layla_wa_layla0000.dot -o Alf_layla_wa_layla0000.jpg
+ -Tcmapx -o map101camp1py_ch00.map
+$ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1py ch0 知识点图谱" -d map101camp1py_ch00.dot -o map101camp1py_ch00.html
+
+##############################################################################
+#   全局设定
+##############################################################################
+*/
+    graph [label="《天方夜谭》故事线索图谱 \n{by Zoom.Quiet for Chaos42DAMA\n powerded Graphviz}"
+        , fontsize=14.0
+        , fontcolor="#D33682"
+        , fontname="思源宋体 CN,Heavy"
+
+        , labeljust="r",labelloc="t",center=1
+        , ranksep=0.1,center=1,ratio=compress
+        , rankdir=BT
+        //, rankdir=LR
+        , bgcolor="#002B36"
+        , dpi = 200  /* 300 600 1200 */
+        , outputorder="edgesfirst"
+        ];
+
+    node[fontsize=12.0,height=0.4
+        , style="filled,setlinewidth(0.5)"
+        , fillcolor="#073642"
+        , fontcolor="#FDF6E3"
+        , color=gray
+        , shape=plaintext
+        , fontname="更纱黑体 Mono SC Nerd"
+        ];
+
+    edge [fontsize=10.0
+        , fontcolor="#EEE8D5"
+        , color="#2AA198"
+        , arrowsize=0.5,arrowhead=vee,arrowtail=none
+        , style="setlinewidth(0.5)"
+        ];
+
+/*
+##############################################################################
+#   block relation
+##############################################################################
+*/
+
+
+{{ chapters }}
+
+
+##############################################################################
+#   global relation
+##############################################################################
+
+
+    
+/*
+    edge [style=invis];
+    {mailme ZQ H2AQTSW}->PYC;
+
+    title->ZQ;
+    mailme->OBP;
+*/
+
+}
+
+
+
