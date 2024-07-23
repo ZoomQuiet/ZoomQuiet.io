@@ -18,11 +18,11 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         , rankdir=BT
         //, rankdir=LR
         , bgcolor="#002B36"
-        , dpi = 200  /* 300 600 1200 */
+        , dpi = 100  /* 200 300 600 1200 */
         , outputorder="edgesfirst"
         ];
 
-    node[fontsize=12.0,height=0.4
+    node[fontsize=10.0,height=0.4
         , style="filled,setlinewidth(0.5)"
         , fillcolor="#073642"
         , fontcolor="#FDF6E3"
@@ -31,7 +31,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         , fontname="更纱黑体 Mono SC Nerd"
         ];
 
-    edge [fontsize=10.0
+    edge [fontsize=9.0
         , fontcolor="#EEE8D5"
         , color="#2AA198"
         , arrowsize=0.5,arrowhead=vee,arrowtail=none

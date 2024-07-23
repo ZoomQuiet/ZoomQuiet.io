@@ -18,11 +18,11 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         , rankdir=BT
         //, rankdir=LR
         , bgcolor="#002B36"
-        , dpi = 200  /* 300 600 1200 */
+        , dpi = 100  /* 200 300 600 1200 */
         , outputorder="edgesfirst"
         ];
 
-    node[fontsize=12.0,height=0.4
+    node[fontsize=10.0,height=0.4
         , style="filled,setlinewidth(0.5)"
         , fillcolor="#073642"
         , fontcolor="#FDF6E3"
@@ -31,7 +31,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         , fontname="更纱黑体 Mono SC Nerd"
         ];
 
-    edge [fontsize=10.0
+    edge [fontsize=9.0
         , fontcolor="#EEE8D5"
         , color="#2AA198"
         , arrowsize=0.5,arrowhead=vee,arrowtail=none
@@ -1093,6 +1093,85 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
     ch0178 [label="第178夜",fillcolor="#586E75"];
         ch0178a [label="比完美飞魔送回公主,早晨盖麦尔没见布杜尔大怒"];
         {ch0178,ch0177a}->ch0178a
+
+    ch0178->ch0179;
+    ch0179 [label="第179夜",fillcolor="#586E75"];
+        ch0179a [label="仆人求来宰相问盖麦尔,没人知道昨夜姑娘"];
+        {ch0179,ch0178a}->ch0179a
+
+    ch0179->ch0180;
+    ch0180 [label="第180夜",fillcolor="#586E75"];
+        ch0180a [label="宰相拉来舍赫曼国王同问盖麦尔王子"];
+        {ch0180,ch0179a}->ch0180a
+
+    ch0180->ch0181;
+    ch0181 [label="第181夜",fillcolor="#586E75"];
+        ch0181a [label="盖麦尔王子展示证据戒指,大家没办法搬到新宫殿一起熬"];
+        {ch0181,ch0180a}->ch0181a
+
+    ch0181->ch0182;
+    ch0182 [label="第182夜",fillcolor="#586E75"];
+        ch0182a [label="布杜尔公主醒来也没见王子被当成疯子,发小麦尔泽旺受托出发寻找"];
+        {ch0182,ch0181a}->ch0182a
+
+    ch0182->ch0183;
+    ch0183 [label="第183夜",fillcolor="#586E75"];
+        ch0183a [label="麦尔泽旺海难被舍赫曼国王救起见到盖麦尔王子"];
+        {ch0183,ch0182a}->ch0183a
+
+    ch0183->ch0184;
+    ch0184 [label="第184夜",fillcolor="#586E75"];
+        ch0184a [label="麦尔泽旺带来好盖麦尔王子高兴极了"];
+        {ch0184,ch0183a}->ch0184a
+
+    ch0184->ch0185;
+    ch0185 [label="第185夜",fillcolor="#586E75"];
+        ch0185a [label="盖麦尔王子和麦尔泽旺密谋去见布杜尔公主"];
+        {ch0185,ch0184a}->ch0185a
+
+    ch0185->ch0186;
+    ch0186 [label="第186夜",fillcolor="#586E75"];
+        ch0186a [label="盖麦尔王子伪装成占卜师引起埃尤尔国王注意"];
+        {ch0186,ch0185a}->ch0186a
+
+    ch0186->ch0187;
+    ch0187 [label="第187夜",fillcolor="#586E75"];
+        ch0187a [label="盖麦尔王子隔帘给布杜尔公主修书一封"];
+        {ch0187,ch0186a}->ch0187a
+
+    ch0187->ch0188;
+    ch0188 [label="第188夜",fillcolor="#586E75"];
+        ch0188a [label="盖麦尔和布杜尔成婚后回家路上注意到公主腰带上的红宝石"];
+        {ch0188,ch0187a}->ch0188a
+
+    ch0188->ch0189;
+    ch0189 [label="第189夜",fillcolor="#586E75"];
+        ch0189a [label="红宝石被大鸟抢走,盖麦尔追踪到一个陌生城市住下来当园丁"];
+        {ch0189,ch0188a}->ch0189a
+
+    ch0189->ch0190;
+    ch0190 [label="第190夜",fillcolor="#586E75"];
+        ch0190a [label="布杜尔醒来不见丈夫只能假装盖麦尔到达阿卜努斯城被老国王看中嫁给了哈娅蒂公主"];
+        {ch0190,ch0189a}->ch0190a
+
+    ch0190->ch0191;
+    ch0191 [label="第191夜",fillcolor="#586E75"];
+        ch0191a [label="布杜尔连续三天没行房,最终向哈娅蒂公主坦白二人合谋通过考验"];
+        {ch0191,ch0190a}->ch0191a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
