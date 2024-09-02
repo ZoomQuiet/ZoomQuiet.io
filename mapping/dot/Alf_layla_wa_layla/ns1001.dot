@@ -1121,7 +1121,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 
     ch0183->ch0184;
     ch0184 [label="第184夜",fillcolor="#586E75"];
-        ch0184a [label="麦尔泽旺带来好盖麦尔王子高兴极了"];
+        ch0184a [label="麦尔泽旺带来消息盖麦尔王子高兴极了"];
         {ch0184,ch0183a}->ch0184a
 
     ch0184->ch0185;
@@ -1159,12 +1159,85 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0191a [label="布杜尔连续三天没行房,最终向哈娅蒂公主坦白二人合谋通过考验"];
         {ch0191,ch0190a}->ch0191a
 
+    ch0191->ch0192;
+    ch0192 [label="第192夜",fillcolor="#586E75"];
+        ch0192a [label="舍赫曼国王找到盖麦尔留下的血衣伤心建哀宫"];
+        {ch0192,ch0191a}->ch0192a
+
+    ch0192->ch0193;
+    ch0193 [label="第193夜",fillcolor="#586E75"];
+        ch0193a [label="盖麦尔在花园找丢失的红宝石以及金库可没赶上回国的船"];
+        {ch0193,ch0192a}->ch0193a
+
+    ch0193->ch0194;
+    ch0194 [label="第194夜",fillcolor="#586E75"];
+        ch0194a [label="布杜尔意外获得了线索让货船将盖麦尔带回阿卜努斯并奇迹般相认"];
+        {ch0194,ch0193a}->ch0194a
+
+    ch0194->ch0195;
+    ch0195 [label="第195夜",fillcolor="#586E75"];
+        ch0195a [label="真相大白盖麦尔当了国王娶了哈娅蒂和布杜尔共同生活"];
+        {ch0195,ch0194a}->ch0195a
+
+    ch0195->ch0196;
+    ch0196 [label="第196夜",fillcolor="#586E75"];
+        ch0196a [label="盖麦尔两个王子分别被对方的母亲爱上又被情书揭破"];
+        {ch0196,ch0195a}->ch0196a
+
+    ch0196->ch0197;
+    ch0197 [label="第197夜",fillcolor="#586E75"];
+        ch0197a [label="哈娅蒂和布杜尔抢先向盖麦尔诬告两王子不伦自己"];
+        {ch0197,ch0196a}->ch0197a
+
+    ch0197->ch0198;
+    ch0198 [label="第198夜",fillcolor="#586E75"];
+        ch0198a [label="盖麦尔大怒密令老司仓杀掉两王子却因意外脱逃带回遗物"];
+        {ch0198,ch0197a}->ch0198a
+
+    ch0198->ch0199;
+    ch0199 [label="第199夜",fillcolor="#586E75"];
+        ch0199a [label="盖麦尔从遗物知真相起哀宫,而两王子跋涉误入拜火教城艾斯阿德被关"];
+        {ch0199,ch0198a}->ch0199a
 
 
 
 
 
 
+
+
+
+    ch0199->ch0200;
+    ch0200 [label="第200夜",fillcolor="#586E75"];
+        ch0200a [label="艾姆吉德下山找艾斯阿德街遇小姐姐"];
+        {ch0200,ch0199a}->ch0200a
+
+    ch0200->ch0201;
+    ch0201 [label="第201夜",fillcolor="#586E75"];
+        ch0201a [label="艾姆吉德和小姐姐误入白哈迪尔家"];
+        {ch0201,ch0200a}->ch0201a
+
+    ch0201->ch0202;
+    ch0202 [label="第202夜",fillcolor="#586E75"];
+        ch0202a [label="白哈迪尔被艾姆吉德救下,而艾斯阿德被虐一年后随船去拜火被麦尔加娜暂时救出"];
+        {ch0202,ch0201a}->ch0202a
+
+    ch0202->ch0203;
+    ch0203 [label="第203夜",fillcolor="#586E75"];
+        ch0203a [label="艾斯阿德反复脱险又入险最后回到艾姆吉德为相的城中感化白斯塔妮最终自救"];
+        {ch0203,ch0202a}->ch0203a
+
+    ch0203->ch0204;
+    ch0204 [label="第204夜",fillcolor="#586E75"];
+        ch0204a [label="艾斯阿德和艾姆吉德团聚,白赫拉姆改信伊斯兰"];
+        ch0204b [label="白赫拉姆开始讲《尼阿麦与奴阿美的故事》"];
+        ch0204c [label="奴阿美是尼阿麦的女奴被库法总督看上了"];
+        {ch0204,ch0203a}->ch0204a->ch0204b->ch0204c
+
+    ch0204b->ch0205;
+    ch0205 [label="第205夜",fillcolor="#586E75"];
+        ch0205a [label="奴阿美被骗带到大马士革送给哈里发"];
+        {ch0205,ch0204c}->ch0205a
 
 
 
