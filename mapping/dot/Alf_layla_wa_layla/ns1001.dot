@@ -1282,6 +1282,30 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0213a [label="阿塔希亚在方哈斯门口见到早年迷恋的女奴阿蒂白"];
         {ch0213,ch0212b}->ch0213a
 
+    ch0213->ch0214;
+    ch0214 [label="第214夜",fillcolor="#586E75"];
+        ch0214a [label="阿塔希亚留宿方哈斯半夜偷听阿蒂白女主人秘会"];
+        {ch0214,ch0213a}->ch0214a
+
+    ch0214->ch0215;
+    ch0215 [label="第215夜",fillcolor="#586E75"];
+        ch0215a [label="原来是哈里发拉希德的妹妹阿芭萨来见自己的娃"];
+        {ch0215,ch0214a}->ch0215a
+
+    ch0215->ch0216;
+    ch0216 [label="第216夜",fillcolor="#586E75"];
+        ch0216a [label="阿塔希亚一早去见方哈斯通知法德勒来买白女奴"];
+        {ch0216,ch0215a}->ch0216a
+
+    ch0216->ch0217;
+    ch0217 [label="第217夜",fillcolor="#586E75"];
+        ch0217a [label="方哈斯给法德勒逐一介绍奴隶品种"];
+        {ch0217,ch0216a}->ch0217a
+
+    ch0217->ch0218;
+    ch0218 [label="第218夜",fillcolor="#586E75"];
+        ch0218a [label="方哈斯为格兰法尔三位顶级白女奴向法德勒讲价"];
+        {ch0218,ch0217a}->ch0218a
 
 
 
