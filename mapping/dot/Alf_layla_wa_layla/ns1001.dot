@@ -1307,6 +1307,31 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0218a [label="方哈斯为格兰法尔三位顶级白女奴向法德勒讲价"];
         {ch0218,ch0217a}->ch0218a
 
+    ch0218->ch0219;
+    ch0219 [label="第219夜",fillcolor="#586E75"];
+        ch0219a [label="法德勒救下阿塔希亚,阿芭萨指使阿蒂白紧急去马球场通知贾法尔宰相"];
+        {ch0219,ch0218a}->ch0219a
+
+    ch0219->ch0220;
+    ch0220 [label="第220夜",fillcolor="#586E75"];
+        ch0220a [label="阿芭萨和阿蒂白等了一整天入夜才见到偷偷前来的贾法尔宰相"];
+        {ch0220,ch0219a}->ch0220a
+
+    ch0220->ch0221;
+    ch0221 [label="第221夜",fillcolor="#586E75"];
+        ch0221a [label="阿芭萨和贾法尔商定离开,另一方面法德勒带着阿塔希亚去见艾敏"];
+        {ch0221,ch0220a}->ch0221a
+
+    ch0221->ch0222;
+    ch0222 [label="第222夜",fillcolor="#586E75"];
+        ch0222a [label="加法尔和法德勒一直故意放纵王储艾敏准备替代之"];
+        {ch0222,ch0221a}->ch0222a
+
+    ch0222->ch0223;
+    ch0223 [label="第223夜",fillcolor="#586E75"];
+        ch0223a [label="艾敏带加法尔和法德勒玩过斗羊又领他们领略自己的歌瓱以及阉人乐团"];
+        {ch0223,ch0222a}->ch0223a
+
 
 
 
