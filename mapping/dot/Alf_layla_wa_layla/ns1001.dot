@@ -1382,8 +1382,31 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0233a [label="拉希德为解心忧听了格兰法尔的新歌在酒友诗人围绕下快乐了起来"];
         {ch0233,ch0232a}->ch0233a
 
+    ch0233->ch0234;
+    ch0234 [label="第234夜",fillcolor="#586E75"];
+        ch0234a [label="拉希德听到阿塔希亚念出放在椅靠后卡片上相同诗句当即单聊诗人"];
+        {ch0234,ch0233a}->ch0234a
+
+    ch0235->ch0235;
+    ch0235 [label="第235夜",fillcolor="#586E75"];
+        ch0235a [label="拉希德逗完雄狮和贾法尔晩餐摸清情报真假"];
+        {ch0235,ch0234a}->ch0235a
+
+    ch0235->ch0236;
+    ch0236 [label="第236夜",fillcolor="#586E75"];
+        ch0236a [label="拉希德打定主意约谈伊斯梅尔老人"];
+        {ch0236,ch0235a}->ch0236a
 
 
+    ch0236->ch0237;
+    ch0237 [label="第237夜",fillcolor="#586E75"];
+        ch0237a [label="拉希德和伊斯梅尔定计将贾法尔任命为呼罗珊总督"];
+        {ch0237,ch0236a}->ch0237a
+
+    ch0237->ch0238;
+    ch0238 [label="第238夜",fillcolor="#586E75"];
+        ch0238a [label="贾法尔感到时机危险密约阿芭萨尽快离开拉希德收到线报去和祖贝黛商议"];
+        {ch0238,ch0237a}->ch0238a
 
 
 
