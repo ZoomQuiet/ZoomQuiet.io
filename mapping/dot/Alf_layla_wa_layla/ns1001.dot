@@ -1394,7 +1394,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 
     ch0235->ch0236;
     ch0236 [label="第236夜",fillcolor="#586E75"];
-        ch0236a [label="拉希德打定主意约谈伊斯梅尔老人"];
+        ch0236a [label="拉希德打定主意约谈伊斯梅尔老人讨论实施细节"];
         {ch0236,ch0235a}->ch0236a
 
 
@@ -1408,6 +1408,20 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0238a [label="贾法尔感到时机危险密约阿芭萨尽快离开拉希德收到线报去和祖贝黛商议"];
         {ch0238,ch0237a}->ch0238a
 
+    ch0238->ch0239;
+    ch0239 [label="第239夜",fillcolor="#586E75"];
+        ch0239a [label="艾尔加旺被传唤问出细节当场砍头拉希德还从祖贝黛口中得知孩子们的着落"];
+        {ch0239,ch0238a}->ch0239a
+
+    ch0239->ch0240;
+    ch0240 [label="第240夜",fillcolor="#586E75"];
+        ch0240a [label="阿芭萨和阿蒂白终于感觉不对去探查艾尔加旺的下落"];
+        {ch0240,ch0239a}->ch0240a
+
+    ch0242->ch0243;
+    ch0243 [label="第243夜",fillcolor="#586E75"];
+        ch0243a [label="拉希德拿孩子来威胁阿芭萨绝望中直斥哈里发自己的行径..."];
+        {ch0243,ch0242a}->ch0243a
 
 
 
