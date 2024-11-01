@@ -1477,8 +1477,8 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0249b [label="[[莎赫札德开始讲:]]"];
             ch0249b1 [label="《阿拉丁·艾卜·沙马特的故事》"];
             ch0249b2 [label="巨商舍姆斯丁婚后四十年无子嗣"];
-        {ch0249,ch0248a}->ch0249a
-        ch0249->ch0249b->{ch0249b1,ch0249b2}
+        {ch0249,ch0248a}->ch0249a;
+        ch0249->ch0249b->ch0249b1->ch0249b2;
 
 ch0000_111->{ch0212b,ch0249b};
 
