@@ -8,18 +8,21 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 #   全局设定
 ##############################################################################
 */
-    graph [label="《天方夜谭》故事线索图谱 \n{by Zoom.Quiet for Chaos42DAMA\n powerded Graphviz}"
+    graph [label="《天方夜谭》故事线索图谱 {powerded Graphviz}"
         , fontsize=14.0
         , fontcolor="#D33682"
         , fontname="思源宋体 CN,Heavy"
-
-        , labeljust="r",labelloc="t",center=1
+        , labeljust="l"
+        ,labelloc="t"
+        , center=1
         , ranksep=0.1,center=1,ratio=compress
-        , rankdir=BT
+        //, rankdir=BT
         //, rankdir=LR
+        , rankdir=TB
         , bgcolor="#002B36"
-        , dpi = 100  /* 200 300 600 1200 */
+        #, dpi = 150  /* 200 300 600 1200 */
         , outputorder="edgesfirst"
+        
         ];
 
     node[fontsize=10.0,height=0.4
@@ -38,6 +41,11 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         , style="setlinewidth(0.5)"
         ];
 
+    info [label="by Zoom.Quiet for Chaos42DAMA\nv25.5.10"
+        ,shape=ellipse,style="filled,dashed,setlinewidth(5)"
+        ,color="#333333",fillcolor=dimgray,fontcolor=aqua
+        ,URL="https://www.youtube.com/playlist?list=PLbUdpHqxsZwHXNADWIEMsUHM4QtPj0xh-"
+        ];
 /*
 ##############################################################################
 #   block relation
@@ -53,23 +61,26 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 
     ch0000_3->ch0000_11;
 
-    ch0000_111->{ch0000_12,ch0001_1,ch0009_1};
+    ch0000_111->{ch0000_12};
 
+info -> ch0000_111;
 
     ch0000_11  [label="宰相"];
         ch0000_111  [label="长女:莎赫札德"];
         ch0000_112  [label="次女:杜娅札德"];
-    ch0000_12  [label="《毛驴、黄牛与农夫的故事》"];
+    ch0000_12  [label="《毛驴、黄牛与农夫的故事》"
+        ,URL="https://youtu.be/CXxbSB1iMaE"];
 
     ch0000_0->{ch0000_1,ch0000_2}->ch0000_3;
     ch0000_11->{ch0000_111,ch0000_112};
-    ch0000_11->ch0000_12->ch0000_111;
 
     //ch0000_1->ch0000_11;
 
     ch0000_111->ch0000_1;
         ch0000_1->ch0001_0;
-    ch0001_0  [label="第1夜",fillcolor="#586E75"];
+    ch0001_0  [label="第1夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/UIq247tHc9M"];
+
         ch0001_1  [label="《商人与魔鬼的故事》"];
             ch0001_11  [label="羚羊堂妹"];
             ch0001_12  [label="两狗兄弟"];
@@ -77,7 +88,8 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
     ch0001_0->ch0001_1->{ch0001_12,ch0001_13,ch0001_11};
 
     ch0001_0->ch0002_0;
-    ch0002_0  [label="第2夜",fillcolor="#586E75"];
+    ch0002_0  [label="第2夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/-ruEPGS1NNE"];
         ch0002_0->{ch0001_12,ch0001_13};
 
     ch0002_0->ch0003_0;
@@ -354,7 +366,6 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         {ch0036_17,ch0043_0}->ch0036_18;
 
 
-    ch0000_111->{ch0044_1};
 
     ch0043_0->ch0044_0;
     ch0044_0  [label="第44夜",fillcolor="#586E75"];
@@ -921,7 +932,6 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ch0044_113 [label="努阿曼国王及其儿子孙子故事大结局"];
         {ch0044_112,ch0145}->ch0044_113
 
-    ch0000_111->{ch146_0};
 
     ch0145->ch0146;
     ch0146 [label="第146夜",fillcolor="#586E75"];
@@ -960,7 +970,6 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         {ch149_1,ch0152}->ch0152_1
 
 
-    ch0000_111->{ch0153_0};
 
     ch0152->ch0153;
     ch0153 [label="第153夜",fillcolor="#586E75"];
@@ -1054,7 +1063,6 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 
 
 
-    ch0000_111->{ch0170a};
 
     ch0169->ch0170;
     ch0170 [label="第170夜",fillcolor="#586E75"];
@@ -2048,7 +2056,7 @@ ch0333 [label="第333夜",fillcolor="#586E75"];
 
 ch0333->ch0334;
 ch0334 [label="第334夜",fillcolor="#586E75"];
-    ch0334a [label="莎赫札德开始讲"];
+    ch0334a [label="[[莎赫札德开始讲]]"];
     {ch0334,ch0333a}->ch0334a;
     ch0334b1 [label="《异肤色六婢女争辩的故事》"];
     ch0334b2 [label="哈里发马蒙着穆罕默德·白斯里说故事有个富豪有6个不同肤色的美婢女.."];
@@ -2116,7 +2124,7 @@ ch0342 [label="第342夜",fillcolor="#586E75"];
     ch0342b [label="[[莎赫札德开始讲:]]"];
     ch0342b1 [label="《三省督的奇遇》"];
     ch0342b2 [label="纳绥尔国王将开罗~布拉克~米斯尔三省省督召来打听最奇特的事儿.."];
-    ch0342a->ch0342b1->{ch0342b1,ch0342b2};
+    ch0342a->ch0342b->{ch0342b1,ch0342b2};
     ch0342b1->ch0342b2;
 
 ch0342->ch0343;
@@ -2341,93 +2349,6 @@ ch0370 [label="第370夜",fillcolor="#586E75"];
 
 
 
-
-
-ch0370->ch0371;
-ch0371 [label="第371夜",fillcolor="#586E75"];
-    ch0371a [label="王子带公主回到自己的国家安乐成婚继承王位直到归于永恒.."];
-    {ch0371,ch0370a}->ch0371a;
-    ch0371b [label="[[莎赫札德开始讲:]]"];
-    ch0371b1 [label="《文尼斯·沃久德与沃尔黛的故事》"];
-    ch0371b2 [label="相传君王有位信任的宰相有位女儿名叫沃尔黛在马球比赛上看中一位青年军官文尼斯·沃久德.."];
-    ch0371a->ch0371b->{ch0371b1,ch0371b2};
-    ch0371b1->ch0371b2;
-
-ch0371b2->ch0372;
-ch0372 [label="第372夜",fillcolor="#586E75"];
-    ch0372a [label="保姆看穿心思为沃尔黛和沃久德传递情信没想到才第二封就落到宰相手中.."];
-    {ch0372,ch0371b2}->ch0372a;
-
-ch0372->ch0373;
-ch0373 [label="第373夜",fillcolor="#586E75"];
-    ch0373a [label="宰相在失子岛上建立宫殿沃尔黛在被送走前门上留诗沃久德看到茫然乱走遇到猛狮坦露心思...."];
-    {ch0373,ch0372a}->ch0373a;
-
-ch0373->ch0374;
-ch0374 [label="第374夜",fillcolor="#586E75"];
-    ch0374a [label="听过沃久德的哭述猛狮指出线索继续追踪遇到苦修士也是苦情人交换故事后抱头大哭.."];
-    {ch0374,ch0373a}->ch0374a;
-
-ch0374->ch0375;
-ch0375 [label="第375夜",fillcolor="#586E75"];
-    ch0375a [label="苦修士帮沃久德造好葫芦筏出海漂了三天到达沃尔黛所在失子岛.."];
-    {ch0375,ch0374a}->ch0375a;
-
-ch0375->ch0376;
-ch0376 [label="第376夜",fillcolor="#586E75"];
-    ch0376a [label="沃久德和来自伊斯法罕的奴仆攀谈进入宫院和一系列笼中鸟对吟苦情诗.."];
-    {ch0376,ch0375a}->ch0376a;
-
-ch0376->ch0377;
-ch0377 [label="第377夜",fillcolor="#586E75"];
-    ch0377a [label="沃久德确认找到沃尔黛之时沃尔黛已经利用巴勒贝克长纱垂出宫墙在海边遇到苦情渔夫出逃.."];
-    {ch0377,ch0376a}->ch0377a;
-
-ch0377->ch0378;
-ch0378 [label="第378夜",fillcolor="#586E75"];
-    ch0378a [label="沃尔黛被大风浪送到海滨城市被德尔巴斯国王发现并知晓故事派出使者去沙米赫国王求亲沃久德最终联合人马开始寻找.."];
-    {ch0378,ch0377a}->ch0378a;
-
-ch0378->ch0379;
-ch0379 [label="第379夜",fillcolor="#586E75"];
-    ch0379a [label="两国宰相联合人马四处寻找终于找到失子岛发现沃尔黛已脱逃只得带着哭晕过去的沃久德回转而此时无人识得他.."];
-    {ch0379,ch0378a}->ch0379a;
-
-ch0379->ch0380;
-ch0380 [label="第380夜",fillcolor="#586E75"];
-    ch0380a [label="德尔巴斯国王宰相带着沃久德回转惊喜交差立即和沃尔黛缔结婚约两人成婚之夜高兴的双双昏了过去.."];
-    {ch0380,ch0379a}->ch0380a;
-
-ch0380->ch0381;
-ch0381 [label="第381夜",fillcolor="#586E75"];
-    ch0381a [label="沃久德和沃尔黛缔历经磨难终于和美终身.."];
-    {ch0381,ch0380a}->ch0381a;
-    ch0381b [label="[[莎赫札德开始讲:]]"];
-    ch0381b1 [label="《诗人与哈里发的故事》"];
-    ch0381b2 [label="诗人艾卜·努瓦斯备好酒席上街带三个美少年回来欢宴.."];
-    ch0381a->ch0381b->{ch0381b1,ch0381b2};
-    ch0381b1->ch0381b2;
-
-ch0381b2->ch0382;
-ch0382 [label="第382夜",fillcolor="#586E75"];
-    ch0382a [label="努瓦斯备酒席上和三个美少纵情欢乐时哈里发哈伦·拉希德来访被怼回.."];
-    {ch0382,ch0381b2}->ch0382a;
-
-ch0382->ch0383;
-ch0383 [label="第383夜",fillcolor="#586E75"];
-    ch0383a [label="隔天努瓦斯在早朝后的酒席上就被哈里发拉希德装扮成驴游街幸好机智用幽默自救让哈里发消了气.."];
-    {ch0383,ch0382a}->ch0383a;
-    ch0383b [label="[[莎赫札德开始讲:]]"];
-    ch0383b1 [label="《主仆俩与执政官的故事》"];
-    ch0383b2 [label="有巴士拉富人买了女奴并细心培养可时运不徍不得不出售巴士拉执政官看到想买可被俩人感动就地成全.."];
-    ch0383a->ch0383b->{ch0383b1,ch0383b2};
-    ch0383b1->ch0383b2;
-    ch0383c1 [label="《生前死后的故事》"];
-    ch0383c2 [label="欧兹莱部族有位青年不觉陷入单相思被人们周知.."];
-    ch0383b->{ch0383c1,ch0383c2};
-
-
-#ch0000_111->{ch0269b,ch0270b,ch0271b,ch0272b,ch0275b,ch0277b,ch0279b,ch0282b,ch0285b,ch0294b,ch0296b,ch0297b,ch0299b,ch0305b};
 
 
 

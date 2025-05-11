@@ -33,7 +33,11 @@ def exp(c, jpg="ns1001"):
     print(f"export {jpg} from .dot")
     #return None
     redot(c)
-    _cmd =f"dot -Tjpeg {env['exp_dot']}.dot -o {env['exp_jpg']}/{jpg}.jpg"
+    #_cmd =f"fdp -Tjpeg {env['exp_dot']}.dot -o {env['exp_jpg']}/{jpg}.jpg"
+    #_cmd =f"dot -Tjpeg {env['exp_dot']}.dot -o {env['exp_jpg']}/{jpg}.jpg"
+    #_cmd =f"dot {env['exp_dot']}.dot -Tgif -o {env['exp_jpg']}/{jpg}.gif -Tcmapx -o {env['exp_jpg']}/{jpg}.gif.map"
+    _cmd =f"dot {env['exp_dot']}.dot -Tsvg_inline -o {env['exp_jpg']}/{jpg}.svg.html"
+
     print(f"run: {_cmd}") 
     c.run(_cmd)
 

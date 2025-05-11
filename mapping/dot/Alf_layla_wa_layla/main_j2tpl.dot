@@ -8,18 +8,21 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 #   全局设定
 ##############################################################################
 */
-    graph [label="《天方夜谭》故事线索图谱 \n{by Zoom.Quiet for Chaos42DAMA\n powerded Graphviz}"
+    graph [label="《天方夜谭》故事线索图谱 {powerded Graphviz}"
         , fontsize=14.0
         , fontcolor="#D33682"
         , fontname="思源宋体 CN,Heavy"
-
-        , labeljust="r",labelloc="t",center=1
+        , labeljust="l"
+        ,labelloc="t"
+        , center=1
         , ranksep=0.1,center=1,ratio=compress
-        , rankdir=BT
+        //, rankdir=BT
         //, rankdir=LR
+        , rankdir=TB
         , bgcolor="#002B36"
-        , dpi = 100  /* 200 300 600 1200 */
+        #, dpi = 150  /* 200 300 600 1200 */
         , outputorder="edgesfirst"
+        
         ];
 
     node[fontsize=10.0,height=0.4
@@ -38,6 +41,11 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         , style="setlinewidth(0.5)"
         ];
 
+    info [label="by Zoom.Quiet for Chaos42DAMA\nv25.5.10"
+        ,shape=ellipse,style="filled,dashed,setlinewidth(5)"
+        ,color="#333333",fillcolor=dimgray,fontcolor=aqua
+        ,URL="https://www.youtube.com/playlist?list=PLbUdpHqxsZwHXNADWIEMsUHM4QtPj0xh-"
+        ];
 /*
 ##############################################################################
 #   block relation

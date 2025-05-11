@@ -6,23 +6,26 @@
 
     ch0000_3->ch0000_11;
 
-    ch0000_111->{ch0000_12,ch0001_1,ch0009_1};
+    ch0000_111->{ch0000_12};
 
+info -> ch0000_111;
 
     ch0000_11  [label="宰相"];
         ch0000_111  [label="长女:莎赫札德"];
         ch0000_112  [label="次女:杜娅札德"];
-    ch0000_12  [label="《毛驴、黄牛与农夫的故事》"];
+    ch0000_12  [label="《毛驴、黄牛与农夫的故事》"
+        ,URL="https://youtu.be/CXxbSB1iMaE"];
 
     ch0000_0->{ch0000_1,ch0000_2}->ch0000_3;
     ch0000_11->{ch0000_111,ch0000_112};
-    ch0000_11->ch0000_12->ch0000_111;
 
     //ch0000_1->ch0000_11;
 
     ch0000_111->ch0000_1;
         ch0000_1->ch0001_0;
-    ch0001_0  [label="第1夜",fillcolor="#586E75"];
+    ch0001_0  [label="第1夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/UIq247tHc9M"];
+
         ch0001_1  [label="《商人与魔鬼的故事》"];
             ch0001_11  [label="羚羊堂妹"];
             ch0001_12  [label="两狗兄弟"];
@@ -30,16 +33,19 @@
     ch0001_0->ch0001_1->{ch0001_12,ch0001_13,ch0001_11};
 
     ch0001_0->ch0002_0;
-    ch0002_0  [label="第2夜",fillcolor="#586E75"];
+    ch0002_0  [label="第2夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/-ruEPGS1NNE"];
         ch0002_0->{ch0001_12,ch0001_13};
 
     ch0002_0->ch0003_0;
-    ch0003_0  [label="第3夜",fillcolor="#586E75"];
+    ch0003_0  [label="第3夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/5zIREV0uHpE"];
         ch0003_1  [label="《渔夫与魔鬼的故事》"];
         ch0003_0->ch0003_1;
 
     ch0003_0->ch0004_0;
-    ch0004_0  [label="第4夜",fillcolor="#586E75"];
+    ch0004_0  [label="第4夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/ZuZZWJPKYK8"];
         ch0003_11  [label="渔夫:\n《国王与医师的故事》"];
 
         ch0004_0->ch0003_11;
@@ -47,7 +53,8 @@
         ch0003_11->{ch0003_111,ch0003_112};
 
     ch0004_0->ch0005_0;
-    ch0005_0  [label="第5夜",fillcolor="#586E75"];
+    ch0005_0  [label="第5夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/O_3_0GRN3eM"];
         ch0003_111  [label="尤南国王:\n《国王与猎鹰的故事》"];
         ch0003_112  [label="大臣:\n《王子与食人鬼的故事》"];
         ch0003_113  [label="鲁扬医师:\n鳄鱼的故事"];
