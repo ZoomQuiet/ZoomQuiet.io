@@ -1,87 +1,121 @@
 
     ch0152->ch0153;
-    ch0153 [label="第153夜",fillcolor="#586E75"];
+    ch0153 [label="第153夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/HinlXnOYUXQ"
+        ];
         ch0153_0 [label="[[莎赫札德开始讲:]]"];
         ch0153_1 [label="《毕卡尔与莎姆丝的故事》"];
         {ch0153_0,ch0153}->ch0153_1
 
     ch0153->ch0154;
-    ch0154 [label="第154夜",fillcolor="#586E75"];
+    ch0154 [label="第154夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/biPshYoC-WY"
+        ];
         ch0154_1 [label="毕卡尔与莎姆丝相会又分离"];
         {ch0154,ch0153_1}->ch0154_1
 
     ch0154->ch0155;
-    ch0155 [label="第155夜",fillcolor="#586E75"];
+    ch0155 [label="第155夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/k1cW0X87NtA"
+        ];
         ch0155_1 [label="哈桑送毕卡尔回家"];
         {ch0155,ch0154_1}->ch0155_1
 
     ch0155->ch0156;
-    ch0156 [label="第156夜",fillcolor="#586E75"];
+    ch0156 [label="第156夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/FCGuelV5yJI"
+        ];
         ch0156_1 [label="莎姆丝用女仆和毕卡尔建立联系"];
         {ch0156,ch0155_1}->ch0156_1
 
     ch0156->ch0157;
-    ch0157 [label="第157夜",fillcolor="#586E75"];
+    ch0157 [label="第157夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/rlygIkiySbY"
+        ];
         ch0157_1 [label="哈桑的店铺变成联系地点"];
         {ch0157,ch0156_1}->ch0157_1
 
     ch0157->ch0158;
-    ch0158 [label="第158夜",fillcolor="#586E75"];
+    ch0158 [label="第158夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/1YPr2LA4X6E"
+        ];
         ch0158_1 [label="哈桑开始担心自己"];
         {ch0158,ch0157_1}->ch0158_1
 
     ch0158->ch0159;
-    ch0159 [label="第159夜",fillcolor="#586E75"];
+    ch0159 [label="第159夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/He17oAB3JIY"
+        ];
         ch0159_1 [label="哈桑逃去巴士拉城高海尔出现"];
         {ch0159,ch0158_1}->ch0159_1
 
     ch0159->ch0160;
-    ch0160 [label="第160夜",fillcolor="#586E75"];
+    ch0160 [label="第160夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/TdmPduBaPCY"
+        ];
         ch0160_1 [label="高海尔决定重新担当联系点"];
         {ch0160,ch0159_1}->ch0160_1
 
     ch0160->ch0161;
-    ch0161 [label="第161夜",fillcolor="#586E75"];
+    ch0161 [label="第161夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/DiRp901PYMI"
+        ];
         ch0161_1 [label="高海尔不敢去王宫要求在自宅见面"];
         {ch0161,ch0160_1}->ch0161_1
 
     ch0161->ch0162;
-    ch0162 [label="第162夜",fillcolor="#586E75"];
+    ch0162 [label="第162夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/BOxrYltu4Bk"
+        ];
         ch0162_1 [label="高海尔向毕卡尔转述莎姆丝来访"];
         {ch0162,ch0161_1}->ch0162_1
 
     ch0162->ch0163;
-    ch0163 [label="第163夜",fillcolor="#586E75"];
+    ch0163 [label="第163夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/AIpm9F34lQw"
+        ];
         ch0163_1 [label="毕卡尔和莎姆丝在高海尔宅中欢乐幽会"];
         {ch0163,ch0162_1}->ch0163_1
 
     ch0163->ch0164;
-    ch0164 [label="第164夜",fillcolor="#586E75"];
+    ch0164 [label="第164夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/slR4v8V_tLU"
+        ];
         ch0164_1 [label="高海尔救回盗贼掳走的毕卡尔和莎姆丝"];
         {ch0164,ch0163_1}->ch0164_1
 
     ch0164->ch0165;
-    ch0165 [label="第165夜",fillcolor="#586E75"];
+    ch0165 [label="第165夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/eskuNhrpWAM"
+        ];
         ch0165_1 [label="莎姆丝贴身侍女和高海尔核对事实"];
         {ch0165,ch0164_1}->ch0165_1
 
     ch0165->ch0166;
-    ch0166 [label="第166夜",fillcolor="#586E75"];
+    ch0166 [label="第166夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/RLJD2_eNT8s"
+        ];
         ch0166_1 [label="侍女转述莎姆丝亲身经历"];
         {ch0166,ch0165_1}->ch0166_1
 
     ch0166->ch0167;
-    ch0167 [label="第167夜",fillcolor="#586E75"];
+    ch0167 [label="第167夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/OSfqQlp85QQ"
+        ];
         ch0167_1 [label="毕卡尔入病侍女通告宫中变故"];
         {ch0167,ch0166_1}->ch0167_1
 
     ch0167->ch0168;
-    ch0168 [label="第168夜",fillcolor="#586E75"];
+    ch0168 [label="第168夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jG3DbQz_wKo"
+        ];
         ch0168_1 [label="毕卡尔和高海尔出逃途中毕卡尔瘁死"];
         {ch0168,ch0167_1}->ch0168_1
 
     ch0168->ch0169;
-    ch0169 [label="第169夜",fillcolor="#586E75"];
+    ch0169 [label="第169夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/88cPrBQfo50"
+        ];
         ch0169a [label="侍女通告莎姆丝也暴毙宫中"];
         {ch0169,ch0168_1}->ch0169a
 

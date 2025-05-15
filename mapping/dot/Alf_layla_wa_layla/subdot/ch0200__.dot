@@ -1,5 +1,7 @@
     ch0199->ch0200;
-    ch0200 [label="第200夜",fillcolor="#586E75"];
+    ch0200 [label="第200夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/qGUlGwSLccU"
+        ];
         ch0200a [label="艾姆吉德下山找艾斯阿德街遇小姐姐"];
         {ch0200,ch0199a}->ch0200a
 

@@ -2,154 +2,214 @@
 
 
     ch0169->ch0170;
-    ch0170 [label="第170夜",fillcolor="#586E75"];
+    ch0170 [label="第170夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/N5AbIyku19U"
+        ];
         ch0170a [label="[[莎赫札德开始讲:]]"];
         ch0170b [label="《盖麦尔与布杜尔的故事》"];
         ch0170c [label="舍赫曼国王老来得子盖麦尔"];
         {ch0170a,ch0170}->ch0170b->ch0170c
 
     ch0170->ch0171;
-    ch0171 [label="第171夜",fillcolor="#586E75"];
+    ch0171 [label="第171夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/c6YPH9UVRoA"
+        ];
         ch0171a [label="盖麦尔信先贤书不想结婚"];
         {ch0171,ch0170c}->ch0171a
 
     ch0171->ch0172;
-    ch0172 [label="第172夜",fillcolor="#586E75"];
+    ch0172 [label="第172夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/_YM_GnoeTrg"
+        ];
         ch0172a [label="盖麦尔20岁还是不想结婚被关起来"];
         {ch0172,ch0171a}->ch0172a
 
     ch0172->ch0173;
-    ch0173 [label="第173夜",fillcolor="#586E75"];
+    ch0173 [label="第173夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/3K4o9CL32aU"
+        ];
         ch0173a [label="盖麦尔后悔了"];
         {ch0173,ch0172a}->ch0173a
 
     ch0173->ch0174;
-    ch0174 [label="第174夜",fillcolor="#586E75"];
+    ch0174 [label="第174夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/SAv7A9vDz6Y"
+        ];
         ch0174a [label="仙女梅姆娜看中盖麦尔\n抓到飞魔戴何士得知埃尤尔国公主更美"];
         {ch0174,ch0173a}->ch0174a
 
     ch0174->ch0175;
-    ch0175 [label="第175夜",fillcolor="#586E75"];
+    ch0175 [label="第175夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/RSjm5qL-qE8"
+        ];
         ch0175a [label="仙女梅姆娜着飞魔戴何士将布杜尔公主带过来比较"];
         {ch0175,ch0174a}->ch0175a
 
     ch0175->ch0176;
-    ch0176 [label="第176夜",fillcolor="#586E75"];
+    ch0176 [label="第176夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/fv7ueyuOYBU"
+        ];
         ch0176a [label="仙女和飞魔看不出高低想了个办法"];
         {ch0176,ch0175a}->ch0176a
 
     ch0176->ch0177;
-    ch0177 [label="第177夜",fillcolor="#586E75"];
+    ch0177 [label="第177夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/VrqDy4hNabA"
+        ];
         ch0177a [label="盖麦尔醒见布杜尔公主动情忍住,换布杜尔公主醒见"];
         {ch0177,ch0176a}->ch0177a
 
     ch0177->ch0178;
-    ch0178 [label="第178夜",fillcolor="#586E75"];
+    ch0178 [label="第178夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/wRs_zCsrst0"
+        ];
         ch0178a [label="比完美飞魔送回公主,早晨盖麦尔没见布杜尔大怒"];
         {ch0178,ch0177a}->ch0178a
 
     ch0178->ch0179;
-    ch0179 [label="第179夜",fillcolor="#586E75"];
+    ch0179 [label="第179夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/YAykS0v1Hng"
+        ];
         ch0179a [label="仆人求来宰相问盖麦尔,没人知道昨夜姑娘"];
         {ch0179,ch0178a}->ch0179a
 
     ch0179->ch0180;
-    ch0180 [label="第180夜",fillcolor="#586E75"];
+    ch0180 [label="第180夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/hmOuw8_E7VE"
+        ];
         ch0180a [label="宰相拉来舍赫曼国王同问盖麦尔王子"];
         {ch0180,ch0179a}->ch0180a
 
     ch0180->ch0181;
-    ch0181 [label="第181夜",fillcolor="#586E75"];
+    ch0181 [label="第181夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/gjdpe5pitx0"
+        ];
         ch0181a [label="盖麦尔王子展示证据戒指,大家没办法搬到新宫殿一起熬"];
         {ch0181,ch0180a}->ch0181a
 
     ch0181->ch0182;
-    ch0182 [label="第182夜",fillcolor="#586E75"];
+    ch0182 [label="第182夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/K8syXTNycO0"
+        ];
         ch0182a [label="布杜尔公主醒来也没见王子被当成疯子,发小麦尔泽旺受托出发寻找"];
         {ch0182,ch0181a}->ch0182a
 
     ch0182->ch0183;
-    ch0183 [label="第183夜",fillcolor="#586E75"];
+    ch0183 [label="第183夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jR0CzZ4hAOM"
+        ];
         ch0183a [label="麦尔泽旺海难被舍赫曼国王救起见到盖麦尔王子"];
         {ch0183,ch0182a}->ch0183a
 
     ch0183->ch0184;
-    ch0184 [label="第184夜",fillcolor="#586E75"];
+    ch0184 [label="第184夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/BqkMyRy744Y"
+        ];
         ch0184a [label="麦尔泽旺带来消息盖麦尔王子高兴极了"];
         {ch0184,ch0183a}->ch0184a
 
     ch0184->ch0185;
-    ch0185 [label="第185夜",fillcolor="#586E75"];
+    ch0185 [label="第185夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/JJdkWsxRz_E"
+        ];
         ch0185a [label="盖麦尔王子和麦尔泽旺密谋去见布杜尔公主"];
         {ch0185,ch0184a}->ch0185a
 
     ch0185->ch0186;
-    ch0186 [label="第186夜",fillcolor="#586E75"];
+    ch0186 [label="第186夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/vA5rOl1KLIA"
+        ];
         ch0186a [label="盖麦尔王子伪装成占卜师引起埃尤尔国王注意"];
         {ch0186,ch0185a}->ch0186a
 
     ch0186->ch0187;
-    ch0187 [label="第187夜",fillcolor="#586E75"];
+    ch0187 [label="第187夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/6397Ovqy8Vk"
+        ];
         ch0187a [label="盖麦尔王子隔帘给布杜尔公主修书一封"];
         {ch0187,ch0186a}->ch0187a
 
     ch0187->ch0188;
-    ch0188 [label="第188夜",fillcolor="#586E75"];
+    ch0188 [label="第188夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/iWLOY-Gi7TQ"
+        ];
         ch0188a [label="盖麦尔和布杜尔成婚后回家路上注意到公主腰带上的红宝石"];
         {ch0188,ch0187a}->ch0188a
 
     ch0188->ch0189;
-    ch0189 [label="第189夜",fillcolor="#586E75"];
+    ch0189 [label="第189夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/4iJp9mzMJNc"
+        ];
         ch0189a [label="红宝石被大鸟抢走,盖麦尔追踪到一个陌生城市住下来当园丁"];
         {ch0189,ch0188a}->ch0189a
 
     ch0189->ch0190;
-    ch0190 [label="第190夜",fillcolor="#586E75"];
+    ch0190 [label="第190夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/RX1WC1IYnu8"
+        ];
         ch0190a [label="布杜尔醒来不见丈夫只能假装盖麦尔到达阿卜努斯城被老国王看中嫁给了哈娅蒂公主"];
         {ch0190,ch0189a}->ch0190a
 
     ch0190->ch0191;
-    ch0191 [label="第191夜",fillcolor="#586E75"];
+    ch0191 [label="第191夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Ejy6R_gUsJo"
+        ];
         ch0191a [label="布杜尔连续三天没行房,最终向哈娅蒂公主坦白二人合谋通过考验"];
         {ch0191,ch0190a}->ch0191a
 
     ch0191->ch0192;
-    ch0192 [label="第192夜",fillcolor="#586E75"];
+    ch0192 [label="第192夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/T9e3scjnP8g"
+        ];
         ch0192a [label="舍赫曼国王找到盖麦尔留下的血衣伤心建哀宫"];
         {ch0192,ch0191a}->ch0192a
 
     ch0192->ch0193;
-    ch0193 [label="第193夜",fillcolor="#586E75"];
+    ch0193 [label="第193夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/bdNYe4UdNoo"
+        ];
         ch0193a [label="盖麦尔在花园找丢失的红宝石以及金库可没赶上回国的船"];
         {ch0193,ch0192a}->ch0193a
 
     ch0193->ch0194;
-    ch0194 [label="第194夜",fillcolor="#586E75"];
+    ch0194 [label="第194夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/_VsEAE-E96Q"
+        ];
         ch0194a [label="布杜尔意外获得了线索让货船将盖麦尔带回阿卜努斯并奇迹般相认"];
         {ch0194,ch0193a}->ch0194a
 
     ch0194->ch0195;
-    ch0195 [label="第195夜",fillcolor="#586E75"];
+    ch0195 [label="第195夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/fGyYb2C_YsE"
+        ];
         ch0195a [label="真相大白盖麦尔当了国王娶了哈娅蒂和布杜尔共同生活"];
         {ch0195,ch0194a}->ch0195a
 
     ch0195->ch0196;
-    ch0196 [label="第196夜",fillcolor="#586E75"];
+    ch0196 [label="第196夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/SJ2tzNT8UUA"
+        ];
         ch0196a [label="盖麦尔两个王子分别被对方的母亲爱上又被情书揭破"];
         {ch0196,ch0195a}->ch0196a
 
     ch0196->ch0197;
-    ch0197 [label="第197夜",fillcolor="#586E75"];
+    ch0197 [label="第197夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/bLr8XBtjnqk"
+        ];
         ch0197a [label="哈娅蒂和布杜尔抢先向盖麦尔诬告两王子不伦自己"];
         {ch0197,ch0196a}->ch0197a
 
     ch0197->ch0198;
-    ch0198 [label="第198夜",fillcolor="#586E75"];
+    ch0198 [label="第198夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/leeQU-JJHdo"
+        ];
         ch0198a [label="盖麦尔大怒密令老司仓杀掉两王子却因意外脱逃带回遗物"];
         {ch0198,ch0197a}->ch0198a
 
     ch0198->ch0199;
-    ch0199 [label="第199夜",fillcolor="#586E75"];
+    ch0199 [label="第199夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/OLL-c1WingQ"
+        ];
         ch0199a [label="盖麦尔从遗物知真相起哀宫,而两王子跋涉误入拜火教城艾斯阿德被关"];
         {ch0199,ch0198a}->ch0199a
 

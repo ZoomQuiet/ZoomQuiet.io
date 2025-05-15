@@ -46,6 +46,11 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ,color="#333333",fillcolor=dimgray,fontcolor=aqua
         ,URL="https://www.youtube.com/playlist?list=PLbUdpHqxsZwHXNADWIEMsUHM4QtPj0xh-"
         ];
+    why1001  [label="为什么通读1001夜?",fillcolor="#586E75"
+        ,URL="https://youtu.be/Bk9xReE2eNU"
+        ];
+
+        
 /*
 ##############################################################################
 #   block relation

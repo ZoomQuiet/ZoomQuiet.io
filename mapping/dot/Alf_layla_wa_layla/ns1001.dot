@@ -46,6 +46,11 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         ,color="#333333",fillcolor=dimgray,fontcolor=aqua
         ,URL="https://www.youtube.com/playlist?list=PLbUdpHqxsZwHXNADWIEMsUHM4QtPj0xh-"
         ];
+    why1001  [label="为什么通读1001夜?",fillcolor="#586E75"
+        ,URL="https://youtu.be/Bk9xReE2eNU"
+        ];
+
+        
 /*
 ##############################################################################
 #   block relation
@@ -63,12 +68,12 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
 
     ch0000_111->{ch0000_12};
 
-info -> ch0000_111;
+info -> {ch0000_111,why1001};
 
     ch0000_11  [label="宰相"];
         ch0000_111  [label="长女:莎赫札德"];
         ch0000_112  [label="次女:杜娅札德"];
-    ch0000_12  [label="《毛驴、黄牛与农夫的故事》"
+    ch0000_12  [label="《毛驴、黄牛与农夫的故事》",fillcolor="#586E75"
         ,URL="https://youtu.be/CXxbSB1iMaE"];
 
     ch0000_0->{ch0000_1,ch0000_2}->ch0000_3;
@@ -93,12 +98,14 @@ info -> ch0000_111;
         ch0002_0->{ch0001_12,ch0001_13};
 
     ch0002_0->ch0003_0;
-    ch0003_0  [label="第3夜",fillcolor="#586E75"];
+    ch0003_0  [label="第3夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/5zIREV0uHpE"];
         ch0003_1  [label="《渔夫与魔鬼的故事》"];
         ch0003_0->ch0003_1;
 
     ch0003_0->ch0004_0;
-    ch0004_0  [label="第4夜",fillcolor="#586E75"];
+    ch0004_0  [label="第4夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/ZuZZWJPKYK8"];
         ch0003_11  [label="渔夫:\n《国王与医师的故事》"];
 
         ch0004_0->ch0003_11;
@@ -106,7 +113,8 @@ info -> ch0000_111;
         ch0003_11->{ch0003_111,ch0003_112};
 
     ch0004_0->ch0005_0;
-    ch0005_0  [label="第5夜",fillcolor="#586E75"];
+    ch0005_0  [label="第5夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/O_3_0GRN3eM"];
         ch0003_111  [label="尤南国王:\n《国王与猎鹰的故事》"];
         ch0003_112  [label="大臣:\n《王子与食人鬼的故事》"];
         ch0003_113  [label="鲁扬医师:\n鳄鱼的故事"];
@@ -116,7 +124,9 @@ info -> ch0000_111;
 
 
     ch0005_0->ch0006_0;
-    ch0006_0  [label="第6夜",fillcolor="#586E75"];
+    ch0006_0  [label="第6夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/igEehMvKfPI"
+        ];
         ch0003_12  [label="魔鬼:\n《乌马迈与阿蒂凯》"];
         ch0003_13  [label="渔夫进献国王:\n四色鱼"];
         ch0003_131  [label="国王发现:\n四色鱼"];
@@ -126,13 +136,17 @@ info -> ch0000_111;
         ch0003_13->ch0003_131;
 
     ch0006_0->ch0007_0;
-    ch0007_0  [label="第7夜",fillcolor="#586E75"];
+    ch0007_0  [label="第7夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/o3l_SKheHbQ"
+        ];
         ch0003_132  [label="国王发现:\n着魔青年"];
 
         {ch0003_131,ch0007_0}->ch0003_132;
 
     ch0007_0->ch0008_0;
-    ch0008_0  [label="第8夜",fillcolor="#586E75"];
+    ch0008_0  [label="第8夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/qaqaa-f81Z8"
+        ];
         ch0003_1321  [label="着魔青年:\n四色鱼的故事"];
         ch0003_133  [label="国王解救:\n着魔青年"];
 
@@ -140,7 +154,9 @@ info -> ch0000_111;
         ch0003_1321->ch0003_133;
 
     ch0008_0->ch0009_0;
-    ch0009_0  [label="第9夜",fillcolor="#586E75"];
+    ch0009_0  [label="第9夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/InDVJQZzN_A"
+        ];
 
         ch0003_134  [label="国王纳着魔青年为王子"];
         ch0003_2  [label="结束《渔夫与魔鬼的故事》"];
@@ -150,131 +166,173 @@ info -> ch0000_111;
     ch0009_0->ch0009_1;
 
     ch0009_0->ch0010_0;
-    ch0010_0  [label="第10夜",fillcolor="#586E75"];
+    ch0010_0  [label="第10夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/qcihASTgSYk"
+        ];
 
         ch0009_11 [label="看门姑娘惊变\n国王要问\n房主姑娘要杀..."];
         {ch0009_1,ch0010_0}->ch0009_11;
 
     ch0010_0->ch0011_0;
-    ch0011_0  [label="第11夜",fillcolor="#586E75"];
+    ch0011_0  [label="第11夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/j2gycWcMHfY"
+        ];
 
         ch0009_111 [label="第一位独眼流浪汉的故事"];
         {ch0009_11,ch0011_0}->ch0009_111;
 
     ch0011_0->ch0012_0;
-    ch0012_0  [label="第12夜",fillcolor="#586E75"];
+    ch0012_0  [label="第12夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/V0nU3aA4Ey8"
+        ];
 
         ch0009_112 [label="第二位独眼流浪汉的故事"];
         {ch0009_111,ch0012_0}->ch0009_112;
 
     ch0012_0->ch0013_0;
-    ch0013_0  [label="第13夜",fillcolor="#586E75"];
+    ch0013_0  [label="第13夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/LQeshrUUAiQ"
+        ];
 
         ch0009_1121 [label="被魔鬼变成猴子的王子\n终于被公主认出"];
         {ch0009_112,ch0013_0}->ch0009_1121;
 
     ch0013_0->ch0014_0;
-    ch0014_0  [label="第14夜",fillcolor="#586E75"];
+    ch0014_0  [label="第14夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Otcswx1Cuo8"
+        ];
 
         ch0009_113 [label="第三位独眼流浪汉的故事"];
         {ch0009_112,ch0014_0}->ch0009_113;
 
     ch0014_0->ch0015_0;
-    ch0015_0  [label="第15夜",fillcolor="#586E75"];
+    ch0015_0  [label="第15夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/nsfb1rBSBbA"
+        ];
 
         ch0009_114 [label="第三位独眼流浪汉\n和40位公主以及宝库"];
         {ch0009_113,ch0015_0}->ch0009_114;
 
     ch0015_0->ch0016_0;
-    ch0016_0  [label="第16夜",fillcolor="#586E75"];
+    ch0016_0  [label="第16夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/PLJe3RqpFY8"
+        ];
 
         ch0009_115 [label="房主姑娘\n人畜皆黑石的拜火教城"];
         {ch0009_114,ch0016_0}->ch0009_115;
 
     ch0016_0->ch0017_0;
-    ch0017_0  [label="第17夜",fillcolor="#586E75"];
+    ch0017_0  [label="第17夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/QhcpZ05SFvA"
+        ];
 
         ch0009_116 [label="房主姑娘姐姐被变黑狗\n看门姑娘被婚配又遭遗弃"];
         {ch0009_115,ch0017_0}->ch0009_116;
 
     ch0017_0->ch0018_0;
-    ch0018_0  [label="第18夜",fillcolor="#586E75"];
+    ch0018_0  [label="第18夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/FzzKc2FIzfI"
+        ];
 
         ch0018_1 [label="《三个苹果的故事》"];
         {ch0009_116,ch0018_0}->ch0018_1;
 
     ch0018_0->ch0019_0;
-    ch0019_0  [label="第19夜",fillcolor="#586E75"];
+    ch0019_0  [label="第19夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/4ICNrGkg8Gs"
+        ];
 
         ch0019_1 [label="《兄弟宰相的故事》"];
         {ch0018_1,ch0019_0}->ch0019_1;
 
     ch0019_0->ch0020_0;
-    ch0020_0  [label="第20夜",fillcolor="#586E75"];
+    ch0020_0  [label="第20夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/iwEfaqm00D8"
+        ];
 
         ch0019_11 [label="果然同日结婚生子女\n又都遭受变故"];
         {ch0019_1,ch0020_0}->ch0019_11;
 
     ch0020_0->ch0021_0;
-    ch0021_0  [label="第21夜",fillcolor="#586E75"];
+    ch0021_0  [label="第21夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/voH0NNvqG6A"
+        ];
 
         ch0019_12 [label="飞魔和仙女帮忙\n新婚后又遭到分离"];
         {ch0019_11,ch0021_0}->ch0019_12;
 
     ch0021_0->ch0022_0;
-    ch0022_0  [label="第22夜",fillcolor="#586E75"];
+    ch0022_0  [label="第22夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/AgeSyfnimcg"
+        ];
 
         ch0019_13 [label="宰相老哥终于明白\n女儿和侄儿真成婚了"];
         {ch0019_12,ch0022_0}->ch0019_13;
 
     ch0022_0->ch0023_0;
-    ch0023_0  [label="第23夜",fillcolor="#586E75"];
+    ch0023_0  [label="第23夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/bxdkAfjfpiQ"
+        ];
 
         ch0019_14 [label="老哥宰相带外孙寻侄儿\n生生错过两次"];
         {ch0019_13,ch0023_0}->ch0019_14;
 
     ch0023_0->ch0024_0;
-    ch0024_0  [label="第24夜",fillcolor="#586E75"];
+    ch0024_0  [label="第24夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/w2bzIqZXTkY"
+        ];
 
         ch0019_15 [label="《兄弟宰相的故事》合美结束"];
         ch0024_1 [label="《裁缝与驼背人的故事》"];
         {ch0019_14,ch0024_0}->ch0019_15->ch0024_1;
 
     ch0024_0->ch0025_0;
-    ch0025_0  [label="第25夜",fillcolor="#586E75"];
+    ch0025_0  [label="第25夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/LKy3uejPH9U"
+        ];
 
         ch0024_11 [label="差点儿被吊死的基督教徒"];
         ch0024_111 [label="《断手青年的故事》"];
         {ch0024_1,ch0025_0}->ch0024_11->ch0024_111;
 
     ch0025_0->ch0026_0;
-    ch0026_0  [label="第26夜",fillcolor="#586E75"];
+    ch0026_0  [label="第26夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/O8jYnUEq7wA"
+        ];
 
         ch0024_112 [label="《断手青年的故事》结束"];
         {ch0024_111,ch0026_0}->ch0024_112;
 
     ch0026_0->ch0027_0;
-    ch0027_0  [label="第27夜",fillcolor="#586E75"];
+    ch0027_0  [label="第27夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/7PVS2dzVOdg"
+        ];
 
         ch0024_12 [label="御膳房主事:《断指青年的故事》"];
         ch0024_13 [label="犹太医生:《祸福相依的故事》"];
         {ch0024_112,ch0027_0}->ch0024_12->ch0024_13;
 
     ch0027_0->ch0028_0;
-    ch0028_0  [label="第28夜",fillcolor="#586E75"];
+    ch0028_0  [label="第28夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Qx73zHoRy5E"
+        ];
 
         ch0024_131 [label="《祸福相依的故事》结束"];
         ch0024_14 [label="裁缝《巴格达剃头匠的故事》"];
         {ch0024_13,ch0028_0}->ch0024_131->ch0024_14;
 
     ch0028_0->ch0029_0;
-    ch0029_0  [label="第29夜",fillcolor="#586E75"];
+    ch0029_0  [label="第29夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/eFaxPF_5oKA"
+        ];
 
         ch0024_141 [label="饶舌剃头匠搞事儿..."];
         {ch0024_14,ch0029_0}->ch0024_141;
 
     ch0029_0->ch0030_0;
-    ch0030_0  [label="第30夜",fillcolor="#586E75"];
+    ch0030_0  [label="第30夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jcCU2tBq2C4"
+        ];
 
         ch0024_142 [label="剃头匠说《七兄弟的故事》"];
         ch0024_1421 [label="剃头匠:瘸子大哥"];
@@ -282,7 +340,9 @@ info -> ch0000_111;
         {ch0024_141,ch0030_0}->ch0024_142->ch0024_1421->ch0024_1422;
 
     ch0030_0->ch0031_0;
-    ch0031_0  [label="第31夜",fillcolor="#586E75"];
+    ch0031_0  [label="第31夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Nbk75656dTM"
+        ];
 
         ch0024_14221 [label="剃头匠:裸奔二哥"];
         ch0024_1423 [label="剃头匠:盲人三哥"];
@@ -291,45 +351,59 @@ info -> ch0000_111;
         {ch0024_1422,ch0031_0}->ch0024_14221->ch0024_1423->ch0024_1424->ch0024_1425;
 
     ch0031_0->ch0032_0;
-    ch0032_0  [label="第32夜",fillcolor="#586E75"];
+    ch0032_0  [label="第32夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/ATvBB82W3v0"
+        ];
 
         ch0024_1426 [label="剃头匠:六哥双唇被割"];
         ch0032_1 [label="《双宰相与女奴的故事》"];
         {ch0024_1425,ch0032_0}->ch0024_1426->ch0032_1;
 
     ch0032_0->ch0033_0;
-    ch0033_0  [label="第33夜",fillcolor="#586E75"];
+    ch0033_0  [label="第33夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/BZafGJ6mdos"
+        ];
 
         ch0032_11 [label="宰相儿子看上了女奴"];
         {ch0032_1,ch0033_0}->ch0032_11;
 
     ch0033_0->ch0034_0;
-    ch0034_0  [label="第34夜",fillcolor="#586E75"];
+    ch0034_0  [label="第34夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/cHCfIkXZBHs"
+        ];
 
         ch0032_12 [label="败光家产不得不发卖女奴"];
         {ch0032_11,ch0034_0}->ch0032_12;
 
     ch0034_0->ch0035_0;
-    ch0035_0  [label="第35夜",fillcolor="#586E75"];
+    ch0035_0  [label="第35夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/bKT8c7Q12Do"
+        ];
 
         ch0032_13 [label="逃到巴格达消愁宫触发故事"];
         {ch0032_12,ch0035_0}->ch0032_13;
 
     ch0035_0->ch0036_0;
-    ch0036_0  [label="第36夜",fillcolor="#586E75"];
+    ch0036_0  [label="第36夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/gRDkOE9erU8"
+        ];
 
         ch0032_14 [label="努尔丁变成国王happy end"];
         ch0036_1 [label="《商人阿尤布及其子女的故事》"];
         {ch0032_13,ch0036_0}->ch0032_14->ch0036_1;
 
     ch0036_1->ch0037_0;
-    ch0037_0  [label="第37夜",fillcolor="#586E75"];
+    ch0037_0  [label="第37夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/W-7U6Mqj4KE"
+        ];
 
         ch0036_11 [label="儿子加尼姆误入巴格达城外墓地"];
         {ch0037_0}->ch0036_11;
 
     ch0037_0->ch0038_0;
-    ch0038_0  [label="第38夜",fillcolor="#586E75"];
+    ch0038_0  [label="第38夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/tuqwMS9aAQk"
+        ];
 
         ch0036_12 [label="奴隶:布赫特被阉割的故事"];
         ch0036_13 [label="奴隶:卡夫尔被阉割的故事"];
@@ -342,25 +416,33 @@ info -> ch0000_111;
         {ch0036_13,ch0039_0}->ch0036_14;
 
     ch0039_0->ch0040_0;
-    ch0040_0  [label="第40夜",fillcolor="#586E75"];
+    ch0040_0  [label="第40夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/atgQLc2JAvk"
+        ];
 
         ch0036_15 [label="加尼姆不敢碰姑蒂"];
         {ch0036_14,ch0040_0}->ch0036_15;
 
     ch0040_0->ch0041_0;
-    ch0041_0  [label="第41夜",fillcolor="#586E75"];
+    ch0041_0  [label="第41夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/TPQIbvfDb7U"
+        ];
 
         ch0036_16 [label="王后用木尸替姑蒂下葬终被发现"];
         {ch0036_15,ch0041_0}->ch0036_16;
 
     ch0041_0->ch0042_0;
-    ch0042_0  [label="第42夜",fillcolor="#586E75"];
+    ch0042_0  [label="第42夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/S-aWacNk9u8"
+        ];
 
         ch0036_17 [label="姑蒂获准四处寻找加尼姆"];
         {ch0036_16,ch0042_0}->ch0036_17;
 
     ch0042_0->ch0043_0;
-    ch0043_0  [label="第43夜",fillcolor="#586E75"];
+    ch0043_0  [label="第43夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/AwL2rDQA07M"
+        ];
 
         ch0036_18 [label="姑蒂寻回加尼姆面见国王"];
         {ch0036_17,ch0043_0}->ch0036_18;
@@ -368,391 +450,526 @@ info -> ch0000_111;
 
 
     ch0043_0->ch0044_0;
-    ch0044_0  [label="第44夜",fillcolor="#586E75"];
+    ch0044_0  [label="第44夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/CMi2YYgrvvg"
+        ];
 
         ch0044_1 [label="《欧麦尔·努阿曼国王及其儿子的故事》"];
         {ch0036_18,ch0044_0}->ch0044_1;
 
     ch0044_1->ch0045_0;
-    ch0045_0  [label="第45夜",fillcolor="#586E75"];
+    ch0045_0  [label="第45夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/WybbiDDVmIk"
+        ];
 
         ch0044_11 [label="希腊索菲雅生出龙凤胎"];
         {ch0045_0}->ch0044_11;
 
     ch0045_0->ch0046_0;
-    ch0046_0  [label="第46夜",fillcolor="#586E75"];
+    ch0046_0  [label="第46夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Sl8jnILfnB0"
+        ];
 
         ch0044_12 [label="君士坦丁堡来求救发兵"];
         {ch0044_11,ch0046_0}->ch0044_12;
 
     ch0046_0->ch0047_0;
-    ch0047_0  [label="第47夜",fillcolor="#586E75"];
+    ch0047_0  [label="第47夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/D7jOuBmjIrQ"
+        ];
 
         ch0044_13 [label="王太子舒尔康被耶稣教女子摔胜"];
         {ch0044_12,ch0047_0}->ch0044_13;
 
     ch0047_0->ch0048_0;
-    ch0048_0  [label="第48夜",fillcolor="#586E75"];
+    ch0048_0  [label="第48夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/NB1u8jLgNOE"
+        ];
 
         ch0044_14 [label="舒尔康和罗马女子耳鬓厮磨两日"];
         {ch0044_13,ch0048_0}->ch0044_14;
 
     ch0048_0->ch0049_0;
-    ch0049_0  [label="第49夜",fillcolor="#586E75"];
+    ch0049_0  [label="第49夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/5hf-gUbAjhg"
+        ];
 
         ch0044_15 [label="原来摔倒舒尔康的是伊卜里梓公主"];
         {ch0044_14,ch0049_0}->ch0044_15;
 
 
     ch0049_0->ch0050_0;
-    ch0050_0  [label="第50夜",fillcolor="#586E75"];
+    ch0050_0  [label="第50夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/G_vNJx94AGE"
+        ];
 
         ch0044_16 [label="伊卜里梓公主战队大胜舒尔康的"];
         {ch0044_15,ch0050_0}->ch0044_16;
 
 
     ch0050_0->ch0051_0;
-    ch0051_0  [label="第51夜",fillcolor="#586E75"];
+    ch0051_0  [label="第51夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/RcRu-lGTX6Q"
+        ];
 
         ch0044_17 [label="伊卜里梓公主追随舒尔康回巴格达\n被国王迷奷怀孕出逃"];
         {ch0044_16,ch0051_0}->ch0044_17;
 
     ch0051_0->ch0052_0;
-    ch0052_0  [label="第52夜",fillcolor="#586E75"];
+    ch0052_0  [label="第52夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/E-UATH6g8Fc"
+        ];
 
         ch0044_18 [label="伊卜里梓公主被杀,哈杜布国王发誓报仇"];
         {ch0044_17,ch0052_0}->ch0044_18;
 
     ch0052_0->ch0053_0;
-    ch0053_0  [label="第53夜",fillcolor="#586E75"];
+    ch0053_0  [label="第53夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/39Nqfa4fLlw"
+        ];
 
         ch0044_19 [label="太后达瓦希定下美人计"];
         ch0044_20 [label="杜姆康和努兹蔓双胞胎偷访耶路撒冷"];
         {ch0044_18,ch0053_0}->ch0044_19->ch0044_20;
 
     ch0053_0->ch0054_0;
-    ch0054_0  [label="第54夜",fillcolor="#586E75"];
+    ch0054_0  [label="第54夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/CeCAttQbDms"
+        ];
 
         ch0044_21 [label="杜姆康病倒街头幸运恢复"];
         {ch0044_20,ch0054_0}->ch0044_21
 
     ch0054_0->ch0055_0;
-    ch0055_0  [label="第55夜",fillcolor="#586E75"];
+    ch0055_0  [label="第55夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/-0Ei5wD7Byo"
+        ];
 
         ch0044_22 [label="杜姆康开始回国,努兹蔓被拐骗入山"];
         {ch0044_21,ch0055_0}->ch0044_22
 
     ch0055_0->ch0056_0;
-    ch0056_0  [label="第56夜",fillcolor="#586E75"];
+    ch0056_0  [label="第56夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/TyiDlGvImpM"
+        ];
 
         ch0044_23 [label="努兹蔓也到大马士革正被发卖"];
         {ch0044_22,ch0056_0}->ch0044_23
 
     ch0056_0->ch0057_0;
-    ch0057_0  [label="第57夜",fillcolor="#586E75"];
+    ch0057_0  [label="第57夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/-R6OulxcQ1Q"
+        ];
 
         ch0044_24 [label="努兹蔓被10万第纳尔买下"];
         {ch0044_23,ch0057_0}->ch0044_24
 
     ch0057_0->ch0058_0;
-    ch0058_0  [label="第58夜",fillcolor="#586E75"];
+    ch0058_0  [label="第58夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/d7FhqTsOCNk"
+        ];
 
         ch0044_25 [label="努兹蔓和好心商人约好条件"];
         {ch0044_24,ch0058_0}->ch0044_25
 
     ch0058_0->ch0059_0;
-    ch0059_0  [label="第59夜",fillcolor="#586E75"];
+    ch0059_0  [label="第59夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/JZFwpgBkQGQ"
+        ];
 
         ch0044_26 [label="舒尔康用32万第纳尔买下努兹蔓"];
         {ch0044_25,ch0059_0}->ch0044_26
 
     ch0059_0->ch0060_0;
-    ch0060_0  [label="第60夜",fillcolor="#586E75"];
+    ch0060_0  [label="第60夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/boM5ppBsdNk"
+        ];
 
         ch0044_27 [label="努兹蔓展示才学开坛说经"];
         {ch0044_26,ch0060_0}->ch0044_27
 
     ch0060_0->ch0061_0;
-    ch0061_0  [label="第61夜",fillcolor="#586E75"];
+    ch0061_0  [label="第61夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Te3DjsjkVtM"
+        ];
 
         ch0044_28 [label="努兹蔓说君王"];
         {ch0044_27,ch0061_0}->ch0044_28
 
     ch0061_0->ch0062_0;
-    ch0062_0  [label="第62夜",fillcolor="#586E75"];
+    ch0062_0  [label="第62夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/LUeFF4uQSew"
+        ];
 
         ch0044_29 [label="努兹蔓说礼法"];
         {ch0044_28,ch0062_0}->ch0044_29
 
     ch0062_0->ch0063_0;
-    ch0063_0  [label="第63夜",fillcolor="#586E75"];
+    ch0063_0  [label="第63夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/--t-RqoS1gk"
+        ];
 
         ch0044_30 [label="努兹蔓说财政"];
         {ch0044_29,ch0063_0}->ch0044_30
 
     ch0063_0->ch0064;
-    ch0064  [label="第64夜",fillcolor="#586E75"];
+    ch0064  [label="第64夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/2YmMAHnFR70"
+        ];
 
         ch0044_31 [label="努兹蔓讲:礼法与德行"];
         {ch0044_30,ch0064}->ch0044_31
 
     ch0064->ch0065;
-    ch0065  [label="第65夜",fillcolor="#586E75"];
+    ch0065  [label="第65夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/2YmMAHnFR70"
+        ];
 
         ch0044_32 [label="努兹蔓讲:礼法第一章第二节"];
         {ch0044_31,ch0065}->ch0044_32
 
     ch0065->ch0066;
-    ch0066  [label="第66夜",fillcolor="#586E75"];
+    ch0066  [label="第66夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/NogGl8tGjTc"
+        ];
 
         ch0044_33 [label="努兹蔓讲:礼法第二章第二节"];
         {ch0044_32,ch0066}->ch0044_33
 
     ch0066->ch0067;
-    ch0067  [label="第67夜",fillcolor="#586E75"];
+    ch0067  [label="第67夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/-BTuToazAc0"
+        ];
 
         ch0044_34 [label="舒尔康当即娶了努兹蔓"];
         {ch0044_33,ch0067}->ch0044_34
 
     ch0067->ch0068;
-    ch0068  [label="第68夜",fillcolor="#586E75"];
+    ch0068  [label="第68夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Kk8GXTSq1Js"
+        ];
 
         ch0044_35 [label="舒尔康收到父王来信\n才知娶了同父异母妹妹"];
         {ch0044_34,ch0068}->ch0044_35
 
     ch0068->ch0069;
-    ch0069  [label="第69夜",fillcolor="#586E75"];
+    ch0069  [label="第69夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/l2oDRfNivCo"
+        ];
 
         ch0044_36 [label="舒尔康将努兹蔓改嫁给待卫官"];
         {ch0044_35,ch0069}->ch0044_36
 
     ch0069->ch0070;
-    ch0070  [label="第70夜",fillcolor="#586E75"];
+    ch0070  [label="第70夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/eBCm9nIhcIA"
+        ];
 
         ch0044_37 [label="努兹蔓出发回国,杜姆康跟上驼队"];
         {ch0044_36,ch0070}->ch0044_37
 
     ch0070->ch0071;
-    ch0071 [label="第71夜",fillcolor="#586E75"];
+    ch0071 [label="第71夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/qyydZmmJLlw"
+        ];
 
         ch0044_38 [label="杜姆康月夜吟诗"];
         {ch0044_37,ch0071}->ch0044_38
 
     ch0071->ch0072;
-    ch0072 [label="第72夜",fillcolor="#586E75"];
+    ch0072 [label="第72夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/SNT_uptoNsk"
+        ];
 
         ch0044_39 [label="努兹蔓听到杜姆康吟唱"];
         {ch0044_38,ch0072}->ch0044_39
 
     ch0072->ch0073;
-    ch0073 [label="第73夜",fillcolor="#586E75"];
+    ch0073 [label="第73夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/hAm5avmOmiQ"
+        ];
 
         ch0044_40 [label="仆从反复寻定杜姆康"];
         {ch0044_39,ch0073}->ch0044_40
 
     ch0073->ch0074;
-    ch0074 [label="第74夜",fillcolor="#586E75"];
+    ch0074 [label="第74夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/knVeRPVrHFs"
+        ];
 
         ch0044_41 [label="努兹蔓认出杜姆康"];
         {ch0044_40,ch0074}->ch0044_41
 
     ch0074->ch0075;
-    ch0075 [label="第75夜",fillcolor="#586E75"];
+    ch0075 [label="第75夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/ow7RNFvYI3k"
+        ];
 
         ch0044_42 [label="姐弟相认,侍卫官才知老婆是公主"];
         {ch0044_41,ch0075}->ch0044_42
 
     ch0075->ch0076;
-    ch0076 [label="第76夜",fillcolor="#586E75"];
+    ch0076 [label="第76夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/wb-lKjWwL7I"
+        ];
 
         ch0044_43 [label="回路撞见佟丹宰相,才知努阿曼国王已死"];
         {ch0044_42,ch0076}->ch0044_43
 
     ch0076->ch0077;
-    ch0077 [label="第77夜",fillcolor="#586E75"];
+    ch0077 [label="第77夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/zAFZZZ8qQvE"
+        ];
 
         ch0044_44 [label="杜姆康接受建议,准备继承王位"];
         {ch0044_43,ch0077}->ch0044_44
 
     ch0077->ch0078;
-    ch0078 [label="第78夜",fillcolor="#586E75"];
+    ch0078 [label="第78夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/brcWW2uNJTk"
+        ];
 
         ch0044_45 [label="杜姆康逐批接见大臣后,向宰相问死因"];
         {ch0044_44,ch0078}->ch0044_45
 
     ch0078->ch0079;
-    ch0079 [label="第79夜",fillcolor="#586E75"];
+    ch0079 [label="第79夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Xu1-d6SgVHs"
+        ];
 
         ch0044_46 [label="宰相佟丹回顾\n老太婆领来5位姑娘\n逐一展现才学"];
         {ch0044_45,ch0079}->ch0044_46
 
     ch0079->ch0080;
-    ch0080 [label="第80夜",fillcolor="#586E75"];
+    ch0080 [label="第80夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/IM4EKLF4nbM"
+        ];
 
         ch0044_47 [label="宰相佟丹回顾\n第一位说完\n第二位上来说"];
         {ch0044_46,ch0080}->ch0044_47
 
     ch0080->ch0081;
-    ch0081 [label="第81夜",fillcolor="#586E75"];
+    ch0081 [label="第81夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/WI0hi5AOnBU"
+        ];
 
         ch0044_48 [label="宰相佟丹回顾\n第二位说完\n第三,四位接替来说"];
         {ch0044_47,ch0081}->ch0044_48
 
     ch0081->ch0082;
-    ch0082 [label="第82夜",fillcolor="#586E75"];
+    ch0082 [label="第82夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/OsT1aWdeYfw"
+        ];
 
         ch0044_49 [label="宰相佟丹回顾\n第四位说完\n第五位接上来说"];
         {ch0044_48,ch0082}->ch0044_49
 
     ch0082->ch0083;
-    ch0083 [label="第83夜",fillcolor="#586E75"];
+    ch0083 [label="第83夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Nm7WIBNc0q0"
+        ];
 
         ch0044_50 [label="宰相佟丹回顾\n第五位说完\n老太婆来补充"];
         {ch0044_49,ch0083}->ch0044_50
 
     ch0083->ch0084;
-    ch0084 [label="第84夜",fillcolor="#586E75"];
+    ch0084 [label="第84夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/GM2wfVdzEW0"
+        ];
 
         ch0044_51 [label="老太婆骗国王斋戒喝罐装水"];
         {ch0044_50,ch0084}->ch0044_51
 
     ch0084->ch0085;
-    ch0085 [label="第85夜",fillcolor="#586E75"];
+    ch0085 [label="第85夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/5TBtIWe60sA"
+        ];
 
         ch0044_52 [label="老太婆骗国王要去占卜师获福"];
         {ch0044_51,ch0085}->ch0044_52
 
     ch0085->ch0086;
-    ch0086 [label="第86夜",fillcolor="#586E75"];
+    ch0086 [label="第86夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/wKNCdzjdnTM"
+        ];
 
         ch0044_53 [label="老太婆带索菲娅离开国王受骗喝水而死"];
         {ch0044_52,ch0086}->ch0044_53
 
     ch0086->ch0087;
-    ch0087 [label="第87夜",fillcolor="#586E75"];
+    ch0087 [label="第87夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/hFLwIJQerqs"
+        ];
         ch0044_54 [label="杜姆康登基,和舒尔康计划复仇"];
         {ch0044_53,ch0087}->ch0044_54
 
     ch0087->ch0088;
-    ch0088 [label="第88夜",fillcolor="#586E75"];
+    ch0088 [label="第88夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/PzMNc_nYNH4"
+        ];
         ch0044_55 [label="伊斯兰大军出征,基督徒求计老太婆"];
         {ch0044_54,ch0088}->ch0044_55
 
     ch0088->ch0089;
-    ch0089 [label="第89夜",fillcolor="#586E75"];
+    ch0089 [label="第89夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Lco8T-ZC3TQ"
+        ];
         ch0044_56 [label="老太婆出谋,伊斯兰大军12万,大胜基督徒160万人马"];
         {ch0044_55,ch0089}->ch0044_56
 
     ch0089->ch0090;
-    ch0090 [label="第90夜",fillcolor="#586E75"];
+    ch0090 [label="第90夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/UZ3aZk3RIE0"
+        ];
         ch0044_57 [label="舒尔康投还沙姆鲁特的短矛,同时追加一矛扎死鲁本"];
         {ch0044_56,ch0090}->ch0044_57
 
     ch0090->ch0091;
-    ch0091 [label="第91夜",fillcolor="#586E75"];
+    ch0091 [label="第91夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/V8wW-5FQmkg"
+        ];
         ch0044_58 [label="伊斯兰大军佯退,基督徒大军上当"];
         {ch0044_57,ch0091}->ch0044_58
 
     ch0091->ch0092;
-    ch0092 [label="第92夜",fillcolor="#586E75"];
+    ch0092 [label="第92夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/bb9l4467440"
+        ];
         ch0044_59 [label="杜姆康亲身杀敌,基督徒大军惨败"];
         {ch0044_58,ch0092}->ch0044_59
 
     ch0092->ch0093;
-    ch0093 [label="第93夜",fillcolor="#586E75"];
+    ch0093 [label="第93夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/5XJ55YwnLNw"
+        ];
         ch0044_60 [label="札特老太婆再次定计,伪装混在商队迎向伊斯兰大军"];
         {ch0044_59,ch0093}->ch0044_60
 
     ch0093->ch0094;
-    ch0094 [label="第94夜",fillcolor="#586E75"];
+    ch0094 [label="第94夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/VE_2qIb5UQ4"
+        ];
         ch0044_61 [label="商队在大草原和伊斯兰大军撞上"];
         {ch0044_60,ch0094}->ch0044_61
 
     ch0094->ch0095;
-    ch0095 [label="第95夜",fillcolor="#586E75"];
+    ch0095 [label="第95夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/AlXVeFzcNiA"
+        ];
         ch0044_62 [label="商队献出老太婆,又成功忽悠国王一起去修道院求福"];
         {ch0044_61,ch0095}->ch0044_62
 
     ch0095->ch0096;
-    ch0096 [label="第96夜",fillcolor="#586E75"];
+    ch0096 [label="第96夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/1t6eIFDTbjA"
+        ];
         ch0044_63 [label="基督徒骑兵在狭路堵住,老太婆混战中假装割掉主教头"];
         {ch0044_62,ch0096}->ch0044_63
 
     ch0096->ch0097;
-    ch0097 [label="第97夜",fillcolor="#586E75"];
+    ch0097 [label="第97夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/t_rYheT-YgM"
+        ];
         ch0044_64 [label="老太婆骗说能隐身,带杜姆康和佟丹宰相出逃"];
         {ch0044_63,ch0097}->ch0044_64
 
     ch0097->ch0098;
-    ch0098 [label="第98夜",fillcolor="#586E75"];
+    ch0098 [label="第98夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jXVVbZNV9kE"
+        ];
         ch0044_65 [label="舒尔康领残兵守山洞抗住两天"];
         {ch0044_64,ch0098}->ch0044_65
 
     ch0098->ch0099;
-    ch0099 [label="第99夜",fillcolor="#586E75"];
+    ch0099 [label="第99夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/TYFsVVvigG8"
+        ];
         ch0044_66 [label="终于全部被抓,趁醉夜脱逃并反杀"];
         {ch0044_65,ch0099}->ch0044_66
 
     ch0099->ch0100;
-    ch0100 [label="第100夜",fillcolor="#586E75"];
+    ch0100 [label="第100夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/a07XdljVjg4"
+        ];
         ch0044_67 [label="日出时刻,伊斯兰大军神奇出现"];
         {ch0044_66,ch0100}->ch0044_67
 
     ch0100->ch0101;
-    ch0101 [label="第101夜",fillcolor="#586E75"];
+    ch0101 [label="第101夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/UY4M51wj9Tc"
+        ];
         ch0044_68 [label="老太婆从侍卫官处骗出一万精兵去救援"];
         {ch0044_67,ch0101}->ch0044_68
 
     ch0101->ch0102;
-    ch0102 [label="第102夜",fillcolor="#586E75"];
+    ch0102 [label="第102夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Z9KHaumGwrA"
+        ];
         ch0044_69 [label="杜姆康被艾弗里顿飞镖中伤"];
         {ch0044_68,ch0102}->ch0044_69
 
     ch0102->ch0103;
-    ch0103 [label="第103夜",fillcolor="#586E75"];
+    ch0103 [label="第103夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/J1T6Kr9KbBQ"
+        ];
         ch0044_70 [label="杜姆康国王陈前斩首艾弗里顿"];
         {ch0044_69,ch0103}->ch0044_70
 
     ch0103->ch0104;
-    ch0104 [label="第104夜",fillcolor="#586E75"];
+    ch0104 [label="第104夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/aY6VKA198Hg"
+        ];
         ch0044_71 [label="老太婆夜里偷杀杜姆康"];
         {ch0044_70,ch0104}->ch0044_71
 
     ch0104->ch0105;
-    ch0105 [label="第105夜
-    ",fillcolor="#586E75"];
+    ch0105 [label="第105夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/rYYBdeFpkdM"
+        ];
         ch0044_72 [label="老太婆公开信说明真相"];
         {ch0044_71,ch0105}->ch0044_72
 
     ch0105->ch0106;
-    ch0106 [label="第106夜",fillcolor="#586E75"];
+    ch0106 [label="第106夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/JsZF7pZ3mp4"
+        ];
         ch0044_73 [label="杜姆康伤心之下请宰相说故事"];
         {ch0044_72,ch0106}->ch0044_73
 
     ch0044_73_1 [label="佟丹说故事:"];
     ch0044_73->{ch0044_73_1,ch0107};
-    ch0107 [label="第107夜",fillcolor="#586E75"];
+    ch0107 [label="第107夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/E7iHaHP2z5Q"
+        ];
         ch0044_74 [label="哈杜拉城苏莱曼国王想成亲"];
         {ch0044_73_1,ch0107}->ch0044_74
 
     ch0107->ch0108;
-    ch0108 [label="第108夜",fillcolor="#586E75"];
+    ch0108 [label="第108夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/6vJo-OrZB6I"
+        ];
         ch0044_75 [label="苏莱曼的宰相到白仪达王国成功求亲"];
         {ch0044_74,ch0108}->ch0044_75
 
     ch0108->ch0109;
-    ch0109 [label="第109夜",fillcolor="#586E75"];
+    ch0109 [label="第109夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/eiPDTwVvnF4"
+        ];
         ch0044_76 [label="苏莱曼国王顺利成亲孕得王子穆鲁克"];
         {ch0044_75,ch0109}->ch0044_76
 
     ch0109->ch0110;
-    ch0110 [label="第110夜",fillcolor="#586E75"];
+    ch0110 [label="第110夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/NacMbd1dufo"
+        ];
         ch0044_77 [label="穆鲁克王子喜欢打猎,途中遇见商队"];
         {ch0044_76,ch0110}->ch0044_77
 
 
     ch0110->ch0111;
-    ch0111 [label="第111夜",fillcolor="#586E75"];
+    ch0111 [label="第111夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/G7FQ7Orni2Y"
+        ];
         ch0044_78 [label="穆鲁克王子硬看哭泣青年的货物触发新故事"];
 
         ch0044_78_0 [label="穆鲁克王子听故事:"];
@@ -761,299 +978,415 @@ info -> ch0000_111;
     ch0044_73_1->ch0044_78_0;
     
     ch0044_78_0->ch0112;
-    ch0112 [label="第112夜",fillcolor="#586E75"];
+    ch0112 [label="第112夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/M74Dad_eHVI"
+        ];
         ch0044_79 [label="青年与堂妺订婚之日看到那个姑娘"];
         {ch0112}->ch0044_79
 
     ch0112->ch0113;
-    ch0113 [label="第113夜",fillcolor="#586E75"];
+    ch0113 [label="第113夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/LRp-qcMYt2A"
+        ];
         ch0044_80 [label="错过订婚,而堂妺还是帮忙解释了姑娘的暗语"];
         {ch0044_79,ch0113}->ch0044_80
 
     ch0113->ch0114;
-    ch0114 [label="第114夜",fillcolor="#586E75"];
+    ch0114 [label="第114夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/JMtvoRYIUrE"
+        ];
         ch0044_81 [label="两天后还是没见到气得踢倒堂妺"];
         {ch0044_80,ch0114}->ch0044_81
 
     ch0114->ch0115;
-    ch0115 [label="第115夜",fillcolor="#586E75"];
+    ch0115 [label="第115夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/wHp6_cWHX6k"
+        ];
         ch0044_82 [label="堂妺忍痛又猜透姑娘隔天果然又收到暗语"];
         {ch0044_81,ch0115}->ch0044_82
 
     ch0115->ch0116;
-    ch0116 [label="第116夜",fillcolor="#586E75"];
+    ch0116 [label="第116夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/xGzFLA3YZiM"
+        ];
         ch0044_83 [label="半夜在凉亭睡去醒来肚子上堆着盐和木炭"];
         {ch0044_82,ch0116}->ch0044_83
 
     ch0116->ch0117;
-    ch0117 [label="第117夜",fillcolor="#586E75"];
+    ch0117 [label="第117夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/dYGGD2XkE1k"
+        ];
         ch0044_84 [label="再次赴约还是睡去醒来肚子放着小木棍、椰枣核和稻豆子树籽"];
         {ch0044_83,ch0117}->ch0044_84
 
     ch0117->ch0118;
-    ch0118 [label="第118夜",fillcolor="#586E75"];
+    ch0118 [label="第118夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/nEjXy1mWOw4"
+        ];
         ch0044_85 [label="又去赴约醉倒醒来终于听堂妺的话最后终于睡到姑娘了"];
         {ch0044_84,ch0118}->ch0044_85
 
     ch0118->ch0119;
-    ch0119 [label="第119夜",fillcolor="#586E75"];
+    ch0119 [label="第119夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/OZy8WPPrgXM"
+        ];
         ch0044_86 [label="连续幽会姑娘,堂妺终于悲伤而死"];
         {ch0044_85,ch0119}->ch0044_86
 
     ch0119->ch0120;
-    ch0120 [label="第120夜",fillcolor="#586E75"];
+    ch0120 [label="第120夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/7u0Zt8Ymk9Q"
+        ];
         ch0044_87 [label="堂妺留了东西只有青年为她而哭时才能获得"];
         {ch0044_86,ch0120}->ch0044_87
 
     ch0120->ch0121;
-    ch0121 [label="第121夜",fillcolor="#586E75"];
+    ch0121 [label="第121夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/qJ7QYf5YZ1M"
+        ];
         ch0044_88 [label="姑娘给堂妺上过坟和青年开始连续幽会"];
         {ch0044_87,ch0121}->ch0044_88
 
     ch0121->ch0122;
-    ch0122 [label="第122夜",fillcolor="#586E75"];
+    ch0122 [label="第122夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Yq87A8dBEV4"
+        ];
         ch0044_89 [label="一年后阿齐兹被老妪骗入大院"];
         {ch0044_88,ch0122}->ch0044_89
 
     ch0122->ch0123;
-    ch0123 [label="第123夜",fillcolor="#586E75"];
+    ch0123 [label="第123夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/HiPCQWe9IFc"
+        ];
         ch0044_90 [label="阿齐兹原地被结婚"];
         {ch0044_89,ch0123}->ch0044_90
 
     ch0123->ch0124;
-    ch0124 [label="第124夜",fillcolor="#586E75"];
+    ch0124 [label="第124夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/TRLfm1TtPNg"
+        ];
         ch0044_91 [label="一年后阿齐兹才能出门又去找戴丽莱"];
         {ch0044_90,ch0124}->ch0044_91
 
     ch0124->ch0125;
-    ch0125 [label="第125夜",fillcolor="#586E75"];
+    ch0125 [label="第125夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Nnk8xUOMYeo"
+        ];
         ch0044_92 [label="戴丽莱等了阿齐兹一年才知已婚"];
         {ch0044_91,ch0125}->ch0044_92
 
     ch0125->ch0126;
-    ch0126 [label="第126夜",fillcolor="#586E75"];
+    ch0126 [label="第126夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/GIkk1OZX4RY"
+        ];
         ch0044_93 [label="戴丽莱怒极当场阉了阿齐兹"];
         {ch0044_92,ch0126}->ch0044_93
 
     ch0126->ch0127;
-    ch0127 [label="第127夜",fillcolor="#586E75"];
+    ch0127 [label="第127夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/rqYopReOumo"
+        ];
         ch0044_94 [label="阿齐兹这才想起堂妹的好大哭之下获得香罗帕"];
         {ch0044_93,ch0127}->ch0044_94
 
     ch0127->ch0128;
-    ch0128 [label="第128夜",fillcolor="#586E75"];
+    ch0128 [label="第128夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/zeou_La77nk"
+        ];
         ch0044_95 [label="阿齐兹说完自己的故事"];
         {ch0044_94,ch0128}->ch0044_95
 
     ch0044_95->ch0129;
-    ch0129 [label="第129夜",fillcolor="#586E75"];
+    ch0129 [label="第129夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/DbBJKYU874E"
+        ];
         ch0044_96 [label="穆鲁克问见到杜妮娅公主的过程"];
         {ch0044_78_0,ch0129}->ch0044_96
 
     ch0129->ch0130;
-    ch0130 [label="第130夜",fillcolor="#586E75"];
+    ch0130 [label="第130夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/hFfc4L_pDag"
+        ];
         ch0044_97 [label="穆鲁克思恋杜妮娅父王派人去求亲"];
         {ch0044_96,ch0130}->ch0044_97
 
     ch0130->ch0131;
-    ch0131 [label="第131夜",fillcolor="#586E75"];
+    ch0131 [label="第131夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/kzsgKMgU9P4"
+        ];
         ch0044_98 [label="穆鲁克扮商人去卡夫尔岛王国"];
         {ch0044_97,ch0131}->ch0044_98
 
     ch0131->ch0132;
-    ch0132 [label="第132夜",fillcolor="#586E75"];
+    ch0132 [label="第132夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/0Le-dOW_jdE"
+        ];
         ch0044_99 [label="穆魯克王子顺利开店"];
         {ch0044_98,ch0132}->ch0044_99
 
     ch0132->ch0133;
-    ch0133 [label="第133夜",fillcolor="#586E75"];
+    ch0133 [label="第133夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/6gkp0wC34Xw"
+        ];
         ch0044_100 [label="穆魯克送信给杜妮娅公主受到拒绝"];
         {ch0044_99,ch0133}->ch0044_100
 
     ch0133->ch0134;
-    ch0134 [label="第134夜",fillcolor="#586E75"];
+    ch0134 [label="第134夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/S7U0JHm9b54"
+        ];
         ch0044_101 [label="巧壁画解公主心结,杜妮娅一眼爱上穆魯克"];
         {ch0044_100,ch0134}->ch0044_101
 
     ch0134->ch0135;
-    ch0135 [label="第135夜",fillcolor="#586E75"];
+    ch0135 [label="第135夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/SCQ3hQIn-Vs"
+        ];
         ch0044_102 [label="穆魯克偷入杜妮娅一个月才被发现"];
         {ch0044_101,ch0135}->ch0044_102
 
     ch0135->ch0136;
-    ch0136 [label="第136夜",fillcolor="#586E75"];
+    ch0136 [label="第136夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/WypFlqzqKug"
+        ];
         ch0044_103 [label="舍赫尔曼国王大军压境穆魯克欢娶杜妮娅"];
         {ch0044_102,ch0136}->ch0044_103
 
     ch0044_103->ch0044_104;
     ch0044_104 [label="宰相佟丹故事说完"];
     ch0044_104->ch0137;
-    ch0137 [label="第137夜",fillcolor="#586E75"];
+    ch0137 [label="第137夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/sf0ig4fpGIc"
+        ];
         ch0044_105 [label="杜姆康收兵回家办好后事病死"];
         {ch0044_104,ch0137}->ch0044_105
 
     ch0137->ch0138;
-    ch0138 [label="第138夜",fillcolor="#586E75"];
+    ch0138 [label="第138夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/_0bwzAPNzD4"
+        ];
         ch0044_106 [label="杜姆康儿子卡麦康爱上堂姐润仙"];
         {ch0044_105,ch0138}->ch0044_106
 
     ch0138->ch0139;
-    ch0139 [label="第139夜",fillcolor="#586E75"];
+    ch0139 [label="第139夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/U16M-AsdO40"
+        ];
         ch0044_107 [label="卡麦康被失恋爱出走荒野"];
         {ch0044_106,ch0139}->ch0044_107
 
     ch0139->ch0140;
-    ch0140 [label="第140夜",fillcolor="#586E75"];
+    ch0140 [label="第140夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Wvlf8As3fQ4"
+        ];
         ch0044_108 [label="卡麦康收服独侠萨巴赫又遇窃马大盗"];
         {ch0044_107,ch0140}->ch0044_108
 
     ch0140->ch0141;
-    ch0141 [label="第141夜",fillcolor="#586E75"];
+    ch0141 [label="第141夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/5mqUWEj6dp4"
+        ];
         ch0044_109 [label="卡麦康得宝马回城求见润仙"];
         {ch0044_108,ch0141}->ch0044_109
 
     ch0141->ch0142;
-    ch0142 [label="第142夜",fillcolor="#586E75"];
+    ch0142 [label="第142夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/l2BDhPc2jtw"
+        ];
         ch0044_110 [label="卡麦康声势起萨珊国王选派老宫女芭根去害人"];
         {ch0044_109,ch0142}->ch0044_110
 
     ch0142->ch0143;
-    ch0143 [label="第143夜",fillcolor="#586E75"];
+    ch0143 [label="第143夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/UXC7rxnMw7k"
+        ];
         ch0044_111 [label="佟丹宰相人马变成罗马国王罗姆赞的俘虏却促成亲戚相认"];
         {ch0044_110,ch0143}->ch0044_111
 
     ch0143->ch0144;
-    ch0144 [label="第144夜",fillcolor="#586E75"];
+    ch0144 [label="第144夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/1B97L0tjYjU"
+        ];
         ch0044_112 [label="罗姆赞卡麦康合流归国轮流执政"];
         {ch0044_111,ch0144}->ch0044_112
 
     ch0144->ch0145;
-    ch0145 [label="第145夜",fillcolor="#586E75"];
+    ch0145 [label="第145夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/ULxVDuEYnRI"
+        ];
         ch0044_113 [label="努阿曼国王及其儿子孙子故事大结局"];
         {ch0044_112,ch0145}->ch0044_113
 
 
     ch0145->ch0146;
-    ch0146 [label="第146夜",fillcolor="#586E75"];
+    ch0146 [label="第146夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/L1E69tJIwAY"
+        ];
         ch146_0 [label="[[莎赫札德开始讲:]]"];
         ch146_1 [label="《孔雀与野鸭的故事》"];
         {ch0146}->ch146_0->ch146_1
 
     ch0146->ch0147;
-    ch0147 [label="第147夜",fillcolor="#586E75"];
+    ch0147 [label="第147夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/0f4n-SrqUSM"
+        ];
         ch147_1 [label="开始《山中牧羊人的故事》"];
         {ch0147}->ch147_1
 
     ch0147->ch0148;
-    ch0148 [label="第148夜",fillcolor="#586E75"];
+    ch0148 [label="第148夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jN-021-VjLU"
+        ];
         ch148_1 [label="开始《水鸟与雄龟的故事》"];
         {ch0148}->ch148_1
 
     ch0148->ch0149;
-    ch0149 [label="第149夜",fillcolor="#586E75"];
+    ch0149 [label="第149夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jN-021-VjLU"
+        ];
         ch149_1 [label="《狐狸、狼与人的故事》"];
         {ch0149}->ch149_1
 
     ch0149->ch0150;
-    ch0150 [label="第150夜",fillcolor="#586E75"];
+    ch0150 [label="第150夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/GzCq9EZj3c8"
+        ];
         ch150_1 [label="狐狸说《老鼠与黄鼬的故事》"];
         {ch149_1,ch0150}->ch150_1
 
     ch0150->ch0151;
-    ch0151 [label="第151夜",fillcolor="#586E75"];
+    ch0151 [label="第151夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/TMmE_Pp6QNE"
+        ];
         ch0151_1 [label="狐狸问:隼是怎样对待小鸟们的呢"];
         {ch149_1,ch0151}->ch0151_1
 
     ch0151->ch0152;
-    ch0152 [label="第152夜",fillcolor="#586E75"];
+    ch0152 [label="第152夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/fSl_CBl4oog"
+        ];
         ch0152_1 [label="乌鸦说《隼与小鸟的故事》"];
         {ch149_1,ch0152}->ch0152_1
 
 
 
     ch0152->ch0153;
-    ch0153 [label="第153夜",fillcolor="#586E75"];
+    ch0153 [label="第153夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/HinlXnOYUXQ"
+        ];
         ch0153_0 [label="[[莎赫札德开始讲:]]"];
         ch0153_1 [label="《毕卡尔与莎姆丝的故事》"];
         {ch0153_0,ch0153}->ch0153_1
 
     ch0153->ch0154;
-    ch0154 [label="第154夜",fillcolor="#586E75"];
+    ch0154 [label="第154夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/biPshYoC-WY"
+        ];
         ch0154_1 [label="毕卡尔与莎姆丝相会又分离"];
         {ch0154,ch0153_1}->ch0154_1
 
     ch0154->ch0155;
-    ch0155 [label="第155夜",fillcolor="#586E75"];
+    ch0155 [label="第155夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/k1cW0X87NtA"
+        ];
         ch0155_1 [label="哈桑送毕卡尔回家"];
         {ch0155,ch0154_1}->ch0155_1
 
     ch0155->ch0156;
-    ch0156 [label="第156夜",fillcolor="#586E75"];
+    ch0156 [label="第156夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/FCGuelV5yJI"
+        ];
         ch0156_1 [label="莎姆丝用女仆和毕卡尔建立联系"];
         {ch0156,ch0155_1}->ch0156_1
 
     ch0156->ch0157;
-    ch0157 [label="第157夜",fillcolor="#586E75"];
+    ch0157 [label="第157夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/rlygIkiySbY"
+        ];
         ch0157_1 [label="哈桑的店铺变成联系地点"];
         {ch0157,ch0156_1}->ch0157_1
 
     ch0157->ch0158;
-    ch0158 [label="第158夜",fillcolor="#586E75"];
+    ch0158 [label="第158夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/1YPr2LA4X6E"
+        ];
         ch0158_1 [label="哈桑开始担心自己"];
         {ch0158,ch0157_1}->ch0158_1
 
     ch0158->ch0159;
-    ch0159 [label="第159夜",fillcolor="#586E75"];
+    ch0159 [label="第159夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/He17oAB3JIY"
+        ];
         ch0159_1 [label="哈桑逃去巴士拉城高海尔出现"];
         {ch0159,ch0158_1}->ch0159_1
 
     ch0159->ch0160;
-    ch0160 [label="第160夜",fillcolor="#586E75"];
+    ch0160 [label="第160夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/TdmPduBaPCY"
+        ];
         ch0160_1 [label="高海尔决定重新担当联系点"];
         {ch0160,ch0159_1}->ch0160_1
 
     ch0160->ch0161;
-    ch0161 [label="第161夜",fillcolor="#586E75"];
+    ch0161 [label="第161夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/DiRp901PYMI"
+        ];
         ch0161_1 [label="高海尔不敢去王宫要求在自宅见面"];
         {ch0161,ch0160_1}->ch0161_1
 
     ch0161->ch0162;
-    ch0162 [label="第162夜",fillcolor="#586E75"];
+    ch0162 [label="第162夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/BOxrYltu4Bk"
+        ];
         ch0162_1 [label="高海尔向毕卡尔转述莎姆丝来访"];
         {ch0162,ch0161_1}->ch0162_1
 
     ch0162->ch0163;
-    ch0163 [label="第163夜",fillcolor="#586E75"];
+    ch0163 [label="第163夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/AIpm9F34lQw"
+        ];
         ch0163_1 [label="毕卡尔和莎姆丝在高海尔宅中欢乐幽会"];
         {ch0163,ch0162_1}->ch0163_1
 
     ch0163->ch0164;
-    ch0164 [label="第164夜",fillcolor="#586E75"];
+    ch0164 [label="第164夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/slR4v8V_tLU"
+        ];
         ch0164_1 [label="高海尔救回盗贼掳走的毕卡尔和莎姆丝"];
         {ch0164,ch0163_1}->ch0164_1
 
     ch0164->ch0165;
-    ch0165 [label="第165夜",fillcolor="#586E75"];
+    ch0165 [label="第165夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/eskuNhrpWAM"
+        ];
         ch0165_1 [label="莎姆丝贴身侍女和高海尔核对事实"];
         {ch0165,ch0164_1}->ch0165_1
 
     ch0165->ch0166;
-    ch0166 [label="第166夜",fillcolor="#586E75"];
+    ch0166 [label="第166夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/RLJD2_eNT8s"
+        ];
         ch0166_1 [label="侍女转述莎姆丝亲身经历"];
         {ch0166,ch0165_1}->ch0166_1
 
     ch0166->ch0167;
-    ch0167 [label="第167夜",fillcolor="#586E75"];
+    ch0167 [label="第167夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/OSfqQlp85QQ"
+        ];
         ch0167_1 [label="毕卡尔入病侍女通告宫中变故"];
         {ch0167,ch0166_1}->ch0167_1
 
     ch0167->ch0168;
-    ch0168 [label="第168夜",fillcolor="#586E75"];
+    ch0168 [label="第168夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jG3DbQz_wKo"
+        ];
         ch0168_1 [label="毕卡尔和高海尔出逃途中毕卡尔瘁死"];
         {ch0168,ch0167_1}->ch0168_1
 
     ch0168->ch0169;
-    ch0169 [label="第169夜",fillcolor="#586E75"];
+    ch0169 [label="第169夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/88cPrBQfo50"
+        ];
         ch0169a [label="侍女通告莎姆丝也暴毙宫中"];
         {ch0169,ch0168_1}->ch0169a
 
@@ -1065,154 +1398,214 @@ info -> ch0000_111;
 
 
     ch0169->ch0170;
-    ch0170 [label="第170夜",fillcolor="#586E75"];
+    ch0170 [label="第170夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/N5AbIyku19U"
+        ];
         ch0170a [label="[[莎赫札德开始讲:]]"];
         ch0170b [label="《盖麦尔与布杜尔的故事》"];
         ch0170c [label="舍赫曼国王老来得子盖麦尔"];
         {ch0170a,ch0170}->ch0170b->ch0170c
 
     ch0170->ch0171;
-    ch0171 [label="第171夜",fillcolor="#586E75"];
+    ch0171 [label="第171夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/c6YPH9UVRoA"
+        ];
         ch0171a [label="盖麦尔信先贤书不想结婚"];
         {ch0171,ch0170c}->ch0171a
 
     ch0171->ch0172;
-    ch0172 [label="第172夜",fillcolor="#586E75"];
+    ch0172 [label="第172夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/_YM_GnoeTrg"
+        ];
         ch0172a [label="盖麦尔20岁还是不想结婚被关起来"];
         {ch0172,ch0171a}->ch0172a
 
     ch0172->ch0173;
-    ch0173 [label="第173夜",fillcolor="#586E75"];
+    ch0173 [label="第173夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/3K4o9CL32aU"
+        ];
         ch0173a [label="盖麦尔后悔了"];
         {ch0173,ch0172a}->ch0173a
 
     ch0173->ch0174;
-    ch0174 [label="第174夜",fillcolor="#586E75"];
+    ch0174 [label="第174夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/SAv7A9vDz6Y"
+        ];
         ch0174a [label="仙女梅姆娜看中盖麦尔\n抓到飞魔戴何士得知埃尤尔国公主更美"];
         {ch0174,ch0173a}->ch0174a
 
     ch0174->ch0175;
-    ch0175 [label="第175夜",fillcolor="#586E75"];
+    ch0175 [label="第175夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/RSjm5qL-qE8"
+        ];
         ch0175a [label="仙女梅姆娜着飞魔戴何士将布杜尔公主带过来比较"];
         {ch0175,ch0174a}->ch0175a
 
     ch0175->ch0176;
-    ch0176 [label="第176夜",fillcolor="#586E75"];
+    ch0176 [label="第176夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/fv7ueyuOYBU"
+        ];
         ch0176a [label="仙女和飞魔看不出高低想了个办法"];
         {ch0176,ch0175a}->ch0176a
 
     ch0176->ch0177;
-    ch0177 [label="第177夜",fillcolor="#586E75"];
+    ch0177 [label="第177夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/VrqDy4hNabA"
+        ];
         ch0177a [label="盖麦尔醒见布杜尔公主动情忍住,换布杜尔公主醒见"];
         {ch0177,ch0176a}->ch0177a
 
     ch0177->ch0178;
-    ch0178 [label="第178夜",fillcolor="#586E75"];
+    ch0178 [label="第178夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/wRs_zCsrst0"
+        ];
         ch0178a [label="比完美飞魔送回公主,早晨盖麦尔没见布杜尔大怒"];
         {ch0178,ch0177a}->ch0178a
 
     ch0178->ch0179;
-    ch0179 [label="第179夜",fillcolor="#586E75"];
+    ch0179 [label="第179夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/YAykS0v1Hng"
+        ];
         ch0179a [label="仆人求来宰相问盖麦尔,没人知道昨夜姑娘"];
         {ch0179,ch0178a}->ch0179a
 
     ch0179->ch0180;
-    ch0180 [label="第180夜",fillcolor="#586E75"];
+    ch0180 [label="第180夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/hmOuw8_E7VE"
+        ];
         ch0180a [label="宰相拉来舍赫曼国王同问盖麦尔王子"];
         {ch0180,ch0179a}->ch0180a
 
     ch0180->ch0181;
-    ch0181 [label="第181夜",fillcolor="#586E75"];
+    ch0181 [label="第181夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/gjdpe5pitx0"
+        ];
         ch0181a [label="盖麦尔王子展示证据戒指,大家没办法搬到新宫殿一起熬"];
         {ch0181,ch0180a}->ch0181a
 
     ch0181->ch0182;
-    ch0182 [label="第182夜",fillcolor="#586E75"];
+    ch0182 [label="第182夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/K8syXTNycO0"
+        ];
         ch0182a [label="布杜尔公主醒来也没见王子被当成疯子,发小麦尔泽旺受托出发寻找"];
         {ch0182,ch0181a}->ch0182a
 
     ch0182->ch0183;
-    ch0183 [label="第183夜",fillcolor="#586E75"];
+    ch0183 [label="第183夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jR0CzZ4hAOM"
+        ];
         ch0183a [label="麦尔泽旺海难被舍赫曼国王救起见到盖麦尔王子"];
         {ch0183,ch0182a}->ch0183a
 
     ch0183->ch0184;
-    ch0184 [label="第184夜",fillcolor="#586E75"];
+    ch0184 [label="第184夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/BqkMyRy744Y"
+        ];
         ch0184a [label="麦尔泽旺带来消息盖麦尔王子高兴极了"];
         {ch0184,ch0183a}->ch0184a
 
     ch0184->ch0185;
-    ch0185 [label="第185夜",fillcolor="#586E75"];
+    ch0185 [label="第185夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/JJdkWsxRz_E"
+        ];
         ch0185a [label="盖麦尔王子和麦尔泽旺密谋去见布杜尔公主"];
         {ch0185,ch0184a}->ch0185a
 
     ch0185->ch0186;
-    ch0186 [label="第186夜",fillcolor="#586E75"];
+    ch0186 [label="第186夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/vA5rOl1KLIA"
+        ];
         ch0186a [label="盖麦尔王子伪装成占卜师引起埃尤尔国王注意"];
         {ch0186,ch0185a}->ch0186a
 
     ch0186->ch0187;
-    ch0187 [label="第187夜",fillcolor="#586E75"];
+    ch0187 [label="第187夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/6397Ovqy8Vk"
+        ];
         ch0187a [label="盖麦尔王子隔帘给布杜尔公主修书一封"];
         {ch0187,ch0186a}->ch0187a
 
     ch0187->ch0188;
-    ch0188 [label="第188夜",fillcolor="#586E75"];
+    ch0188 [label="第188夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/iWLOY-Gi7TQ"
+        ];
         ch0188a [label="盖麦尔和布杜尔成婚后回家路上注意到公主腰带上的红宝石"];
         {ch0188,ch0187a}->ch0188a
 
     ch0188->ch0189;
-    ch0189 [label="第189夜",fillcolor="#586E75"];
+    ch0189 [label="第189夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/4iJp9mzMJNc"
+        ];
         ch0189a [label="红宝石被大鸟抢走,盖麦尔追踪到一个陌生城市住下来当园丁"];
         {ch0189,ch0188a}->ch0189a
 
     ch0189->ch0190;
-    ch0190 [label="第190夜",fillcolor="#586E75"];
+    ch0190 [label="第190夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/RX1WC1IYnu8"
+        ];
         ch0190a [label="布杜尔醒来不见丈夫只能假装盖麦尔到达阿卜努斯城被老国王看中嫁给了哈娅蒂公主"];
         {ch0190,ch0189a}->ch0190a
 
     ch0190->ch0191;
-    ch0191 [label="第191夜",fillcolor="#586E75"];
+    ch0191 [label="第191夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Ejy6R_gUsJo"
+        ];
         ch0191a [label="布杜尔连续三天没行房,最终向哈娅蒂公主坦白二人合谋通过考验"];
         {ch0191,ch0190a}->ch0191a
 
     ch0191->ch0192;
-    ch0192 [label="第192夜",fillcolor="#586E75"];
+    ch0192 [label="第192夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/T9e3scjnP8g"
+        ];
         ch0192a [label="舍赫曼国王找到盖麦尔留下的血衣伤心建哀宫"];
         {ch0192,ch0191a}->ch0192a
 
     ch0192->ch0193;
-    ch0193 [label="第193夜",fillcolor="#586E75"];
+    ch0193 [label="第193夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/bdNYe4UdNoo"
+        ];
         ch0193a [label="盖麦尔在花园找丢失的红宝石以及金库可没赶上回国的船"];
         {ch0193,ch0192a}->ch0193a
 
     ch0193->ch0194;
-    ch0194 [label="第194夜",fillcolor="#586E75"];
+    ch0194 [label="第194夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/_VsEAE-E96Q"
+        ];
         ch0194a [label="布杜尔意外获得了线索让货船将盖麦尔带回阿卜努斯并奇迹般相认"];
         {ch0194,ch0193a}->ch0194a
 
     ch0194->ch0195;
-    ch0195 [label="第195夜",fillcolor="#586E75"];
+    ch0195 [label="第195夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/fGyYb2C_YsE"
+        ];
         ch0195a [label="真相大白盖麦尔当了国王娶了哈娅蒂和布杜尔共同生活"];
         {ch0195,ch0194a}->ch0195a
 
     ch0195->ch0196;
-    ch0196 [label="第196夜",fillcolor="#586E75"];
+    ch0196 [label="第196夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/SJ2tzNT8UUA"
+        ];
         ch0196a [label="盖麦尔两个王子分别被对方的母亲爱上又被情书揭破"];
         {ch0196,ch0195a}->ch0196a
 
     ch0196->ch0197;
-    ch0197 [label="第197夜",fillcolor="#586E75"];
+    ch0197 [label="第197夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/bLr8XBtjnqk"
+        ];
         ch0197a [label="哈娅蒂和布杜尔抢先向盖麦尔诬告两王子不伦自己"];
         {ch0197,ch0196a}->ch0197a
 
     ch0197->ch0198;
-    ch0198 [label="第198夜",fillcolor="#586E75"];
+    ch0198 [label="第198夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/leeQU-JJHdo"
+        ];
         ch0198a [label="盖麦尔大怒密令老司仓杀掉两王子却因意外脱逃带回遗物"];
         {ch0198,ch0197a}->ch0198a
 
     ch0198->ch0199;
-    ch0199 [label="第199夜",fillcolor="#586E75"];
+    ch0199 [label="第199夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/OLL-c1WingQ"
+        ];
         ch0199a [label="盖麦尔从遗物知真相起哀宫,而两王子跋涉误入拜火教城艾斯阿德被关"];
         {ch0199,ch0198a}->ch0199a
 
@@ -1225,7 +1618,9 @@ info -> ch0000_111;
 
 
     ch0199->ch0200;
-    ch0200 [label="第200夜",fillcolor="#586E75"];
+    ch0200 [label="第200夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/qGUlGwSLccU"
+        ];
         ch0200a [label="艾姆吉德下山找艾斯阿德街遇小姐姐"];
         {ch0200,ch0199a}->ch0200a
 
@@ -2346,6 +2741,233 @@ ch0370 [label="第370夜",fillcolor="#586E75"];
 
 
 #ch0000_111->{ch0269b,ch0270b,ch0271b,ch0272b,ch0275b,ch0277b,ch0279b,ch0282b,ch0285b,ch0294b,ch0296b,ch0297b,ch0299b,ch0305b};
+
+
+
+
+
+ch0370->ch0371;
+ch0371 [label="第371夜",fillcolor="#586E75"];
+    ch0371a [label="王子带公主回到自己的国家安乐成婚继承王位直到归于永恒.."];
+    {ch0371,ch0370a}->ch0371a;
+    ch0371b [label="[[莎赫札德开始讲:]]"];
+    ch0371b1 [label="《文尼斯·沃久德与沃尔黛的故事》"];
+    ch0371b2 [label="相传君王有位信任的宰相有位女儿名叫沃尔黛在马球比赛上看中一位青年军官文尼斯·沃久德.."];
+    ch0371a->ch0371b->{ch0371b1,ch0371b2};
+    ch0371b1->ch0371b2;
+
+ch0371b2->ch0372;
+ch0372 [label="第372夜",fillcolor="#586E75"];
+    ch0372a [label="保姆看穿心思为沃尔黛和沃久德传递情信没想到才第二封就落到宰相手中.."];
+    {ch0372,ch0371b2}->ch0372a;
+
+ch0372->ch0373;
+ch0373 [label="第373夜",fillcolor="#586E75"];
+    ch0373a [label="宰相在失子岛上建立宫殿沃尔黛在被送走前门上留诗沃久德看到茫然乱走遇到猛狮坦露心思...."];
+    {ch0373,ch0372a}->ch0373a;
+
+ch0373->ch0374;
+ch0374 [label="第374夜",fillcolor="#586E75"];
+    ch0374a [label="听过沃久德的哭述猛狮指出线索继续追踪遇到苦修士也是苦情人交换故事后抱头大哭.."];
+    {ch0374,ch0373a}->ch0374a;
+
+ch0374->ch0375;
+ch0375 [label="第375夜",fillcolor="#586E75"];
+    ch0375a [label="苦修士帮沃久德造好葫芦筏出海漂了三天到达沃尔黛所在失子岛.."];
+    {ch0375,ch0374a}->ch0375a;
+
+ch0375->ch0376;
+ch0376 [label="第376夜",fillcolor="#586E75"];
+    ch0376a [label="沃久德和来自伊斯法罕的奴仆攀谈进入宫院和一系列笼中鸟对吟苦情诗.."];
+    {ch0376,ch0375a}->ch0376a;
+
+ch0376->ch0377;
+ch0377 [label="第377夜",fillcolor="#586E75"];
+    ch0377a [label="沃久德确认找到沃尔黛之时沃尔黛已经利用巴勒贝克长纱垂出宫墙在海边遇到苦情渔夫出逃.."];
+    {ch0377,ch0376a}->ch0377a;
+
+ch0377->ch0378;
+ch0378 [label="第378夜",fillcolor="#586E75"];
+    ch0378a [label="沃尔黛被大风浪送到海滨城市被德尔巴斯国王发现并知晓故事派出使者去沙米赫国王求亲沃久德最终联合人马开始寻找.."];
+    {ch0378,ch0377a}->ch0378a;
+
+ch0378->ch0379;
+ch0379 [label="第379夜",fillcolor="#586E75"];
+    ch0379a [label="两国宰相联合人马四处寻找终于找到失子岛发现沃尔黛已脱逃只得带着哭晕过去的沃久德回转而此时无人识得他.."];
+    {ch0379,ch0378a}->ch0379a;
+
+ch0379->ch0380;
+ch0380 [label="第380夜",fillcolor="#586E75"];
+    ch0380a [label="德尔巴斯国王宰相带着沃久德回转惊喜交差立即和沃尔黛缔结婚约两人成婚之夜高兴的双双昏了过去.."];
+    {ch0380,ch0379a}->ch0380a;
+
+ch0380->ch0381;
+ch0381 [label="第381夜",fillcolor="#586E75"];
+    ch0381a [label="沃久德和沃尔黛缔历经磨难终于和美终身.."];
+    {ch0381,ch0380a}->ch0381a;
+    ch0381b [label="[[莎赫札德开始讲:]]"];
+    ch0381b1 [label="《诗人与哈里发的故事》"];
+    ch0381b2 [label="诗人艾卜·努瓦斯备好酒席上街带三个美少年回来欢宴.."];
+    ch0381a->ch0381b->{ch0381b1,ch0381b2};
+    ch0381b1->ch0381b2;
+
+ch0381b2->ch0382;
+ch0382 [label="第382夜",fillcolor="#586E75"];
+    ch0382a [label="努瓦斯备酒席上和三个美少纵情欢乐时哈里发哈伦·拉希德来访被怼回.."];
+    {ch0382,ch0381b2}->ch0382a;
+
+ch0382->ch0383;
+ch0383 [label="第383夜",fillcolor="#586E75"];
+    ch0383a [label="隔天努瓦斯在早朝后的酒席上就被哈里发拉希德装扮成驴游街幸好机智用幽默自救让哈里发消了气.."];
+    {ch0383,ch0382a}->ch0383a;
+    ch0383b [label="[[莎赫札德开始讲:]]"];
+    ch0383b1 [label="《主仆俩与执政官的故事》"];
+    ch0383b2 [label="有巴士拉富人买了女奴并细心培养可时运不徍不得不出售巴士拉执政官看到想买可被俩人感动就地成全.."];
+    ch0383a->ch0383b->{ch0383b1,ch0383b2};
+    ch0383b1->ch0383b2;
+    ch0383c1 [label="《生前死后的故事》"];
+    ch0383c2 [label="欧兹莱部族有位青年不觉陷入单相思被人们周知.."];
+    ch0383b->{ch0383c1,ch0383c2};
+
+ch0383c2->ch0384;
+ch0384 [label="第384夜",fillcolor="#586E75"];
+    ch0384a [label="欧兹莱部族单相思青年病死女青年也随之而去.."];
+    {ch0384,ch0383c2}->ch0384a;
+    ch0384b [label="[[莎赫札德开始讲:]]"];
+    ch0384b1 [label="《也门宰相白德尔丁的故事》"];
+    ch0384b2 [label="宰相白德尔丁有个弟弟深得老先生的喜爱以至约定好二更夜翻墙相会.."];
+    ch0384a->ch0384b->{ch0384b1,ch0384b2};
+    ch0384b1->ch0384b2;
+    ch0384c1 [label="《少男与少女的故事》"];
+    ch0384c2 [label="同在一个学堂读书的少男爱上了少女...."];
+    ch0384b2->ch0384c1->ch0384c2;
+
+ch0384c2->ch0385;
+ch0385 [label="第385夜",fillcolor="#586E75"];
+    ch0385a [label="少男少女学监甚至于监护人都在纸上留下诗句最终直接原地结成夫妻.."];
+    {ch0385,ch0384c2}->ch0385a;
+    ch0385b [label="[[莎赫札德开始讲:]]"];
+    ch0385b1 [label="《改嫁花烛夜的故事》"];
+    ch0385b2 [label="古希腊国著名诗人穆特莱姆斯为避国王责罚外逃多年妻子被亲族硬逼改嫁当天他回来了...."];
+    ch0385a->ch0385b->{ch0385b1,ch0385b2};
+    ch0385b1->ch0385b2;
+    ch0385c1 [label="《哈里发哈伦·拉希德观景的故事》"];
+    ch0385c2 [label="哈里发哈伦王后祖贝黛在一个炎热的夏天进入专用乐园.."];
+    ch0385b2->ch0385c1->ch0385c2;
+
+ch0385c2->ch0386;
+ch0386 [label="第386夜",fillcolor="#586E75"];
+    ch0386a [label="哈里发哈伦见王后祖贝黛一丝不挂立浅水中冲凉立即招诗人们来描绘.."];
+    {ch0386,ch0385c2}->ch0386a;
+    ch0386b [label="[[莎赫札德开始讲:]]"];
+    ch0386b1 [label="《哈里发与诗人的故事》"];
+    ch0386b2 [label="哈伦·拉希德夜晚撞见一名醉意朦胧的宫女想云雨被推约隔日却道夜下道之话，日出即抹掉..."];
+    ch0386a->ch0386b->{ch0386b1,ch0386b2};
+    ch0386b1->ch0386b2;
+    ch0386c1 [label="《穆斯阿卜结亲的故事》"];
+    ch0386c2 [label="穆斯阿卜求阿梓先去看看阿漪莎是否值得娶妻.."];
+    ch0386b2->ch0386c1->ch0386c2;
+
+ch0386c2->ch0387;
+ch0387 [label="第387夜",fillcolor="#586E75"];
+    ch0387a [label="阿梓盛赞阿漪莎穆斯阿卜得偿所愿洞房之夜云雨七次.."];
+    {ch0387,ch0386c2}->ch0387a;
+    ch0387b [label="[[莎赫札德开始讲:]]"];
+    ch0387b1 [label="《哈里发与少女的故事》"];
+    ch0387b2 [label="哈伦·拉希德和麦地那库法麦加伊拉克姑娘们戏耍时大家引经论典.."];
+    ch0387a->ch0387b->{ch0387b1,ch0387b2};
+    ch0387b1->ch0387b2;
+    ch0387c1 [label="《泄密招来灾祸的故事》"];
+    ch0387c2 [label="磨房主人有个不忠的妻子这天告诉她梦中启示.."];
+    ch0387b2->ch0387c1->ch0387c2;
+
+ch0387c2->ch0388;
+ch0388 [label="第388夜",fillcolor="#586E75"
+    ,URL="https://youtu.be/UIq247tHc9M"];
+    ch0388a [label="不忠的妻子和隔壁汉子先挖出财宝被就地残害天亮后磨房主的驴子不愿走.."];
+    {ch0388,ch0387c2}->ch0388a;
+    ch0388b [label="[[莎赫札德开始讲:]]"];
+    ch0388b1 [label="《容易受骗的人的故事》"];
+    ch0388b2 [label="骗子将自己和毛驴换个位结果就令易受骗的人相信自己是因安拉惩罚变驴子.."];
+    ch0388a->ch0388b->{ch0388b1,ch0388b2};
+    ch0388b1->ch0388b2;
+    ch0388c1 [label="《法官巧断皇家案的故事》"];
+    ch0388c2 [label="哈伦·拉希德发现自己褥单上有鲜精液.."];
+    ch0388b2->ch0388c1->ch0388c2;
+
+ch0388c2->ch0389;
+ch0389 [label="第389夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0389a [label="法官优素福一眼看出是天花板上洞中蝙蝠的精液.."];
+    {ch0389,ch0388c2}->ch0389a;
+    ch0389b [label="[[莎赫札德开始讲:]]"];
+    ch0389b1 [label="《哈里发厚报富商的故事》"];
+    ch0389b2 [label="哈基姆因为富商立即给出100套招待吃喝取出税款370万第纳尔赠予庄园主人.."];
+    ch0389a->ch0388b->{ch0389b1,ch0389b2};
+    ch0389b1->ch0389b2;
+    ch0389c [label="[[莎赫札德开始讲:]]"];
+    ch0389c1 [label="《科斯鲁与村姑的故事》"];
+    ch0389c2 [label="公正君王舍尔瓦尼打猎走散遇到山村小姑娘.."];
+    ch0389b2->ch0389c->ch0389c1->ch0389c2;
+
+ch0389c2->ch0390;
+ch0390 [label="第390夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0390a [label="舍尔瓦尼两次讨水喝都小姑娘教育而纳为妃.."];
+    {ch0390,ch0389c2}->ch0389a;
+    ch0390b [label="[[莎赫札德开始讲:]]"];
+    ch0390b1 [label="《水夫与银匠夫妻的故事》"];
+    ch0390b2 [label="布哈拉城的水夫给银匠家送水30年这天然突然对银匠的妻子.."];
+    ch0390a->ch0390b->{ch0390b1,ch0390b2};
+    ch0390b1->ch0390b2;
+
+
+ch0390b2->ch0391;
+ch0391 [label="第391夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0391a [label="银匠回来被妻子盘问才发现原因自此变成成语.."];
+    {ch0391,ch0390b2}->ch0391a;
+    ch0391b [label="[[莎赫札德开始讲:]]"];
+    ch0391b1 [label="《聪明的渔夫的故事》"];
+    ch0391b2 [label="国王海斯鲁高兴的赏给献大鱼的渔夫四千迪尔汗被王后教导进行各种刁难却被渔夫.."];
+    ch0391a->ch0390b->{ch0390b1,ch0390b2};
+    ch0391b1->ch0390b2;
+    ch0391c [label="[[莎赫札德开始讲:]]"];
+    ch0391c1 [label="《慷慨待客的叶海亚·巴尔马克》"];
+    ch0391c2 [label="男子求到叶海亚府上每天能获得一千迪尔汗.."];
+    ch0390b2->ch0391c->ch0391c1->ch0391c2;
+
+ch0391c2->ch0392;
+ch0392 [label="第392夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0392a [label="男子呆了一个月就悄悄跑掉衬托出巴尔马克仗义疏财.."];
+    {ch0392,ch0391c2}->ch0392a;
+    ch0392b [label="[[莎赫札德开始讲:]]"];
+    ch0392b1 [label="《歌姬白德尔的故事》"];
+    ch0392b2 [label="贾法尔家的歌女白德尔·克比尔才色无双以致穆罕默德·艾敏直接扛走用一船宝物强换.."];
+    ch0392a->ch0390b->{ch0390b1,ch0390b2};
+    ch0392b1->ch0390b2;
+    ch0392c [label="[[莎赫札德开始讲:]]"];
+    ch0392c1 [label="《赛义德还债的故事》"];
+    ch0392c2 [label="赛义德欠债难还.."];
+    ch0390b2->ch0392c->ch0392c1->ch0392c2;
+
+ch0392c2->ch0393;
+ch0393 [label="第393夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0393a [label="向叶海亚的儿子法德勒和贾法尔述说困难转头就获得了330万迪尔汗.."];
+    {ch0393,ch0392c2}->ch0393a;
+    ch0393b [label="[[莎赫札德开始讲:]]"];
+    ch0393b1 [label="《一个暗算丈夫的女人的故事》"];
+    ch0393b2 [label="丈夫给妻子一条鱼转头忘在水罐里五天.."];
+    ch0393a->ch0390b->{ch0390b1,ch0390b2};
+    ch0393b1->ch0390b2;
+
+
+
+
+
+
 
 
 
