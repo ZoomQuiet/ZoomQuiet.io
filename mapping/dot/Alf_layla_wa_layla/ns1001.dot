@@ -41,7 +41,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         , style="setlinewidth(0.5)"
         ];
 
-    info [label="by Zoom.Quiet for Chaos42DAMA\nv25.5.10"
+    info [label="by Zoom.Quiet for Chaos42DAMA\nv25.5.23"
         ,shape=ellipse,style="filled,dashed,setlinewidth(5)"
         ,color="#333333",fillcolor=dimgray,fontcolor=aqua
         ,URL="https://www.youtube.com/playlist?list=PLbUdpHqxsZwHXNADWIEMsUHM4QtPj0xh-"
@@ -2897,13 +2897,13 @@ ch0388 [label="第388夜",fillcolor="#586E75"
 
 ch0388c2->ch0389;
 ch0389 [label="第389夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/6O5if7KAgEM"];
     ch0389a [label="法官优素福一眼看出是天花板上洞中蝙蝠的精液.."];
     {ch0389,ch0388c2}->ch0389a;
     ch0389b [label="[[莎赫札德开始讲:]]"];
     ch0389b1 [label="《哈里发厚报富商的故事》"];
     ch0389b2 [label="哈基姆因为富商立即给出100套招待吃喝取出税款370万第纳尔赠予庄园主人.."];
-    ch0389a->ch0388b->{ch0389b1,ch0389b2};
+    ch0389a->ch0389b->{ch0389b1,ch0389b2};
     ch0389b1->ch0389b2;
     ch0389c [label="[[莎赫札德开始讲:]]"];
     ch0389c1 [label="《科斯鲁与村姑的故事》"];
@@ -2912,65 +2912,156 @@ ch0389 [label="第389夜",fillcolor="#586E75"
 
 ch0389c2->ch0390;
 ch0390 [label="第390夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/gMAQo6bCvGM"];
     ch0390a [label="舍尔瓦尼两次讨水喝都小姑娘教育而纳为妃.."];
-    {ch0390,ch0389c2}->ch0389a;
+    {ch0390,ch0389c2}->ch0390a;
     ch0390b [label="[[莎赫札德开始讲:]]"];
     ch0390b1 [label="《水夫与银匠夫妻的故事》"];
     ch0390b2 [label="布哈拉城的水夫给银匠家送水30年这天然突然对银匠的妻子.."];
     ch0390a->ch0390b->{ch0390b1,ch0390b2};
     ch0390b1->ch0390b2;
 
-
 ch0390b2->ch0391;
 ch0391 [label="第391夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/hXgLVvX7i2M"];
     ch0391a [label="银匠回来被妻子盘问才发现原因自此变成成语.."];
     {ch0391,ch0390b2}->ch0391a;
     ch0391b [label="[[莎赫札德开始讲:]]"];
     ch0391b1 [label="《聪明的渔夫的故事》"];
     ch0391b2 [label="国王海斯鲁高兴的赏给献大鱼的渔夫四千迪尔汗被王后教导进行各种刁难却被渔夫.."];
-    ch0391a->ch0390b->{ch0390b1,ch0390b2};
-    ch0391b1->ch0390b2;
+    ch0391a->ch0391b->{ch0391b1,ch0391b2};
+    ch0391b1->ch0391b2;
     ch0391c [label="[[莎赫札德开始讲:]]"];
     ch0391c1 [label="《慷慨待客的叶海亚·巴尔马克》"];
     ch0391c2 [label="男子求到叶海亚府上每天能获得一千迪尔汗.."];
-    ch0390b2->ch0391c->ch0391c1->ch0391c2;
+    ch0391b2->ch0391c->ch0391c1->ch0391c2;
 
 ch0391c2->ch0392;
 ch0392 [label="第392夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/PyB8HAZ50jY"];
     ch0392a [label="男子呆了一个月就悄悄跑掉衬托出巴尔马克仗义疏财.."];
     {ch0392,ch0391c2}->ch0392a;
     ch0392b [label="[[莎赫札德开始讲:]]"];
     ch0392b1 [label="《歌姬白德尔的故事》"];
     ch0392b2 [label="贾法尔家的歌女白德尔·克比尔才色无双以致穆罕默德·艾敏直接扛走用一船宝物强换.."];
-    ch0392a->ch0390b->{ch0390b1,ch0390b2};
-    ch0392b1->ch0390b2;
+    ch0392a->ch0392b->{ch0392b1,ch0392b2};
+    ch0392b1->ch0392b2;
     ch0392c [label="[[莎赫札德开始讲:]]"];
     ch0392c1 [label="《赛义德还债的故事》"];
     ch0392c2 [label="赛义德欠债难还.."];
-    ch0390b2->ch0392c->ch0392c1->ch0392c2;
+    ch0392b2->ch0392c->ch0392c1->ch0392c2;
 
 ch0392c2->ch0393;
 ch0393 [label="第393夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Nl3AuWKIrEg"];
     ch0393a [label="向叶海亚的儿子法德勒和贾法尔述说困难转头就获得了330万迪尔汗.."];
     {ch0393,ch0392c2}->ch0393a;
     ch0393b [label="[[莎赫札德开始讲:]]"];
     ch0393b1 [label="《一个暗算丈夫的女人的故事》"];
     ch0393b2 [label="丈夫给妻子一条鱼转头忘在水罐里五天.."];
-    ch0393a->ch0390b->{ch0390b1,ch0390b2};
-    ch0393b1->ch0390b2;
+    ch0393a->ch0393b->{ch0393b1,ch0393b2};
+    ch0393b1->ch0393b2;
+
+ch0393b2->ch0394;
+ch0394 [label="第394夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0394a [label="没人信鱼能在罐里活那么久大家以为丈夫疯了.."];
+    {ch0394,ch0393b2}->ch0394a;
+    ch0394b [label="[[莎赫札德开始讲:]]"];
+    ch0394b1 [label="《善女与歹徒的故事》"];
+    ch0394b2 [label="善良女子被二园丁要胁上帝的使者丹亚尔降下奇迹.."];
+    ch0394a->ch0394b->{ch0394b1,ch0394b2};
+    ch0394b1->ch0394b2;
+    ch0394c [label="[[莎赫札德开始讲:]]"];
+    ch0394c1 [label="《一个玩笑的故事》"];
+    ch0394c2 [label="哈伦·拉希德带着贾法尔等等在旷野见到一老人.."];
+    ch0394b2->ch0394c->ch0394c1->ch0394c2;
+
+ch0394c2->ch0395;
+ch0395 [label="第395夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0395a [label="拉希德命令贾法尔宰相开个玩笑.."];
+    {ch0395,ch0394c2}->ch0395a;
+    ch0395b [label="[[莎赫札德开始讲:]]"];
+    ch0395b1 [label="《一个守信青年的故事》"];
+    ch0395b2 [label="俩兄弟抓着一青年来到欧麦尔面前.."];
+    ch0395a->ch0395b->{ch0395b1,ch0395b2};
+    ch0395b1->ch0395b2;
+
+ch0395b2->ch0396;
+ch0396 [label="第396夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0396a [label="青年承认失手杀人但是想用3天安排后事再来领罪请艾卜·齐尔担保.."];
+    {ch0396,ch0395b2}->ch0396a;
+
+
+ch0396->ch0397;
+ch0397 [label="第397夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0397a [label="三天后青年回来担保安心苦主也放弃偿命.."];
+    {ch0397,ch0396}->ch0397a;
+    ch0397b [label="[[莎赫札德开始讲:]]"];
+    ch0397b1 [label="《麦蒙与金字塔的故事》"];
+    ch0397b2 [label="麦蒙想捣毁金字塔取宝.."];
+    ch0397a->ch0397b->ch0397b1->ch0397b2;
+
+ch0397b2->ch0398;
+ch0398 [label="第398夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0398a [label="麦蒙好容易破入一个金字塔发现开销和收获几乎相等.."];
+    {ch0398,ch0397b2}->ch0398a;
+    ch0398b [label="[[莎赫札德开始讲:]]"];
+    ch0398b1 [label="《追回失物的故事》"];
+    ch0398b2 [label="有个商人作过小偷这夜他的店.."];
+    ch0398a->ch0398b->ch0398b1->ch0398b2;
+
+ch0398b2->ch0399;
+ch0399 [label="第399夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0399a [label="商人从容跟踪小偷运货的踪迹直到拿回.."];
+    {ch0399,ch0398b2}->ch0399a;
+    ch0399b [label="[[莎赫札德开始讲:]]"];
+    ch0399b1 [label="《分享赏罚的故事》"];
+    ch0399b2 [label="哈伦·拉希德叕心烦意乱就问迈斯鲁尔.."];
+    ch0399a->ch0399b->ch0399b1->ch0399b2;
 
 
 
+ch0399b2->ch0400;
+ch0400 [label="第400夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0400a [label="迈斯鲁尔要求伊本分配赏赐结果收到了拉希德的皮袋子打结果发现不得打迈斯鲁尔这才逗笑所有人.."];
+    {ch0400,ch0399b2}->ch0400a;
 
+ch0400->ch0401;
+ch0401 [label="第401夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0401a [label="《王子出家的故事》哈伦·拉希德有个儿子16岁突然厌世出家修行流浪到巴士拉城.."];
+    {ch0401,ch0400}->ch0401a;
 
+ch0401->ch0402;
+ch0402 [label="第402夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0402a [label="艾布·阿米尔收敛了哈伦·拉希德的儿子将王后留他的红宝石交还.."];
+    {ch0402,ch0401}->ch0402a;
+    ch0402b [label="[[莎赫札德开始讲:]]"];
+    ch0402b1 [label="《多情私塾先生的故事》"];
+    ch0402b2 [label="有学者回顾见到一位优秀的私塾先生突然休假在家为了悼念没见过的女子..乌姆·阿慕尔"];
+    ch0402a->ch0402b->ch0402b1->ch0402b2;
 
-
-
-
+ch0402b2->ch0403;
+ch0403 [label="第403夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0403a [label="因为他人不同歌唱而陷入失恋的私塾先生.."];
+    {ch0403,ch0402b2}->ch0403a;
+    ch0403b [label="[[莎赫札德开始讲:]]"];
+    ch0403b1 [label="《无知私塾先生的故事》"];
+    ch0403b2 [label="文雅的客人和私塾先生对谈热烈被留宿半夜夫人惊呼私塾先生忽然困惑两只睾丸没有什么用途.."];
+    ch0403a->ch0403b->ch0403b1->ch0403b2;
+    ch0403c [label="[[莎赫札德开始讲:]]"];
+    ch0403c1 [label="《一位假学士的故事》"];
+    ch0403c2 [label="假学士开私塾不敢念信误导妇人以为丈夫已死.."];
+    ch0403b2->ch0403c->ch0403c1->ch0403c2;
 
 
 

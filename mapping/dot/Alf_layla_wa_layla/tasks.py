@@ -36,7 +36,8 @@ def exp(c, jpg="ns1001"):
     #_cmd =f"fdp -Tjpeg {env['exp_dot']}.dot -o {env['exp_jpg']}/{jpg}.jpg"
     #_cmd =f"dot -Tjpeg {env['exp_dot']}.dot -o {env['exp_jpg']}/{jpg}.jpg"
     #_cmd =f"dot {env['exp_dot']}.dot -Tgif -o {env['exp_jpg']}/{jpg}.gif -Tcmapx -o {env['exp_jpg']}/{jpg}.gif.map"
-    _cmd =f"dot {env['exp_dot']}.dot -Tsvg_inline -o {env['exp_jpg']}/{jpg}.svg.html"
+    #_cmd =f"dot {env['exp_dot']}.dot -Tsvg_inline -o {env['exp_jpg']}/{jpg}.svg.html"
+    _cmd =f"dot {env['exp_dot']}.dot -Tsvg_inline -o {env['exp_jpg']}/index.svg.html"
 
     print(f"run: {_cmd}") 
     c.run(_cmd)

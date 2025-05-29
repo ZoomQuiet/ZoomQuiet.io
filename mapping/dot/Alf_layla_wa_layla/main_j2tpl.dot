@@ -41,7 +41,7 @@ $ python ../dotools/gen2htm4io101camp.py -t ../dotools/tpl_idx.htm -i "101camp1p
         , style="setlinewidth(0.5)"
         ];
 
-    info [label="by Zoom.Quiet for Chaos42DAMA\nv25.5.10"
+    info [label="by Zoom.Quiet for Chaos42DAMA\nv25.5.23"
         ,shape=ellipse,style="filled,dashed,setlinewidth(5)"
         ,color="#333333",fillcolor=dimgray,fontcolor=aqua
         ,URL="https://www.youtube.com/playlist?list=PLbUdpHqxsZwHXNADWIEMsUHM4QtPj0xh-"
