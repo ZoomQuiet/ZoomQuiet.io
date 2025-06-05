@@ -2964,7 +2964,7 @@ ch0393 [label="第393夜",fillcolor="#586E75"
 
 ch0393b2->ch0394;
 ch0394 [label="第394夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/gULw0CWdTus"];
     ch0394a [label="没人信鱼能在罐里活那么久大家以为丈夫疯了.."];
     {ch0394,ch0393b2}->ch0394a;
     ch0394b [label="[[莎赫札德开始讲:]]"];
@@ -2979,7 +2979,7 @@ ch0394 [label="第394夜",fillcolor="#586E75"
 
 ch0394c2->ch0395;
 ch0395 [label="第395夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/anohbVNXQmc"];
     ch0395a [label="拉希德命令贾法尔宰相开个玩笑.."];
     {ch0395,ch0394c2}->ch0395a;
     ch0395b [label="[[莎赫札德开始讲:]]"];
@@ -2990,14 +2990,14 @@ ch0395 [label="第395夜",fillcolor="#586E75"
 
 ch0395b2->ch0396;
 ch0396 [label="第396夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/0e8JpgbE2_I"];
     ch0396a [label="青年承认失手杀人但是想用3天安排后事再来领罪请艾卜·齐尔担保.."];
     {ch0396,ch0395b2}->ch0396a;
 
 
 ch0396->ch0397;
 ch0397 [label="第397夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/sHqQ18Ab2uk"];
     ch0397a [label="三天后青年回来担保安心苦主也放弃偿命.."];
     {ch0397,ch0396}->ch0397a;
     ch0397b [label="[[莎赫札德开始讲:]]"];
@@ -3007,7 +3007,7 @@ ch0397 [label="第397夜",fillcolor="#586E75"
 
 ch0397b2->ch0398;
 ch0398 [label="第398夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/fT_lyg0ZxjQ"];
     ch0398a [label="麦蒙好容易破入一个金字塔发现开销和收获几乎相等.."];
     {ch0398,ch0397b2}->ch0398a;
     ch0398b [label="[[莎赫札德开始讲:]]"];
@@ -3017,7 +3017,7 @@ ch0398 [label="第398夜",fillcolor="#586E75"
 
 ch0398b2->ch0399;
 ch0399 [label="第399夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/WYTp9a3W9o0"];
     ch0399a [label="商人从容跟踪小偷运货的踪迹直到拿回.."];
     {ch0399,ch0398b2}->ch0399a;
     ch0399b [label="[[莎赫札德开始讲:]]"];
@@ -3029,19 +3029,19 @@ ch0399 [label="第399夜",fillcolor="#586E75"
 
 ch0399b2->ch0400;
 ch0400 [label="第400夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/0CAVKTr8vdU"];
     ch0400a [label="迈斯鲁尔要求伊本分配赏赐结果收到了拉希德的皮袋子打结果发现不得打迈斯鲁尔这才逗笑所有人.."];
     {ch0400,ch0399b2}->ch0400a;
 
 ch0400->ch0401;
 ch0401 [label="第401夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/EvIiG8zyAow"];
     ch0401a [label="《王子出家的故事》哈伦·拉希德有个儿子16岁突然厌世出家修行流浪到巴士拉城.."];
     {ch0401,ch0400}->ch0401a;
 
 ch0401->ch0402;
 ch0402 [label="第402夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/uZJ_FsmH22U"];
     ch0402a [label="艾布·阿米尔收敛了哈伦·拉希德的儿子将王后留他的红宝石交还.."];
     {ch0402,ch0401}->ch0402a;
     ch0402b [label="[[莎赫札德开始讲:]]"];
@@ -3051,17 +3051,65 @@ ch0402 [label="第402夜",fillcolor="#586E75"
 
 ch0402b2->ch0403;
 ch0403 [label="第403夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/PdKbKfqqsFI"];
     ch0403a [label="因为他人不同歌唱而陷入失恋的私塾先生.."];
     {ch0403,ch0402b2}->ch0403a;
     ch0403b [label="[[莎赫札德开始讲:]]"];
     ch0403b1 [label="《无知私塾先生的故事》"];
     ch0403b2 [label="文雅的客人和私塾先生对谈热烈被留宿半夜夫人惊呼私塾先生忽然困惑两只睾丸没有什么用途.."];
     ch0403a->ch0403b->ch0403b1->ch0403b2;
-    ch0403c [label="[[莎赫札德开始讲:]]"];
     ch0403c1 [label="《一位假学士的故事》"];
     ch0403c2 [label="假学士开私塾不敢念信误导妇人以为丈夫已死.."];
-    ch0403b2->ch0403c->ch0403c1->ch0403c2;
+    ch0403b->ch0403c1->ch0403c2;
+
+ch0403c2->ch0404;
+ch0404 [label="第404夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0404a [label="假学士硬是熟练的混过去了.."];
+    {ch0404,ch0403c2}->ch0404a;
+    ch0404b [label="[[莎赫札德开始讲:]]"];
+    ch0404b1 [label="《一个聪明女人的故事》"];
+    ch0404b2 [label="有位国王访察民情见明艳村女起意入室此事被丈夫知道.."];
+    ch0404a->ch0404b->ch0404b1->ch0404b2;
+    ch0404c1 [label="《旅行家与鲲鹏的故事》"];
+    ch0404c2 [label="拉赫曼·马格里布以中国人知名带着鲲鹏雏鸟的羽翮.."];
+    ch0404b->ch0404c1->ch0404c2;
+
+ch0404c2->ch0405;
+ch0405 [label="第405夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0405a [label="拉赫曼·马格里布在岛上从鲲鹏蛋里的雏鸟身上取肉.."];
+    {ch0405,ch0404c2}->ch0405a;
+    ch0405b [label="[[莎赫札德开始讲:]]"];
+    ch0405b1 [label="《阿迪与杏德公主的故事》"];
+    ch0405b2 [label="君王努阿曼有女儿叫杏德遇见栽德立即倾心.."];
+    ch0405a->ch0405b->ch0405b1->ch0405b2;
+
+ch0405b2->ch0406;
+ch0406 [label="第406夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0406a [label="杏德公主女仆玛丽娅从中勾联栽德成功筵请到国王当面提亲.."];
+    {ch0406,ch0405b2}->ch0406a;
+
+ch0406->ch0407;
+ch0407 [label="第407夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0407a [label="可惜成立三年后到国王怒杀栽德公主杏德从此弃绝红尘.."];
+    {ch0407,ch0406}->ch0407a;
+    ch0407b [label="[[莎赫札德开始讲:]]"];
+    ch0407b1 [label="《见色忘义的故事》"];
+    ch0407b2 [label="海札伊讲述亲历从街上成功搭讪美娘去好友穆斯里姆家中一转身就被朋友占用.."];
+    ch0407a->ch0407b->ch0407b1->ch0407b2;
+    ch0405c1 [label="《宫廷歌手遇知音的故事》"];
+    ch0405c2 [label="大音乐家伊斯哈格·本·易卜拉欣·穆苏说经历.."];
+    ch0407b->ch0405c1->ch0405c2;
+
+ch0405c2->ch0408;
+ch0408 [label="第408夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0408a [label="穆苏在街上见到位绝世歌姬混入主人宅院得机会展示新曲.."];
+    {ch0408,ch0405c2}->ch0408a;
+
 
 
 
