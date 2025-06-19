@@ -35,7 +35,7 @@ ch0403 [label="第403夜",fillcolor="#586E75"
 
 ch0403c2->ch0404;
 ch0404 [label="第404夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/B80ntWBIEpk"];
     ch0404a [label="假学士硬是熟练的混过去了.."];
     {ch0404,ch0403c2}->ch0404a;
     ch0404b [label="[[莎赫札德开始讲:]]"];
@@ -48,7 +48,7 @@ ch0404 [label="第404夜",fillcolor="#586E75"
 
 ch0404c2->ch0405;
 ch0405 [label="第405夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/LclEV8Bnygc"];
     ch0405a [label="拉赫曼·马格里布在岛上从鲲鹏蛋里的雏鸟身上取肉.."];
     {ch0405,ch0404c2}->ch0405a;
     ch0405b [label="[[莎赫札德开始讲:]]"];
@@ -58,13 +58,13 @@ ch0405 [label="第405夜",fillcolor="#586E75"
 
 ch0405b2->ch0406;
 ch0406 [label="第406夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/XSPLTfqCpyo"];
     ch0406a [label="杏德公主女仆玛丽娅从中勾联栽德成功筵请到国王当面提亲.."];
     {ch0406,ch0405b2}->ch0406a;
 
 ch0406->ch0407;
 ch0407 [label="第407夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/XXDmkKuS_0Y"];
     ch0407a [label="可惜成婚三年后到国王怒杀栽德公主杏德从此弃绝红尘.."];
     {ch0407,ch0406}->ch0407a;
     ch0407b [label="[[莎赫札德开始讲:]]"];
@@ -77,13 +77,13 @@ ch0407 [label="第407夜",fillcolor="#586E75"
 
 ch0405c2->ch0408;
 ch0408 [label="第408夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/M2w10a4V4tM"];
     ch0408a [label="穆苏在街上见到位绝世歌姬混入主人宅院得机会展示新曲.."];
     {ch0408,ch0405c2}->ch0408a;
 
 ch0408->ch0409;
 ch0409 [label="第409夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/cEjpwR9CbTA"];
     ch0409a [label="穆苏里技惊四方在宅院呆了一个月就获得了美姬得偿心愿.."];
     {ch0409,ch0408}->ch0409a;
     ch0409b [label="[[莎赫札德开始讲:]]"];
@@ -93,7 +93,7 @@ ch0409 [label="第409夜",fillcolor="#586E75"
 
 ch0409b2->ch0410;
 ch0410 [label="第410夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/eJnC0-ivnJk"];
     ch0410a [label="恋爱脑青年听从歌女戏言而死女儿为青年而死歌女也立即殉情"];
     {ch0410,ch0409b2}->ch0410a;
     ch0410b [label="[[莎赫札德开始讲:]]"];
@@ -103,7 +103,7 @@ ch0410 [label="第410夜",fillcolor="#586E75"
 
 ch0410b2->ch0411;
 ch0411 [label="第411夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/I4sgAflYwEM"];
     ch0411a [label="部落老翁主持殉情男女的葬礼.."];
     {ch0411,ch0410b2}->ch0411a;
     ch0411b [label="[[莎赫札德开始讲:]]"];
@@ -113,7 +113,7 @@ ch0411 [label="第411夜",fillcolor="#586E75"
 
 ch0411b2->ch0412;
 ch0412 [label="第412夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/ewNiqRoHXWI"];
     ch0412a [label="穆卜里德回来给哈里发一讲也开始为之惋惜.."];
     {ch0412,ch0411b2}->ch0412a;
     ch0412b [label="[[莎赫札德开始讲:]]"];
@@ -123,8 +123,49 @@ ch0412 [label="第412夜",fillcolor="#586E75"
 
 ch0412b2->ch0413;
 ch0413 [label="第413夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/oq5CTJqo0lU"];
     ch0413a [label="追求伊斯兰姑娘的青年被小孩哥们投石击死当晚姑娘就梦到.."];
     {ch0413,ch0412b2}->ch0413a;
+
+ch0413->ch0414;
+ch0414 [label="第414夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0414a [label="姑娘述说梦中奇景还分享了从天堂带回的苹果四天后就死在青年墓上导致修道院全体皈依穆斯林.."];
+    {ch0414,ch0413}->ch0414a;
+    ch0414b [label="[[莎赫札德开始讲:]]"];
+    ch0414b1 [label="《皇兄与歌姬的故事》"];
+    ch0414b2 [label="哈里发麦蒙的哥哥伊萨爱上了希沙姆的歌姬古莱阿妮.."];
+    ch0414a->ch0414b->ch0414b1->ch0414b2;
+
+ch0414b2->ch0415;
+ch0415 [label="第415夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0415a [label="麦蒙坐彩船四处走访来到希沙姆公馆听了两轮歌女诵唱.."];
+    {ch0415,ch0414b2}->ch0415a;
+
+ch0415->ch0416;
+ch0416 [label="第416夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0416a [label="麦蒙在希沙姆公馆又听了两轮歌女临走一万第纳尔买来的头牌小才出现.."];
+    {ch0416,ch0415}->ch0416a;
+
+ch0416->ch0417;
+ch0417 [label="第417夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0417a [label="麦蒙在希沙姆公馆看出伊萨爱上了古莱阿妮.."];
+    {ch0417,ch0416}->ch0417a;
+
+ch0417->ch0418;
+ch0418 [label="第418夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0418a [label="希沙姆根据麦蒙心意将古莱阿妮送给伊萨获得仗义豪爽美名.."];
+    {ch0418,ch0417}->ch0418a;
+    ch0418b [label="[[莎赫札德开始讲:]]"];
+    ch0418b1 [label="《艾敏纳妾的故事》"];
+    ch0418b2 [label="麦蒙的弟弟艾敏在叔父马赫迪家看中一女仆获得痀又担心已被染指.."];
+    ch0418a->ch0418b->ch0418b1->ch0418b2;
+
+
+
 
 
