@@ -129,7 +129,7 @@ ch0413 [label="第413夜",fillcolor="#586E75"
 
 ch0413->ch0414;
 ch0414 [label="第414夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/K4xCxdJbT6Y"];
     ch0414a [label="姑娘述说梦中奇景还分享了从天堂带回的苹果四天后就死在青年墓上导致修道院全体皈依穆斯林.."];
     {ch0414,ch0413}->ch0414a;
     ch0414b [label="[[莎赫札德开始讲:]]"];
@@ -139,31 +139,70 @@ ch0414 [label="第414夜",fillcolor="#586E75"
 
 ch0414b2->ch0415;
 ch0415 [label="第415夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/QpeGNoNW55o"];
     ch0415a [label="麦蒙坐彩船四处走访来到希沙姆公馆听了两轮歌女诵唱.."];
     {ch0415,ch0414b2}->ch0415a;
 
 ch0415->ch0416;
 ch0416 [label="第416夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/mkGSNUNl6tg"];
     ch0416a [label="麦蒙在希沙姆公馆又听了两轮歌女临走一万第纳尔买来的头牌才出现.."];
     {ch0416,ch0415}->ch0416a;
 
 ch0416->ch0417;
 ch0417 [label="第417夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/4J7d5_juq1U"];
     ch0417a [label="麦蒙在希沙姆公馆看出伊萨爱上了古莱阿妮.."];
     {ch0417,ch0416}->ch0417a;
 
 ch0417->ch0418;
 ch0418 [label="第418夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/ysGaWP-iLGY"];
     ch0418a [label="希沙姆根据麦蒙心意将古莱阿妮送给伊萨获得仗义豪爽美名.."];
     {ch0418,ch0417}->ch0418a;
     ch0418b [label="[[莎赫札德开始讲:]]"];
     ch0418b1 [label="《艾敏纳妾的故事》"];
     ch0418b2 [label="麦蒙的弟弟艾敏在叔父马赫迪家看中一女仆获赠后又担心已被染指.."];
     ch0418a->ch0418b->ch0418b1->ch0418b2;
+
+ch0418->ch0419;
+ch0419 [label="第419夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0419a [label="《臣子们的礼物的故事》哈里发生病宰相法塔赫送套酒杯上刻药方.."];
+    {ch0419,ch0418}->ch0419a;
+    ch0419b [label="[[莎赫札德开始讲:]]"];
+    ch0419b1 [label="《男女尊卑争论的故事》"];
+    ch0419b2 [label="学中女杰在哈马特城讲经遇到持女不如男观点的学者.."];
+    ch0419a->ch0419b->ch0419b1->ch0419b2;
+
+ch0419b2->ch0420;
+ch0420 [label="第420夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0420a [label="朋友列举古兰经圣训等学术交流与诗篇耝证明少女不如少男.."];
+    {ch0420,ch0419b2}->ch0420a;
+
+ch0420->ch0421;
+ch0421 [label="第421夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0421a [label="女杰听完所有唠叨从容不迫一一怼回.."];
+    {ch0421,ch0420}->ch0421a;
+
+ch0421->ch0422;
+ch0422 [label="第422夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0422a [label="女杰从身段开始海量排比义正严辞直怼同性为耻.."];
+    {ch0422,ch0421}->ch0422a;
+
+ch0422->ch0423;
+ch0423 [label="第423夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0423a [label="《不染发的老妪的故事》苏维德说自身经历和朋友们在果园遇见一位美丽自发老太就建议何不染发.."];
+    {ch0423,ch0422}->ch0423a;
+
+
+
+
+
 
 
 
