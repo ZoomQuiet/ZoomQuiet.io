@@ -3196,7 +3196,7 @@ ch0418 [label="第418夜",fillcolor="#586E75"
 
 ch0418->ch0419;
 ch0419 [label="第419夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/INxd2FcKwJ4"];
     ch0419a [label="《臣子们的礼物的故事》哈里发生病宰相法塔赫送套酒杯上刻药方.."];
     {ch0419,ch0418}->ch0419a;
     ch0419b [label="[[莎赫札德开始讲:]]"];
@@ -3206,31 +3206,31 @@ ch0419 [label="第419夜",fillcolor="#586E75"
 
 ch0419b2->ch0420;
 ch0420 [label="第420夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/yL2EhmZhC0U"];
     ch0420a [label="朋友列举古兰经圣训等学术交流与诗篇耝证明少女不如少男.."];
     {ch0420,ch0419b2}->ch0420a;
 
 ch0420->ch0421;
 ch0421 [label="第421夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/1mu7H-YzW8c"];
     ch0421a [label="女杰听完所有唠叨从容不迫一一怼回.."];
     {ch0421,ch0420}->ch0421a;
 
 ch0421->ch0422;
 ch0422 [label="第422夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Kerj4fZz4Cg"];
     ch0422a [label="女杰从身段开始海量排比义正严辞直怼同性为耻.."];
     {ch0422,ch0421}->ch0422a;
 
 ch0422->ch0423;
 ch0423 [label="第423夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/_L5EO68y1zM"];
     ch0423a [label="《不染发的老妪的故事》苏维德说自身经历和朋友们在果园遇见一位美丽自发老太就建议何不染发.."];
     {ch0423,ch0422}->ch0423a;
 
 ch0423->ch0424;
 ch0424 [label="第424夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/mXkgrD2fBYk"];
     ch0424a [label="美丽白发老太用诗从容回应"];
     {ch0424,ch0423}->ch0424a;
     ch0424b [label="[[莎赫札德开始讲:]]"];
@@ -3243,32 +3243,57 @@ ch0424 [label="第424夜",fillcolor="#586E75"
 
 ch0424c2->ch0425;
 ch0425 [label="第425夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Y5nXVhzQ5rM"];
     ch0425a [label="哈桑·高海里临终前细细叮嘱儿子阿里·米斯里但40天后.."];
     {ch0425,ch0424c2}->ch0425a;
 
 ch0425->ch0426;
 ch0426 [label="第426夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/sOStWXaJQjI"];
     ch0426a [label="商贾子弟们拉着阿里·米斯里四处游玩没几年就败光家产.."];
     {ch0426,ch0425}->ch0426a;
 
 ch0426->ch0427;
 ch0427 [label="第427夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/fIVQMV68Jps"];
     ch0427a [label="妻子从邻居讨那儿讨得吃食阿里·米斯里出门去杜姆亚特找机会各种遭遇最后到了巴格达.."];
     {ch0426,ch0427}->ch0427a;
 
-
 ch0427->ch0428;
 ch0428 [label="第428夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/UL09AME4UM8"];
     ch0428a [label="阿里·米斯里选了巴格达商人一间凶宅住了进去半夜从容应对从魔怪那儿获得金币.."];
     {ch0428,ch0427}->ch0428a;
 
+ch0428->ch0429;
+ch0429 [label="第429夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0429a [label="三天过去魔怪组织的商队果然来了.."];
+    {ch0429,ch0428}->ch0429a;
 
+ch0429->ch0430;
+ch0430 [label="第430夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0430a [label="阿里·米斯里的妻儿述说过程看到壁石后的金币惊问.."];
+    {ch0430,ch0429}->ch0430a;
 
+ch0430->ch0431;
+ch0431 [label="第431夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0431a [label="阿里·米斯里和妻儿成为巴格达富商被国王召见送上四大盒绝世珍宝后.."];
+    {ch0431,ch0430}->ch0431a;
 
+ch0431->ch0432;
+ch0432 [label="第432夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0432a [label="国王想招阿里·米斯里为驸马见面一聊儿子哈桑变成驸马米斯里成为宰相专门修建两座宫殿大家就近幸福生活在一起.."];
+    {ch0432,ch0431}->ch0432a;
+
+ch0432->ch0433;
+ch0433 [label="第433夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0433a [label="国王年迈提前商讨大家都推举哈桑为新王完成交接后.."];
+    {ch0433,ch0432}->ch0433a;
 
 
 
