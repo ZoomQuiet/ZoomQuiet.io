@@ -3267,37 +3267,37 @@ ch0428 [label="第428夜",fillcolor="#586E75"
 
 ch0428->ch0429;
 ch0429 [label="第429夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/pUPO1jvYdOE"];
     ch0429a [label="三天过去魔怪组织的商队果然来了.."];
     {ch0429,ch0428}->ch0429a;
 
 ch0429->ch0430;
 ch0430 [label="第430夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Vv_mVGw4WNs"];
     ch0430a [label="阿里·米斯里的妻儿述说过程看到壁石后的金币惊问.."];
     {ch0430,ch0429}->ch0430a;
 
 ch0430->ch0431;
 ch0431 [label="第431夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/nZQcMms63oA"];
     ch0431a [label="阿里·米斯里和妻儿成为巴格达富商被国王召见送上四大盒绝世珍宝后.."];
     {ch0431,ch0430}->ch0431a;
 
 ch0431->ch0432;
 ch0432 [label="第432夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/DuDUMwl_V_0"];
     ch0432a [label="国王想招阿里·米斯里为驸马见面一聊儿子哈桑变成驸马米斯里成为宰相专门修建两座宫殿大家就近幸福生活在一起.."];
     {ch0432,ch0431}->ch0432a;
 
 ch0432->ch0433;
 ch0433 [label="第433夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/ABMTvxGo3TI"];
     ch0433a [label="国王年迈提前商讨大家都推举哈桑为新王完成交接后.."];
     {ch0433,ch0432}->ch0433a;
 
 ch0433->ch0434;
 ch0434 [label="第434夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/2D0ScN1ojG8"];
     ch0434a [label="哈桑朝政万民称颂国家安定"];
     {ch0434,ch0433}->ch0434a;
     ch0434b [label="[[莎赫札德开始讲:]]"];
@@ -3307,93 +3307,126 @@ ch0434 [label="第434夜",fillcolor="#586E75"
 
 ch0434b2->ch0435;
 ch0435 [label="第435夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/m37_E0lSBvg"];
     ch0435a [label="哈吉问老妪为何如此生活即说有君王暴虐百载无百姓相残一年的道理.."];
     {ch0435,ch0434b2}->ch0435a;
 
 ch0435->ch0436;
 ch0436 [label="第436夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/0cU3AjEMX4k"];
     ch0436a [label="[[莎赫札德开始讲:]]\n《婢女泰沃杜德的故事》\n巴格达巨商晚年得子留下大笔遗产而去.."];
     {ch0436,ch0435}->ch0436a;
 
 ch0436->ch0437;
 ch0437 [label="第437夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/iexey4egowU"];
     ch0437a [label="艾卜·哈桑受到诱惑很快败光家产身边只余绝世美婢泰沃杜德能换饭.."];
     {ch0437,ch0436}->ch0437a;
 
 ch0437->ch0438;
 ch0438 [label="第438夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Pj-jUTuS6Bg"];
     ch0438a [label="泰沃杜德见艾卜·哈桑三天没饭吃就劝将自己送给哈里发换至少一万第纳尔国王一见立即组织各种专家来考就.."];
     {ch0438,ch0437}->ch0438a;
 
 ch0438->ch0439;
 ch0439 [label="第439夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/2owJLoOCF0Y"];
     ch0439a [label="泰沃杜德流畅回答法学家有关智力天命自然规律信仰的要素等等问题.."];
     {ch0439,ch0438}->ch0439a;
 
 ch0439->ch0440;
 ch0440 [label="第440夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/X1ArHELgop4"];
     ch0440a [label="泰沃杜德继续自如的回答关于礼拜圣训等等沙斐仪派各种仪式问题.."];
     {ch0440,ch0439}->ch0440a;
 
 
 ch0440->ch0441;
 ch0441 [label="第441夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/jdJ6eEt6vDQ"];
     ch0441a [label="泰沃杜德高速回答关于大净天课各种税率斋戒及其天命和圣行等等问题.."];
     {ch0441,ch0440}->ch0441a;
 
 ch0441->ch0442;
 ch0442 [label="第442夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/qYsvPHwcFsw"];
     ch0442a [label="泰沃杜德完美回答关于节日礼拜日食礼拜月食礼拜维特尔拜等等朝觐受戒相关天命和圣行问题.."];
     {ch0442,ch0441}->ch0442a;
 
 
 ch0442->ch0443;
 ch0443 [label="第443夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/lPMrapWt2Vs"];
     ch0443a [label="泰沃杜德最后用两组问题问住了法学家被扒掉衣服含羞离开接着下一位学者上前考就.."];
     {ch0443,ch0442}->ch0443a;
 
 ch0443->ch0444;
 ch0444 [label="第444夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/sMudc8geMSQ"];
     ch0444a [label="泰沃杜德开始持续应答有关饮食的天命圣行礼貌以及信仰要素人之心等等细节问题.."];
     {ch0444,ch0443}->ch0444a;
 
 ch0444->ch0445;
 ch0445 [label="第445夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/WQU-6kn6snU"];
     ch0445a [label="泰沃杜德照样完美回答并用深入的问题问住专家被扒掉衣服含羞离开《古兰经》朗诵家上前继续考究.."];
     {ch0445,ch0444}->ch0445a;
 
 ch0445->ch0446;
 ch0446 [label="第446夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/wkqa-20iY1M"];
     ch0446a [label="泰沃杜德仔细回答《古兰经》相关训诂问题.."];
     {ch0446,ch0445}->ch0446a;
 
 
 ch0446->ch0447;
 ch0447 [label="第447夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/GKDKH1sySIU"];
     ch0447a [label="泰沃杜德根据《古兰经》各种版本内容分析奉至仁至慈的真主之名的初始等等关键问题.."];
     {ch0447,ch0446}->ch0447a;
 
 
 ch0447->ch0448;
 ch0448 [label="第448夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/10RCcsFhkHE"];
     ch0448a [label="《古兰经》朗诵家最后也被泰沃杜德具体问题问住不得不扒掉衣服害羞离开.."];
     {ch0448,ch0447}->ch0448a;
 
 
+ch0448->ch0449;
+ch0449 [label="第449夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0449a [label="高明医生走上前开始要求泰沃杜德回答关于医学的各种问题.."];
+    {ch0449,ch0448}->ch0449a;
+
+
+ch0449->ch0450;
+ch0450 [label="第450夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0450a [label="泰沃杜德回答流畅回答了血管骨骼诊断等问题.."];
+    {ch0450,ch0449}->ch0450a;
+
+
+ch0450->ch0451;
+ch0451 [label="第451夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0451a [label="高明医生接着问泰沃杜德医学分类饮食法等等.."];
+    {ch0451,ch0450}->ch0451a;
+
+
+ch0451->ch0452;
+ch0452 [label="第452夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0452a [label="泰沃杜德继续流畅回答有关澡堂菜肴饮酒放血等等养生知识.."];
+    {ch0452,ch0451}->ch0452a;
+
+
+ch0452->ch0453;
+ch0453 [label="第453夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0453a [label="高明医生最后提出了房软相关问题追问泰沃杜德不好意思了一下但是依然流畅回答.."];
+    {ch0453,ch0452}->ch0453a;
 
 
 
