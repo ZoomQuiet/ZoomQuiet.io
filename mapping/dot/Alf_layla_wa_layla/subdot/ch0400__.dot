@@ -532,13 +532,13 @@ ch0468 [label="第468夜",fillcolor="#586E75"
 
 ch0468b2->ch0469;
 ch0469 [label="第469夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/2RCHHDLTtqE"];
     ch0469a [label="男子发现女主人意图后在真主支持下跳楼回家.."];
     {ch0469,ch0468b2}->ch0469a;
 
 ch0469a->ch0470;
 ch0470 [label="第470夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/dfKaEsaRJSM"];
     ch0470a [label="虔诚夫妻看到祈祷降福的真正后果选择安贫拜主直至白头百年"];
     {ch0470,ch0469a}->ch0470a;
     ch0470b [label="[[莎赫札德开始讲:]]"];
@@ -549,7 +549,7 @@ ch0470 [label="第470夜",fillcolor="#586E75"
 
 ch0470b2->ch0471;
 ch0471 [label="第471夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/cydBrNPUNbQ"];
     ch0471a [label="哈加吉听到狱吏的报告后大为震惊.."];
     {ch0471,ch0470b2}->ch0471a;
     ch0471b [label="[[莎赫札德开始讲:]]"];
@@ -560,19 +560,19 @@ ch0471 [label="第471夜",fillcolor="#586E75"
 
 ch0471b2->ch0472;
 ch0472 [label="第472夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/pLzHWISi1nE"];
     ch0472a [label="铁匠当年对一女子有邪念饥荒时反复逼迫忽然醒悟获得安拉应许.."];
     {ch0472,ch0471b2}->ch0472a;
 
 ch0472a->ch0473;
 ch0473 [label="第473夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/SP2rrXlP2XQ"];
     ch0473a [label="《修士与国王的故事》以色列有位名修士热情减退安拉收回了一直守护头上的云彩不得不重新开展寻回.."];
     {ch0473,ch0472a}->ch0473a;
 
 ch0473->ch0474;
 ch0474 [label="第474夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Wg3Kk0wUZJQ"];
     ch0474a [label="国王夫妇替修士祈求求回专属云彩.."];
     {ch0474,ch0473a}->ch0474a;
     ch0474b [label="[[莎赫札德开始讲:]]"];
@@ -582,26 +582,26 @@ ch0474 [label="第474夜",fillcolor="#586E75"
 
 ch0474b2->ch0475;
 ch0475 [label="第475夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Y_xFnmJSg8c"];
     ch0475a [label="大主教想用自己的女儿感化幸存的兄弟结果反而适得其反.."];
     {ch0475,ch0474b2}->ch0475a;
 
 
 ch0475->ch0476;
 ch0476 [label="第476夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Tndns1o3agk"];
     ch0476a [label="大主教女儿和幸存的兄弟在安接帮助下逃到麦地那受到哈里发欧麦尔迎接.."];
     {ch0476,ch0475}->ch0476a;
 
 ch0476->ch0477;
 ch0477 [label="第477夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/CLVkCt3X3IM"];
     ch0477a [label="《神医巧治公主病的故事》名医哈瓦斯听从内心召唤去异教徒国家结果遇到一位自然皈依的公主.."];
     {ch0477,ch0476}->ch0477a;
 
 ch0477->ch0478;
 ch0478 [label="第478夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/qBmxdJYGInI"];
     ch0478a [label="名医哈瓦斯在安接帮助下将自主皈依的公主好带回圣城麦加.."];
     {ch0478,ch0477}->ch0478a;
     ch0478b [label="[[莎赫札德开始讲:]]"];
@@ -611,7 +611,7 @@ ch0478 [label="第478夜",fillcolor="#586E75"
 
 ch0478b2->ch0479;
 ch0479 [label="第479夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/HS9m0gmRw_w"];
     ch0479a [label="诗人感赞安拉知密.."];
     {ch0479,ch0478b2}->ch0479a;
     ch0479b [label="[[莎赫札德开始讲:]]"];
@@ -624,13 +624,13 @@ ch0479 [label="第479夜",fillcolor="#586E75"
 
 ch0479c2->ch0480;
 ch0480 [label="第480夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/29CJwdEqB0s"];
     ch0480a [label="以色列富翁儿子漂到孤岛得安接指示获得财宝成为贤王两个儿子分别从各地闻名赶来投奔却不知关系.."];
     {ch0480,ch0479c2}->ch0480a;
 
 ch0480->ch0481;
 ch0481 [label="第481夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/OP9cI6H5n4Y"];
     ch0481a [label="有一商人收留了富翁儿子的妻子也闻名上岛神奇机缘之下一家重聚得以善终.."];
     {ch0481,ch0480a}->ch0481a;
     ch0481b [label="[[莎赫札德开始讲:]]"];
@@ -640,7 +640,7 @@ ch0481 [label="第481夜",fillcolor="#586E75"
 
 ch0481b2->ch0482;
 ch0482 [label="第482夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/_tLgCj_pC4s"];
     ch0482a [label="德拉吉抵达麦加时那残疾人又消失了向大贤询问才知是圣人艾卜·贾法尔.."];
     {ch0482,ch0481b2}->ch0482a;
     ch0482b [label="[[莎赫札德开始讲:]]"];
@@ -650,69 +650,69 @@ ch0482 [label="第482夜",fillcolor="#586E75"
 
 ch0482b2->ch0483;
 ch0483 [label="第483夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/ApnEoWsQ_i4"];
     ch0483a [label="丹亚尔出海遇风暴只带回5页书作为遗产留给儿子哈西卜·克里姆丁成年后一直没找到事作直到作为樵夫发现一个山洞中隐藏的.."];
     {ch0483,ch0482b2}->ch0483a;
 
 
 ch0483->ch0484;
 ch0484 [label="第484夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/f-v-X4xWvYs"];
     ch0484a [label="克里姆丁在山洞发现隐藏的蜜井由樵夫贬卖反而被骗困入井底.."];
     {ch0484,ch0483a}->ch0484a;
 
 ch0484->ch0485;
 ch0485 [label="第485夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/EkUbEdEnweQ"];
     ch0485a [label="克里姆丁顺着井底巨蝎的来路进入玉山和各种金银椅子不觉在中央金椅上睡了过去醒来见到蛇女王.."];
     {ch0485,ch0484a}->ch0485a;
 
 ch0485->ch0486;
 ch0486 [label="第486夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/I2OMWSsuku8"];
     ch0486a [label="蛇女王开始讲《布鲁基亚的故事》埃及米斯尔老国王死后儿子布鲁基亚从遗产中发现笔记皈依了真主出行去找穆罕默德.."];
     {ch0486,ch0485a}->ch0486a;
 
 ch0486->ch0487;
 ch0487 [label="第487夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/bH4p7fFCbNE"];
     ch0487a [label="布鲁基亚无意中进入蛇岛发现其实是火狱居民蛇女王也在其中并推荐耶路撒冷阿凡引路.."];
     {ch0487,ch0486a}->ch0487a;
 
 ch0487->ch0488;
 ch0488 [label="第488夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/YkSVcLeMOHQ"];
     ch0488a [label="阿凡和布鲁基亚带着蛇女王一起找到能渡海的草汁才知道苏莱曼的戒指是根本取不下来的因为那是造物主单独给苏莱曼的.."];
     {ch0488,ch0487a}->ch0488a;
 
 ch0488->ch0489;
 ch0489 [label="第489夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Ff75gRzq2U8"];
     ch0489a [label="阿凡和布鲁基亚不听蛇女王的话还是跨7海找到苏莱曼的坟地阿凡当场被巨蛇口喷火焰烧成灰.."];
     {ch0489,ch0488a}->ch0489a;
 
 ch0489->ch0490;
 ch0490 [label="第490夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/fGnlkr-PNj8"];
     ch0490a [label="布鲁基亚得天使明示只好独自返程路上经过陆兽和海兽每晚聚会的小岛.."];
     {ch0490,ch0489a}->ch0490a;
 
 
 ch0490->ch0491;
 ch0491 [label="第491夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/haTkPRHClnk"];
     ch0491a [label="布鲁基亚在脚上沬好草汁跨过5海发现由水晶构成的小岛又在第6海后发现长有各种奇果的小岛还遇到萨赫尔国王巨人值守的小岛.."];
     {ch0491,ch0490a}->ch0491a;
 
 ch0491->ch0492;
 ch0492 [label="第492夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/wfie3EBSqPI"];
     ch0492a [label="布鲁基亚又在舍达德大地遇到精灵和萨赫尔国王在巨大的红绸帐中谈话.."];
     {ch0492,ch0491a}->ch0492a;
 
 ch0492->ch0493;
 ch0493 [label="第493夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/wDOnTVUrSAs"];
     ch0493a [label="布鲁基亚和萨赫尔国王吃过1500个盘碗组成的大筵开始讲述地狱的结构."];
     {ch0493,ch0492a}->ch0493a;
 
