@@ -298,159 +298,159 @@ ch0437->ch0438;
 ch0438 [label="第438夜",fillcolor="#586E75"
     ,URL="https://youtu.be/Pj-jUTuS6Bg"];
     ch0438a [label="泰沃杜德见艾卜·哈桑三天没饭吃就劝将自己送给哈里发换至少一万第纳尔国王一见立即组织各种专家来考就.."];
-    {ch0438,ch0437}->ch0438a;
+    {ch0438,ch0437a}->ch0438a;
 
 ch0438->ch0439;
 ch0439 [label="第439夜",fillcolor="#586E75"
     ,URL="https://youtu.be/2owJLoOCF0Y"];
     ch0439a [label="泰沃杜德流畅回答法学家有关智力天命自然规律信仰的要素等等问题.."];
-    {ch0439,ch0438}->ch0439a;
+    {ch0439,ch0438a}->ch0439a;
 
 ch0439->ch0440;
 ch0440 [label="第440夜",fillcolor="#586E75"
     ,URL="https://youtu.be/X1ArHELgop4"];
     ch0440a [label="泰沃杜德继续自如的回答关于礼拜圣训等等沙斐仪派各种仪式问题.."];
-    {ch0440,ch0439}->ch0440a;
+    {ch0440,ch0439a}->ch0440a;
 
 
 ch0440->ch0441;
 ch0441 [label="第441夜",fillcolor="#586E75"
     ,URL="https://youtu.be/jdJ6eEt6vDQ"];
     ch0441a [label="泰沃杜德高速回答关于大净天课各种税率斋戒及其天命和圣行等等问题.."];
-    {ch0441,ch0440}->ch0441a;
+    {ch0441,ch0440a}->ch0441a;
 
 ch0441->ch0442;
 ch0442 [label="第442夜",fillcolor="#586E75"
     ,URL="https://youtu.be/qYsvPHwcFsw"];
     ch0442a [label="泰沃杜德完美回答关于节日礼拜日食礼拜月食礼拜维特尔拜等等朝觐受戒相关天命和圣行问题.."];
-    {ch0442,ch0441}->ch0442a;
+    {ch0442,ch0441a}->ch0442a;
 
 
 ch0442->ch0443;
 ch0443 [label="第443夜",fillcolor="#586E75"
     ,URL="https://youtu.be/lPMrapWt2Vs"];
     ch0443a [label="泰沃杜德最后用两组问题问住了法学家被扒掉衣服含羞离开接着下一位学者上前考就.."];
-    {ch0443,ch0442}->ch0443a;
+    {ch0443,ch0442a}->ch0443a;
 
 ch0443->ch0444;
 ch0444 [label="第444夜",fillcolor="#586E75"
     ,URL="https://youtu.be/sMudc8geMSQ"];
     ch0444a [label="泰沃杜德开始持续应答有关饮食的天命圣行礼貌以及信仰要素人之心等等细节问题.."];
-    {ch0444,ch0443}->ch0444a;
+    {ch0444,ch0443a}->ch0444a;
 
 ch0444->ch0445;
 ch0445 [label="第445夜",fillcolor="#586E75"
     ,URL="https://youtu.be/WQU-6kn6snU"];
     ch0445a [label="泰沃杜德照样完美回答并用深入的问题问住专家被扒掉衣服含羞离开《古兰经》朗诵家上前继续考究.."];
-    {ch0445,ch0444}->ch0445a;
+    {ch0445,ch0444a}->ch0445a;
 
 ch0445->ch0446;
 ch0446 [label="第446夜",fillcolor="#586E75"
     ,URL="https://youtu.be/wkqa-20iY1M"];
     ch0446a [label="泰沃杜德仔细回答《古兰经》相关训诂问题.."];
-    {ch0446,ch0445}->ch0446a;
+    {ch0446,ch0445a}->ch0446a;
 
 
 ch0446->ch0447;
 ch0447 [label="第447夜",fillcolor="#586E75"
     ,URL="https://youtu.be/GKDKH1sySIU"];
     ch0447a [label="泰沃杜德根据《古兰经》各种版本内容分析奉至仁至慈的真主之名的初始等等关键问题.."];
-    {ch0447,ch0446}->ch0447a;
+    {ch0447,ch0446a}->ch0447a;
 
 
 ch0447->ch0448;
 ch0448 [label="第448夜",fillcolor="#586E75"
     ,URL="https://youtu.be/10RCcsFhkHE"];
     ch0448a [label="《古兰经》朗诵家最后也被泰沃杜德具体问题问住不得不扒掉衣服害羞离开.."];
-    {ch0448,ch0447}->ch0448a;
+    {ch0448,ch0447a}->ch0448a;
 
 
 ch0448->ch0449;
 ch0449 [label="第449夜",fillcolor="#586E75"
     ,URL="https://youtu.be/LzZZmg5JgCI"];
     ch0449a [label="高明医生走上前开始要求泰沃杜德回答关于医学的各种问题.."];
-    {ch0449,ch0448}->ch0449a;
+    {ch0449,ch0448a}->ch0449a;
 
 
 ch0449->ch0450;
 ch0450 [label="第450夜",fillcolor="#586E75"
     ,URL="https://youtu.be/-T4S_1Gie0U"];
     ch0450a [label="泰沃杜德回答流畅回答了血管骨骼诊断等问题.."];
-    {ch0450,ch0449}->ch0450a;
+    {ch0450,ch0449a}->ch0450a;
 
 
 ch0450->ch0451;
 ch0451 [label="第451夜",fillcolor="#586E75"
     ,URL="https://youtu.be/fTQXE3ubuPI"];
     ch0451a [label="高明医生接着问泰沃杜德医学分类饮食法等等.."];
-    {ch0451,ch0450}->ch0451a;
+    {ch0451,ch0450a}->ch0451a;
 
 
 ch0451->ch0452;
 ch0452 [label="第452夜",fillcolor="#586E75"
     ,URL="https://youtu.be/OXttnDqQ6fs"];
     ch0452a [label="泰沃杜德继续流畅回答有关澡堂菜肴饮酒放血等等养生知识.."];
-    {ch0452,ch0451}->ch0452a;
+    {ch0452,ch0451a}->ch0452a;
 
 
 ch0452->ch0453;
 ch0453 [label="第453夜",fillcolor="#586E75"
     ,URL="https://youtu.be/WkAzgkeRpME"];
     ch0453a [label="高明医生最后提出了房事相关问题追问泰沃杜德不好意思了一下但是依然流畅回答.."];
-    {ch0453,ch0452}->ch0453a;
+    {ch0453,ch0452a}->ch0453a;
 
 
 ch0453->ch0454;
 ch0454 [label="第454夜",fillcolor="#586E75"
     ,URL="https://youtu.be/pWbY_YwiG9k"];
     ch0454a [label="泰沃杜德将医生问倒后点名星相学家开始叕一轮问答.."];
-    {ch0454,ch0453}->ch0454a;
+    {ch0454,ch0453a}->ch0454a;
 
 
 ch0454->ch0455;
 ch0455 [label="第455夜",fillcolor="#586E75"
     ,URL="https://youtu.be/_bgZMH7YB5o"];
     ch0455a [label="星相学家也问不倒泰沃杜德就使心眼问这个月会降雨嘛.."];
-    {ch0455,ch0454}->ch0455a;
+    {ch0455,ch0454a}->ch0455a;
 
 
 ch0455->ch0456;
 ch0456 [label="第456夜",fillcolor="#586E75"
     ,URL="https://youtu.be/DQDcsntVbwo"];
     ch0456a [label="星相学家连续问正月初一恰逢礼拜几对应的年景泰沃杜德流畅回答后回问了一个问题.."];
-    {ch0456,ch0455}->ch0456a;
+    {ch0456,ch0455a}->ch0456a;
 
 ch0456->ch0457;
 ch0457 [label="第457夜",fillcolor="#586E75"
     ,URL="https://youtu.be/rb5HbnvBQ2w"];
     ch0457a [label="星相学家被问的心悦诚服地离开泰沃杜德开始找哲学家谈谈时光及其界限与日月.."];
-    {ch0457,ch0456}->ch0457a;
+    {ch0457,ch0456a}->ch0457a;
 
 
 ch0457->ch0458;
 ch0458 [label="第458夜",fillcolor="#586E75"
     ,URL="https://youtu.be/TGJrSD0FdyE"];
     ch0458a [label="哲学家很快也狼狈离去泰沃杜德想谈各种艺术结果一名诗人上前开始吟诗猜谜.."];
-    {ch0458,ch0457}->ch0458a;
+    {ch0458,ch0457a}->ch0458a;
 
 
 ch0458->ch0459;
 ch0459 [label="第459夜",fillcolor="#586E75"
     ,URL="https://youtu.be/-5IDNUWV-Z4"];
     ch0459a [label="诗人继续吟诗谜而泰沃杜德继续高速解答.."];
-    {ch0459,ch0458}->ch0459a;
+    {ch0459,ch0458a}->ch0459a;
 
 ch0459->ch0460;
 ch0460 [label="第460夜",fillcolor="#586E75"
     ,URL="https://youtu.be/Y2sruJCbkv8"];
     ch0460a [label="泰沃杜德识别出诗人题目中的陷阱彻底败服易卜拉欣开始对上棋类大师.."];
-    {ch0460,ch0459}->ch0460a;
+    {ch0460,ch0459a}->ch0460a;
 
 ch0460->ch0461;
 ch0461 [label="第461夜",fillcolor="#586E75"
     ,URL="https://youtu.be/RoIL4VEsgv4"];
     ch0461a [label="泰沃杜德接连三盘杀清象棋大师然后又快速干掉双陆棋接着操起珍藏多年的四弦琴.."];
-    {ch0461,ch0460}->ch0461a;
+    {ch0461,ch0460a}->ch0461a;
 
 ch0461->ch0462;
 ch0462 [label="第462夜",fillcolor="#586E75"
@@ -745,4 +745,82 @@ ch0498 [label="第498夜",fillcolor="#586E75"
     ,URL="#"];
     ch0498a [label="哈西卜抺上草汁顺咸海回程遇到下凡除蛇怪的四天使经过一岛见到坐在两座坟墓之间哭泣落泪脸上放光的标致青年.."];
     {ch0498,ch0497a}->ch0498a;
+
+ch0498->ch0499;
+ch0499 [label="第499夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0499a [label="蛇女王叶穆丽哈终于同意哈西卜立誓就送回地面接着说布鲁基亚遇到的标致青年的故事:泰伊姆斯国王占卜得知只有呼罗珊国王的女儿能为他诞下儿子.."];
+    {ch0499,ch0498a}->ch0499a;
+
+ch0499->ch0500;
+ch0500 [label="第500夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0500a [label="阿尼札尔宰相代泰伊姆斯国王出使呼罗珊国白赫鲁旺国王同意女儿顺利回到卡比勒王国盛大成婚顺利产下儿子姜杉10多岁就能文能武.."];
+    {ch0500,ch0499a}->ch0500a;
+
+ch0500->ch0501;
+ch0501 [label="第501夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0501a [label="姜杉王子游猎时发现一毛色奇异的羚羊紧随其后来到海边一时兴起去海中大岛游玩结果回程时遇暴风漂到另外一座海岛被半边人追杀.."];
+    {ch0501,ch0500a}->ch0501a;
+
+
+ch0501->ch0502;
+ch0502 [label="第502夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0502a [label="姜杉王子从半边人的海岛逃走来到另外一座海岛中央有座白色大理石城当晚休息忽然见大队猴子冲来.."];
+    {ch0502,ch0501a}->ch0502a;
+
+
+ch0502->ch0503;
+ch0503 [label="第503夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0503a [label="交谈得知道这岛是苏莱曼先知的猴子们推举姜杉王子当国王带领它们和妖魔作战险胜后见到达伍德立的碑说明了去路选择.."];
+    {ch0503,ch0502a}->ch0503a;
+
+
+ch0503->ch0504;
+ch0504 [label="第504夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0504a [label="姜杉王子不得不当上猴子国王不觉一年半过去终于决心带仆人从蚂蚁谷去寻归路.."];
+    {ch0504,ch0503a}->ch0504a;
+
+ch0504->ch0505;
+ch0505 [label="第505夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0505a [label="姜杉王子漏夜带仆人穿越蚂蚁谷猴兵猴将追杀三名仆从分别丧命王子终于找到犹太城市才知离家有两年半路程而能带路的商队得等一年.."];
+    {ch0505,ch0504a}->ch0505a;
+
+
+ch0505->ch0506;
+ch0506 [label="第506夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0506a [label="王子姜杉暂居犹太城中四处乱逛听到有人招工报酬可观上前应招见到主人立即得到报酬并轻松享乐了两天.."];
+    {ch0506,ch0505a}->ch0506a;
+
+ch0506->ch0507;
+ch0507 [label="第507夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0507a [label="王子姜杉随商人到一处高山下宰杀骡子并躲入腹中果断被一巨鸟提到山顶按照要求将200块宝石丢给商人却被抛弃只有自主求生.."];
+    {ch0507,ch0506a}->ch0507a;
+
+
+ch0507->ch0508;
+ch0508 [label="第508夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0508a [label="王子姜杉艰难找到一个峡谷得知这是百鸟之王替大帝苏莱曼镇守的并答应在百鸟朝王时让大鸟带他回家可那天禁不住进入了禁忌之殿.."];
+    {ch0508,ch0507a}->ch0508a;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
