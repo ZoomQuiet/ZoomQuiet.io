@@ -5188,31 +5188,31 @@ ch0718 [label="第718夜",fillcolor="#586E75"
 
 ch0718->ch0719;
 ch0719 [label="第719夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/hE5nlhMJjCY"];
     ch0719a [label="艾哈迈德·戴尼夫带阿里·米斯里进宫推荐给哈里发果然青眼有加给了官职营房指了婚配泽娜白旧衣店老板的女儿、女仆及盖麦尔莎赫札德接着讲《设拉子王子与伊拉克公主的故事》.."];
     {ch0719,ch0718a}->ch0719a;
 
 ch0719->ch0720;
 ch0720 [label="第720夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/13Evalm76UM"];
     ch0720a [label="波斯设拉子城国王老来得子艾兹德什尔得知伊拉克国公主哈雅蒂·奈菲丝相思成灾测定亲自求婚出发月余长途跋涉到达白伊达城.."];
     {ch0720,ch0719a}->ch0720a;
 
 ch0720->ch0721;
 ch0721 [label="第721夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Jpv1p7TKh1I"];
     ch0721a [label="宰相为王子献计在布匹市租铺面伪装商人经营生意很快因为惊人的俊俏很快获得宫中采买妈妈的关注送上锦袍和礼金求得机会.."];
     {ch0721,ch0720a}->ch0721a;
 
 ch0721->ch0722;
 ch0722 [label="第722夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Q-hSONDwgHU#"];
     ch0722a [label="艾兹德什尔王子通过宫中采买妈妈带信给哈雅蒂公主勃然大怒回信怒诗骂回.."];
     {ch0722,ch0722}->ch0722a;
 
 ch0722->ch0723;
 ch0723 [label="第723夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/cz0cfH170Ow#"];
     ch0723a [label="艾兹德什尔王子接信大哭在采买妈妈劝说下又真诚回诗带信给哈雅蒂公主又怒回往来两次发现不对尝试举报父王去处决王子.."];
     {ch0723,ch0722a}->ch0723a;
 
