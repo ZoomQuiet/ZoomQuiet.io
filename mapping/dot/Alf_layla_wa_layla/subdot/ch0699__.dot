@@ -212,25 +212,25 @@ ch0733 [label="第733夜",fillcolor="#586E75"
 
 ch0733->ch0734;
 ch0734 [label="第734夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/t5SHUTLz2Ls#"];
     ch0734a [label="艾兹德什尔王子就和哈雅蒂公主在绣房中一直嗯哼下去直到国王得到珍宝项链着一位和公主有过节的宫仆去送撞破现场.."];
     {ch0734,ch0733a}->ch0734a
 
 ch0734->ch0735;
 ch0735 [label="第735夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/ZuyiYcMNzaE#"];
     ch0735a [label="赛伊夫·沙赫国王从宫仆卡夫尔得知公主和男人滚在一起大怒着刽子手立即斩杀就在此时艾兹德什尔王子父王赛伊夫·沙赫国王率领大军到城下.."];
     {ch0735,ch0734a}->ch0735a
 
 ch0735->ch0736;
 ch0736 [label="第736夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/34DSKfLuWSY#"];
     ch0736a [label="沙赫国王宰相出城探问回来赶紧去问刽子手幸好一直没忍心斩杀于是艾兹德什尔王子父子相认而哈雅蒂公主.."];
     {ch0736,ch0735a}->ch0736a
 
 ch0736->ch0737;
 ch0737 [label="第737夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/OvBODtTx4UU#"];
     ch0737a [label="艾兹德什尔王子向父王求情以礼相聘阿卜杜·卡迪尔国王哈雅蒂公主求婚成功.."];
     {ch0737,ch0736a}->ch0737a
 

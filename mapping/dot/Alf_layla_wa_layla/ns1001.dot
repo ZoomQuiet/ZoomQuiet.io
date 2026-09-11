@@ -5248,33 +5248,64 @@ ch0728 [label="第728夜",fillcolor="#586E75"
 
 ch0728->ch0729;
 ch0729 [label="第729夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/vCFkJcHzku4#"];
     ch0729a [label="哈雅蒂公主如期和老妈子奴仆们如期入园统销到翻新好的宫殿公主大喜招老园丁奖赏差点儿以为事发就此无常.."];
     {ch0729,ch0728a}->ch0729a
 
 ch0729->ch0730;
 ch0730 [label="第730夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/c3wAVEMeF_E#"];
     ch0730a [label="哈雅蒂公主赏过老园丁在老妈妈的引导下进入宫殿游历如期发现了专门设计绘制的《猎鸟图》同时又说了一系列好几个夫妻恩爱的故事解除公主的心病.."];
     {ch0730,ch0729a}->ch0730a
 
 ch0730->ch0731;
 ch0731 [label="第731夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/gK5JukUX8Ug#"];
     ch0731a [label="哈雅蒂公主又被老妈妈引导着走逈艾兹德什尔王子藏身之所并正确根据暗号现身一打眼双双陷入迷恋当场互拥昏了过去.."];
     {ch0731,ch0730a}->ch0731a
 
 ch0731->ch0732;
 ch0732 [label="第732夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/7ZFW8V8dLLI#"];
     ch0732a [label="哈雅蒂公主与艾兹德什尔王子首次花圈幽会不得尽兴回宫后责令老妈妈必须三天后带人进来于是第三天将王子打扮成美女.."];
     {ch0732,ch0731a}->ch0732a
 
 ch0732->ch0733;
 ch0733 [label="第733夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/waCrvhAZ2iE#"];
     ch0733a [label="老妈妈带着伪装成女子的艾兹德什尔王子连闯7道宫门又隐藏在暗处等到天黑这才进入公主绣房相会.."];
     {ch0733,ch0732a}->ch0733a
+
+ch0733->ch0734;
+ch0734 [label="第734夜",fillcolor="#586E75"
+    ,URL="https://youtu.be/t5SHUTLz2Ls#"];
+    ch0734a [label="艾兹德什尔王子就和哈雅蒂公主在绣房中一直嗯哼下去直到国王得到珍宝项链着一位和公主有过节的宫仆去送撞破现场.."];
+    {ch0734,ch0733a}->ch0734a
+
+ch0734->ch0735;
+ch0735 [label="第735夜",fillcolor="#586E75"
+    ,URL="https://youtu.be/ZuyiYcMNzaE#"];
+    ch0735a [label="赛伊夫·沙赫国王从宫仆卡夫尔得知公主和男人滚在一起大怒着刽子手立即斩杀就在此时艾兹德什尔王子父王赛伊夫·沙赫国王率领大军到城下.."];
+    {ch0735,ch0734a}->ch0735a
+
+ch0735->ch0736;
+ch0736 [label="第736夜",fillcolor="#586E75"
+    ,URL="https://youtu.be/34DSKfLuWSY#"];
+    ch0736a [label="沙赫国王宰相出城探问回来赶紧去问刽子手幸好一直没忍心斩杀于是艾兹德什尔王子父子相认而哈雅蒂公主.."];
+    {ch0736,ch0735a}->ch0736a
+
+ch0736->ch0737;
+ch0737 [label="第737夜",fillcolor="#586E75"
+    ,URL="https://youtu.be/OvBODtTx4UU#"];
+    ch0737a [label="艾兹德什尔王子向父王求情以礼相聘阿卜杜·卡迪尔国王哈雅蒂公主求婚成功.."];
+    {ch0737,ch0736a}->ch0737a
+
+ch0737->ch0738;
+ch0738 [label="第738夜",fillcolor="#586E75"
+    ,URL="#"];
+    ch0738a [label="就这般艾兹德什尔王子终于迎娶哈雅蒂公主过上幸福美满甘甜与平静的生活..莎赫札德讲《白德尔国王与朱海莱公主的故事》.."];
+    {ch0738,ch0737a}->ch0738a
+
 
 
 
