@@ -1,0 +1,9 @@
+[project]
+name = "alf-layla-wa-layla-dot"
+version = "25.9.26"
+description = "《一千零一夜》故事线索图谱 dot 生成/回填工具链"
+requires-python = ">=3.11"
+dependencies = [
+    "invoke",
+    "jinja2",
+]

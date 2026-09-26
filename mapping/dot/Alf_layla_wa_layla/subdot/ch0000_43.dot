@@ -350,7 +350,9 @@ info -> {ch0000_111,why1001};
         {ch0036_11,ch0038_0}->ch0036_12->ch0036_13;
 
     ch0038_0->ch0039_0;
-    ch0039_0  [label="第39夜",fillcolor="#586E75"];
+    ch0039_0  [label="第39夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/jcnuRSF0J2g"
+        ];
 
         ch0036_14 [label="加尼姆开箱见美女"];
         {ch0036_13,ch0039_0}->ch0036_14;
