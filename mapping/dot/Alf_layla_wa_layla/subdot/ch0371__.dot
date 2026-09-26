@@ -1,5 +1,7 @@
 ch0370->ch0371;
-ch0371 [label="第371夜",fillcolor="#586E75"];
+ch0371 [label="第371夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/w4imFPJITHM"
+        ];
     ch0371a [label="王子带公主回到自己的国家安乐成婚继承王位直到归于永恒.."];
     {ch0371,ch0370a}->ch0371a;
     ch0371b [label="[[莎赫札德开始讲:]]"];
@@ -9,52 +11,72 @@ ch0371 [label="第371夜",fillcolor="#586E75"];
     ch0371b1->ch0371b2;
 
 ch0371b2->ch0372;
-ch0372 [label="第372夜",fillcolor="#586E75"];
+ch0372 [label="第372夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/0YNELieLPZA"
+        ];
     ch0372a [label="保姆看穿心思为沃尔黛和沃久德传递情信没想到才第二封就落到宰相手中.."];
     {ch0372,ch0371b2}->ch0372a;
 
 ch0372->ch0373;
-ch0373 [label="第373夜",fillcolor="#586E75"];
+ch0373 [label="第373夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/FPgYIk_DX1g"
+        ];
     ch0373a [label="宰相在失子岛上建立宫殿沃尔黛在被送走前门上留诗沃久德看到茫然乱走遇到猛狮坦露心思...."];
     {ch0373,ch0372a}->ch0373a;
 
 ch0373->ch0374;
-ch0374 [label="第374夜",fillcolor="#586E75"];
+ch0374 [label="第374夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/MY5dPh-lEus"
+        ];
     ch0374a [label="听过沃久德的哭述猛狮指出线索继续追踪遇到苦修士也是苦情人交换故事后抱头大哭.."];
     {ch0374,ch0373a}->ch0374a;
 
 ch0374->ch0375;
-ch0375 [label="第375夜",fillcolor="#586E75"];
+ch0375 [label="第375夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/1CHyBLT4M2U"
+        ];
     ch0375a [label="苦修士帮沃久德造好葫芦筏出海漂了三天到达沃尔黛所在失子岛.."];
     {ch0375,ch0374a}->ch0375a;
 
 ch0375->ch0376;
-ch0376 [label="第376夜",fillcolor="#586E75"];
+ch0376 [label="第376夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/SLUF1BUojxQ"
+        ];
     ch0376a [label="沃久德和来自伊斯法罕的奴仆攀谈进入宫院和一系列笼中鸟对吟苦情诗.."];
     {ch0376,ch0375a}->ch0376a;
 
 ch0376->ch0377;
-ch0377 [label="第377夜",fillcolor="#586E75"];
+ch0377 [label="第377夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/a9qp9HImi-I"
+        ];
     ch0377a [label="沃久德确认找到沃尔黛之时沃尔黛已经利用巴勒贝克长纱垂出宫墙在海边遇到苦情渔夫出逃.."];
     {ch0377,ch0376a}->ch0377a;
 
 ch0377->ch0378;
-ch0378 [label="第378夜",fillcolor="#586E75"];
+ch0378 [label="第378夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/TwhCfTdIWs8"
+        ];
     ch0378a [label="沃尔黛被大风浪送到海滨城市被德尔巴斯国王发现并知晓故事派出使者去沙米赫国王求亲沃久德最终联合人马开始寻找.."];
     {ch0378,ch0377a}->ch0378a;
 
 ch0378->ch0379;
-ch0379 [label="第379夜",fillcolor="#586E75"];
+ch0379 [label="第379夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/OEuEqDveNWw"
+        ];
     ch0379a [label="两国宰相联合人马四处寻找终于找到失子岛发现沃尔黛已脱逃只得带着哭晕过去的沃久德回转而此时无人识得他.."];
     {ch0379,ch0378a}->ch0379a;
 
 ch0379->ch0380;
-ch0380 [label="第380夜",fillcolor="#586E75"];
+ch0380 [label="第380夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/yqEXVZeAPwU"
+        ];
     ch0380a [label="德尔巴斯国王宰相带着沃久德回转惊喜交差立即和沃尔黛缔结婚约两人成婚之夜高兴的双双昏了过去.."];
     {ch0380,ch0379a}->ch0380a;
 
 ch0380->ch0381;
-ch0381 [label="第381夜",fillcolor="#586E75"];
+ch0381 [label="第381夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/cCnZTJy2K9I"
+        ];
     ch0381a [label="沃久德和沃尔黛缔历经磨难终于和美终身.."];
     {ch0381,ch0380a}->ch0381a;
     ch0381b [label="[[莎赫札德开始讲:]]"];
@@ -64,12 +86,16 @@ ch0381 [label="第381夜",fillcolor="#586E75"];
     ch0381b1->ch0381b2;
 
 ch0381b2->ch0382;
-ch0382 [label="第382夜",fillcolor="#586E75"];
+ch0382 [label="第382夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/QgAwDm1QIeE"
+        ];
     ch0382a [label="努瓦斯备酒席上和三个美少纵情欢乐时哈里发哈伦·拉希德来访被怼回.."];
     {ch0382,ch0381b2}->ch0382a;
 
 ch0382->ch0383;
-ch0383 [label="第383夜",fillcolor="#586E75"];
+ch0383 [label="第383夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/KF0S__UjShs"
+        ];
     ch0383a [label="隔天努瓦斯在早朝后的酒席上就被哈里发拉希德装扮成驴游街幸好机智用幽默自救让哈里发消了气.."];
     {ch0383,ch0382a}->ch0383a;
     ch0383b [label="[[莎赫札德开始讲:]]"];
@@ -82,7 +108,9 @@ ch0383 [label="第383夜",fillcolor="#586E75"];
     ch0383b->{ch0383c1,ch0383c2};
 
 ch0383c2->ch0384;
-ch0384 [label="第384夜",fillcolor="#586E75"];
+ch0384 [label="第384夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/pUb6u4Deip0"
+        ];
     ch0384a [label="欧兹莱部族单相思青年病死女青年也随之而去.."];
     {ch0384,ch0383c2}->ch0384a;
     ch0384b [label="[[莎赫札德开始讲:]]"];
@@ -95,7 +123,9 @@ ch0384 [label="第384夜",fillcolor="#586E75"];
     ch0384b2->ch0384c1->ch0384c2;
 
 ch0384c2->ch0385;
-ch0385 [label="第385夜",fillcolor="#586E75"];
+ch0385 [label="第385夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Ve82kDN6ct0"
+        ];
     ch0385a [label="少男少女学监甚至于监护人都在纸上留下诗句最终直接原地结成夫妻.."];
     {ch0385,ch0384c2}->ch0385a;
     ch0385b [label="[[莎赫札德开始讲:]]"];
@@ -108,7 +138,9 @@ ch0385 [label="第385夜",fillcolor="#586E75"];
     ch0385b2->ch0385c1->ch0385c2;
 
 ch0385c2->ch0386;
-ch0386 [label="第386夜",fillcolor="#586E75"];
+ch0386 [label="第386夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/Sjo6ObELVzE"
+        ];
     ch0386a [label="哈里发哈伦见王后祖贝黛一丝不挂立浅水中冲凉立即招诗人们来描绘.."];
     {ch0386,ch0385c2}->ch0386a;
     ch0386b [label="[[莎赫札德开始讲:]]"];
@@ -121,7 +153,9 @@ ch0386 [label="第386夜",fillcolor="#586E75"];
     ch0386b2->ch0386c1->ch0386c2;
 
 ch0386c2->ch0387;
-ch0387 [label="第387夜",fillcolor="#586E75"];
+ch0387 [label="第387夜",fillcolor="#586E75"
+        ,URL="https://youtu.be/OUUANotraL8"
+        ];
     ch0387a [label="阿梓盛赞阿漪莎穆斯阿卜得偿所愿洞房之夜云雨七次.."];
     {ch0387,ch0386c2}->ch0387a;
     ch0387b [label="[[莎赫札德开始讲:]]"];
