@@ -302,31 +302,31 @@ ch0748 [label="第748夜",fillcolor="#586E75"
 
 ch0748->ch0749;
 ch0749 [label="第749夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/I7Ue1t43Gko#"];
     ch0749a [label="朱海莱公主甜言蜜语哄骗白德尔·巴西姆趁其不意念咒将之变成白羽红嘴红脚红腿的鸟并指派侍女送去干旱岛渴死..."];
     {ch0749,ch0748a}->ch0749a
 
 ch0749->ch0750;
 ch0750 [label="第750夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/Di4iHlMcXKA#"];
     ch0750a [label="吉娜兹·白哈里和亲族一起四处寻找白德尔·巴西姆幸好侍女只是将白鸟丢在另外一岛这天被猎人网到献给国王..."];
     {ch0750,ch0749a}->ch0750a
 
 ch0750->ch0751;
 ch0751 [label="第751夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/gcmeqGs2A7k#"];
     ch0751a [label="国王见白鸟吃人食叫王后来看稀奇结果一看就说这男子汉并道出来由原来王后是当时最通魔法、妖术的女性立即恢复人形并获得资助返程路上遭遇海难..."];
     {ch0750,ch0750}->ch0750a
 
 ch0751->ch0752;
 ch0752 [label="第752夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/1Yz1f7OIgcU#"];
     ch0752a [label="白德尔·巴西姆国王命大漂了三天到达海边城却发现不异常获得菜店老人看护才知道这是被妖女王统治的魔城不日拉卜女王还是发现了巴西姆..."];
     {ch0752,ch0751a}->ch0752a
 
 ch0752->ch0753;
 ch0753 [label="第753夜",fillcolor="#586E75"
-    ,URL="#"];
+    ,URL="https://youtu.be/RYKO1zWgSy0#"];
     ch0753a [label="拉卜女王拉着白德尔·巴西姆回宫设专筵欢迎俩人吃吃喝喝一直到同醉而眠..."];
     {ch0753,ch0752a}->ch0753a
 
